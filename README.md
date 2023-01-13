@@ -1,2 +1,2 @@
 # newpaper
-🎨enjoyable light and dark coror theme
+🎨enjoyable light and dark color theme
