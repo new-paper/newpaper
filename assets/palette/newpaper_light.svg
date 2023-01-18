@@ -85,9 +85,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="2.7834157"
-     inkscape:cx="131.31348"
-     inkscape:cy="86.404627"
+     inkscape:zoom="1.3917079"
+     inkscape:cx="435.79548"
+     inkscape:cy="197.95821"
      inkscape:window-width="2560"
      inkscape:window-height="1057"
      inkscape:window-x="-8"
@@ -129,8 +129,6 @@
          font-family="Verdana"
          id="text2125"
          style="font-size:960px;font-family:Verdana;fill:#2b2b2b"><tspan
-           y="0"
-           x="0 785.28003 1395.8401 2054.4001 2664.9602 3323.5203 3934.0803"
            id="tspan2123"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:960px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#2B2B2B</tspan></text>
     </g>
@@ -205,7 +203,7 @@
        y="154.34401"
        style="stroke-width:0.05"><tspan
          y="154.34401"
-         x="51.3965 64.484497 74.6605 85.636505 95.8125 106.78851 116.96451"
+         x="51.3965"
          id="tspan2165"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF';stroke-width:0.05">#2B2B2B</tspan></text>
   </g>
@@ -222,8 +220,6 @@
        font-family="Verdana"
        id="text2181"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f1f3f2;fill-opacity:1"><tspan
-         y="0"
-         x="0 261.76001 480.64001 664.64001 868.16003 1071.6801 1275.2001"
          id="tspan2179"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f1f3f2;fill-opacity:1">#AF0000</tspan></text>
   </g>
@@ -239,8 +235,6 @@
        font-family="Verdana"
        id="text2195"
        style="font-size:320px;font-family:Verdana;fill:#f1f3f2"><tspan
-         y="0"
-         x="0 261.76001 465.28003 668.80005 872.32007 1075.8401 1279.3601"
          id="tspan2193"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#008700</tspan></text>
   </g>
@@ -256,8 +250,6 @@
        font-family="Verdana"
        id="text2209"
        style="font-size:320px;font-family:Verdana;fill:#f1f3f2"><tspan
-         y="0"
-         x="0 261.76001 480.64001 664.64001 868.16003 1052.16 1255.6801"
          id="tspan2207"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#AF5F00</tspan></text>
   </g>
@@ -283,8 +275,6 @@
          font-family="Verdana"
          id="text2223"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
-           y="0"
-           x="0 261.76001 465.28003 668.80005 872.32007 1075.8401 1279.3601"
            id="tspan2221"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#27408B</tspan></text>
     </g>
@@ -301,8 +291,6 @@
        font-family="Verdana"
        id="text2237"
        style="font-size:320px;font-family:Verdana;fill:#f1f3f2"><tspan
-         y="0"
-         x="0 261.76001 465.28003 668.80005 872.32007 1075.8401 1294.7201"
          id="tspan2235"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#8700AF</tspan></text>
   </g>
@@ -318,8 +306,6 @@
        font-family="Verdana"
        id="text2251"
        style="font-size:320px;font-family:Verdana;fill:#f1f3f2"><tspan
-         y="0"
-         x="0 261.76001 465.28003 668.80005 872.32007 1056.3201 1259.8401"
          id="tspan2249"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#005F87</tspan></text>
   </g>
@@ -335,8 +321,6 @@
        font-family="Verdana"
        id="text2265"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f1f3f2"><tspan
-         y="0"
-         x="0 261.76001 465.28003 668.80005 872.32007 1075.8401 1279.3601"
          id="tspan2263"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#444444</tspan></text>
   </g>
@@ -349,8 +333,6 @@
      x="166.282"
      y="226.71001"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f1f3f2;stroke-width:0.05"><tspan
-       y="226.71001"
-       x="166.282 179.37 189.48199 199.658 209.834 220.01001 230.186"
        id="tspan2277"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#E14133</tspan></text>
   <text
@@ -362,8 +344,6 @@
      x="279.668"
      y="226.71001"
      style="font-size:16px;font-family:Verdana;fill:#f1f3f2;stroke-width:0.05"><tspan
-       y="226.71001"
-       x="279.668 292.75601 302.93201 313.108 324.052 334.228 344.40399"
        id="tspan2291"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#50A14F</tspan></text>
   <text
@@ -375,8 +355,6 @@
      x="393.05399"
      y="226.71001"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05"><tspan
-       y="226.71001"
-       x="393.05399 406.142 418.478 428.65399 438.82999 448.03 458.20599"
        id="tspan2305"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#D75F00</tspan></text>
   <text
@@ -388,8 +366,6 @@
      x="506.44"
      y="226.71001"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05"><tspan
-       y="226.71001"
-       x="506.44 519.52802 529.70398 539.88 550.05603 560.23199 571.40002"
        id="tspan2319"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#0072C1</tspan></text>
   <text
@@ -402,7 +378,7 @@
      y="226.71001"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05"><tspan
        y="226.71001"
-       x="619.82599 632.914 643.026 653.20203 663.37799 673.55402 684.53003"
+       x="619.82599"
        id="tspan2333"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#E563BA</tspan></text>
   <text
@@ -414,8 +390,6 @@
      x="733.211"
      y="226.71001"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05"><tspan
-       y="226.71001"
-       x="733.211 746.29901 756.47498 766.651 776.82703 787.00299 797.94702"
        id="tspan2347"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#0087AF</tspan></text>
   <path
