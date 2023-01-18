@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="850.394pt"
+   height="283.465pt"
+   viewBox="0 0 850.394 283.465"
+   id="svg4737"
+   sodipodi:docname="newpaper_dark.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4741">
+    <clipPath
+       id="cp0">
+      <path
+         d="M 28.3464 91.7397 L 822.04739 91.7397 L 822.04739 31.2397 L 28.3464 31.2397 Z "
+         id="path4479" />
+    </clipPath>
+    <clipPath
+       id="cp15">
+      <path
+         transform="matrix(0.05,0,0,0.05,708.661,138.744)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4608" />
+    </clipPath>
+    <clipPath
+       id="cp9">
+      <path
+         transform="matrix(0.05,0,0,0.05,368.504,138.744)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4566" />
+    </clipPath>
+    <clipPath
+       id="cp11">
+      <path
+         transform="matrix(0.05,0,0,0.05,481.89,138.744)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4580" />
+    </clipPath>
+    <clipPath
+       id="cp13">
+      <path
+         transform="matrix(0.05,0,0,0.05,595.276,138.744)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4594" />
+    </clipPath>
+    <clipPath
+       id="cp23">
+      <path
+         transform="matrix(0.05,0,0,0.05,368.504,209.61)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4664" />
+    </clipPath>
+    <clipPath
+       id="cp25">
+      <path
+         transform="matrix(0.05,0,0,0.05,481.89,209.61)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4678" />
+    </clipPath>
+    <clipPath
+       id="cp21">
+      <path
+         transform="matrix(0.05,0,0,0.05,255.118,209.61)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4650" />
+    </clipPath>
+    <clipPath
+       id="cp29">
+      <path
+         transform="matrix(0.05,0,0,0.05,708.661,209.61)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4706" />
+    </clipPath>
+    <clipPath
+       id="cp19">
+      <path
+         transform="matrix(0.05,0,0,0.05,141.732,209.61)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4636" />
+    </clipPath>
+    <clipPath
+       id="cp27">
+      <path
+         transform="matrix(0.05,0,0,0.05,595.276,209.61)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4692" />
+    </clipPath>
+    <clipPath
+       id="cp17">
+      <path
+         transform="matrix(0.05,0,0,0.05,28.3465,209.61)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4622" />
+    </clipPath>
+    <clipPath
+       id="cp5">
+      <path
+         transform="matrix(0.05,0,0,0.05,141.732,138.744)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4538" />
+    </clipPath>
+    <clipPath
+       id="cp7">
+      <path
+         transform="matrix(0.05,0,0,0.05,255.118,138.744)"
+         d="M 0,403 V 0 h 2267.72 v 403"
+         id="path4552" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4739"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.98408607"
+     inkscape:cx="594.96828"
+     inkscape:cy="198.66148"
+     inkscape:window-width="2560"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4735" />
+  <g
+     enable-background="new"
+     id="g4735">
+    <path
+       d="M 28.3465,0 H 822.047 c 15.656,0 28.347,12.6911 28.347,28.3465 V 255.118 c 0,15.655 -12.691,28.347 -28.347,28.347 H 28.3465 C 12.6911,283.465 0,270.773 0,255.118 V 28.3465 C 1e-4,12.6911 12.6911,0 28.3465,0"
+       fill="#2b2b2b"
+       id="path4475" />
+    <path
+       stroke-width="3"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#a274d1"
+       d="M 28.3465,0 H 822.047 c 15.656,0 28.347,12.6911 28.347,28.3465 V 255.118 c 0,15.655 -12.691,28.347 -28.347,28.347 H 28.3465 C 12.6911,283.465 0,270.773 0,255.118 V 28.3465 C 1e-4,12.6911 12.6911,0 28.3465,0"
+       id="path4477" />
+    <g
+       clip-path="url(#cp0)"
+       id="g4491">
+      <clipPath
+         id="cp1">
+        <path
+           transform="matrix(0.05,0,0,0.05,28.3464,31.2397)"
+           d="M 0,1210 V 0 h 15874 v 1210"
+           id="path4482" />
+      </clipPath>
+      <g
+         clip-path="url(#cp1)"
+         id="g4489">
+        <text
+           fill="#cfced0"
+           xml:space="preserve"
+           transform="matrix(0.05,0,0,0.05,324.1964,78.08971)"
+           font-size="960px"
+           font-family="Verdana"
+           id="text4487"
+           style="font-size:960px;font-family:Verdana;fill:#cfced0"><tspan
+             y="0"
+             x="0 785.28003 1455.3601 2065.9202 2736.0002 3346.5603 4016.6404"
+             id="tspan4485"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:960px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#C6C8CD</tspan></text>
+      </g>
+    </g>
+    <path
+       d="m 481.89,113.386 h 113.386 v 70.866 H 481.89 Z"
+       fill="#8195e7"
+       id="path4493" />
+    <path
+       d="m 255.118,184.252 h 113.386 v 70.866 H 255.118 Z"
+       fill="#5faf5f"
+       id="path4495" />
+    <path
+       d="m 595.276,113.386 h 113.385 v 70.866 H 595.276 Z"
+       fill="#a274d1"
+       id="path4497" />
+    <path
+       d="M 368.504,184.252 H 481.89 v 70.866 H 368.504 Z"
+       fill="#f5824b"
+       id="path4499" />
+    <path
+       d="m 141.732,113.386 h 113.386 v 70.866 H 141.732 Z"
+       fill="#cc5555"
+       id="path4501" />
+    <path
+       d="m 481.89,184.252 h 113.386 v 70.866 H 481.89 Z"
+       fill="#7db1d5"
+       id="path4503" />
+    <path
+       d="m 255.118,113.386 h 113.386 v 70.866 H 255.118 Z"
+       fill="#75b680"
+       id="path4505" />
+    <path
+       d="m 595.276,184.252 h 113.385 v 70.866 H 595.276 Z"
+       fill="#e878d8"
+       id="path4507" />
+    <path
+       d="M 368.504,113.386 H 481.89 v 70.866 H 368.504 Z"
+       fill="#c57a30"
+       id="path4509" />
+    <path
+       d="m 141.732,184.252 h 113.386 v 70.866 H 141.732 Z"
+       fill="#dc5761"
+       id="path4511" />
+    <path
+       d="m 793.701,255.118 h -85.04 v -70.866 h 113.386 v 42.52 c 0,15.655 -12.691,28.346 -28.346,28.346 z"
+       fill="#5fafd7"
+       id="path4513" />
+    <path
+       d="m 793.701,113.386 c 15.655,0 28.346,12.691 28.346,28.346 v 7.087 35.433 H 708.661 v -70.866 z"
+       fill="#72aeb3"
+       id="path4515" />
+    <path
+       d="M 56.6929,255.118 H 141.732 V 184.252 H 28.3465 v 42.52 c 0,15.655 12.6911,28.346 28.3464,28.346 z"
+       fill="#bcbcbc"
+       id="path4517" />
+    <path
+       d="m 56.6929,113.386 c -15.6553,0 -28.3464,12.691 -28.3464,28.346 v 7.087 35.433 H 141.732 v -70.866 z"
+       fill="#2b2b2b"
+       id="path4519" />
+    <text
+       fill="#cfced0"
+       xml:space="preserve"
+       font-size="16px"
+       font-family="Verdana"
+       id="text4529"
+       x="51.3965"
+       y="154.34401"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGL Nerd Font';-inkscape-font-specification:'MesloLGL Nerd Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#cfced0;stroke-width:0.05"><tspan
+         id="tspan4527"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05"
+         y="154.34401"
+         x="51.3965 64.484497 74.6605 85.636505 95.8125 106.78851 116.96451">#2B2B2B</tspan></text>
+    <g
+       clip-path="url(#cp5)"
+       id="g4545">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,164.782,154.34401)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4543"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 485.12 708.47998 912 1115.52 1319.04"
+           id="tspan4541"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#CC5555</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp7)"
+       id="g4559">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,278.168,154.34401)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4557"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 465.28003 668.80005 888.32007 1091.8401 1295.3601"
+           id="tspan4555"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#75B680</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp9)"
+       id="g4573">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,391.554,154.34401)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4571"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 485.12 688.64001 892.16003 1111.04 1314.5601"
+           id="tspan4569"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#C57A30</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp11)"
+       id="g4587">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,504.94,154.34401)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4585"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 465.28003 668.80005 872.32007 1075.8401 1278.0801"
+           id="tspan4583"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#8195E7</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp13)"
+       id="g4601">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,618.326,154.34401)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4599"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 480.64001 684.16003 887.68005 1091.2001 1337.92"
+           id="tspan4597"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#A274D1</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp15)"
+       id="g4615">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,731.711,154.34401)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4613"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 465.28003 668.80005 887.68005 1089.92 1309.4401"
+           id="tspan4611"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#72AEB3</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp17)"
+       id="g4629">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,51.3965,225.21)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4627"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 481.28003 704.64001 924.16003 1147.52 1367.04"
+           id="tspan4625"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#BCBCBC</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp19)"
+       id="g4643">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,164.782,225.21)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4641"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 508.48001 731.84003 935.36005 1138.8801 1342.4001"
+           id="tspan4639"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#DC5761</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp21)"
+       id="g4657">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,278.168,225.21)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4655"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 465.28003 649.28003 868.16003 1052.16 1255.6801"
+           id="tspan4653"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#5FAF5F</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp23)"
+       id="g4671">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,391.554,225.21)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4669"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 445.76001 649.28003 852.80005 1056.3201 1259.8401"
+           id="tspan4667"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#F5824B</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp25)"
+       id="g4685">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,504.94,225.21)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4683"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 465.28003 712 931.52002 1135.04 1381.76"
+           id="tspan4681"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#7DB1D5</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp27)"
+       id="g4699">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,618.326,225.21)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4697"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 464 667.52002 871.04004 1074.5601 1321.28"
+           id="tspan4695"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#E878D8</tspan></text>
+    </g>
+    <g
+       clip-path="url(#cp29)"
+       id="g4713">
+      <text
+         fill="#2b2b2b"
+         xml:space="preserve"
+         transform="matrix(0.05,0,0,0.05,731.711,225.21)"
+         font-size="320px"
+         font-family="Verdana"
+         id="text4711"
+         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+           y="0"
+           x="0 261.76001 465.28003 649.28003 868.16003 1052.16 1298.88"
+           id="tspan4709"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#5FAFD7</tspan></text>
+    </g>
+    <path
+       stroke-width="2"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#cfced0"
+       d="M 56.6929,113.386 H 793.701 c 15.655,0 28.346,12.691 28.346,28.346 v 85.04 c 0,15.655 -12.691,28.346 -28.346,28.346 H 56.6929 c -15.6553,0 -28.3464,-12.691 -28.3464,-28.346 v -85.04 c 0,-15.655 12.6911,-28.346 28.3464,-28.346"
+       id="path4717" />
+    <path
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#cfced0"
+       d="M 28.3465,184.252 H 822.047"
+       id="path4719" />
+    <path
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#cfced0"
+       d="M 141.732,113.386 V 255.118"
+       id="path4721" />
+    <path
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#cfced0"
+       d="M 255.118,113.386 V 255.118"
+       id="path4723" />
+    <path
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#cfced0"
+       d="M 368.504,113.386 V 255.118"
+       id="path4725" />
+    <path
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#cfced0"
+       d="M 481.89,113.386 V 255.118"
+       id="path4727" />
+    <path
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#cfced0"
+       d="M 595.276,113.386 V 255.118"
+       id="path4729" />
+    <path
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-miterlimit="10"
+       stroke-linejoin="miter"
+       fill="none"
+       stroke="#cfced0"
+       d="M 708.661,113.386 V 255.118"
+       id="path4731" />
+  </g>
+</svg>
