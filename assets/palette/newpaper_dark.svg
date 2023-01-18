@@ -122,15 +122,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="1.3917079"
-     inkscape:cx="552.19922"
-     inkscape:cy="179.27613"
+     inkscape:zoom="0.98408609"
+     inkscape:cx="597.5087"
+     inkscape:cy="203.23425"
      inkscape:window-width="2560"
      inkscape:window-height="1057"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4735" />
+     inkscape:current-layer="g4489" />
   <g
      enable-background="new"
      id="g4735"
@@ -138,7 +138,8 @@
     <path
        d="M 28.3465,0 H 822.047 c 15.656,0 28.347,12.6911 28.347,28.3465 V 255.118 c 0,15.655 -12.691,28.347 -28.347,28.347 H 28.3465 C 12.6911,283.465 0,270.773 0,255.118 V 28.3465 C 1e-4,12.6911 12.6911,0 28.3465,0"
        fill="#2b2b2b"
-       id="path4475" />
+       id="path4475"
+       style="stroke:#929448;stroke-opacity:1;fill:#303030;fill-opacity:1" />
     <path
        stroke-width="3"
        stroke-linecap="butt"
@@ -164,13 +165,14 @@
         <text
            fill="#cfced0"
            xml:space="preserve"
-           transform="matrix(0.05,0,0,0.05,324.1964,78.08971)"
            font-size="960px"
            font-family="Verdana"
            id="text4487"
-           style="font-size:960px;font-family:Verdana;fill:#cfced0"><tspan
+           style="font-size:48px;font-family:Verdana;fill:#cfced0;stroke-width:0.05"
+           x="149.93529"
+           y="78.089706"><tspan
              id="tspan4485"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:960px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#C6C8CD</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">fg#C6C8CD bg#303030</tspan></text>
       </g>
     </g>
     <path
@@ -242,7 +244,8 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#2B2B2B</tspan></text>
     <g
        clip-path="url(#cp5)"
-       id="g4545">
+       id="g4545"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -250,13 +253,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4543"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4541"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#CC5555</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#CC5555</tspan></text>
     </g>
     <g
        clip-path="url(#cp7)"
-       id="g4559">
+       id="g4559"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -264,13 +268,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4557"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4555"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#75B680</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#75B680</tspan></text>
     </g>
     <g
        clip-path="url(#cp9)"
-       id="g4573">
+       id="g4573"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -278,13 +283,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4571"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4569"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#C57A30</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#C57A30</tspan></text>
     </g>
     <g
        clip-path="url(#cp11)"
-       id="g4587">
+       id="g4587"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -292,13 +298,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4585"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4583"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#8195E7</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#8195E7</tspan></text>
     </g>
     <g
        clip-path="url(#cp13)"
-       id="g4601">
+       id="g4601"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -306,13 +313,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4599"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4597"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#A274D1</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#A274D1</tspan></text>
     </g>
     <g
        clip-path="url(#cp15)"
-       id="g4615">
+       id="g4615"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -320,13 +328,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4613"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4611"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#72AEB3</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#72AEB3</tspan></text>
     </g>
     <g
        clip-path="url(#cp17)"
-       id="g4629">
+       id="g4629"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -334,13 +343,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4627"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4625"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#BCBCBC</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#BCBCBC</tspan></text>
     </g>
     <g
        clip-path="url(#cp19)"
-       id="g4643">
+       id="g4643"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -348,13 +358,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4641"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4639"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#DC5761</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#DC5761</tspan></text>
     </g>
     <g
        clip-path="url(#cp21)"
-       id="g4657">
+       id="g4657"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -362,13 +373,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4655"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4653"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#5FAF5F</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#5FAF5F</tspan></text>
     </g>
     <g
        clip-path="url(#cp23)"
-       id="g4671">
+       id="g4671"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -376,13 +388,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4669"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4667"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#F5824B</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#F5824B</tspan></text>
     </g>
     <g
        clip-path="url(#cp25)"
-       id="g4685">
+       id="g4685"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -390,15 +403,16 @@
          font-size="320px"
          font-family="Verdana"
          id="text4683"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            y="0"
            x="0 261.76001"
            id="tspan4681"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#7DB1D5</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#7DB1D5</tspan></text>
     </g>
     <g
        clip-path="url(#cp27)"
-       id="g4699">
+       id="g4699"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -406,13 +420,14 @@
          font-size="320px"
          font-family="Verdana"
          id="text4697"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            id="tspan4695"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#E878D8</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#E878D8</tspan></text>
     </g>
     <g
        clip-path="url(#cp29)"
-       id="g4713">
+       id="g4713"
+       style="fill:#303030;fill-opacity:1">
       <text
          fill="#2b2b2b"
          xml:space="preserve"
@@ -420,11 +435,11 @@
          font-size="320px"
          font-family="Verdana"
          id="text4711"
-         style="font-size:320px;font-family:Verdana;fill:#2b2b2b"><tspan
+         style="font-size:320px;font-family:Verdana;fill:#303030;fill-opacity:1"><tspan
            y="0"
            x="0"
            id="tspan4709"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">#5FAFD7</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:320px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#303030;fill-opacity:1">#5FAFD7</tspan></text>
     </g>
     <path
        stroke-width="2"
@@ -434,69 +449,198 @@
        fill="none"
        stroke="#cfced0"
        d="M 56.6929,113.386 H 793.701 c 15.655,0 28.346,12.691 28.346,28.346 v 85.04 c 0,15.655 -12.691,28.346 -28.346,28.346 H 56.6929 c -15.6553,0 -28.3464,-12.691 -28.3464,-28.346 v -85.04 c 0,-15.655 12.6911,-28.346 28.3464,-28.346"
-       id="path4717" />
-    <path
-       stroke-width="1"
-       stroke-linecap="butt"
-       stroke-miterlimit="10"
-       stroke-linejoin="miter"
-       fill="none"
-       stroke="#cfced0"
-       d="M 28.3465,184.252 H 822.047"
-       id="path4719" />
-    <path
-       stroke-width="1"
-       stroke-linecap="butt"
-       stroke-miterlimit="10"
-       stroke-linejoin="miter"
-       fill="none"
-       stroke="#cfced0"
-       d="M 141.732,113.386 V 255.118"
-       id="path4721" />
-    <path
-       stroke-width="1"
-       stroke-linecap="butt"
-       stroke-miterlimit="10"
-       stroke-linejoin="miter"
-       fill="none"
-       stroke="#cfced0"
-       d="M 255.118,113.386 V 255.118"
-       id="path4723" />
-    <path
-       stroke-width="1"
-       stroke-linecap="butt"
-       stroke-miterlimit="10"
-       stroke-linejoin="miter"
-       fill="none"
-       stroke="#cfced0"
-       d="M 368.504,113.386 V 255.118"
-       id="path4725" />
-    <path
-       stroke-width="1"
-       stroke-linecap="butt"
-       stroke-miterlimit="10"
-       stroke-linejoin="miter"
-       fill="none"
-       stroke="#cfced0"
-       d="M 481.89,113.386 V 255.118"
-       id="path4727" />
-    <path
-       stroke-width="1"
-       stroke-linecap="butt"
-       stroke-miterlimit="10"
-       stroke-linejoin="miter"
-       fill="none"
-       stroke="#cfced0"
-       d="M 595.276,113.386 V 255.118"
-       id="path4729" />
-    <path
-       stroke-width="1"
-       stroke-linecap="butt"
-       stroke-miterlimit="10"
-       stroke-linejoin="miter"
-       fill="none"
-       stroke="#cfced0"
-       d="M 708.661,113.386 V 255.118"
-       id="path4731" />
+       id="path4717"
+       style="stroke-width:4;stroke-dasharray:none;stroke:#303030;stroke-opacity:1" />
+    <g
+       id="g26930"
+       style="stroke:#2b2b2b;stroke-opacity:1;stroke-width:4;stroke-dasharray:none">
+      <path
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-miterlimit="10"
+         stroke-linejoin="miter"
+         fill="none"
+         stroke="#cfced0"
+         d="M 28.3465,184.252 H 822.047"
+         id="path4719"
+         style="stroke:#2b2b2b;stroke-opacity:1;stroke-width:4;stroke-dasharray:none" />
+      <path
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-miterlimit="10"
+         stroke-linejoin="miter"
+         fill="none"
+         stroke="#cfced0"
+         d="M 141.732,113.386 V 255.118"
+         id="path4721"
+         style="stroke:#2b2b2b;stroke-opacity:1;stroke-width:4;stroke-dasharray:none" />
+      <path
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-miterlimit="10"
+         stroke-linejoin="miter"
+         fill="none"
+         stroke="#cfced0"
+         d="M 255.118,113.386 V 255.118"
+         id="path4723"
+         style="stroke:#2b2b2b;stroke-opacity:1;stroke-width:4;stroke-dasharray:none" />
+      <path
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-miterlimit="10"
+         stroke-linejoin="miter"
+         fill="none"
+         stroke="#cfced0"
+         d="M 368.504,113.386 V 255.118"
+         id="path4725"
+         style="stroke:#2b2b2b;stroke-opacity:1;stroke-width:4;stroke-dasharray:none" />
+      <path
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-miterlimit="10"
+         stroke-linejoin="miter"
+         fill="none"
+         stroke="#cfced0"
+         d="M 481.89,113.386 V 255.118"
+         id="path4727"
+         style="stroke:#2b2b2b;stroke-opacity:1;stroke-width:4;stroke-dasharray:none" />
+      <path
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-miterlimit="10"
+         stroke-linejoin="miter"
+         fill="none"
+         stroke="#cfced0"
+         d="M 595.276,113.386 V 255.118"
+         id="path4729"
+         style="stroke:#2b2b2b;stroke-opacity:1;stroke-width:4;stroke-dasharray:none" />
+      <path
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-miterlimit="10"
+         stroke-linejoin="miter"
+         fill="none"
+         stroke="#cfced0"
+         d="M 708.661,113.386 V 255.118"
+         id="path4731"
+         style="stroke:#2b2b2b;stroke-opacity:1;stroke-width:4;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g21753"
+       transform="translate(-1.5009873,-1.4999989)"
+       style="stroke:#303030;stroke-opacity:1">
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20495"
+         width="113.386"
+         height="70.865997"
+         x="143.23199"
+         y="185.752"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20497"
+         width="113.386"
+         height="70.865997"
+         x="143.23199"
+         y="114.886"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20499"
+         width="113.386"
+         height="70.865997"
+         x="256.61801"
+         y="185.752"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20501"
+         width="113.386"
+         height="70.865997"
+         x="370.004"
+         y="114.886"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20503"
+         width="113.386"
+         height="70.865997"
+         x="370.004"
+         y="185.752"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20505"
+         width="113.386"
+         height="70.865997"
+         x="483.39001"
+         y="114.886"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20507"
+         width="113.386"
+         height="70.865997"
+         x="483.39001"
+         y="185.752"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20509"
+         width="113.386"
+         height="70.865997"
+         x="596.776"
+         y="114.886"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20511"
+         width="113.386"
+         height="70.865997"
+         x="596.776"
+         y="185.752"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20513"
+         width="113.386"
+         height="70.865997"
+         x="710.16199"
+         y="114.886"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20515"
+         width="113.386"
+         height="70.865997"
+         x="710.16199"
+         y="185.752"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20517"
+         width="113.386"
+         height="70.865997"
+         x="29.846008"
+         y="185.752"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20519"
+         width="113.386"
+         height="70.865997"
+         x="29.846008"
+         y="114.886"
+         ry="6.0970273" />
+      <rect
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#303030;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20521"
+         width="113.386"
+         height="70.865997"
+         x="256.61801"
+         y="114.886"
+         ry="6.0970273" />
+    </g>
   </g>
 </svg>
