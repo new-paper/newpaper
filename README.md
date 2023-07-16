@@ -8,7 +8,6 @@
 
 Theme using [Papercolor](https://github.com/NLKNguyen/papercolor-theme) color palette with small changes. LaTeX syntax highlight get from [sublime-writing-color-scheme](https://github.com/kmisiunas/sublime-writing-color-scheme).
 
-
 ## 🎨 Palette
 
 <p align="center">
@@ -19,21 +18,27 @@ Theme using [Papercolor](https://github.com/NLKNguyen/papercolor-theme) color pa
     <img src="https://raw.githubusercontent.com/new-paper/newpaper/main/assets/palette/newpaper_dark.svg"/>
 </p>
 
-### 🔌 Ports and more!
+## 🔌 Ports and more!
 
 <details open>
 <summary>📝 Code Editors</summary>
-- [Neovim]https://github.com/yorik1984/newpaper.nvim)
+
+- [Neovim](https://github.com/yorik1984/newpaper.nvim)
+
 </details>
 
 <details open>
 <summary>📋 CLI tools</summary>
+
 - [Lazygit](https://github.com/new-paper/lazygit)
+
 </details>
 
 <details open>
 <summary>💻 Terminals</summary>
-- [Windows Terminal]https://github.com/new-paper/windows-terminal)
+
+- [Windows Terminal](https://github.com/new-paper/windows-terminal)
+
 </details>
 
 ### ©️ Credits
