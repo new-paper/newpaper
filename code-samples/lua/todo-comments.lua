@@ -1,0 +1,50 @@
+-- treesitter
+-- TODO(user): by @user
+-- FIX comment
+-- FIXME comment
+-- BUG comment
+-- FIXIT comment
+-- ISSUE comment
+-- ERROR comment
+-- TODO comment
+-- WIP comment
+-- HACK comment
+-- WARN comment
+-- WARNING comment
+-- XXX comment
+-- PERF comment
+-- OPTIM comment
+-- PERFORMANCE comment
+-- OPTIMIZE comment
+-- NOTE comment
+-- INFO comment
+-- DOCS comment
+-- TEST comment
+-- TESTING comment
+-- PASSED comment
+-- FAILED comment
+
+-- todo-comments
+-- FIX: comment
+-- FIXME: comment
+-- BUG: comment
+-- FIXIT: comment
+-- ISSUE: comment
+-- ERROR: comment
+-- TODO: comment
+-- WIP: comment
+-- HACK: comment
+-- WARN: comment
+-- WARNING: comment
+-- XXX: comment
+-- PERF: comment
+-- OPTIM: comment
+-- PERFORMANCE: comment
+-- OPTIMIZE: comment
+-- NOTE: comment
+-- INFO: comment
+-- DOCS: comment
+-- TEST: comment
+-- TESTING: comment
+-- PASSED: comment
+-- FAILED: comment
