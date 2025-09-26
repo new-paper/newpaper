@@ -6,7 +6,7 @@
    viewBox="0 0 853.394 286.465"
    id="svg4737"
    sodipodi:docname="newpaper_dark.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -122,15 +122,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.98408609"
-     inkscape:cx="597.5087"
-     inkscape:cy="203.23425"
+     inkscape:zoom="1.3917079"
+     inkscape:cx="359.27079"
+     inkscape:cy="272.32726"
      inkscape:window-width="2560"
-     inkscape:window-height="1057"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1054"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4489" />
+     inkscape:current-layer="g4735" />
   <g
      enable-background="new"
      id="g4735"
@@ -230,7 +230,8 @@
     <path
        d="m 56.6929,113.386 c -15.6553,0 -28.3464,12.691 -28.3464,28.346 v 7.087 35.433 H 141.732 v -70.866 z"
        fill="#2b2b2b"
-       id="path4519" />
+       id="path4519"
+       style="fill:#2f2a3d;fill-opacity:1" />
     <text
        fill="#cfced0"
        xml:space="preserve"
@@ -241,7 +242,7 @@
        y="154.34401"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGL Nerd Font';-inkscape-font-specification:'MesloLGL Nerd Font, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#cfced0;stroke-width:0.05"><tspan
          id="tspan4527"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#2B2B2B</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">#2F2A3D</tspan></text>
     <g
        clip-path="url(#cp5)"
        id="g4545"

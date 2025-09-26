@@ -6,7 +6,7 @@
    viewBox="0 0 853.394 286.465"
    id="svg2375"
    sodipodi:docname="newpaper_light.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -85,15 +85,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.98408609"
-     inkscape:cx="495.89157"
-     inkscape:cy="200.18574"
+     inkscape:zoom="0.69585395"
+     inkscape:cx="636.62785"
+     inkscape:cy="333.4033"
      inkscape:window-width="2560"
-     inkscape:window-height="1057"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1054"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g2127" />
+     inkscape:current-layer="svg2375" />
   <path
      d="M 29.8465,1.5 H 823.547 c 15.656,0 28.347,12.6911 28.347,28.3465 V 256.618 c 0,15.655 -12.691,28.347 -28.347,28.347 H 29.8465 C 14.1911,284.965 1.5,272.273 1.5,256.618 V 29.8465 C 1.5001,14.1911 14.1911,1.5 29.8465,1.5"
      fill="#f1f3f2"
@@ -131,7 +131,7 @@
          x="150.41576"
          y="78.089706"><tspan
            id="tspan2123"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">fg#2B2B2B bg#F1F3F2</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.05">fg#2F2A3D bg#F1F3F2</tspan></text>
     </g>
   </g>
   <path
@@ -189,7 +189,8 @@
   <path
      d="m 58.1929,114.886 c -15.6553,0 -28.3464,12.691 -28.3464,28.346 v 7.087 35.433 H 143.232 v -70.866 z"
      fill="#2b2b2b"
-     id="path2157" />
+     id="path2157"
+     style="fill:#2f2a3d;fill-opacity:1" />
   <g
      clip-path="url(#cp2)"
      id="g2171"
@@ -206,7 +207,7 @@
          y="154.34401"
          x="51.3965"
          id="tspan2165"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF';stroke-width:0.05">#2B2B2B</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF';stroke-width:0.05">#2F2A3D</tspan></text>
   </g>
   <g
      clip-path="url(#cp5)"
