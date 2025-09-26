@@ -57,7 +57,7 @@ module HTMLProcessor
       public_class_method; private_class_method
       public_constant; private_constant
       module_function
-      attr; attr_accessor; attr_reader; attr_writer              # rubyAttribute
+      attr_accessor; attr_reader; attr_writer                    # rubyAttribute
       extend; include; prepend; refine; using                    # rubyMacro
       alias_method; define_method; define_singleton_method;
       remove_method; undef_method
@@ -119,6 +119,8 @@ module HTMLProcessor
       end
       puts @text.join('')
     end
+
+  end
 
   end
 
