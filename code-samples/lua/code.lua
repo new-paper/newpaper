@@ -47,7 +47,7 @@ local config = {
 function M.setup(config)
     config = config or configModule.config
     local newpaper = {
-        black           = '#2B2B2B', -- color00
+        black           = '#2F2A3D', -- color00
         maroon          = '#AF0000', -- color01
         darkgreen       = '#008700'  -- color02
     }
