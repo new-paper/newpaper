@@ -1,0 +1,781 @@
+% !TeX program = lualatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{STIX}
+\usepackage{unicode-math}
+\setmathfont{STIXTwoMath-Regular.otf}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{margin=0.5cm, landscape}
+
+\begin{document}
+
+\subsection*{Commands for Latin Letters (A-Z, a-z)}
+
+\begin{itemize}
+    \item \texttt{\textbackslash{}mathup} — upright ($\mathup{A} \ldots \mathup{Z}$ $\mathup{a} \ldots \mathup{z}$)
+    \item \texttt{\textbackslash{}mathit} — italic ($\mathit{A} \ldots \mathit{Z}$ $\mathit{a} \ldots \mathit{z}$)
+    \item \texttt{\textbackslash{}mathbf} — bold upright ($\mathbf{A} \ldots \mathbf{Z}$ $\mathbf{a} \ldots \mathbf{z}$)
+    \item \texttt{\textbackslash{}mathsf} — sans-serif ($\mathsf{A} \ldots \mathsf{Z}$ $\mathsf{a} \ldots \mathsf{z}$)
+    \item \texttt{\textbackslash{}mathtt} — typewriter ($\mathtt{A} \ldots \mathtt{Z}$ $\mathtt{a} \ldots \mathtt{z}$)
+    \item \texttt{\textbackslash{}mathbfup} — bold upright ($\mathbfup{A} \ldots \mathbfup{Z}$ $\mathbfup{a} \ldots \mathbfup{z}$)
+    \item \texttt{\textbackslash{}mathbfit} — bold italic ($\mathbfit{A} \ldots \mathbfit{Z}$ $\mathbfit{a} \ldots \mathbfit{z}$)
+    \item \texttt{\textbackslash{}mathsfup} — sans-serif ($\mathsfup{A} \ldots \mathsfup{Z}$ $\mathsfup{a} \ldots \mathsfup{z}$)
+    \item \texttt{\textbackslash{}mathsfit} — sans-serif italic ($\mathsfit{A} \ldots \mathsfit{Z}$ $\mathsfit{a} \ldots \mathsfit{z}$)
+    \item \texttt{\textbackslash{}mathbfsf} — sans-serif bold ($\mathbfsf{A} \ldots \mathbfsf{Z}$ $\mathbfsf{a} \ldots \mathbfsf{z}$)
+    \item \texttt{\textbackslash{}mathbfsfup} — sans-serif bold ($\mathbfsfup{A} \ldots \mathbfsfup{Z}$ $\mathbfsfup{a} \ldots \mathbfsfup{z}$)
+    \item \texttt{\textbackslash{}mathbfsfit} — sans-serif bold italic ($\mathbfsfit{A} \ldots \mathbfsfit{Z}$ $\mathbfsfit{a} \ldots \mathbfsfit{z}$)
+    \item \texttt{\textbackslash{}mathcal} — calligraphic ($\mathcal{A} \ldots \mathcal{Z}$ $\mathcal{a} \ldots \mathcal{z}$)
+    \item \texttt{\textbackslash{}mathbfcal} — bold calligraphic ($\mathbfcal{A} \ldots \mathbfcal{Z}$ $\mathbfcal{a} \ldots \mathbfcal{z}$)
+    \item \texttt{\textbackslash{}mathscr} — script ($\mathscr{A} \ldots \mathscr{Z}$ $\mathscr{a} \ldots \mathscr{z}$)
+    \item \texttt{\textbackslash{}mathbfscr} — bold script ($\mathbfscr{A} \ldots \mathbfscr{Z}$ $\mathbfscr{a} \ldots \mathbfscr{z}$)
+    \item \texttt{\textbackslash{}mathbb} — blackboard bold ($\mathbb{A} \ldots \mathbb{Z}$ $\mathbb{a} \ldots \mathbb{z}$)
+    \item \texttt{\textbackslash{}mathbbit} — blackboard bold ($\mathbbit{A} \ldots \mathbbit{Z}$ $\mathbbit{a} \ldots \mathbbit{z}$)
+    \item \texttt{\textbackslash{}mathfrak} — fraktur ($\mathfrak{A} \ldots \mathfrak{Z}$ $\mathfrak{a} \ldots \mathfrak{z}$)
+    \item \texttt{\textbackslash{}mathbffrak} — bold fraktur ($\mathbffrak{A} \ldots \mathbffrak{Z}$ $\mathbffrak{a} \ldots \mathbffrak{z}$)
+\end{itemize}
+
+\section*{Latin Letters: Full Alphabet (A-Z, a-z) with Unicode Glyphs}
+
+\subsection*{\texttt{\textbackslash{}mathup} (Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathup{A}| & $\mathup{A}$ & $\mathup{a}$ & $ 𝖠 𝖺 $ \\
+\verb|\mathup{B}| & $\mathup{B}$ & $\mathup{b}$ & $ 𝖡 𝖻 $ \\
+\verb|\mathup{C}| & $\mathup{C}$ & $\mathup{c}$ & $ 𝖢 𝖼 $ \\
+\verb|\mathup{D}| & $\mathup{D}$ & $\mathup{d}$ & $ 𝖣 𝖽 $ \\
+\verb|\mathup{E}| & $\mathup{E}$ & $\mathup{e}$ & $ 𝖤 𝖾 $ \\
+\verb|\mathup{F}| & $\mathup{F}$ & $\mathup{f}$ & $ 𝖥 𝖿 $ \\
+\verb|\mathup{G}| & $\mathup{G}$ & $\mathup{g}$ & $ 𝖦 𝗀 $ \\
+\verb|\mathup{H}| & $\mathup{H}$ & $\mathup{h}$ & $ 𝖧 𝗁 $ \\
+\verb|\mathup{I}| & $\mathup{I}$ & $\mathup{i}$ & $ 𝖨 𝗂 $ \\
+\verb|\mathup{J}| & $\mathup{J}$ & $\mathup{j}$ & $ 𝖩 𝗃 $ \\
+\verb|\mathup{K}| & $\mathup{K}$ & $\mathup{k}$ & $ 𝖪 𝗄 $ \\
+\verb|\mathup{L}| & $\mathup{L}$ & $\mathup{l}$ & $ 𝖫 𝗅 $ \\
+\verb|\mathup{M}| & $\mathup{M}$ & $\mathup{m}$ & $ 𝖬 𝗆 $ \\
+\verb|\mathup{N}| & $\mathup{N}$ & $\mathup{n}$ & $ 𝖭 𝗇 $ \\
+\verb|\mathup{O}| & $\mathup{O}$ & $\mathup{o}$ & $ 𝖮 𝗈 $ \\
+\verb|\mathup{P}| & $\mathup{P}$ & $\mathup{p}$ & $ 𝖯 𝗉 $ \\
+\verb|\mathup{Q}| & $\mathup{Q}$ & $\mathup{q}$ & $ 𝖰 𝗊 $ \\
+\verb|\mathup{R}| & $\mathup{R}$ & $\mathup{r}$ & $ 𝖱 𝗋 $ \\
+\verb|\mathup{S}| & $\mathup{S}$ & $\mathup{s}$ & $ 𝖲 𝗌 $ \\
+\verb|\mathup{T}| & $\mathup{T}$ & $\mathup{t}$ & $ 𝖳 𝗍 $ \\
+\verb|\mathup{U}| & $\mathup{U}$ & $\mathup{u}$ & $ 𝖴 𝗎 $ \\
+\verb|\mathup{V}| & $\mathup{V}$ & $\mathup{v}$ & $ 𝖵 𝗏 $ \\
+\verb|\mathup{W}| & $\mathup{W}$ & $\mathup{w}$ & $ 𝖶 𝗐 $ \\
+\verb|\mathup{X}| & $\mathup{X}$ & $\mathup{x}$ & $ 𝖷 𝗑 $ \\
+\verb|\mathup{Y}| & $\mathup{Y}$ & $\mathup{y}$ & $ 𝖸 𝗒 $ \\
+\verb|\mathup{Z}| & $\mathup{Z}$ & $\mathup{z}$ & $ 𝖹 𝗓 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathit} (Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathit{A}| & $\mathit{A}$ & $\mathit{a}$ & $ 𝐴 𝑎 $ \\
+\verb|\mathit{B}| & $\mathit{B}$ & $\mathit{b}$ & $ 𝐵 𝑏 $ \\
+\verb|\mathit{C}| & $\mathit{C}$ & $\mathit{c}$ & $ 𝐶 𝑐 $ \\
+\verb|\mathit{D}| & $\mathit{D}$ & $\mathit{d}$ & $ 𝐷 𝑑 $ \\
+\verb|\mathit{E}| & $\mathit{E}$ & $\mathit{e}$ & $ 𝐸 𝑒 $ \\
+\verb|\mathit{F}| & $\mathit{F}$ & $\mathit{f}$ & $ 𝐹 𝑓 $ \\
+\verb|\mathit{G}| & $\mathit{G}$ & $\mathit{g}$ & $ 𝐺 𝑔 $ \\
+\verb|\mathit{H}| & $\mathit{H}$ & $\mathit{h}$ & $ 𝐻 ℎ $ \\
+\verb|\mathit{I}| & $\mathit{I}$ & $\mathit{i}$ & $ 𝐼 𝑖 $ \\
+\verb|\mathit{J}| & $\mathit{J}$ & $\mathit{j}$ & $ 𝐽 𝑗 $ \\
+\verb|\mathit{K}| & $\mathit{K}$ & $\mathit{k}$ & $ 𝐾 𝑘 $ \\
+\verb|\mathit{L}| & $\mathit{L}$ & $\mathit{l}$ & $ 𝐿 𝑙 $ \\
+\verb|\mathit{M}| & $\mathit{M}$ & $\mathit{m}$ & $ 𝑀 𝑚 $ \\
+\verb|\mathit{N}| & $\mathit{N}$ & $\mathit{n}$ & $ 𝑁 𝑛 $ \\
+\verb|\mathit{O}| & $\mathit{O}$ & $\mathit{o}$ & $ 𝑂 𝑜 $ \\
+\verb|\mathit{P}| & $\mathit{P}$ & $\mathit{p}$ & $ 𝑃 𝑝 $ \\
+\verb|\mathit{Q}| & $\mathit{Q}$ & $\mathit{q}$ & $ 𝑄 𝑞 $ \\
+\verb|\mathit{R}| & $\mathit{R}$ & $\mathit{r}$ & $ 𝑅 𝑟 $ \\
+\verb|\mathit{S}| & $\mathit{S}$ & $\mathit{s}$ & $ 𝑆 𝑠 $ \\
+\verb|\mathit{T}| & $\mathit{T}$ & $\mathit{t}$ & $ 𝑇 𝑡 $ \\
+\verb|\mathit{U}| & $\mathit{U}$ & $\mathit{u}$ & $ 𝑈 𝑢 $ \\
+\verb|\mathit{V}| & $\mathit{V}$ & $\mathit{v}$ & $ 𝑉 𝑣 $ \\
+\verb|\mathit{W}| & $\mathit{W}$ & $\mathit{w}$ & $ 𝑊 𝑤 $ \\
+\verb|\mathit{X}| & $\mathit{X}$ & $\mathit{x}$ & $ 𝑋 𝑥 $ \\
+\verb|\mathit{Y}| & $\mathit{Y}$ & $\mathit{y}$ & $ 𝑌 𝑦 $ \\
+\verb|\mathit{Z}| & $\mathit{Z}$ & $\mathit{z}$ & $ 𝑍 𝑧 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbf} (Bold Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbf{A}| & $\mathbf{A}$ & $\mathbf{a}$ & $ 𝐀 𝐚 $ \\
+\verb|\mathbf{B}| & $\mathbf{B}$ & $\mathbf{b}$ & $ 𝐁 𝐛 $ \\
+\verb|\mathbf{C}| & $\mathbf{C}$ & $\mathbf{c}$ & $ 𝐂 𝐜 $ \\
+\verb|\mathbf{D}| & $\mathbf{D}$ & $\mathbf{d}$ & $ 𝐃 𝐝 $ \\
+\verb|\mathbf{E}| & $\mathbf{E}$ & $\mathbf{e}$ & $ 𝐄 𝐞 $ \\
+\verb|\mathbf{F}| & $\mathbf{F}$ & $\mathbf{f}$ & $ 𝐅 𝐟 $ \\
+\verb|\mathbf{G}| & $\mathbf{G}$ & $\mathbf{g}$ & $ 𝐆 𝐠 $ \\
+\verb|\mathbf{H}| & $\mathbf{H}$ & $\mathbf{h}$ & $ 𝐇 𝐡 $ \\
+\verb|\mathbf{I}| & $\mathbf{I}$ & $\mathbf{i}$ & $ 𝐈 𝐢 $ \\
+\verb|\mathbf{J}| & $\mathbf{J}$ & $\mathbf{j}$ & $ 𝐉 𝐣 $ \\
+\verb|\mathbf{K}| & $\mathbf{K}$ & $\mathbf{k}$ & $ 𝐊 𝐤 $ \\
+\verb|\mathbf{L}| & $\mathbf{L}$ & $\mathbf{l}$ & $ 𝐋 𝐥 $ \\
+\verb|\mathbf{M}| & $\mathbf{M}$ & $\mathbf{m}$ & $ 𝐌 𝐦 $ \\
+\verb|\mathbf{N}| & $\mathbf{N}$ & $\mathbf{n}$ & $ 𝐍 𝐧 $ \\
+\verb|\mathbf{O}| & $\mathbf{O}$ & $\mathbf{o}$ & $ 𝐎 𝐨 $ \\
+\verb|\mathbf{P}| & $\mathbf{P}$ & $\mathbf{p}$ & $ 𝐏 𝐩 $ \\
+\verb|\mathbf{Q}| & $\mathbf{Q}$ & $\mathbf{q}$ & $ 𝐐 𝐪 $ \\
+\verb|\mathbf{R}| & $\mathbf{R}$ & $\mathbf{r}$ & $ 𝐑 𝐫 $ \\
+\verb|\mathbf{S}| & $\mathbf{S}$ & $\mathbf{s}$ & $ 𝐒 𝐬 $ \\
+\verb|\mathbf{T}| & $\mathbf{T}$ & $\mathbf{t}$ & $ 𝐓 𝐭 $ \\
+\verb|\mathbf{U}| & $\mathbf{U}$ & $\mathbf{u}$ & $ 𝐔 𝐮 $ \\
+\verb|\mathbf{V}| & $\mathbf{V}$ & $\mathbf{v}$ & $ 𝐕 𝐯 $ \\
+\verb|\mathbf{W}| & $\mathbf{W}$ & $\mathbf{w}$ & $ 𝐖 𝐰 $ \\
+\verb|\mathbf{X}| & $\mathbf{X}$ & $\mathbf{x}$ & $ 𝐗 𝐱 $ \\
+\verb|\mathbf{Y}| & $\mathbf{Y}$ & $\mathbf{y}$ & $ 𝐘 𝐲 $ \\
+\verb|\mathbf{Z}| & $\mathbf{Z}$ & $\mathbf{z}$ & $ 𝐙 𝐳 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathsf} (Sans-serif)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathsf{A}| & $\mathsf{A}$ & $\mathsf{a}$ & $ 𝖠 𝖺 $ \\
+\verb|\mathsf{B}| & $\mathsf{B}$ & $\mathsf{b}$ & $ 𝖡 𝖻 $ \\
+\verb|\mathsf{C}| & $\mathsf{C}$ & $\mathsf{c}$ & $ 𝖢 𝖼 $ \\
+\verb|\mathsf{D}| & $\mathsf{D}$ & $\mathsf{d}$ & $ 𝖣 𝖽 $ \\
+\verb|\mathsf{E}| & $\mathsf{E}$ & $\mathsf{e}$ & $ 𝖾 𝗌 $ \\
+\verb|\mathsf{F}| & $\mathsf{F}$ & $\mathsf{f}$ & $ 𝖥 𝖿 $ \\
+\verb|\mathsf{G}| & $\mathsf{G}$ & $\mathsf{g}$ & $ 𝖦 𝗀 $ \\
+\verb|\mathsf{H}| & $\mathsf{H}$ & $\mathsf{h}$ & $ 𝖧 𝗁 $ \\
+\verb|\mathsf{I}| & $\mathsf{I}$ & $\mathsf{i}$ & $ 𝖨 𝗂 $ \\
+\verb|\mathsf{J}| & $\mathsf{J}$ & $\mathsf{j}$ & $ 𝖩 𝗃 $ \\
+\verb|\mathsf{K}| & $\mathsf{K}$ & $\mathsf{k}$ & $ 𝖪 𝗄 $ \\
+\verb|\mathsf{L}| & $\mathsf{L}$ & $\mathsf{l}$ & $ 𝖫 𝗅 $ \\
+\verb|\mathsf{M}| & $\mathsf{M}$ & $\mathsf{m}$ & $ 𝖬 𝗆 $ \\
+\verb|\mathsf{N}| & $\mathsf{N}$ & $\mathsf{n}$ & $ 𝖭 𝗇 $ \\
+\verb|\mathsf{O}| & $\mathsf{O}$ & $\mathsf{o}$ & $ 𝖮 𝗈 $ \\
+\verb|\mathsf{P}| & $\mathsf{P}$ & $\mathsf{p}$ & $ 𝖯 𝗉 $ \\
+\verb|\mathsf{Q}| & $\mathsf{Q}$ & $\mathsf{q}$ & $ 𝖰 𝗊 $ \\
+\verb|\mathsf{R}| & $\mathsf{R}$ & $\mathsf{r}$ & $ 𝖱 𝗋 $ \\
+\verb|\mathsf{S}| & $\mathsf{S}$ & $\mathsf{s}$ & $ 𝖲 𝗌 $ \\
+\verb|\mathsf{T}| & $\mathsf{T}$ & $\mathsf{t}$ & $ 𝖳 𝗍 $ \\
+\verb|\mathsf{U}| & $\mathsf{U}$ & $\mathsf{u}$ & $ 𝖴 𝗎 $ \\
+\verb|\mathsf{V}| & $\mathsf{V}$ & $\mathsf{v}$ & $ 𝖵 𝗏 $ \\
+\verb|\mathsf{W}| & $\mathsf{W}$ & $\mathsf{w}$ & $ 𝖶 𝗐 $ \\
+\verb|\mathsf{X}| & $\mathsf{X}$ & $\mathsf{x}$ & $ 𝖷 𝗑 $ \\
+\verb|\mathsf{Y}| & $\mathsf{Y}$ & $\mathsf{y}$ & $ 𝖸 𝗒 $ \\
+\verb|\mathsf{Z}| & $\mathsf{Z}$ & $\mathsf{z}$ & $ 𝖹 𝗓 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathtt} (Typewriter)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathtt{A}| & $\mathtt{A}$ & $\mathtt{a}$ & $ 𝙰 𝚊 $ \\
+\verb|\mathtt{B}| & $\mathtt{B}$ & $\mathtt{b}$ & $ 𝙱 𝚋 $ \\
+\verb|\mathtt{C}| & $\mathtt{C}$ & $\mathtt{c}$ & $ 𝙲 𝚌 $ \\
+\verb|\mathtt{D}| & $\mathtt{D}$ & $\mathtt{d}$ & $ 𝙳 𝚍 $ \\
+\verb|\mathtt{E}| & $\mathtt{E}$ & $\mathtt{e}$ & $ 𝙴 𝚎 $ \\
+\verb|\mathtt{F}| & $\mathtt{F}$ & $\mathtt{f}$ & $ 𝙵 𝚏 $ \\
+\verb|\mathtt{G}| & $\mathtt{G}$ & $\mathtt{g}$ & $ 𝙶 𝚐 $ \\
+\verb|\mathtt{H}| & $\mathtt{H}$ & $\mathtt{h}$ & $ 𝙷 𝚑 $ \\
+\verb|\mathtt{I}| & $\mathtt{I}$ & $\mathtt{i}$ & $ 𝙸 𝚒 $ \\
+\verb|\mathtt{J}| & $\mathtt{J}$ & $\mathtt{j}$ & $ 𝙹 𝚓 $ \\
+\verb|\mathtt{K}| & $\mathtt{K}$ & $\mathtt{k}$ & $ 𝙺 𝚔 $ \\
+\verb|\mathtt{L}| & $\mathtt{L}$ & $\mathtt{l}$ & $ 𝙻 𝚕 $ \\
+\verb|\mathtt{M}| & $\mathtt{M}$ & $\mathtt{m}$ & $ 𝙼 𝚖 $ \\
+\verb|\mathtt{N}| & $\mathtt{N}$ & $\mathtt{n}$ & $ 𝙽 𝚗 $ \\
+\verb|\mathtt{O}| & $\mathtt{O}$ & $\mathtt{o}$ & $ 𝙾 𝚘 $ \\
+\verb|\mathtt{P}| & $\mathtt{P}$ & $\mathtt{p}$ & $ 𝙿 𝚙 $ \\
+\verb|\mathtt{Q}| & $\mathtt{Q}$ & $\mathtt{q}$ & $ 𝚀 𝚚 $ \\
+\verb|\mathtt{R}| & $\mathtt{R}$ & $\mathtt{r}$ & $ 𝚁 𝚛 $ \\
+\verb|\mathtt{S}| & $\mathtt{S}$ & $\mathtt{s}$ & $ 𝚂 𝚜 $ \\
+\verb|\mathtt{T}| & $\mathtt{T}$ & $\mathtt{t}$ & $ 𝚃 𝚝 $ \\
+\verb|\mathtt{U}| & $\mathtt{U}$ & $\mathtt{u}$ & $ 𝚄 𝚞 $ \\
+\verb|\mathtt{V}| & $\mathtt{V}$ & $\mathtt{v}$ & $ 𝚅 𝚟 $ \\
+\verb|\mathtt{W}| & $\mathtt{W}$ & $\mathtt{w}$ & $ 𝚆 𝚠 $ \\
+\verb|\mathtt{X}| & $\mathtt{X}$ & $\mathtt{x}$ & $ 𝚇 𝚡 $ \\
+\verb|\mathtt{Y}| & $\mathtt{Y}$ & $\mathtt{y}$ & $ 𝚈 𝚢 $ \\
+\verb|\mathtt{Z}| & $\mathtt{Z}$ & $\mathtt{z}$ & $ 𝚉 𝚣 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbfup} (Bold Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbfup{A}| & $\mathbfup{A}$ & $\mathbfup{a}$ & $ 𝐀 𝐚 $ \\
+\verb|\mathbfup{B}| & $\mathbfup{B}$ & $\mathbfup{b}$ & $ 𝐁 𝐛 $ \\
+\verb|\mathbfup{C}| & $\mathbfup{C}$ & $\mathbfup{c}$ & $ 𝐂 𝐜 $ \\
+\verb|\mathbfup{D}| & $\mathbfup{D}$ & $\mathbfup{d}$ & $ 𝐃 𝐝 $ \\
+\verb|\mathbfup{E}| & $\mathbfup{E}$ & $\mathbfup{e}$ & $ 𝐄 𝐞 $ \\
+\verb|\mathbfup{F}| & $\mathbfup{F}$ & $\mathbfup{f}$ & $ 𝐅 𝐟 $ \\
+\verb|\mathbfup{G}| & $\mathbfup{G}$ & $\mathbfup{g}$ & $ 𝐆 𝐠 $ \\
+\verb|\mathbfup{H}| & $\mathbfup{H}$ & $\mathbfup{h}$ & $ 𝐇 𝐡 $ \\
+\verb|\mathbfup{I}| & $\mathbfup{I}$ & $\mathbfup{i}$ & $ 𝐈 𝐢 $ \\
+\verb|\mathbfup{J}| & $\mathbfup{J}$ & $\mathbfup{j}$ & $ 𝐉 𝐣 $ \\
+\verb|\mathbfup{K}| & $\mathbfup{K}$ & $\mathbfup{k}$ & $ 𝐊 𝐤 $ \\
+\verb|\mathbfup{L}| & $\mathbfup{L}$ & $\mathbfup{l}$ & $ 𝐋 𝐥 $ \\
+\verb|\mathbfup{M}| & $\mathbfup{M}$ & $\mathbfup{m}$ & $ 𝐌 𝐦 $ \\
+\verb|\mathbfup{N}| & $\mathbfup{N}$ & $\mathbfup{n}$ & $ 𝐍 𝐧 $ \\
+\verb|\mathbfup{O}| & $\mathbfup{O}$ & $\mathbfup{o}$ & $ 𝐎 𝐨 $ \\
+\verb|\mathbfup{P}| & $\mathbfup{P}$ & $\mathbfup{p}$ & $ 𝐏 𝐩 $ \\
+\verb|\mathbfup{Q}| & $\mathbfup{Q}$ & $\mathbfup{q}$ & $ 𝐐 𝐪 $ \\
+\verb|\mathbfup{R}| & $\mathbfup{R}$ & $\mathbfup{r}$ & $ 𝐑 𝐫 $ \\
+\verb|\mathbfup{S}| & $\mathbfup{S}$ & $\mathbfup{s}$ & $ 𝐒 𝐬 $ \\
+\verb|\mathbfup{T}| & $\mathbfup{T}$ & $\mathbfup{t}$ & $ 𝐓 𝐭 $ \\
+\verb|\mathbfup{U}| & $\mathbfup{U}$ & $\mathbfup{u}$ & $ 𝐔 𝐮 $ \\
+\verb|\mathbfup{V}| & $\mathbfup{V}$ & $\mathbfup{v}$ & $ 𝐕 𝐯 $ \\
+\verb|\mathbfup{W}| & $\mathbfup{W}$ & $\mathbfup{w}$ & $ 𝐖 𝐰 $ \\
+\verb|\mathbfup{X}| & $\mathbfup{X}$ & $\mathbfup{x}$ & $ 𝐗 𝐱 $ \\
+\verb|\mathbfup{Y}| & $\mathbfup{Y}$ & $\mathbfup{y}$ & $ 𝐘 𝐲 $ \\
+\verb|\mathbfup{Z}| & $\mathbfup{Z}$ & $\mathbfup{z}$ & $ 𝐙 𝐳 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbfit} (Bold Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbfit{A}| & $\mathbfit{A}$ & $\mathbfit{a}$ & 𝑨 𝒂 \\
+\verb|\mathbfit{B}| & $\mathbfit{B}$ & $\mathbfit{b}$ & 𝑩 𝒃 \\
+\verb|\mathbfit{C}| & $\mathbfit{C}$ & $\mathbfit{c}$ & 𝑪 𝒄 \\
+\verb|\mathbfit{D}| & $\mathbfit{D}$ & $\mathbfit{d}$ & 𝑫 𝒅 \\
+\verb|\mathbfit{E}| & $\mathbfit{E}$ & $\mathbfit{e}$ & 𝑬 𝒆 \\
+\verb|\mathbfit{F}| & $\mathbfit{F}$ & $\mathbfit{f}$ & 𝑭 𝒇 \\
+\verb|\mathbfit{G}| & $\mathbfit{G}$ & $\mathbfit{g}$ & 𝑮 𝒈 \\
+\verb|\mathbfit{H}| & $\mathbfit{H}$ & $\mathbfit{h}$ & 𝑯 𝒉 \\
+\verb|\mathbfit{I}| & $\mathbfit{I}$ & $\mathbfit{i}$ & 𝑰 𝒊 \\
+\verb|\mathbfit{J}| & $\mathbfit{J}$ & $\mathbfit{j}$ & 𝑱 𝒋 \\
+\verb|\mathbfit{K}| & $\mathbfit{K}$ & $\mathbfit{k}$ & 𝑲 𝒌 \\
+\verb|\mathbfit{L}| & $\mathbfit{L}$ & $\mathbfit{l}$ & 𝑳 𝒍 \\
+\verb|\mathbfit{M}| & $\mathbfit{M}$ & $\mathbfit{m}$ & 𝑴 𝒎 \\
+\verb|\mathbfit{N}| & $\mathbfit{N}$ & $\mathbfit{n}$ & 𝑵 𝒏 \\
+\verb|\mathbfit{O}| & $\mathbfit{O}$ & $\mathbfit{o}$ & 𝑶 𝒐 \\
+\verb|\mathbfit{P}| & $\mathbfit{P}$ & $\mathbfit{p}$ & 𝑷 𝒑 \\
+\verb|\mathbfit{Q}| & $\mathbfit{Q}$ & $\mathbfit{q}$ & 𝑸 𝒒 \\
+\verb|\mathbfit{R}| & $\mathbfit{R}$ & $\mathbfit{r}$ & 𝑹 𝒓 \\
+\verb|\mathbfit{S}| & $\mathbfit{S}$ & $\mathbfit{s}$ & 𝑺 𝒔 \\
+\verb|\mathbfit{T}| & $\mathbfit{T}$ & $\mathbfit{t}$ & 𝑻 𝒕 \\
+\verb|\mathbfit{U}| & $\mathbfit{U}$ & $\mathbfit{u}$ & 𝑼 𝒖 \\
+\verb|\mathbfit{V}| & $\mathbfit{V}$ & $\mathbfit{v}$ & 𝑽 𝒗 \\
+\verb|\mathbfit{W}| & $\mathbfit{W}$ & $\mathbfit{w}$ & 𝑾 𝒘 \\
+\verb|\mathbfit{X}| & $\mathbfit{X}$ & $\mathbfit{x}$ & 𝑿 𝒙 \\
+\verb|\mathbfit{Y}| & $\mathbfit{Y}$ & $\mathbfit{y}$ & 𝒀 𝒚 \\
+\verb|\mathbfit{Z}| & $\mathbfit{Z}$ & $\mathbfit{z}$ & 𝒁 𝒛 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathsfup} (Sans-Serif Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathsfup{A}| & $\mathsfup{A}$ & $\mathsfup{a}$ & $ 𝖠 𝖺 $ \\
+\verb|\mathsfup{B}| & $\mathsfup{B}$ & $\mathsfup{b}$ & $ 𝖡 𝖻 $ \\
+\verb|\mathsfup{C}| & $\mathsfup{C}$ & $\mathsfup{c}$ & $ 𝖢 𝖼 $ \\
+\verb|\mathsfup{D}| & $\mathsfup{D}$ & $\mathsfup{d}$ & $ 𝖣 𝖽 $ \\
+\verb|\mathsfup{E}| & $\mathsfup{E}$ & $\mathsfup{e}$ & $ 𝖤 𝖾 $ \\
+\verb|\mathsfup{F}| & $\mathsfup{F}$ & $\mathsfup{f}$ & $ 𝖥 𝖿 $ \\
+\verb|\mathsfup{G}| & $\mathsfup{G}$ & $\mathsfup{g}$ & $ 𝖦 𝗀 $ \\
+\verb|\mathsfup{H}| & $\mathsfup{H}$ & $\mathsfup{h}$ & $ 𝖧 𝗁 $ \\
+\verb|\mathsfup{I}| & $\mathsfup{I}$ & $\mathsfup{i}$ & $ 𝖨 𝗂 $ \\
+\verb|\mathsfup{J}| & $\mathsfup{J}$ & $\mathsfup{j}$ & $ 𝖩 𝗃 $ \\
+\verb|\mathsfup{K}| & $\mathsfup{K}$ & $\mathsfup{k}$ & $ 𝖪 𝗄 $ \\
+\verb|\mathsfup{L}| & $\mathsfup{L}$ & $\mathsfup{l}$ & $ 𝖫 𝗅 $ \\
+\verb|\mathsfup{M}| & $\mathsfup{M}$ & $\mathsfup{m}$ & $ 𝖬 𝗆 $ \\
+\verb|\mathsfup{N}| & $\mathsfup{N}$ & $\mathsfup{n}$ & $ 𝖭 𝗇 $ \\
+\verb|\mathsfup{O}| & $\mathsfup{O}$ & $\mathsfup{o}$ & $ 𝖮 𝗈 $ \\
+\verb|\mathsfup{P}| & $\mathsfup{P}$ & $\mathsfup{p}$ & $ 𝖯 𝗉 $ \\
+\verb|\mathsfup{Q}| & $\mathsfup{Q}$ & $\mathsfup{q}$ & $ 𝖰 𝗊 $ \\
+\verb|\mathsfup{R}| & $\mathsfup{R}$ & $\mathsfup{r}$ & $ 𝖱 𝗋 $ \\
+\verb|\mathsfup{S}| & $\mathsfup{S}$ & $\mathsfup{s}$ & $ 𝖲 𝗌 $ \\
+\verb|\mathsfup{T}| & $\mathsfup{T}$ & $\mathsfup{t}$ & $ 𝖳 𝗍 $ \\
+\verb|\mathsfup{U}| & $\mathsfup{U}$ & $\mathsfup{u}$ & $ 𝖴 𝗎 $ \\
+\verb|\mathsfup{V}| & $\mathsfup{V}$ & $\mathsfup{v}$ & $ 𝖵 𝗏 $ \\
+\verb|\mathsfup{W}| & $\mathsfup{W}$ & $\mathsfup{w}$ & $ 𝖶 𝗐 $ \\
+\verb|\mathsfup{X}| & $\mathsfup{X}$ & $\mathsfup{x}$ & $ 𝖷 𝗑 $ \\
+\verb|\mathsfup{Y}| & $\mathsfup{Y}$ & $\mathsfup{y}$ & $ 𝖸 𝗒 $ \\
+\verb|\mathsfup{Z}| & $\mathsfup{Z}$ & $\mathsfup{z}$ & $ 𝖹 𝗓 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathsfit} (Sans-serif Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathsfit{A}| & $\mathsfit{A}$ & $\mathsfit{a}$ & 𝘈 𝘢 \\
+\verb|\mathsfit{B}| & $\mathsfit{B}$ & $\mathsfit{b}$ & 𝘉 𝘣 \\
+\verb|\mathsfit{C}| & $\mathsfit{C}$ & $\mathsfit{c}$ & 𝘊 𝘤 \\
+\verb|\mathsfit{D}| & $\mathsfit{D}$ & $\mathsfit{d}$ & 𝘋 𝘥 \\
+\verb|\mathsfit{E}| & $\mathsfit{E}$ & $\mathsfit{e}$ & 𝘌 𝘦 \\
+\verb|\mathsfit{F}| & $\mathsfit{F}$ & $\mathsfit{f}$ & 𝘍 𝘧 \\
+\verb|\mathsfit{G}| & $\mathsfit{G}$ & $\mathsfit{g}$ & 𝘎 𝘨 \\
+\verb|\mathsfit{H}| & $\mathsfit{H}$ & $\mathsfit{h}$ & 𝘏 𝘩 \\
+\verb|\mathsfit{I}| & $\mathsfit{I}$ & $\mathsfit{i}$ & 𝘐 𝘪 \\
+\verb|\mathsfit{J}| & $\mathsfit{J}$ & $\mathsfit{j}$ & 𝘑 𝘫 \\
+\verb|\mathsfit{K}| & $\mathsfit{K}$ & $\mathsfit{k}$ & 𝘒 𝘬 \\
+\verb|\mathsfit{L}| & $\mathsfit{L}$ & $\mathsfit{l}$ & 𝘓 𝘭 \\
+\verb|\mathsfit{M}| & $\mathsfit{M}$ & $\mathsfit{m}$ & 𝘔 𝘮 \\
+\verb|\mathsfit{N}| & $\mathsfit{N}$ & $\mathsfit{n}$ & 𝘕 𝘯 \\
+\verb|\mathsfit{O}| & $\mathsfit{O}$ & $\mathsfit{o}$ & 𝘖 𝘰 \\
+\verb|\mathsfit{P}| & $\mathsfit{P}$ & $\mathsfit{p}$ & 𝘗 𝘱 \\
+\verb|\mathsfit{Q}| & $\mathsfit{Q}$ & $\mathsfit{q}$ & 𝘘 𝘲 \\
+\verb|\mathsfit{R}| & $\mathsfit{R}$ & $\mathsfit{r}$ & 𝘙 𝘳 \\
+\verb|\mathsfit{S}| & $\mathsfit{S}$ & $\mathsfit{s}$ & 𝘚 𝘴 \\
+\verb|\mathsfit{T}| & $\mathsfit{T}$ & $\mathsfit{t}$ & 𝘛 𝘵 \\
+\verb|\mathsfit{U}| & $\mathsfit{U}$ & $\mathsfit{u}$ & 𝘜 𝘶 \\
+\verb|\mathsfit{V}| & $\mathsfit{V}$ & $\mathsfit{v}$ & 𝘝 𝘷 \\
+\verb|\mathsfit{W}| & $\mathsfit{W}$ & $\mathsfit{w}$ & 𝘞 𝘸 \\
+\verb|\mathsfit{X}| & $\mathsfit{X}$ & $\mathsfit{x}$ & 𝘟 𝘹 \\
+\verb|\mathsfit{Y}| & $\mathsfit{Y}$ & $\mathsfit{y}$ & 𝘠 𝘺 \\
+\verb|\mathsfit{Z}| & $\mathsfit{Z}$ & $\mathsfit{z}$ & 𝘡 𝘻 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbfsf} (Sans-serif Bold)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbfsf{A}| & $\mathbfsf{A}$ & $\mathbfsf{a}$ & $ 𝗔 𝗮 $ \\
+\verb|\mathbfsf{B}| & $\mathbfsf{B}$ & $\mathbfsf{b}$ & $ 𝗕 𝗯 $ \\
+\verb|\mathbfsf{C}| & $\mathbfsf{C}$ & $\mathbfsf{c}$ & $ 𝗖 𝗰 $ \\
+\verb|\mathbfsf{D}| & $\mathbfsf{D}$ & $\mathbfsf{d}$ & $ 𝗗 𝗱 $ \\
+\verb|\mathbfsf{E}| & $\mathbfsf{E}$ & $\mathbfsf{e}$ & $ 𝗘 𝗲 $ \\
+\verb|\mathbfsf{F}| & $\mathbfsf{F}$ & $\mathbfsf{f}$ & $ 𝗙 𝗳 $ \\
+\verb|\mathbfsf{G}| & $\mathbfsf{G}$ & $\mathbfsf{g}$ & $ 𝗚 𝗴 $ \\
+\verb|\mathbfsf{H}| & $\mathbfsf{H}$ & $\mathbfsf{h}$ & $ 𝗛 𝗵 $ \\
+\verb|\mathbfsf{I}| & $\mathbfsf{I}$ & $\mathbfsf{i}$ & $ 𝗜 𝗶 $ \\
+\verb|\mathbfsf{J}| & $\mathbfsf{J}$ & $\mathbfsf{j}$ & $ 𝗝 𝗷 $ \\
+\verb|\mathbfsf{K}| & $\mathbfsf{K}$ & $\mathbfsf{k}$ & $ 𝗞 𝗸 $ \\
+\verb|\mathbfsf{L}| & $\mathbfsf{L}$ & $\mathbfsf{l}$ & $ 𝗟 𝗹 $ \\
+\verb|\mathbfsf{M}| & $\mathbfsf{M}$ & $\mathbfsf{m}$ & $ 𝗠 𝗺 $ \\
+\verb|\mathbfsf{N}| & $\mathbfsf{N}$ & $\mathbfsf{n}$ & $ 𝗡 𝗻 $ \\
+\verb|\mathbfsf{O}| & $\mathbfsf{O}$ & $\mathbfsf{o}$ & $ 𝗢 𝗼 $ \\
+\verb|\mathbfsf{P}| & $\mathbfsf{P}$ & $\mathbfsf{p}$ & $ 𝗣 𝗽 $ \\
+\verb|\mathbfsf{Q}| & $\mathbfsf{Q}$ & $\mathbfsf{q}$ & $ 𝗤 𝗾 $ \\
+\verb|\mathbfsf{R}| & $\mathbfsf{R}$ & $\mathbfsf{r}$ & $ 𝗥 𝗿 $ \\
+\verb|\mathbfsf{S}| & $\mathbfsf{S}$ & $\mathbfsf{s}$ & $ 𝗦 𝘀 $ \\
+\verb|\mathbfsf{T}| & $\mathbfsf{T}$ & $\mathbfsf{t}$ & $ 𝗧 𝘁 $ \\
+\verb|\mathbfsf{U}| & $\mathbfsf{U}$ & $\mathbfsf{u}$ & $ 𝗨 𝘂 $ \\
+\verb|\mathbfsf{V}| & $\mathbfsf{V}$ & $\mathbfsf{v}$ & $ 𝗩 𝘃 $ \\
+\verb|\mathbfsf{W}| & $\mathbfsf{W}$ & $\mathbfsf{w}$ & $ 𝗪 𝘄 $ \\
+\verb|\mathbfsf{X}| & $\mathbfsf{X}$ & $\mathbfsf{x}$ & $ 𝗫 𝘅 $ \\
+\verb|\mathbfsf{Y}| & $\mathbfsf{Y}$ & $\mathbfsf{y}$ & $ 𝗬 𝘆 $ \\
+\verb|\mathbfsf{Z}| & $\mathbfsf{Z}$ & $\mathbfsf{z}$ & $ 𝗭 𝘇 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbfsfup} (Sans-Serif Bold Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbfsfup{A}| & $\mathbfsfup{A}$ & $\mathbfsfup{a}$ & $ 𝗔 𝗮 $ \\
+\verb|\mathbfsfup{B}| & $\mathbfsfup{B}$ & $\mathbfsfup{b}$ & $ 𝗕 𝗯 $ \\
+\verb|\mathbfsfup{C}| & $\mathbfsfup{C}$ & $\mathbfsfup{c}$ & $ 𝗖 𝗰 $ \\
+\verb|\mathbfsfup{D}| & $\mathbfsfup{D}$ & $\mathbfsfup{d}$ & $ 𝗗 𝗱 $ \\
+\verb|\mathbfsfup{E}| & $\mathbfsfup{E}$ & $\mathbfsfup{e}$ & $ 𝗘 𝗲 $ \\
+\verb|\mathbfsfup{F}| & $\mathbfsfup{F}$ & $\mathbfsfup{f}$ & $ 𝗙 𝗳 $ \\
+\verb|\mathbfsfup{G}| & $\mathbfsfup{G}$ & $\mathbfsfup{g}$ & $ 𝗚 𝗴 $ \\
+\verb|\mathbfsfup{H}| & $\mathbfsfup{H}$ & $\mathbfsfup{h}$ & $ 𝗛 𝗵 $ \\
+\verb|\mathbfsfup{I}| & $\mathbfsfup{I}$ & $\mathbfsfup{i}$ & $ 𝗜 𝗶 $ \\
+\verb|\mathbfsfup{J}| & $\mathbfsfup{J}$ & $\mathbfsfup{j}$ & $ 𝗝 𝗷 $ \\
+\verb|\mathbfsfup{K}| & $\mathbfsfup{K}$ & $\mathbfsfup{k}$ & $ 𝗞 𝗸 $ \\
+\verb|\mathbfsfup{L}| & $\mathbfsfup{L}$ & $\mathbfsfup{l}$ & $ 𝗟 𝗹 $ \\
+\verb|\mathbfsfup{M}| & $\mathbfsfup{M}$ & $\mathbfsfup{m}$ & $ 𝗠 𝗺 $ \\
+\verb|\mathbfsfup{N}| & $\mathbfsfup{N}$ & $\mathbfsfup{n}$ & $ 𝗡 𝗻 $ \\
+\verb|\mathbfsfup{O}| & $\mathbfsfup{O}$ & $\mathbfsfup{o}$ & $ 𝗢 𝗼 $ \\
+\verb|\mathbfsfup{P}| & $\mathbfsfup{P}$ & $\mathbfsfup{p}$ & $ 𝗣 𝗽 $ \\
+\verb|\mathbfsfup{Q}| & $\mathbfsfup{Q}$ & $\mathbfsfup{q}$ & $ 𝗤 𝗾 $ \\
+\verb|\mathbfsfup{R}| & $\mathbfsfup{R}$ & $\mathbfsfup{r}$ & $ 𝗥 𝗿 $ \\
+\verb|\mathbfsfup{S}| & $\mathbfsfup{S}$ & $\mathbfsfup{s}$ & $ 𝗦 𝘀 $ \\
+\verb|\mathbfsfup{T}| & $\mathbfsfup{T}$ & $\mathbfsfup{t}$ & $ 𝗧 𝘁 $ \\
+\verb|\mathbfsfup{U}| & $\mathbfsfup{U}$ & $\mathbfsfup{u}$ & $ 𝗨 𝘂 $ \\
+\verb|\mathbfsfup{V}| & $\mathbfsfup{V}$ & $\mathbfsfup{v}$ & $ 𝗩 𝘃 $ \\
+\verb|\mathbfsfup{W}| & $\mathbfsfup{W}$ & $\mathbfsfup{w}$ & $ 𝗪 𝘄 $ \\
+\verb|\mathbfsfup{X}| & $\mathbfsfup{X}$ & $\mathbfsfup{x}$ & $ 𝗫 𝘅 $ \\
+\verb|\mathbfsfup{Y}| & $\mathbfsfup{Y}$ & $\mathbfsfup{y}$ & $ 𝗬 𝘆 $ \\
+\verb|\mathbfsfup{Z}| & $\mathbfsfup{Z}$ & $\mathbfsfup{z}$ & $ 𝗭 𝘇 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbfsfit} (Sans-serif Bold Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbfsfit{A}| & $\mathbfsfit{A}$ & $\mathbfsfit{a}$ & 𝘼 𝙖 \\
+\verb|\mathbfsfit{B}| & $\mathbfsfit{B}$ & $\mathbfsfit{b}$ & 𝘽 𝙗 \\
+\verb|\mathbfsfit{C}| & $\mathbfsfit{C}$ & $\mathbfsfit{c}$ & 𝘾 𝙘 \\
+\verb|\mathbfsfit{D}| & $\mathbfsfit{D}$ & $\mathbfsfit{d}$ & 𝘿 𝙙 \\
+\verb|\mathbfsfit{E}| & $\mathbfsfit{E}$ & $\mathbfsfit{e}$ & 𝙀 𝙚 \\
+\verb|\mathbfsfit{F}| & $\mathbfsfit{F}$ & $\mathbfsfit{f}$ & 𝙁 𝙛 \\
+\verb|\mathbfsfit{G}| & $\mathbfsfit{G}$ & $\mathbfsfit{g}$ & 𝙂 𝙜 \\
+\verb|\mathbfsfit{H}| & $\mathbfsfit{H}$ & $\mathbfsfit{h}$ & 𝙃 𝙝 \\
+\verb|\mathbfsfit{I}| & $\mathbfsfit{I}$ & $\mathbfsfit{i}$ & 𝙄 𝙞 \\
+\verb|\mathbfsfit{J}| & $\mathbfsfit{J}$ & $\mathbfsfit{j}$ & 𝙅 𝙟 \\
+\verb|\mathbfsfit{K}| & $\mathbfsfit{K}$ & $\mathbfsfit{k}$ & 𝙆 𝙠 \\
+\verb|\mathbfsfit{L}| & $\mathbfsfit{L}$ & $\mathbfsfit{l}$ & 𝙇 𝙡 \\
+\verb|\mathbfsfit{M}| & $\mathbfsfit{M}$ & $\mathbfsfit{m}$ & 𝙈 𝙢 \\
+\verb|\mathbfsfit{N}| & $\mathbfsfit{N}$ & $\mathbfsfit{n}$ & 𝙉 𝙣 \\
+\verb|\mathbfsfit{O}| & $\mathbfsfit{O}$ & $\mathbfsfit{o}$ & 𝙊 𝙤 \\
+\verb|\mathbfsfit{P}| & $\mathbfsfit{P}$ & $\mathbfsfit{p}$ & 𝙋 𝙥 \\
+\verb|\mathbfsfit{Q}| & $\mathbfsfit{Q}$ & $\mathbfsfit{q}$ & 𝙌 𝙦 \\
+\verb|\mathbfsfit{R}| & $\mathbfsfit{R}$ & $\mathbfsfit{r}$ & 𝙍 𝙧 \\
+\verb|\mathbfsfit{S}| & $\mathbfsfit{S}$ & $\mathbfsfit{s}$ & 𝙎 𝙨 \\
+\verb|\mathbfsfit{T}| & $\mathbfsfit{T}$ & $\mathbfsfit{t}$ & 𝙏 𝙩 \\
+\verb|\mathbfsfit{U}| & $\mathbfsfit{U}$ & $\mathbfsfit{u}$ & 𝙐 𝙪 \\
+\verb|\mathbfsfit{V}| & $\mathbfsfit{V}$ & $\mathbfsfit{v}$ & 𝙑 𝙫 \\
+\verb|\mathbfsfit{W}| & $\mathbfsfit{W}$ & $\mathbfsfit{w}$ & 𝙒 𝙬 \\
+\verb|\mathbfsfit{X}| & $\mathbfsfit{X}$ & $\mathbfsfit{x}$ & 𝙓 𝙭 \\
+\verb|\mathbfsfit{Y}| & $\mathbfsfit{Y}$ & $\mathbfsfit{y}$ & 𝙔 𝙮 \\
+\verb|\mathbfsfit{Z}| & $\mathbfsfit{Z}$ & $\mathbfsfit{z}$ & 𝙕 𝙯 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathcal} (Calligraphic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathcal{A}| & $\mathcal{A}$ & $\mathcal{a}$ & $ 𝒜 𝒶 $ \\
+\verb|\mathcal{B}| & $\mathcal{B}$ & $\mathcal{b}$ & $ ℬ 𝒷 $ \\
+\verb|\mathcal{C}| & $\mathcal{C}$ & $\mathcal{c}$ & $ 𝒞 𝒸 $ \\
+\verb|\mathcal{D}| & $\mathcal{D}$ & $\mathcal{d}$ & $ 𝒟 𝒹 $ \\
+\verb|\mathcal{E}| & $\mathcal{E}$ & $\mathcal{e}$ & $ ℰ ℯ $ \\
+\verb|\mathcal{F}| & $\mathcal{F}$ & $\mathcal{f}$ & $ ℱ 𝒻 $ \\
+\verb|\mathcal{G}| & $\mathcal{G}$ & $\mathcal{g}$ & $ 𝒢 ℊ $ \\
+\verb|\mathcal{H}| & $\mathcal{H}$ & $\mathcal{h}$ & $ ℋ 𝒽 $ \\
+\verb|\mathcal{I}| & $\mathcal{I}$ & $\mathcal{i}$ & $ ℐ 𝒾 $ \\
+\verb|\mathcal{J}| & $\mathcal{J}$ & $\mathcal{j}$ & $ 𝒥 𝒿 $ \\
+\verb|\mathcal{K}| & $\mathcal{K}$ & $\mathcal{k}$ & $ 𝒦 𝓀 $ \\
+\verb|\mathcal{L}| & $\mathcal{L}$ & $\mathcal{l}$ & $ ℒ 𝓁 $ \\
+\verb|\mathcal{M}| & $\mathcal{M}$ & $\mathcal{m}$ & $ ℳ 𝓂 $ \\
+\verb|\mathcal{N}| & $\mathcal{N}$ & $\mathcal{n}$ & $ 𝒩 𝓃 $ \\
+\verb|\mathcal{O}| & $\mathcal{O}$ & $\mathcal{o}$ & $ 𝒪 ℴ $ \\
+\verb|\mathcal{P}| & $\mathcal{P}$ & $\mathcal{p}$ & $ 𝒫 𝓅 $ \\
+\verb|\mathcal{Q}| & $\mathcal{Q}$ & $\mathcal{q}$ & $ 𝒬 𝓆 $ \\
+\verb|\mathcal{R}| & $\mathcal{R}$ & $\mathcal{r}$ & $ ℛ 𝓇 $ \\
+\verb|\mathcal{S}| & $\mathcal{S}$ & $\mathcal{s}$ & $ 𝒮 𝓈 $ \\
+\verb|\mathcal{T}| & $\mathcal{T}$ & $\mathcal{t}$ & $ 𝒯 𝓉 $ \\
+\verb|\mathcal{U}| & $\mathcal{U}$ & $\mathcal{u}$ & $ 𝒰 𝓊 $ \\
+\verb|\mathcal{V}| & $\mathcal{V}$ & $\mathcal{v}$ & $ 𝒱 𝓋 $ \\
+\verb|\mathcal{W}| & $\mathcal{W}$ & $\mathcal{w}$ & $ 𝒲 𝓌 $ \\
+\verb|\mathcal{X}| & $\mathcal{X}$ & $\mathcal{x}$ & $ 𝒳 𝓍 $ \\
+\verb|\mathcal{Y}| & $\mathcal{Y}$ & $\mathcal{y}$ & $ 𝒴 𝓎 $ \\
+\verb|\mathcal{Z}| & $\mathcal{Z}$ & $\mathcal{z}$ & $ 𝒵 𝓏 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbfcal} (Bold Calligraphic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbfcal{A}| & $\mathbfcal{A}$ & $\mathbfcal{a}$ & $ 𝓐 𝓪 $ \\
+\verb|\mathbfcal{B}| & $\mathbfcal{B}$ & $\mathbfcal{b}$ & $ 𝓑 𝓫 $ \\
+\verb|\mathbfcal{C}| & $\mathbfcal{C}$ & $\mathbfcal{c}$ & $ 𝓒 𝓬 $ \\
+\verb|\mathbfcal{D}| & $\mathbfcal{D}$ & $\mathbfcal{d}$ & $ 𝓓 𝓭 $ \\
+\verb|\mathbfcal{E}| & $\mathbfcal{E}$ & $\mathbfcal{e}$ & $ 𝓔 𝓮 $ \\
+\verb|\mathbfcal{F}| & $\mathbfcal{F}$ & $\mathbfcal{f}$ & $ 𝓕 𝓯 $ \\
+\verb|\mathbfcal{G}| & $\mathbfcal{G}$ & $\mathbfcal{g}$ & $ 𝓖 𝓰 $ \\
+\verb|\mathbfcal{H}| & $\mathbfcal{H}$ & $\mathbfcal{h}$ & $ 𝓗 𝓱 $ \\
+\verb|\mathbfcal{I}| & $\mathbfcal{I}$ & $\mathbfcal{i}$ & $ 𝓘 𝓲 $ \\
+\verb|\mathbfcal{J}| & $\mathbfcal{J}$ & $\mathbfcal{j}$ & $ 𝓙 𝓳 $ \\
+\verb|\mathbfcal{K}| & $\mathbfcal{K}$ & $\mathbfcal{k}$ & $ 𝓚 𝓴 $ \\
+\verb|\mathbfcal{L}| & $\mathbfcal{L}$ & $\mathbfcal{l}$ & $ 𝓛 𝓵 $ \\
+\verb|\mathbfcal{M}| & $\mathbfcal{M}$ & $\mathbfcal{m}$ & $ 𝓜 𝓶 $ \\
+\verb|\mathbfcal{N}| & $\mathbfcal{N}$ & $\mathbfcal{n}$ & $ 𝓝 𝓷 $ \\
+\verb|\mathbfcal{O}| & $\mathbfcal{O}$ & $\mathbfcal{o}$ & $ 𝓞 𝓸 $ \\
+\verb|\mathbfcal{P}| & $\mathbfcal{P}$ & $\mathbfcal{p}$ & $ 𝓟 𝓹 $ \\
+\verb|\mathbfcal{Q}| & $\mathbfcal{Q}$ & $\mathbfcal{q}$ & $ 𝓠 𝓺 $ \\
+\verb|\mathbfcal{R}| & $\mathbfcal{R}$ & $\mathbfcal{r}$ & $ 𝓡 𝓻 $ \\
+\verb|\mathbfcal{S}| & $\mathbfcal{S}$ & $\mathbfcal{s}$ & $ 𝓢 𝓼 $ \\
+\verb|\mathbfcal{T}| & $\mathbfcal{T}$ & $\mathbfcal{t}$ & $ 𝓣 𝓽 $ \\
+\verb|\mathbfcal{U}| & $\mathbfcal{U}$ & $\mathbfcal{u}$ & $ 𝓤 𝓾 $ \\
+\verb|\mathbfcal{V}| & $\mathbfcal{V}$ & $\mathbfcal{v}$ & $ 𝓥 𝓿 $ \\
+\verb|\mathbfcal{W}| & $\mathbfcal{W}$ & $\mathbfcal{w}$ & $ 𝓦 𝔀 $ \\
+\verb|\mathbfcal{X}| & $\mathbfcal{X}$ & $\mathbfcal{x}$ & $ 𝓧 𝔁 $ \\
+\verb|\mathbfcal{Y}| & $\mathbfcal{Y}$ & $\mathbfcal{y}$ & $ 𝓨 𝔂 $ \\
+\verb|\mathbfcal{Z}| & $\mathbfcal{Z}$ & $\mathbfcal{z}$ & $ 𝓩 𝔃 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathscr} (Script)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathscr{A}| & $\mathscr{A}$ & $\mathscr{a}$ & $ 𝒜 𝒶 $ \\
+\verb|\mathscr{B}| & $\mathscr{B}$ & $\mathscr{b}$ & $ ℬ 𝒷 $ \\
+\verb|\mathscr{C}| & $\mathscr{C}$ & $\mathscr{c}$ & $ 𝒞 𝒸 $ \\
+\verb|\mathscr{D}| & $\mathscr{D}$ & $\mathscr{d}$ & $ 𝒟 𝒹 $ \\
+\verb|\mathscr{E}| & $\mathscr{E}$ & $\mathscr{e}$ & $ ℰ ℯ $ \\
+\verb|\mathscr{F}| & $\mathscr{F}$ & $\mathscr{f}$ & $ ℱ 𝒻 $ \\
+\verb|\mathscr{G}| & $\mathscr{G}$ & $\mathscr{g}$ & $ 𝒢 ℊ $ \\
+\verb|\mathscr{H}| & $\mathscr{H}$ & $\mathscr{h}$ & $ ℋ 𝒽 $ \\
+\verb|\mathscr{I}| & $\mathscr{I}$ & $\mathscr{i}$ & $ ℐ 𝒾 $ \\
+\verb|\mathscr{J}| & $\mathscr{J}$ & $\mathscr{j}$ & $ 𝒥 𝒿 $ \\
+\verb|\mathscr{K}| & $\mathscr{K}$ & $\mathscr{k}$ & $ 𝒦 𝓀 $ \\
+\verb|\mathscr{L}| & $\mathscr{L}$ & $\mathscr{l}$ & $ ℒ 𝓁 $ \\
+\verb|\mathscr{M}| & $\mathscr{M}$ & $\mathscr{m}$ & $ ℳ 𝓂 $ \\
+\verb|\mathscr{N}| & $\mathscr{N}$ & $\mathscr{n}$ & $ 𝒩 𝓃 $ \\
+\verb|\mathscr{O}| & $\mathscr{O}$ & $\mathscr{o}$ & $ 𝒪 ℴ $ \\
+\verb|\mathscr{P}| & $\mathscr{P}$ & $\mathscr{p}$ & $ 𝒫 𝓅 $ \\
+\verb|\mathscr{Q}| & $\mathscr{Q}$ & $\mathscr{q}$ & $ 𝒬 𝓆 $ \\
+\verb|\mathscr{R}| & $\mathscr{R}$ & $\mathscr{r}$ & $ ℛ 𝓇 $ \\
+\verb|\mathscr{S}| & $\mathscr{S}$ & $\mathscr{s}$ & $ 𝒮 𝓈 $ \\
+\verb|\mathscr{T}| & $\mathscr{T}$ & $\mathscr{t}$ & $ 𝒯 𝓉 $ \\
+\verb|\mathscr{U}| & $\mathscr{U}$ & $\mathscr{u}$ & $ 𝒰 𝓊 $ \\
+\verb|\mathscr{V}| & $\mathscr{V}$ & $\mathscr{v}$ & $ 𝒱 𝓋 $ \\
+\verb|\mathscr{W}| & $\mathscr{W}$ & $\mathscr{w}$ & $ 𝒲 𝓌 $ \\
+\verb|\mathscr{X}| & $\mathscr{X}$ & $\mathscr{x}$ & $ 𝒳 𝓍 $ \\
+\verb|\mathscr{Y}| & $\mathscr{Y}$ & $\mathscr{y}$ & $ 𝒴 𝓎 $ \\
+\verb|\mathscr{Z}| & $\mathscr{Z}$ & $\mathscr{z}$ & $ 𝒵 𝓏 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbfscr} (Bold Script)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbfscr{A}| & $\mathbfscr{A}$ & $\mathbfscr{a}$ & $ 𝓐 𝓪 $ \\
+\verb|\mathbfscr{B}| & $\mathbfscr{B}$ & $\mathbfscr{b}$ & $ 𝓑 𝓫 $ \\
+\verb|\mathbfscr{C}| & $\mathbfscr{C}$ & $\mathbfscr{c}$ & $ 𝓒 𝓬 $ \\
+\verb|\mathbfscr{D}| & $\mathbfscr{D}$ & $\mathbfscr{d}$ & $ 𝓓 𝓭 $ \\
+\verb|\mathbfscr{E}| & $\mathbfscr{E}$ & $\mathbfscr{e}$ & $ 𝓔 𝓮 $ \\
+\verb|\mathbfscr{F}| & $\mathbfscr{F}$ & $\mathbfscr{f}$ & $ 𝓕 𝓯 $ \\
+\verb|\mathbfscr{G}| & $\mathbfscr{G}$ & $\mathbfscr{g}$ & $ 𝓖 𝓰 $ \\
+\verb|\mathbfscr{H}| & $\mathbfscr{H}$ & $\mathbfscr{h}$ & $ 𝓗 𝓱 $ \\
+\verb|\mathbfscr{I}| & $\mathbfscr{I}$ & $\mathbfscr{i}$ & $ 𝓘 𝓲 $ \\
+\verb|\mathbfscr{J}| & $\mathbfscr{J}$ & $\mathbfscr{j}$ & $ 𝓙 𝓳 $ \\
+\verb|\mathbfscr{K}| & $\mathbfscr{K}$ & $\mathbfscr{k}$ & $ 𝓚 𝓴 $ \\
+\verb|\mathbfscr{L}| & $\mathbfscr{L}$ & $\mathbfscr{l}$ & $ 𝓛 𝓵 $ \\
+\verb|\mathbfscr{M}| & $\mathbfscr{M}$ & $\mathbfscr{m}$ & $ 𝓜 𝓶 $ \\
+\verb|\mathbfscr{N}| & $\mathbfscr{N}$ & $\mathbfscr{n}$ & $ 𝓝 𝓷 $ \\
+\verb|\mathbfscr{O}| & $\mathbfscr{O}$ & $\mathbfscr{o}$ & $ 𝓞 𝓸 $ \\
+\verb|\mathbfscr{P}| & $\mathbfscr{P}$ & $\mathbfscr{p}$ & $ 𝓟 𝓹 $ \\
+\verb|\mathbfscr{Q}| & $\mathbfscr{Q}$ & $\mathbfscr{q}$ & $ 𝓠 𝓺 $ \\
+\verb|\mathbfscr{R}| & $\mathbfscr{R}$ & $\mathbfscr{r}$ & $ 𝓡 𝓻 $ \\
+\verb|\mathbfscr{S}| & $\mathbfscr{S}$ & $\mathbfscr{s}$ & $ 𝓢 𝓼 $ \\
+\verb|\mathbfscr{T}| & $\mathbfscr{T}$ & $\mathbfscr{t}$ & $ 𝓣 𝓽 $ \\
+\verb|\mathbfscr{U}| & $\mathbfscr{U}$ & $\mathbfscr{u}$ & $ 𝓤 𝓾 $ \\
+\verb|\mathbfscr{V}| & $\mathbfscr{V}$ & $\mathbfscr{v}$ & $ 𝓥 𝓿 $ \\
+\verb|\mathbfscr{W}| & $\mathbfscr{W}$ & $\mathbfscr{w}$ & $ 𝓦 𝔀 $ \\
+\verb|\mathbfscr{X}| & $\mathbfscr{X}$ & $\mathbfscr{x}$ & $ 𝓧 𝔁 $ \\
+\verb|\mathbfscr{Y}| & $\mathbfscr{Y}$ & $\mathbfscr{y}$ & $ 𝓨 𝔂 $ \\
+\verb|\mathbfscr{Z}| & $\mathbfscr{Z}$ & $\mathbfscr{z}$ & $ 𝓩 𝔃 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbb} (Blackboard Bold)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbb{A}| & $\mathbb{A}$ & $\mathbb{a}$ & $ 𝔸 𝕒 $ \\
+\verb|\mathbb{B}| & $\mathbb{B}$ & $\mathbb{b}$ & $ 𝔹 𝕓 $ \\
+\verb|\mathbb{C}| & $\mathbb{C}$ & $\mathbb{c}$ & $ ℂ 𝕔 $ \\
+\verb|\mathbb{D}| & $\mathbb{D}$ & $\mathbb{d}$ & $ 𝔻 𝕕 $ \\
+\verb|\mathbb{E}| & $\mathbb{E}$ & $\mathbb{e}$ & $ 𝔼 𝕖 $ \\
+\verb|\mathbb{F}| & $\mathbb{F}$ & $\mathbb{f}$ & $ 𝔽 𝕗 $ \\
+\verb|\mathbb{G}| & $\mathbb{G}$ & $\mathbb{g}$ & $ 𝔾 𝕘 $ \\
+\verb|\mathbb{H}| & $\mathbb{H}$ & $\mathbb{h}$ & $ ℍ 𝕙 $ \\
+\verb|\mathbb{I}| & $\mathbb{I}$ & $\mathbb{i}$ & $ 𝕀 𝕚 $ \\
+\verb|\mathbb{J}| & $\mathbb{J}$ & $\mathbb{j}$ & $ 𝕁 𝕛 $ \\
+\verb|\mathbb{K}| & $\mathbb{K}$ & $\mathbb{k}$ & $ 𝕂 𝕜 $ \\
+\verb|\mathbb{L}| & $\mathbb{L}$ & $\mathbb{l}$ & $ 𝕃 𝕝 $ \\
+\verb|\mathbb{M}| & $\mathbb{M}$ & $\mathbb{m}$ & $ 𝕄 𝕞 $ \\
+\verb|\mathbb{N}| & $\mathbb{N}$ & $\mathbb{n}$ & $ ℕ 𝕟 $ \\
+\verb|\mathbb{O}| & $\mathbb{O}$ & $\mathbb{o}$ & $ 𝕆 𝕠 $ \\
+\verb|\mathbb{P}| & $\mathbb{P}$ & $\mathbb{p}$ & $ ℙ 𝕡 $ \\
+\verb|\mathbb{Q}| & $\mathbb{Q}$ & $\mathbb{q}$ & $ ℚ 𝕢 $ \\
+\verb|\mathbb{R}| & $\mathbb{R}$ & $\mathbb{r}$ & $ ℝ 𝕣 $ \\
+\verb|\mathbb{S}| & $\mathbb{S}$ & $\mathbb{s}$ & $ 𝕊 𝕤 $ \\
+\verb|\mathbb{T}| & $\mathbb{T}$ & $\mathbb{t}$ & $ 𝕋 𝕥 $ \\
+\verb|\mathbb{U}| & $\mathbb{U}$ & $\mathbb{u}$ & $ 𝕌 𝕦 $ \\
+\verb|\mathbb{V}| & $\mathbb{V}$ & $\mathbb{v}$ & $ 𝕍 𝕧 $ \\
+\verb|\mathbb{W}| & $\mathbb{W}$ & $\mathbb{w}$ & $ 𝕎 𝕨 $ \\
+\verb|\mathbb{X}| & $\mathbb{X}$ & $\mathbb{x}$ & $ 𝕏 𝕩 $ \\
+\verb|\mathbb{Y}| & $\mathbb{Y}$ & $\mathbb{y}$ & $ 𝕐 𝕪 $ \\
+\verb|\mathbb{Z}| & $\mathbb{Z}$ & $\mathbb{z}$ & $ ℤ 𝕫 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbbit} (Blackboard Bold Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbbit{A}| & $\mathbbit{A}$ & $\mathbbit{a}$ & $ 𝐴 𝑎 $ \\
+\verb|\mathbbit{B}| & $\mathbbit{B}$ & $\mathbbit{b}$ & $ 𝐵 𝑏 $ \\
+\verb|\mathbbit{C}| & $\mathbbit{C}$ & $\mathbbit{c}$ & $ 𝐶 𝑐 $ \\
+\verb|\mathbbit{D}| & $\mathbbit{D}$ & $\mathbbit{d}$ & $ ⅅ ⅆ $ \\
+\verb|\mathbbit{E}| & $\mathbbit{E}$ & $\mathbbit{e}$ & $ 𝐸 ⅇ $ \\
+\verb|\mathbbit{F}| & $\mathbbit{F}$ & $\mathbbit{f}$ & $ 𝐹 𝑓 $ \\
+\verb|\mathbbit{G}| & $\mathbbit{G}$ & $\mathbbit{g}$ & $ 𝐺 𝑔 $ \\
+\verb|\mathbbit{H}| & $\mathbbit{H}$ & $\mathbbit{h}$ & $ 𝐻 ℎ $ \\
+\verb|\mathbbit{I}| & $\mathbbit{I}$ & $\mathbbit{i}$ & $ 𝐼 ⅈ $ \\
+\verb|\mathbbit{J}| & $\mathbbit{J}$ & $\mathbbit{j}$ & $ 𝐽 ⅉ $ \\
+\verb|\mathbbit{K}| & $\mathbbit{K}$ & $\mathbbit{k}$ & $ 𝐾 𝑘 $ \\
+\verb|\mathbbit{L}| & $\mathbbit{L}$ & $\mathbbit{l}$ & $ 𝐿 𝑙 $ \\
+\verb|\mathbbit{M}| & $\mathbbit{M}$ & $\mathbbit{m}$ & $ 𝑀 𝑚 $ \\
+\verb|\mathbbit{N}| & $\mathbbit{N}$ & $\mathbbit{n}$ & $ 𝑁 𝑛 $ \\
+\verb|\mathbbit{O}| & $\mathbbit{O}$ & $\mathbbit{o}$ & $ 𝑂 𝑜 $ \\
+\verb|\mathbbit{P}| & $\mathbbit{P}$ & $\mathbbit{p}$ & $ 𝑃 𝑝 $ \\
+\verb|\mathbbit{Q}| & $\mathbbit{Q}$ & $\mathbbit{q}$ & $ 𝑄 𝑞 $ \\
+\verb|\mathbbit{R}| & $\mathbbit{R}$ & $\mathbbit{r}$ & $ 𝑅 𝑟 $ \\
+\verb|\mathbbit{S}| & $\mathbbit{S}$ & $\mathbbit{s}$ & $ 𝑆 𝑠 $ \\
+\verb|\mathbbit{T}| & $\mathbbit{T}$ & $\mathbbit{t}$ & $ 𝑇 𝑡 $ \\
+\verb|\mathbbit{U}| & $\mathbbit{U}$ & $\mathbbit{u}$ & $ 𝑈 𝑢 $ \\
+\verb|\mathbbit{V}| & $\mathbbit{V}$ & $\mathbbit{v}$ & $ 𝑉 𝑣 $ \\
+\verb|\mathbbit{W}| & $\mathbbit{W}$ & $\mathbbit{w}$ & $ 𝑊 𝑤 $ \\
+\verb|\mathbbit{X}| & $\mathbbit{X}$ & $\mathbbit{x}$ & $ 𝑋 𝑥 $ \\
+\verb|\mathbbit{Y}| & $\mathbbit{Y}$ & $\mathbbit{y}$ & $ 𝑌 𝑦 $ \\
+\verb|\mathbbit{Z}| & $\mathbbit{Z}$ & $\mathbbit{z}$ & $ 𝑍 𝑧 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathfrak} (Fraktur)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathfrak{A}| & $\mathfrak{A}$ & $\mathfrak{a}$ & $ 𝔄 𝔞 $ \\
+\verb|\mathfrak{B}| & $\mathfrak{B}$ & $\mathfrak{b}$ & $ 𝔅 𝔟 $ \\
+\verb|\mathfrak{C}| & $\mathfrak{C}$ & $\mathfrak{c}$ & $ ℭ 𝔠 $ \\
+\verb|\mathfrak{D}| & $\mathfrak{D}$ & $\mathfrak{d}$ & $ 𝔇 𝔡 $ \\
+\verb|\mathfrak{E}| & $\mathfrak{E}$ & $\mathfrak{e}$ & $ 𝔈 𝔢 $ \\
+\verb|\mathfrak{F}| & $\mathfrak{F}$ & $\mathfrak{f}$ & $ 𝔉 𝔣 $ \\
+\verb|\mathfrak{G}| & $\mathfrak{G}$ & $\mathfrak{g}$ & $ 𝔊 𝔤 $ \\
+\verb|\mathfrak{H}| & $\mathfrak{H}$ & $\mathfrak{h}$ & $ ℌ 𝔥 $ \\
+\verb|\mathfrak{I}| & $\mathfrak{I}$ & $\mathfrak{i}$ & $ ℑ 𝔦 $ \\
+\verb|\mathfrak{J}| & $\mathfrak{J}$ & $\mathfrak{j}$ & $ 𝔍 𝔧 $ \\
+\verb|\mathfrak{K}| & $\mathfrak{K}$ & $\mathfrak{k}$ & $ 𝔎 𝔨 $ \\
+\verb|\mathfrak{L}| & $\mathfrak{L}$ & $\mathfrak{l}$ & $ 𝔏 𝔩 $ \\
+\verb|\mathfrak{M}| & $\mathfrak{M}$ & $\mathfrak{m}$ & $ 𝔐 𝔪 $ \\
+\verb|\mathfrak{N}| & $\mathfrak{N}$ & $\mathfrak{n}$ & $ 𝔑 𝔫 $ \\
+\verb|\mathfrak{O}| & $\mathfrak{O}$ & $\mathfrak{o}$ & $ 𝔒 𝔬 $ \\
+\verb|\mathfrak{P}| & $\mathfrak{P}$ & $\mathfrak{p}$ & $ 𝔓 𝔭 $ \\
+\verb|\mathfrak{Q}| & $\mathfrak{Q}$ & $\mathfrak{q}$ & $ 𝔔 𝔮 $ \\
+\verb|\mathfrak{R}| & $\mathfrak{R}$ & $\mathfrak{r}$ & $ ℜ 𝔯 $ \\
+\verb|\mathfrak{S}| & $\mathfrak{S}$ & $\mathfrak{s}$ & $ 𝔖 𝔰 $ \\
+\verb|\mathfrak{T}| & $\mathfrak{T}$ & $\mathfrak{t}$ & $ 𝔗 𝔱 $ \\
+\verb|\mathfrak{U}| & $\mathfrak{U}$ & $\mathfrak{u}$ & $ 𝔘 𝔲 $ \\
+\verb|\mathfrak{V}| & $\mathfrak{V}$ & $\mathfrak{v}$ & $ 𝔙 𝔳 $ \\
+\verb|\mathfrak{W}| & $\mathfrak{W}$ & $\mathfrak{w}$ & $ 𝔚 𝔴 $ \\
+\verb|\mathfrak{X}| & $\mathfrak{X}$ & $\mathfrak{x}$ & $ 𝔛 𝔵 $ \\
+\verb|\mathfrak{Y}| & $\mathfrak{Y}$ & $\mathfrak{y}$ & $ 𝔜 𝔶 $ \\
+\verb|\mathfrak{Z}| & $\mathfrak{Z}$ & $\mathfrak{z}$ & $ ℨ 𝔷 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}mathbffrak} (Bold Fraktur)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\mathbffrak{A}| & $\mathbffrak{A}$ & $\mathbffrak{a}$ & $ 𝕬 𝖆 $ \\
+\verb|\mathbffrak{B}| & $\mathbffrak{B}$ & $\mathbffrak{b}$ & $ 𝕭 𝖇 $ \\
+\verb|\mathbffrak{C}| & $\mathbffrak{C}$ & $\mathbffrak{c}$ & $ 𝕮 𝖈 $ \\
+\verb|\mathbffrak{D}| & $\mathbffrak{D}$ & $\mathbffrak{d}$ & $ 𝕯 𝖉 $ \\
+\verb|\mathbffrak{E}| & $\mathbffrak{E}$ & $\mathbffrak{e}$ & $ 𝕰 𝖊 $ \\
+\verb|\mathbffrak{F}| & $\mathbffrak{F}$ & $\mathbffrak{f}$ & $ 𝕱 𝖋 $ \\
+\verb|\mathbffrak{G}| & $\mathbffrak{G}$ & $\mathbffrak{g}$ & $ 𝕲 𝖌 $ \\
+\verb|\mathbffrak{H}| & $\mathbffrak{H}$ & $\mathbffrak{h}$ & $ 𝕳 𝖍 $ \\
+\verb|\mathbffrak{I}| & $\mathbffrak{I}$ & $\mathbffrak{i}$ & $ 𝕴 𝖎 $ \\
+\verb|\mathbffrak{J}| & $\mathbffrak{J}$ & $\mathbffrak{j}$ & $ 𝕵 𝖏 $ \\
+\verb|\mathbffrak{K}| & $\mathbffrak{K}$ & $\mathbffrak{k}$ & $ 𝕶 𝖐 $ \\
+\verb|\mathbffrak{L}| & $\mathbffrak{L}$ & $\mathbffrak{l}$ & $ 𝕷 𝖑 $ \\
+\verb|\mathbffrak{M}| & $\mathbffrak{M}$ & $\mathbffrak{m}$ & $ 𝕸 𝖒 $ \\
+\verb|\mathbffrak{N}| & $\mathbffrak{N}$ & $\mathbffrak{n}$ & $ 𝕹 𝖓 $ \\
+\verb|\mathbffrak{O}| & $\mathbffrak{O}$ & $\mathbffrak{o}$ & $ 𝕺 𝖔 $ \\
+\verb|\mathbffrak{P}| & $\mathbffrak{P}$ & $\mathbffrak{p}$ & $ 𝕻 𝖕 $ \\
+\verb|\mathbffrak{Q}| & $\mathbffrak{Q}$ & $\mathbffrak{q}$ & $ 𝕼 𝖖 $ \\
+\verb|\mathbffrak{R}| & $\mathbffrak{R}$ & $\mathbffrak{r}$ & $ 𝕽 𝖗 $ \\
+\verb|\mathbffrak{S}| & $\mathbffrak{S}$ & $\mathbffrak{s}$ & $ 𝕾 𝖘 $ \\
+\verb|\mathbffrak{T}| & $\mathbffrak{T}$ & $\mathbffrak{t}$ & $ 𝕿 𝖙 $ \\
+\verb|\mathbffrak{U}| & $\mathbffrak{U}$ & $\mathbffrak{u}$ & $ 𝖀 𝖚 $ \\
+\verb|\mathbffrak{V}| & $\mathbffrak{V}$ & $\mathbffrak{v}$ & $ 𝖁 𝖛 $ \\
+\verb|\mathbffrak{W}| & $\mathbffrak{W}$ & $\mathbffrak{w}$ & $ 𝖂 𝖜 $ \\
+\verb|\mathbffrak{X}| & $\mathbffrak{X}$ & $\mathbffrak{x}$ & $ 𝖃 𝖝 $ \\
+\verb|\mathbffrak{Y}| & $\mathbffrak{Y}$ & $\mathbffrak{y}$ & $ 𝖄 𝖞 $ \\
+\verb|\mathbffrak{Z}| & $\mathbffrak{Z}$ & $\mathbffrak{z}$ & $ 𝖅 𝖟 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\end{document}

@@ -1,0 +1,222 @@
+% !TeX program = lualatex
+% !TeX encoding = UTF-8
+\documentclass[14pt]{article}
+
+\usepackage{unicode-math}
+\usepackage{amsthm}
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорема}
+\newtheorem{lemma}{Лемма}
+
+\begin{document}
+This is some text and next comes some math: $E = mc^2$
+\[
+a^n+b^n-c^n = \alpha\beta\gamma
+
+E = mc^2
+
+E = h\nu
+
+x = \frac{1}{n}\sum_{i=1}^{i=n} x_i = \frac{{x_1 + x_2 + \cdots{} + x_n}}{n}
+
+x = \frac{1}{n}\sum_{i=1}^{i=n} x_i = \frac{x_1 + x_2 + \cdots{} + x_n}{n}
+
+\int_0^{\infty} e^{-\alpha x^2} \mathrm{d}x =
+
+1 + \frac{12}{{\sqrt{\int_{-\infty}^{\infty} e^{-\alpha x^2}}}}
+
+\mathrm{d}x\int_{-\infty}^{\infty} e^{-\alpha y^2}\mathrm{d}y =
+
+\frac{12}{\sqrt{\frac{\pi}{\alpha}}}
+
+\sum_{k=0}^{\infty} a_0q^k = \lim_{n\to\infty}\sum_{k=0}^n a_0q^k =
+
+\lim_{n\to\infty} a_0\frac{1-q^{n+1}}{1-q} = \frac{a_0}{1-q}
+
+x_{1,2}=\frac{{-b \pm \sqrt{b^2-4ac}}}{2a} = \frac{{-p \pm \sqrt{p^2-4q}}}{2}
+
+\bar x = \frac{1}{n}\sum_{i=1}^{i=n} x_i = \frac{x_1 + x_2 + \cdots{} + x_n}{n}
+
+\frac{\partial^2 \Phi}{\partial x^2} + \frac{\partial^2 \Phi}{\partial y^2} +
+
+\frac{\partial^2 \Phi}{\partial z^2} =
+
+\frac{1}{c^2}\frac{\partial^2\Phi}{\partial t^2}
+
+\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{ab}
+
+\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}
+
+\sqrt[n]{b} = \sqrt[n]{a^n b}
+\bar x = \frac{1}{n}\sum_{i=1}^{i=n} x_i = \frac{x_1 + x^2 + \cdots{} + x_n}{n}
+\]
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+0123456789?!~.:;|@`'"<>\# ^{}()*+-/=[,] \$\&\%\#\{\}\_ \,\;\:\!\>\@ | \\
+
++ - * / < > ! | : '
+\[
++ - * / < > ! | : '
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+0123456789?!~.:;|@`'"<>\# ^{}()*+-/=[,] \$\&\%\#\{\}\_ \,\;\:\!\>\@ \| \\
+
+\text{0123456789?!~.:;|@`'"<> ^, *+-/ \# \$\&\%\#\{\}\_ \,\;\:\!\>\@ | \\ }
+
+(a+b)^2 = a^2 + 2ab + b^2
+\sin^2{\alpha} + \cos^2{\alpha} = 1
+\sin^2\alpha + \cos^2\alpha = 1
+x - y = -(y - x)
+a * b = 0
+10 / 5 = 2
+10/5=2
+\frac{a}{b} = c
+x < y \text{и} x > z
+{5}!=120
+a : b = c : d
+f\colon \pi
+f : \pi
+1^{1+1}^{1+1}
+1^{\pi^{22}}^{x^2}
+
+= \sum_{n_1=0}^{\infty} \sum_{n_2=0}^{\infty} \frac{1}{{n_1! n_2!}}
+\frac{{\partial^{n_1+n_2}f(0,0)}}{{\partial X^{n_1} \partial Y^{n_2}}}
+= \sum_{n_1=0}^{\infty} \sum_{n_2=0}^{\infty} \frac{1}{n_1! n_2!}
+\frac{\partial^{n_1+n_2}f(0,0)}{\partial X^{n_1} \partial Y^{n_2}} n_2 a^{n_1} {a^{\dagger}}^{n_2-1}
+= \sum_{n_1=0}^{\infty} \sum_{n_2=1}^{\infty} \frac{1}{n_1! (n_2-1)!}
+\frac{{\partial^{n_1+n_2}f(0,0)}}{{\partial X^{n_1} \partial Y^{n_2}}} a^{n_1} {a^{\dagger}}^{n_2-1}
+= \pdv{f}{a^{\dagger}}
+\]
+\section{Кириллица}
+
+Ѐ Ё Ђ Ѓ Є Ѕ І Ї Ј Љ Њ Ћ Ќ Ѝ Ў Џ Ӏ Ӂ ӂ Ӄ ӄ Ӆ
+А Б В Г Д Е Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я
+а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я
+ѐ ё ђ ѓ є ѕ і ї ј љ њ ћ ќ ѝ ў џ
+Ѡ ѡ Ѣ ѣ Ѥ ѥ Ѧ ѧ Ѩ ѩ Ѫ ѫ Ѭ ѭ Ѯ ѯ Ѱ ѱ Ѳ ѳ Ѵ ѵ Ѷ ѷ Ѹ ѹ Ѻ ѻ Ѽ ѽ Ѿ ѿ
+Ҁ ҁ ҂ Ҋ ҋ Ҍ ҍ Ҏ ҏ Ґ ґ Ғ ғ Ҕ ҕ Җ җ Ҙ ҙ Қ қ Ҝ ҝ Ҟ ҟ Ҡ ҡ Ң ң Ҥ ҥ Ҧ ҧ
+Ҩ ҩ Ҫ ҫ Ҭ ҭ Ү ү Ұ ұ Ҳ ҳ Ҵ ҵ Ҷ ҷ Ҹ ҹ Һ һ Ҽ ҽ Ҿ ҿ Ӏ Ӂ ӂ Ӄ ӄ Ӆ ӆ Ӈ ӈ Ӊ ӊ
+Ӌ ӌ Ӎ ӎ ӏ Ӑ ӑ Ӓ ӓ Ӕ ӕ Ӗ ӗ Ә ә Ӛ ӛ Ӝ ӝ Ӟ ӟ Ӡ ӡ Ӣ ӣ Ӥ ӥ Ӧ ӧ Ө ө
+Ӫ ӫ Ӭ ӭ Ӯ ӯ Ӱ ӱ Ӳ ӳ Ӵ ӵ Ӷ ӷ Ӹ ӹ Ӻ ӻ Ӽ ӽ Ӿ ӿ
+Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ
+Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ ԯ
+\[
+Ѐ Ё Ђ Ѓ Є Ѕ І Ї Ј Љ Њ Ћ Ќ Ѝ Ў Џ Ӏ Ӂ ӂ Ӄ ӄ Ӆ
+А Б В Г Д Е Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я
+а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я
+ѐ ё ђ ѓ є ѕ і ї ј љ њ ћ ќ ѝ ў џ
+Ѡ ѡ Ѣ ѣ Ѥ ѥ Ѧ ѧ Ѩ ѩ Ѫ ѫ Ѭ ѭ Ѯ ѯ Ѱ ѱ Ѳ ѳ Ѵ ѵ Ѷ ѷ Ѹ ѹ Ѻ ѻ Ѽ ѽ Ѿ ѿ
+Ҁ ҁ ҂ Ҋ ҋ Ҍ ҍ Ҏ ҏ Ґ ґ Ғ ғ Ҕ ҕ Җ җ Ҙ ҙ Қ қ Ҝ ҝ Ҟ ҟ Ҡ ҡ Ң ң Ҥ ҥ Ҧ ҧ
+Ҩ ҩ Ҫ ҫ Ҭ ҭ Ү ү Ұ ұ Ҳ ҳ Ҵ ҵ Ҷ ҷ Ҹ ҹ Һ һ Ҽ ҽ Ҿ ҿ Ӏ Ӂ ӂ Ӄ ӄ Ӆ ӆ Ӈ ӈ Ӊ ӊ
+Ӌ ӌ Ӎ ӎ ӏ Ӑ ӑ Ӓ ӓ Ӕ ӕ Ӗ ӗ Ә ә Ӛ ӛ Ӝ ӝ Ӟ ӟ Ӡ ӡ Ӣ ӣ Ӥ ӥ Ӧ ӧ Ө ө
+Ӫ ӫ Ӭ ӭ Ӯ ӯ Ӱ ӱ Ӳ ӳ Ӵ ӵ Ӷ ӷ Ӹ ӹ Ӻ ӻ Ӽ ӽ Ӿ ӿ
+Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ
+Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ ԯ
+\]
+\text{\textit{textтекст}} textтекст
+\text{\textit{text}} textтекст
+\[
+pр^oо=aа_xх
+
+\text{рp}^{\text{оo}}=\text{аa}_{\text{хx}}
+
+x^{\text{\textit{text textтекст} textтекст}}
+x^{\text{\textit{text} textтекст}}
+x^{\text{\textit{text textтекст}} textтекст}
+x^{\text{\textit{text}} textтекст}
+
+\frac{Ѐ x^2 + Ё \sin x}{Ђ + \cos x} = \int_{Ѓ}^{Є} Ѕ e^{-t^20.5} \, dt
+
+\lim_{І \to \infty} \left(1 + \frac{Ї}{І}\right)^{І} = e^{Ј}
+
+\sqrt{Љ^{2} + Њ^{2}} = \sqrt{Ћ^{2} + Ќ^{2}} \implies Ѝ = Ў
+
+\sum_{Џ=1}^{А} \frac{1}{Б^{2}} = \frac{\pi^{2}}{6} + В \cdot Г
+
+\prod_{Д=Е}^{Ж} З^{И} = \exp\left(\int_{Й}^{К} \ln Л \, dМ \right)
+
+\oint_{С} \vec{Т} \cdot d\vec{У} = \iint_{Ф} (\nabla \times \vec{Х}) \cdot d\vec{Ц}
+
+\frac{\partial^{2}Ч}{\partial Ш^{2}} + \frac{\partial^{2}Щ}{\partial Ъ^{2}} = \frac{1}{Ы^{2}} \frac{{\partial^{2}Ь}}{{\partial Э^{2}}}
+
+\underbrace{Ю + Я + а + б}_{в} = \overbrace{г + д + е}^{ж}
+
+\binom{з}{и} = \frac{й!}{к!(л-м)!} \text{и ещё: } \binom{н}{о}
+
+\sin^{2}п + \cos^{2}р = 1 \text{где} п = \frac{с}{т}
+
+\Gamma(у) = \int_{0}^{\infty} ф^{х-1} e^{-ц} \, dч
+
+\vec{ш} \times \vec{щ} = |\vec{ъ}| |\vec{ы}| \sin \theta \cdot \vec{ь}
+
+\widehat{э + ю} = \widetilde{я + ѐ} \text{и} \overline{ё + ђ}
+
+\arg \min_{ѓ \in \mathbb{R}} \left( є^{2} + \ѕ \cdot і + \ї \right)
+
+\max(ј, љ) = \frac{њ + ћ + |ќ - ѝ|}{2} \cdot \ў
+
+\min(џ, Ѡ) \leq \frac{ѡ + Ѣ}{2} \leq \max(ѣ, Ѥ)
+
+\lfloor ѥ \rfloor + \lceil Ѧ \rceil = \lfloor ѧ + Ѩ \rceil
+
+\forall ѩ \in \mathbb{N} \exists Ѫ \in \mathbb{R} : ѫ^{2} = Ѭ
+
+\approx 3.14159 \neq \frac{22}{7} \sim \sqrt{10}
+\]
+\section{Unicode}
+
+αβγδεζηθικλμνξοπρστυφχψω ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+∀∃∄∈∉∋⊂⊆⊇⊃∪∩∧∨¬→⇒↔≤≥≠≈≡≺≻∼≅⊕⊗⊥∞ ←↑→↓↔↕⇒⇔⇐⇑⇓
+∑∏∫∬∮√∂∇ℂℍℕℙℚℝℤ ℵℶ℧ℨKÅℬℭ℮
+∀x∈ℝ: x²≥0 ∫₀¹ x²dx=⅓ α+β=γ ∠ABC=90° ⇒ AB⟂BC λμνξοπρστυφχψω
+\[
+αβγδεζηθικλμνξοπρστυφχψω ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
+∀∃∄∈∉∋⊂⊆⊇⊃∪∩∧∨¬→⇒↔≤≥≠≈≡≺≻∼≅⊕⊗⊥∞ ←↑→↓↔↕⇒⇔⇐⇑⇓
+∑∏∫∬∮√∂∇ℂℍℕℙℚℝℤ ℵℶ℧ℨKÅℬℭ℮
+∀x∈ℝ: x²≥0 ∫₀¹ x²dx=⅓ α+β=γ ∠ABC=90° ⇒ AB⟂BC λμνξοπρστυφχψω
+\]
+\text{\textit{abcd abcdαβγδ}} αβγδ
+\[
+x^{\text{\textit{abcd abcdαβγδ}} αβγδϵ}
+
+∫_{-∞}^{∞} e^{-x²} dx = √π
+
+∑_{n=1}^{∞} \frac{1}{n²} = \frac{π²}{6}
+
+∮_{Γ} f(z) dz = 2πi ∑ \operatorname{Res}(f, a_k)
+
+\lim_{n→∞} \left(1 + \frac{1}{n}\right)^n = e
+
+e^{iθ} = \cos θ + i \sin θ
+
+\sin²α + \cos²α = 1
+
+\frac{∂²u}{∂x²} + \frac{∂²u}{∂y²} = 0
+
+∇ × \mathbf{E} = -\frac{∂\mathbf{B}}{∂t}
+
+\det(λI - A) = 0
+
+P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+
+Γ(z) = ∫_0^∞ t^{z-1} e^{-t} dt
+
+ζ(s) = ∑_{n=1}^{∞} n^{-s}
+
+\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} dt
+
+\zeta(s) = \sum_{n=1}^\infty n^{-s}
+
+∏_{p \text{prime}} \frac{1}{1 - p^{-s}} = ζ(s)
+
+∫_0^1 \frac{dx}{\sqrt{1 - x²}} = \frac{π}{2}
+
+∀ε>0 \; ∃δ>0: |x-a|<δ ⇒ |f(x)-f(a)|<ε
+
+\oint_{|z|=1} \frac{dz}{z} = 2πi
+
+\frac{d}{dx} (x^n) = nx^{n-1}
+
+∫_a^b f(x) dx = F(b) - F(a)
+
+\lim_{x→0} \frac{\sin x}{x} = 1
+\]
+\end{document}

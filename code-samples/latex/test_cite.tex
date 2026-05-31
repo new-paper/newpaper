@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{natbib}      % for \citet and \citep commands
+\usepackage{biblatex}    % alternative citation system
+\addbibresource{refs.bib}
+
+\begin{document}
+
+\section*{cite command variants}
+
+% ==================== Basic \cite (no packages) ====================
+
+% Simple citation
+\cite{key}
+
+% Multiple citations
+\cite{key1,key2,key3}
+
+% Citation with optional text (requires certain packages)
+\cite[see]{key}
+\cite[see][p. 5]{key}
+
+% ==================== With natbib package ====================
+
+% \citet - author as part of sentence (textual citation)
+\citet{key}
+\citet[see]{key}
+\citet[see][p. 5]{key}
+
+% \citep - author in parentheses (parenthetical citation)
+\citep{key}
+\citep[see]{key}
+\citep[see][p. 5]{key}
+
+% Starred version (shows full author list)
+\citet*{key}
+\citep*{key}
+
+% \citeauthor - author names only
+\citeauthor{key}
+\citeauthor*{key}
+
+% \citeyear - year only
+\citeyear{key}
+\citeyearpar{key}  % year in parentheses
+
+% Multiple keys with natbib
+\citep{key1,key2,key3}
+\citet{key1,key2,key3}
+
+% ==================== With biblatex package ====================
+
+% Basic citations
+\cite{key}
+\cite[p. 5]{key}
+\cite[see][p. 5]{key}
+
+% Textual citation (author in text)
+\textcite{key}
+\textcite[p. 5]{key}
+
+% Parenthetical citation (author in parentheses)
+\parencite{key}
+\parencite[p. 5]{key}
+
+% Author only
+\citeauthor{key}
+\citeauthor*{key}
+
+% Year only
+\citeyear{key}
+\citeyear[p. 5]{key}
+
+% Full citation (author, year, page, etc.)
+\fullcite{key}
+
+% Add to bibliography without citation
+\nocite{key}
+
+% Multiple keys with biblatex
+\cite{key1,key2,key3}
+
+% ==================== Visual examples ====================
+
+\subsection*{Examples}
+
+With \texttt{natbib}:
+\begin{itemize}
+  \item \citet{smith2020}
+  \item \citep{smith2020}
+  \item \citep[see][p. 5]{smith2020}
+\end{itemize}
+
+With \texttt{biblatex}:
+\begin{itemize}
+  \item \textcite{smith2020}
+  \item \parencite{smith2020}
+  \item \cite[see][p. 5]{smith2020}
+\end{itemize}
+
+\end{document}

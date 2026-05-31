@@ -1,0 +1,116 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\begin{document}
+
+% 1. label_definition - defining a label
+\section{Introduction} \label{sec:intro} % Label definition for a section
+
+\section{Conclusion}
+\label{sec:conclusion}                % Label definition for another section
+
+\begin{equation}
+a = b
+\label{eq:first}                      % Label definition for first equation
+\end{equation}
+
+\begin{equation}
+c = d
+\label{eq:second}                     % Label definition for second equation
+\end{equation}
+
+\begin{figure}
+\centering
+\caption[First image]{First figure}
+\label{fig:start}                     % Label definition for first figure
+\end{figure}
+
+\begin{figure}
+\centering
+\caption[Last image]{Last figure}
+\label{fig:end}                       % Label definition for last figure
+\end{figure}
+
+\label{LABEL_WITH_2NUMBER}
+\ref{LABEL_WITH_2NUMBER}
+
+% 2. label_reference - single reference
+See Section \ref{sec:intro}           % Single reference to a section
+Equation \ref{eq:first}               % Single reference to an equation
+Figure \ref{fig:start}                % Single reference to a figure
+
+% 3. label_reference_range - range of references
+Sections \crefrange{sec:intro}{sec:conclusion}
+Equations \crefrange{eq:first}{eq:second}
+Figures \crefrange{fig:start}{fig:end}
+
+\Crefrange{sec:intro}{sec:conclusion}            % Capitalized at start of sentence
+\cpagerefrange{sec:intro}{sec:conclusion}        % Page number range
+\Cpagerefrange{sec:intro}{sec:conclusion}        % Capitalized page range
+
+% Starred versions
+\crefrange*{sec:intro}{sec:conclusion}           % Without hyperlinks
+\Crefrange*{sec:intro}{sec:conclusion}           % Starred capitalized
+
+% 4. label_number - reference with \newlabel (used in .aux file)
+% \newlabel{label}{{number}{page}}
+\newlabel{sec:intro}{{1}{2}}
+\newlabel{sec:conclusion}{{2}{5}}
+\newlabel{eq:first}{{1}{3}}
+\newlabel{eq:second}{{2}{4}}
+\newlabel{fig:start}{{1}{6}}
+\newlabel{fig:end}{{2}{7}}
+
+\subsection{Basic references}
+
+\label{sec:basic}
+
+\label{eq:1}
+\newlabel{eq:1}{{1}{2}}
+\eqref{eq:1}
+
+\vref{sec:intro}
+\Vref{sec:intro}
+
+\pageref{sec:intro}
+\pageref*{sec:intro}
+
+\autoref{sec:intro}
+\autoref*{sec:intro}
+
+\autopageref{sec:intro}
+\autopageref*{sec:intro}
+
+\cref{sec:intro}
+\cref*{sec:intro}
+\Cref{sec:intro}
+\Cref*{sec:intro}
+
+\cpageref{sec:intro}
+\Cpageref{sec:intro}
+
+\namecref{sec:intro}
+\nameCref{sec:intro}
+\lcnamecref{sec:intro}
+
+\namecrefs{sec:intro,sec:basic}
+\nameCrefs{sec:intro,sec:basic}
+\lcnamecrefs{sec:intro,sec:basic}
+
+\labelcref{sec:intro}
+\labelcref*{sec:intro}
+
+\labelcpageref{sec:intro}
+\labelcpageref*{sec:intro}
+
+\crefrange{sec:intro}{sec:basic}
+\crefrange*{sec:intro}{sec:basic}
+\Crefrange{sec:intro}{sec:basic}
+\Crefrange*{sec:intro}{sec:basic}
+
+\cpagerefrange{sec:intro}{sec:basic}
+\Cpagerefrange{sec:intro}{sec:basic}
+
+\end{document}

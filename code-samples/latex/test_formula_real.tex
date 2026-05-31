@@ -1,0 +1,76 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsfonts, bm}
+\usepackage{physics}
+
+\begin{document}
+
+\section{Formula}
+
+1. Gravitational Potential (Legendre expansion)
+\[
+\Phi(\mathbf{r}) = -GM(\frac{1}{r} - \frac{1}{r} \sum_{n=1}^{\infty}(\frac{r'}{r})^n P_n(\cos \theta))
+\]
+2. Continuity Equation in Spherical Coordinates
+\[
+\frac{\partial \rho}{\partial t} + \frac{1}{r^2} \frac{\partial}{\partial r}(\rho r^2 v_r) + \frac{1}{r \sin \theta} \frac{\partial}{\partial \theta}left(\rho v_{\theta} \sin \theta) + \frac{1}{r \sin \theta} \frac{\partial}{\partial \phi}(\rho v_{\phi}) = 0
+\]
+3. Planck's Law (Black-body radiation)
+\[
+u(\nu, T) = \frac{8\pi h \nu^3}{c^3} \frac{1}{e^{\frac{h\nu}{k_B T}} - 1}
+\]
+4. Radial Wave Function of Hydrogen Atom
+\[
+R_{nl}(r) = \sqrt{(\frac{2}{n a_0})^3 \frac{(n-l-1)!}{2n (n+l)!}} e^{-\frac{r}{n a_0}}(\frac{2r}{n a_0})^l L_{n-l-1}^{2l+1}(\frac{2r}{n a_0})
+\]
+5. Gradient in Cylindrical Coordinates
+\[
+\nabla f = \frac{\partial f}{\partial r} \hat{\mathbf{r}} + \frac{1}{r} \frac{\partial f}{\partial \phi} \hat{\bm{\phi}} + \frac{\partial f}{\partial z} \hat{\mathbf{z}}
+\]
+6. Navier-Stokes Equation (Incompressible flow)
+\[
+\rho(\frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v} \cdot \nabla) \mathbf{v}) = -\nabla p + \mu \nabla^2 \mathbf{v} + \frac{1}{3} \mu \nabla (\nabla \cdot \mathbf{v}) + \mathbf{f}
+\]
+7. Heat Equation (Fourier) in Spherical Coordinates
+\[
+\frac{\partial T}{\partial t} = \alpha(\frac{1}{r^2} \frac{\partial}{\partial r}(r^2 \frac{\partial T}{\partial r}) + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta}(\sin \theta \frac{\partial T}{\partial \theta}) + \frac{1}{r^2 \sin^2 \theta} \frac{\partial^2 T}{\partial \phi^2})
+\]
+8. de Moivre–Stirling Formula (Stirling's series)
+\[
+n! \sim \sqrt{2\pi n}(\frac{n}{e})^n(1 + \frac{1}{12n} + \frac{1}{288n^2} - \frac{139}{51840n^3} - \cdots)
+\]
+9. Poisson Integral for the Disk (Dirichlet problem)
+\[
+u(r, \theta) = \frac{1}{2\pi} \int_0^{2\pi} \frac{R^2 - r^2}{R^2 - 2Rr\cos(\theta - \phi) + r^2} f(\phi) \, d\phi
+\]
+10. Lorentz Force in a Polarizable and Magnetizable Medium
+\[
+\mathbf{F} = \int_V(\rho_f \mathbf{E} + \mathbf{J}_f \times \mathbf{B} - \frac{1}{2} (\mathbf{E} \cdot \mathbf{E}) \nabla \varepsilon - \frac{1}{2} (\mathbf{H} \cdot \mathbf{H}) \nabla \mu + \frac{1}{2} \nabla(\mathbf{E} \cdot \mathbf{E} \frac{\partial \varepsilon}{\partial \rho} \rho)) dV
+\]
+\section{Fractions in Exponents (Common)}
+\[
+e^{-\frac{E}{kT}} \quad \text{— Boltzmann distribution}
+\]
+\[
+\psi \sim e^{i(\mathbf{k}\cdot\mathbf{r} - \frac{p^2}{2m\hbar}t)} \quad \text{— phase of the wave function}
+\]
+\[
+T = 2\pi \sqrt{\frac{L}{g}} = 2\pi(\frac{L}{g})^{\frac{1}{2}} \quad \text{— period of a simple pendulum}
+\]
+\[
+T \sim a^{\frac{3}{2}} \quad \text{— Kepler's third law}
+\]
+\[
+R \sim N^{\frac{3}{5}} \quad \text{— Flory's law for polymer coil size}
+\]
+\section{Fractions in Subscripts (Very Rare)}
+\[
+\Psi_{\frac{1}{3}} \quad \text{— fractional quantum Hall effect state}
+\]
+\[
+D_{\frac{1}{2}} \quad \text{— spinor representation of SU(2) group}
+\]
+\[
+C_{\frac{5}{2}} \quad \text{— screw symmetry axis in crystallography}
+\]
+\end{document}

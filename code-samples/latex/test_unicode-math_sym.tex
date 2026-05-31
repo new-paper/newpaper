@@ -1,0 +1,1507 @@
+% !TeX program = lualatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{STIX}
+\usepackage{unicode-math}
+\setmathfont{STIXTwoMath-Regular.otf}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{margin=0.5cm, landscape}
+
+\begin{document}
+
+\subsection*{Commands for Latin Letters (A-Z, a-z)}
+
+\begin{itemize}
+    \item \texttt{\textbackslash{}symup} — upright ($\symup{A} \ldots \symup{Z}$ $\symup{a} \ldots \symup{z}$)
+    \item \texttt{\textbackslash{}symit} — italic ($\symit{A} \ldots \symit{Z}$ $\symit{a} \ldots \symit{z}$)
+    \item \texttt{\textbackslash{}symbf} — bold upright ($\symbf{A} \ldots \symbf{Z}$ $\symbf{a} \ldots \symbf{z}$)
+    \item \texttt{\textbackslash{}symsf} — sans-serif ($\symsf{A} \ldots \symsf{Z}$ $\symsf{a} \ldots \symsf{z}$)
+    \item \texttt{\textbackslash{}symtt} — typewriter ($\symtt{A} \ldots \symtt{Z}$ $\symtt{a} \ldots \symtt{z}$)
+    \item \texttt{\textbackslash{}symbfup} — bold upright ($\symbfup{A} \ldots \symbfup{Z}$ $\symbfup{a} \ldots \symbfup{z}$)
+    \item \texttt{\textbackslash{}symbfit} — bold italic ($\symbfit{A} \ldots \symbfit{Z}$ $\symbfit{a} \ldots \symbfit{z}$)
+    \item \texttt{\textbackslash{}symsfup} — sans-serif ($\symsfup{A} \ldots \symsfup{Z}$ $\symsfup{a} \ldots \symsfup{z}$)
+    \item \texttt{\textbackslash{}symsfit} — sans-serif italic ($\symsfit{A} \ldots \symsfit{Z}$ $\symsfit{a} \ldots \symsfit{z}$)
+    \item \texttt{\textbackslash{}symbfsf} — sans-serif bold ($\symbfsf{A} \ldots \symbfsf{Z}$ $\symbfsf{a} \ldots \symbfsf{z}$)
+    \item \texttt{\textbackslash{}symbfsfup} — sans-serif bold ($\symbfsfup{A} \ldots \symbfsfup{Z}$ $\symbfsfup{a} \ldots \symbfsfup{z}$)
+    \item \texttt{\textbackslash{}symbfsfit} — sans-serif bold italic ($\symbfsfit{A} \ldots \symbfsfit{Z}$ $\symbfsfit{a} \ldots \symbfsfit{z}$)
+    \item \texttt{\textbackslash{}symcal} — calligraphic ($\symcal{A} \ldots \symcal{Z}$ $\symcal{a} \ldots \symcal{z}$)
+    \item \texttt{\textbackslash{}symbfcal} — bold calligraphic ($\symbfcal{A} \ldots \symbfcal{Z}$ $\symbfcal{a} \ldots \symbfcal{z}$)
+    \item \texttt{\textbackslash{}symscr} — script ($\symscr{A} \ldots \symscr{Z}$ $\symscr{a} \ldots \symscr{z}$)
+    \item \texttt{\textbackslash{}symbfscr} — bold script ($\symbfscr{A} \ldots \symbfscr{Z}$ $\symbfscr{a} \ldots \symbfscr{z}$)
+    \item \texttt{\textbackslash{}symbb} — blackboard bold ($\symbb{A} \ldots \symbb{Z}$ $\symbb{a} \ldots \symbb{z}$)
+    \item \texttt{\textbackslash{}symbbit} — blackboard bold ($\symbbit{A} \ldots \symbbit{Z}$ $\symbbit{a} \ldots \symbbit{z}$)
+    \item \texttt{\textbackslash{}symfrak} — fraktur ($\symfrak{A} \ldots \symfrak{Z}$ $\symfrak{a} \ldots \symfrak{z}$)
+    \item \texttt{\textbackslash{}symbffrak} — bold fraktur ($\symbffrak{A} \ldots \symbffrak{Z}$ $\symbffrak{a} \ldots \symbffrak{z}$)
+\end{itemize}
+
+\subsection*{Commands for Greek Letters (Α-Ω, α-ω)}
+
+\begin{itemize}
+    \item \texttt{\textbackslash{}symup} — upright ($\symup{\Alpha} \ldots \symup{\Omega}$ $\symup{\alpha} \ldots \symup{\omega}$)
+    \item \texttt{\textbackslash{}symit} — italic ($\symit{\Alpha} \ldots \symit{\Omega}$ $\symit{\alpha} \ldots \symit{\omega}$)
+    \item \texttt{\textbackslash{}symbf} — bold upright ($\symbf{\Alpha} \ldots \symbf{\Omega}$ $\symbf{\alpha} \ldots \symbf{\omega}$)
+    \item \texttt{\textbackslash{}symsf} — sans-serif ($\symsf{\Alpha} \ldots \symsf{\Omega}$ $\symsf{\alpha} \ldots \symsf{\omega}$)
+    \item \texttt{\textbackslash{}symtt} — typewriter ($\symtt{\Alpha} \ldots \symtt{\Omega}$ $\symtt{\alpha} \ldots \symtt{\omega}$)
+    \item \texttt{\textbackslash{}symbfup} — bold ($\symbfup{\Alpha} \ldots \symbfup{\Omega}$ $\symbfup{\alpha} \ldots \symbfup{\omega}$)
+    \item \texttt{\textbackslash{}symbfit} — bold italic ($\symbfit{\Alpha} \ldots \symbfit{\Omega}$ $\symbfit{\alpha} \ldots \symbfit{\omega}$)
+    \item \texttt{\textbackslash{}symsfup} — sans-serif ($\symsfup{\Alpha} \ldots \symsfup{\Omega}$ $\symsfup{\alpha} \ldots \symsfup{\omega}$)
+    \item \texttt{\textbackslash{}symsfit} — sans-serif italic ($\symsfit{\Alpha} \ldots \symsfit{\Omega}$ $\symsfit{\alpha} \ldots \symsfit{\omega}$)
+    \item \texttt{\textbackslash{}symbfsf} — sans-serif bold ($\symbfsf{\Alpha} \ldots \symbfsf{\Omega}$ $\symbfsf{\alpha} \ldots \symbfsf{\omega}$)
+    \item \texttt{\textbackslash{}symbfsfup} — sans-serif bold ($\symbfsfup{\Alpha} \ldots \symbfsfup{\Omega}$ $\symbfsfup{\alpha} \ldots \symbfsfup{\omega}$)
+    \item \texttt{\textbackslash{}symbfsfit} — sans-serif bold italic ($\symbfsfit{\Alpha} \ldots \symbfsfit{\Omega}$ $\symbfsfit{\alpha} \ldots \symbfsfit{\omega}$)
+    \item \texttt{\textbackslash{}symcal} — calligraphic ($\symcal{\Alpha} \ldots \symcal{\Omega}$ $\symcal{\alpha} \ldots \symcal{\omega}$)
+    \item \texttt{\textbackslash{}symbfcal} — bold calligraphic ($\symbfcal{\Alpha} \ldots \symbfcal{\Omega}$ $\symbfcal{\alpha} \ldots \symbfcal{\omega}$)
+    \item \texttt{\textbackslash{}symscr} — script ($\symscr{\Alpha} \ldots \symscr{\Omega}$ $\symscr{\alpha} \ldots \symscr{\omega}$)
+    \item \texttt{\textbackslash{}symbfscr} — bold script ($\symbfscr{\Alpha} \ldots \symbfscr{\Omega}$ $\symbfscr{\alpha} \ldots \symbfscr{\omega}$)
+    \item \texttt{\textbackslash{}symbb} — blackboard bold ($\symbb{\Alpha} \ldots \symbb{\Omega}$ $\symbb{\alpha} \ldots \symbb{\omega}$)
+    \item \texttt{\textbackslash{}symbbit} — bold italic ($\symbbit{\Alpha} \ldots \symbbit{\Omega}$ $\symbbit{\alpha} \ldots \symbbit{\omega}$)
+    \item \texttt{\textbackslash{}symfrak} — fraktur ($\symfrak{\Alpha} \ldots \symfrak{\Omega}$ $\symfrak{\alpha} \ldots \symfrak{\omega}$)
+    \item \texttt{\textbackslash{}symbffrak} — bold fraktur ($\symbffrak{\Alpha} \ldots \symbffrak{\Omega}$ $\symbffrak{\alpha} \ldots \symbffrak{\omega}$)
+\end{itemize}
+
+\newpage
+
+\section*{Latin Letters: Full Alphabet (A-Z, a-z) with Unicode Glyphs}
+
+\subsection*{\texttt{\textbackslash{}symup} (Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symup{A}| & $\symup{A}$ & $\symup{a}$ & $ 𝖠 𝖺 $ \\
+\verb|\symup{B}| & $\symup{B}$ & $\symup{b}$ & $ 𝖡 𝖻 $ \\
+\verb|\symup{C}| & $\symup{C}$ & $\symup{c}$ & $ 𝖢 𝖼 $ \\
+\verb|\symup{D}| & $\symup{D}$ & $\symup{d}$ & $ 𝖣 𝖽 $ \\
+\verb|\symup{E}| & $\symup{E}$ & $\symup{e}$ & $ 𝖤 𝖾 $ \\
+\verb|\symup{F}| & $\symup{F}$ & $\symup{f}$ & $ 𝖥 𝖿 $ \\
+\verb|\symup{G}| & $\symup{G}$ & $\symup{g}$ & $ 𝖦 𝗀 $ \\
+\verb|\symup{H}| & $\symup{H}$ & $\symup{h}$ & $ 𝖧 𝗁 $ \\
+\verb|\symup{I}| & $\symup{I}$ & $\symup{i}$ & $ 𝖨 𝗂 $ \\
+\verb|\symup{J}| & $\symup{J}$ & $\symup{j}$ & $ 𝖩 𝗃 $ \\
+\verb|\symup{K}| & $\symup{K}$ & $\symup{k}$ & $ 𝖪 𝗄 $ \\
+\verb|\symup{L}| & $\symup{L}$ & $\symup{l}$ & $ 𝖫 𝗅 $ \\
+\verb|\symup{M}| & $\symup{M}$ & $\symup{m}$ & $ 𝖬 𝗆 $ \\
+\verb|\symup{N}| & $\symup{N}$ & $\symup{n}$ & $ 𝖭 𝗇 $ \\
+\verb|\symup{O}| & $\symup{O}$ & $\symup{o}$ & $ 𝖮 𝗈 $ \\
+\verb|\symup{P}| & $\symup{P}$ & $\symup{p}$ & $ 𝖯 𝗉 $ \\
+\verb|\symup{Q}| & $\symup{Q}$ & $\symup{q}$ & $ 𝖰 𝗊 $ \\
+\verb|\symup{R}| & $\symup{R}$ & $\symup{r}$ & $ 𝖱 𝗋 $ \\
+\verb|\symup{S}| & $\symup{S}$ & $\symup{s}$ & $ 𝖲 𝗌 $ \\
+\verb|\symup{T}| & $\symup{T}$ & $\symup{t}$ & $ 𝖳 𝗍 $ \\
+\verb|\symup{U}| & $\symup{U}$ & $\symup{u}$ & $ 𝖴 𝗎 $ \\
+\verb|\symup{V}| & $\symup{V}$ & $\symup{v}$ & $ 𝖵 𝗏 $ \\
+\verb|\symup{W}| & $\symup{W}$ & $\symup{w}$ & $ 𝖶 𝗐 $ \\
+\verb|\symup{X}| & $\symup{X}$ & $\symup{x}$ & $ 𝖷 𝗑 $ \\
+\verb|\symup{Y}| & $\symup{Y}$ & $\symup{y}$ & $ 𝖸 𝗒 $ \\
+\verb|\symup{Z}| & $\symup{Z}$ & $\symup{z}$ & $ 𝖹 𝗓 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symit} (Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symit{A}| & $\symit{A}$ & $\symit{a}$ & $ 𝐴 𝑎 $ \\
+\verb|\symit{B}| & $\symit{B}$ & $\symit{b}$ & $ 𝐵 𝑏 $ \\
+\verb|\symit{C}| & $\symit{C}$ & $\symit{c}$ & $ 𝐶 𝑐 $ \\
+\verb|\symit{D}| & $\symit{D}$ & $\symit{d}$ & $ 𝐷 𝑑 $ \\
+\verb|\symit{E}| & $\symit{E}$ & $\symit{e}$ & $ 𝐸 𝑒 $ \\
+\verb|\symit{F}| & $\symit{F}$ & $\symit{f}$ & $ 𝐹 𝑓 $ \\
+\verb|\symit{G}| & $\symit{G}$ & $\symit{g}$ & $ 𝐺 𝑔 $ \\
+\verb|\symit{H}| & $\symit{H}$ & $\symit{h}$ & $ 𝐻 ℎ $ \\
+\verb|\symit{I}| & $\symit{I}$ & $\symit{i}$ & $ 𝐼 𝑖 $ \\
+\verb|\symit{J}| & $\symit{J}$ & $\symit{j}$ & $ 𝐽 𝑗 $ \\
+\verb|\symit{K}| & $\symit{K}$ & $\symit{k}$ & $ 𝐾 𝑘 $ \\
+\verb|\symit{L}| & $\symit{L}$ & $\symit{l}$ & $ 𝐿 𝑙 $ \\
+\verb|\symit{M}| & $\symit{M}$ & $\symit{m}$ & $ 𝑀 𝑚 $ \\
+\verb|\symit{N}| & $\symit{N}$ & $\symit{n}$ & $ 𝑁 𝑛 $ \\
+\verb|\symit{O}| & $\symit{O}$ & $\symit{o}$ & $ 𝑂 𝑜 $ \\
+\verb|\symit{P}| & $\symit{P}$ & $\symit{p}$ & $ 𝑃 𝑝 $ \\
+\verb|\symit{Q}| & $\symit{Q}$ & $\symit{q}$ & $ 𝑄 𝑞 $ \\
+\verb|\symit{R}| & $\symit{R}$ & $\symit{r}$ & $ 𝑅 𝑟 $ \\
+\verb|\symit{S}| & $\symit{S}$ & $\symit{s}$ & $ 𝑆 𝑠 $ \\
+\verb|\symit{T}| & $\symit{T}$ & $\symit{t}$ & $ 𝑇 𝑡 $ \\
+\verb|\symit{U}| & $\symit{U}$ & $\symit{u}$ & $ 𝑈 𝑢 $ \\
+\verb|\symit{V}| & $\symit{V}$ & $\symit{v}$ & $ 𝑉 𝑣 $ \\
+\verb|\symit{W}| & $\symit{W}$ & $\symit{w}$ & $ 𝑊 𝑤 $ \\
+\verb|\symit{X}| & $\symit{X}$ & $\symit{x}$ & $ 𝑋 𝑥 $ \\
+\verb|\symit{Y}| & $\symit{Y}$ & $\symit{y}$ & $ 𝑌 𝑦 $ \\
+\verb|\symit{Z}| & $\symit{Z}$ & $\symit{z}$ & $ 𝑍 𝑧 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbf} (Bold Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbf{A}| & $\symbf{A}$ & $\symbf{a}$ & $ 𝐀 𝐚 $ \\
+\verb|\symbf{B}| & $\symbf{B}$ & $\symbf{b}$ & $ 𝐁 𝐛 $ \\
+\verb|\symbf{C}| & $\symbf{C}$ & $\symbf{c}$ & $ 𝐂 𝐜 $ \\
+\verb|\symbf{D}| & $\symbf{D}$ & $\symbf{d}$ & $ 𝐃 𝐝 $ \\
+\verb|\symbf{E}| & $\symbf{E}$ & $\symbf{e}$ & $ 𝐄 𝐞 $ \\
+\verb|\symbf{F}| & $\symbf{F}$ & $\symbf{f}$ & $ 𝐅 𝐟 $ \\
+\verb|\symbf{G}| & $\symbf{G}$ & $\symbf{g}$ & $ 𝐆 𝐠 $ \\
+\verb|\symbf{H}| & $\symbf{H}$ & $\symbf{h}$ & $ 𝐇 𝐡 $ \\
+\verb|\symbf{I}| & $\symbf{I}$ & $\symbf{i}$ & $ 𝐈 𝐢 $ \\
+\verb|\symbf{J}| & $\symbf{J}$ & $\symbf{j}$ & $ 𝐉 𝐣 $ \\
+\verb|\symbf{K}| & $\symbf{K}$ & $\symbf{k}$ & $ 𝐊 𝐤 $ \\
+\verb|\symbf{L}| & $\symbf{L}$ & $\symbf{l}$ & $ 𝐋 𝐥 $ \\
+\verb|\symbf{M}| & $\symbf{M}$ & $\symbf{m}$ & $ 𝐌 𝐦 $ \\
+\verb|\symbf{N}| & $\symbf{N}$ & $\symbf{n}$ & $ 𝐍 𝐧 $ \\
+\verb|\symbf{O}| & $\symbf{O}$ & $\symbf{o}$ & $ 𝐎 𝐨 $ \\
+\verb|\symbf{P}| & $\symbf{P}$ & $\symbf{p}$ & $ 𝐏 𝐩 $ \\
+\verb|\symbf{Q}| & $\symbf{Q}$ & $\symbf{q}$ & $ 𝐐 𝐪 $ \\
+\verb|\symbf{R}| & $\symbf{R}$ & $\symbf{r}$ & $ 𝐑 𝐫 $ \\
+\verb|\symbf{S}| & $\symbf{S}$ & $\symbf{s}$ & $ 𝐒 𝐬 $ \\
+\verb|\symbf{T}| & $\symbf{T}$ & $\symbf{t}$ & $ 𝐓 𝐭 $ \\
+\verb|\symbf{U}| & $\symbf{U}$ & $\symbf{u}$ & $ 𝐔 𝐮 $ \\
+\verb|\symbf{V}| & $\symbf{V}$ & $\symbf{v}$ & $ 𝐕 𝐯 $ \\
+\verb|\symbf{W}| & $\symbf{W}$ & $\symbf{w}$ & $ 𝐖 𝐰 $ \\
+\verb|\symbf{X}| & $\symbf{X}$ & $\symbf{x}$ & $ 𝐗 𝐱 $ \\
+\verb|\symbf{Y}| & $\symbf{Y}$ & $\symbf{y}$ & $ 𝐘 𝐲 $ \\
+\verb|\symbf{Z}| & $\symbf{Z}$ & $\symbf{z}$ & $ 𝐙 𝐳 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symsf} (Sans-serif)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symsf{A}| & $\symsf{A}$ & $\symsf{a}$ & $ 𝖠 𝖺 $ \\
+\verb|\symsf{B}| & $\symsf{B}$ & $\symsf{b}$ & $ 𝖡 𝖻 $ \\
+\verb|\symsf{C}| & $\symsf{C}$ & $\symsf{c}$ & $ 𝖢 𝖼 $ \\
+\verb|\symsf{D}| & $\symsf{D}$ & $\symsf{d}$ & $ 𝖣 𝖽 $ \\
+\verb|\symsf{E}| & $\symsf{E}$ & $\symsf{e}$ & $ 𝖾 𝗌 $ \\
+\verb|\symsf{F}| & $\symsf{F}$ & $\symsf{f}$ & $ 𝖥 𝖿 $ \\
+\verb|\symsf{G}| & $\symsf{G}$ & $\symsf{g}$ & $ 𝖦 𝗀 $ \\
+\verb|\symsf{H}| & $\symsf{H}$ & $\symsf{h}$ & $ 𝖧 𝗁 $ \\
+\verb|\symsf{I}| & $\symsf{I}$ & $\symsf{i}$ & $ 𝖨 𝗂 $ \\
+\verb|\symsf{J}| & $\symsf{J}$ & $\symsf{j}$ & $ 𝖩 𝗃 $ \\
+\verb|\symsf{K}| & $\symsf{K}$ & $\symsf{k}$ & $ 𝖪 𝗄 $ \\
+\verb|\symsf{L}| & $\symsf{L}$ & $\symsf{l}$ & $ 𝖫 𝗅 $ \\
+\verb|\symsf{M}| & $\symsf{M}$ & $\symsf{m}$ & $ 𝖬 𝗆 $ \\
+\verb|\symsf{N}| & $\symsf{N}$ & $\symsf{n}$ & $ 𝖭 𝗇 $ \\
+\verb|\symsf{O}| & $\symsf{O}$ & $\symsf{o}$ & $ 𝖮 𝗈 $ \\
+\verb|\symsf{P}| & $\symsf{P}$ & $\symsf{p}$ & $ 𝖯 𝗉 $ \\
+\verb|\symsf{Q}| & $\symsf{Q}$ & $\symsf{q}$ & $ 𝖰 𝗊 $ \\
+\verb|\symsf{R}| & $\symsf{R}$ & $\symsf{r}$ & $ 𝖱 𝗋 $ \\
+\verb|\symsf{S}| & $\symsf{S}$ & $\symsf{s}$ & $ 𝖲 𝗌 $ \\
+\verb|\symsf{T}| & $\symsf{T}$ & $\symsf{t}$ & $ 𝖳 𝗍 $ \\
+\verb|\symsf{U}| & $\symsf{U}$ & $\symsf{u}$ & $ 𝖴 𝗎 $ \\
+\verb|\symsf{V}| & $\symsf{V}$ & $\symsf{v}$ & $ 𝖵 𝗏 $ \\
+\verb|\symsf{W}| & $\symsf{W}$ & $\symsf{w}$ & $ 𝖶 𝗐 $ \\
+\verb|\symsf{X}| & $\symsf{X}$ & $\symsf{x}$ & $ 𝖷 𝗑 $ \\
+\verb|\symsf{Y}| & $\symsf{Y}$ & $\symsf{y}$ & $ 𝖸 𝗒 $ \\
+\verb|\symsf{Z}| & $\symsf{Z}$ & $\symsf{z}$ & $ 𝖹 𝗓 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symtt} (Typewriter)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symtt{A}| & $\symtt{A}$ & $\symtt{a}$ & $ 𝙰 𝚊 $ \\
+\verb|\symtt{B}| & $\symtt{B}$ & $\symtt{b}$ & $ 𝙱 𝚋 $ \\
+\verb|\symtt{C}| & $\symtt{C}$ & $\symtt{c}$ & $ 𝙲 𝚌 $ \\
+\verb|\symtt{D}| & $\symtt{D}$ & $\symtt{d}$ & $ 𝙳 𝚍 $ \\
+\verb|\symtt{E}| & $\symtt{E}$ & $\symtt{e}$ & $ 𝙴 𝚎 $ \\
+\verb|\symtt{F}| & $\symtt{F}$ & $\symtt{f}$ & $ 𝙵 𝚏 $ \\
+\verb|\symtt{G}| & $\symtt{G}$ & $\symtt{g}$ & $ 𝙶 𝚐 $ \\
+\verb|\symtt{H}| & $\symtt{H}$ & $\symtt{h}$ & $ 𝙷 𝚑 $ \\
+\verb|\symtt{I}| & $\symtt{I}$ & $\symtt{i}$ & $ 𝙸 𝚒 $ \\
+\verb|\symtt{J}| & $\symtt{J}$ & $\symtt{j}$ & $ 𝙹 𝚓 $ \\
+\verb|\symtt{K}| & $\symtt{K}$ & $\symtt{k}$ & $ 𝙺 𝚔 $ \\
+\verb|\symtt{L}| & $\symtt{L}$ & $\symtt{l}$ & $ 𝙻 𝚕 $ \\
+\verb|\symtt{M}| & $\symtt{M}$ & $\symtt{m}$ & $ 𝙼 𝚖 $ \\
+\verb|\symtt{N}| & $\symtt{N}$ & $\symtt{n}$ & $ 𝙽 𝚗 $ \\
+\verb|\symtt{O}| & $\symtt{O}$ & $\symtt{o}$ & $ 𝙾 𝚘 $ \\
+\verb|\symtt{P}| & $\symtt{P}$ & $\symtt{p}$ & $ 𝙿 𝚙 $ \\
+\verb|\symtt{Q}| & $\symtt{Q}$ & $\symtt{q}$ & $ 𝚀 𝚚 $ \\
+\verb|\symtt{R}| & $\symtt{R}$ & $\symtt{r}$ & $ 𝚁 𝚛 $ \\
+\verb|\symtt{S}| & $\symtt{S}$ & $\symtt{s}$ & $ 𝚂 𝚜 $ \\
+\verb|\symtt{T}| & $\symtt{T}$ & $\symtt{t}$ & $ 𝚃 𝚝 $ \\
+\verb|\symtt{U}| & $\symtt{U}$ & $\symtt{u}$ & $ 𝚄 𝚞 $ \\
+\verb|\symtt{V}| & $\symtt{V}$ & $\symtt{v}$ & $ 𝚅 𝚟 $ \\
+\verb|\symtt{W}| & $\symtt{W}$ & $\symtt{w}$ & $ 𝚆 𝚠 $ \\
+\verb|\symtt{X}| & $\symtt{X}$ & $\symtt{x}$ & $ 𝚇 𝚡 $ \\
+\verb|\symtt{Y}| & $\symtt{Y}$ & $\symtt{y}$ & $ 𝚈 𝚢 $ \\
+\verb|\symtt{Z}| & $\symtt{Z}$ & $\symtt{z}$ & $ 𝚉 𝚣 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfup} (Bold Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfup{A}| & $\symbfup{A}$ & $\symbfup{a}$ & $ 𝐀 𝐚 $ \\
+\verb|\symbfup{B}| & $\symbfup{B}$ & $\symbfup{b}$ & $ 𝐁 𝐛 $ \\
+\verb|\symbfup{C}| & $\symbfup{C}$ & $\symbfup{c}$ & $ 𝐂 𝐜 $ \\
+\verb|\symbfup{D}| & $\symbfup{D}$ & $\symbfup{d}$ & $ 𝐃 𝐝 $ \\
+\verb|\symbfup{E}| & $\symbfup{E}$ & $\symbfup{e}$ & $ 𝐄 𝐞 $ \\
+\verb|\symbfup{F}| & $\symbfup{F}$ & $\symbfup{f}$ & $ 𝐅 𝐟 $ \\
+\verb|\symbfup{G}| & $\symbfup{G}$ & $\symbfup{g}$ & $ 𝐆 𝐠 $ \\
+\verb|\symbfup{H}| & $\symbfup{H}$ & $\symbfup{h}$ & $ 𝐇 𝐡 $ \\
+\verb|\symbfup{I}| & $\symbfup{I}$ & $\symbfup{i}$ & $ 𝐈 𝐢 $ \\
+\verb|\symbfup{J}| & $\symbfup{J}$ & $\symbfup{j}$ & $ 𝐉 𝐣 $ \\
+\verb|\symbfup{K}| & $\symbfup{K}$ & $\symbfup{k}$ & $ 𝐊 𝐤 $ \\
+\verb|\symbfup{L}| & $\symbfup{L}$ & $\symbfup{l}$ & $ 𝐋 𝐥 $ \\
+\verb|\symbfup{M}| & $\symbfup{M}$ & $\symbfup{m}$ & $ 𝐌 𝐦 $ \\
+\verb|\symbfup{N}| & $\symbfup{N}$ & $\symbfup{n}$ & $ 𝐍 𝐧 $ \\
+\verb|\symbfup{O}| & $\symbfup{O}$ & $\symbfup{o}$ & $ 𝐎 𝐨 $ \\
+\verb|\symbfup{P}| & $\symbfup{P}$ & $\symbfup{p}$ & $ 𝐏 𝐩 $ \\
+\verb|\symbfup{Q}| & $\symbfup{Q}$ & $\symbfup{q}$ & $ 𝐐 𝐪 $ \\
+\verb|\symbfup{R}| & $\symbfup{R}$ & $\symbfup{r}$ & $ 𝐑 𝐫 $ \\
+\verb|\symbfup{S}| & $\symbfup{S}$ & $\symbfup{s}$ & $ 𝐒 𝐬 $ \\
+\verb|\symbfup{T}| & $\symbfup{T}$ & $\symbfup{t}$ & $ 𝐓 𝐭 $ \\
+\verb|\symbfup{U}| & $\symbfup{U}$ & $\symbfup{u}$ & $ 𝐔 𝐮 $ \\
+\verb|\symbfup{V}| & $\symbfup{V}$ & $\symbfup{v}$ & $ 𝐕 𝐯 $ \\
+\verb|\symbfup{W}| & $\symbfup{W}$ & $\symbfup{w}$ & $ 𝐖 𝐰 $ \\
+\verb|\symbfup{X}| & $\symbfup{X}$ & $\symbfup{x}$ & $ 𝐗 𝐱 $ \\
+\verb|\symbfup{Y}| & $\symbfup{Y}$ & $\symbfup{y}$ & $ 𝐘 𝐲 $ \\
+\verb|\symbfup{Z}| & $\symbfup{Z}$ & $\symbfup{z}$ & $ 𝐙 𝐳 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfit} (Bold Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfit{A}| & $\symbfit{A}$ & $\symbfit{a}$ & 𝑨 𝒂 \\
+\verb|\symbfit{B}| & $\symbfit{B}$ & $\symbfit{b}$ & 𝑩 𝒃 \\
+\verb|\symbfit{C}| & $\symbfit{C}$ & $\symbfit{c}$ & 𝑪 𝒄 \\
+\verb|\symbfit{D}| & $\symbfit{D}$ & $\symbfit{d}$ & 𝑫 𝒅 \\
+\verb|\symbfit{E}| & $\symbfit{E}$ & $\symbfit{e}$ & 𝑬 𝒆 \\
+\verb|\symbfit{F}| & $\symbfit{F}$ & $\symbfit{f}$ & 𝑭 𝒇 \\
+\verb|\symbfit{G}| & $\symbfit{G}$ & $\symbfit{g}$ & 𝑮 𝒈 \\
+\verb|\symbfit{H}| & $\symbfit{H}$ & $\symbfit{h}$ & 𝑯 𝒉 \\
+\verb|\symbfit{I}| & $\symbfit{I}$ & $\symbfit{i}$ & 𝑰 𝒊 \\
+\verb|\symbfit{J}| & $\symbfit{J}$ & $\symbfit{j}$ & 𝑱 𝒋 \\
+\verb|\symbfit{K}| & $\symbfit{K}$ & $\symbfit{k}$ & 𝑲 𝒌 \\
+\verb|\symbfit{L}| & $\symbfit{L}$ & $\symbfit{l}$ & 𝑳 𝒍 \\
+\verb|\symbfit{M}| & $\symbfit{M}$ & $\symbfit{m}$ & 𝑴 𝒎 \\
+\verb|\symbfit{N}| & $\symbfit{N}$ & $\symbfit{n}$ & 𝑵 𝒏 \\
+\verb|\symbfit{O}| & $\symbfit{O}$ & $\symbfit{o}$ & 𝑶 𝒐 \\
+\verb|\symbfit{P}| & $\symbfit{P}$ & $\symbfit{p}$ & 𝑷 𝒑 \\
+\verb|\symbfit{Q}| & $\symbfit{Q}$ & $\symbfit{q}$ & 𝑸 𝒒 \\
+\verb|\symbfit{R}| & $\symbfit{R}$ & $\symbfit{r}$ & 𝑹 𝒓 \\
+\verb|\symbfit{S}| & $\symbfit{S}$ & $\symbfit{s}$ & 𝑺 𝒔 \\
+\verb|\symbfit{T}| & $\symbfit{T}$ & $\symbfit{t}$ & 𝑻 𝒕 \\
+\verb|\symbfit{U}| & $\symbfit{U}$ & $\symbfit{u}$ & 𝑼 𝒖 \\
+\verb|\symbfit{V}| & $\symbfit{V}$ & $\symbfit{v}$ & 𝑽 𝒗 \\
+\verb|\symbfit{W}| & $\symbfit{W}$ & $\symbfit{w}$ & 𝑾 𝒘 \\
+\verb|\symbfit{X}| & $\symbfit{X}$ & $\symbfit{x}$ & 𝑿 𝒙 \\
+\verb|\symbfit{Y}| & $\symbfit{Y}$ & $\symbfit{y}$ & 𝒀 𝒚 \\
+\verb|\symbfit{Z}| & $\symbfit{Z}$ & $\symbfit{z}$ & 𝒁 𝒛 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symsfup} (Sans-Serif Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symsfup{A}| & $\symsfup{A}$ & $\symsfup{a}$ & $ 𝖠 𝖺 $ \\
+\verb|\symsfup{B}| & $\symsfup{B}$ & $\symsfup{b}$ & $ 𝖡 𝖻 $ \\
+\verb|\symsfup{C}| & $\symsfup{C}$ & $\symsfup{c}$ & $ 𝖢 𝖼 $ \\
+\verb|\symsfup{D}| & $\symsfup{D}$ & $\symsfup{d}$ & $ 𝖣 𝖽 $ \\
+\verb|\symsfup{E}| & $\symsfup{E}$ & $\symsfup{e}$ & $ 𝖤 𝖾 $ \\
+\verb|\symsfup{F}| & $\symsfup{F}$ & $\symsfup{f}$ & $ 𝖥 𝖿 $ \\
+\verb|\symsfup{G}| & $\symsfup{G}$ & $\symsfup{g}$ & $ 𝖦 𝗀 $ \\
+\verb|\symsfup{H}| & $\symsfup{H}$ & $\symsfup{h}$ & $ 𝖧 𝗁 $ \\
+\verb|\symsfup{I}| & $\symsfup{I}$ & $\symsfup{i}$ & $ 𝖨 𝗂 $ \\
+\verb|\symsfup{J}| & $\symsfup{J}$ & $\symsfup{j}$ & $ 𝖩 𝗃 $ \\
+\verb|\symsfup{K}| & $\symsfup{K}$ & $\symsfup{k}$ & $ 𝖪 𝗄 $ \\
+\verb|\symsfup{L}| & $\symsfup{L}$ & $\symsfup{l}$ & $ 𝖫 𝗅 $ \\
+\verb|\symsfup{M}| & $\symsfup{M}$ & $\symsfup{m}$ & $ 𝖬 𝗆 $ \\
+\verb|\symsfup{N}| & $\symsfup{N}$ & $\symsfup{n}$ & $ 𝖭 𝗇 $ \\
+\verb|\symsfup{O}| & $\symsfup{O}$ & $\symsfup{o}$ & $ 𝖮 𝗈 $ \\
+\verb|\symsfup{P}| & $\symsfup{P}$ & $\symsfup{p}$ & $ 𝖯 𝗉 $ \\
+\verb|\symsfup{Q}| & $\symsfup{Q}$ & $\symsfup{q}$ & $ 𝖰 𝗊 $ \\
+\verb|\symsfup{R}| & $\symsfup{R}$ & $\symsfup{r}$ & $ 𝖱 𝗋 $ \\
+\verb|\symsfup{S}| & $\symsfup{S}$ & $\symsfup{s}$ & $ 𝖲 𝗌 $ \\
+\verb|\symsfup{T}| & $\symsfup{T}$ & $\symsfup{t}$ & $ 𝖳 𝗍 $ \\
+\verb|\symsfup{U}| & $\symsfup{U}$ & $\symsfup{u}$ & $ 𝖴 𝗎 $ \\
+\verb|\symsfup{V}| & $\symsfup{V}$ & $\symsfup{v}$ & $ 𝖵 𝗏 $ \\
+\verb|\symsfup{W}| & $\symsfup{W}$ & $\symsfup{w}$ & $ 𝖶 𝗐 $ \\
+\verb|\symsfup{X}| & $\symsfup{X}$ & $\symsfup{x}$ & $ 𝖷 𝗑 $ \\
+\verb|\symsfup{Y}| & $\symsfup{Y}$ & $\symsfup{y}$ & $ 𝖸 𝗒 $ \\
+\verb|\symsfup{Z}| & $\symsfup{Z}$ & $\symsfup{z}$ & $ 𝖹 𝗓 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symsfit} (Sans-serif Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symsfit{A}| & $\symsfit{A}$ & $\symsfit{a}$ & 𝘈 𝘢 \\
+\verb|\symsfit{B}| & $\symsfit{B}$ & $\symsfit{b}$ & 𝘉 𝘣 \\
+\verb|\symsfit{C}| & $\symsfit{C}$ & $\symsfit{c}$ & 𝘊 𝘤 \\
+\verb|\symsfit{D}| & $\symsfit{D}$ & $\symsfit{d}$ & 𝘋 𝘥 \\
+\verb|\symsfit{E}| & $\symsfit{E}$ & $\symsfit{e}$ & 𝘌 𝘦 \\
+\verb|\symsfit{F}| & $\symsfit{F}$ & $\symsfit{f}$ & 𝘍 𝘧 \\
+\verb|\symsfit{G}| & $\symsfit{G}$ & $\symsfit{g}$ & 𝘎 𝘨 \\
+\verb|\symsfit{H}| & $\symsfit{H}$ & $\symsfit{h}$ & 𝘏 𝘩 \\
+\verb|\symsfit{I}| & $\symsfit{I}$ & $\symsfit{i}$ & 𝘐 𝘪 \\
+\verb|\symsfit{J}| & $\symsfit{J}$ & $\symsfit{j}$ & 𝘑 𝘫 \\
+\verb|\symsfit{K}| & $\symsfit{K}$ & $\symsfit{k}$ & 𝘒 𝘬 \\
+\verb|\symsfit{L}| & $\symsfit{L}$ & $\symsfit{l}$ & 𝘓 𝘭 \\
+\verb|\symsfit{M}| & $\symsfit{M}$ & $\symsfit{m}$ & 𝘔 𝘮 \\
+\verb|\symsfit{N}| & $\symsfit{N}$ & $\symsfit{n}$ & 𝘕 𝘯 \\
+\verb|\symsfit{O}| & $\symsfit{O}$ & $\symsfit{o}$ & 𝘖 𝘰 \\
+\verb|\symsfit{P}| & $\symsfit{P}$ & $\symsfit{p}$ & 𝘗 𝘱 \\
+\verb|\symsfit{Q}| & $\symsfit{Q}$ & $\symsfit{q}$ & 𝘘 𝘲 \\
+\verb|\symsfit{R}| & $\symsfit{R}$ & $\symsfit{r}$ & 𝘙 𝘳 \\
+\verb|\symsfit{S}| & $\symsfit{S}$ & $\symsfit{s}$ & 𝘚 𝘴 \\
+\verb|\symsfit{T}| & $\symsfit{T}$ & $\symsfit{t}$ & 𝘛 𝘵 \\
+\verb|\symsfit{U}| & $\symsfit{U}$ & $\symsfit{u}$ & 𝘜 𝘶 \\
+\verb|\symsfit{V}| & $\symsfit{V}$ & $\symsfit{v}$ & 𝘝 𝘷 \\
+\verb|\symsfit{W}| & $\symsfit{W}$ & $\symsfit{w}$ & 𝘞 𝘸 \\
+\verb|\symsfit{X}| & $\symsfit{X}$ & $\symsfit{x}$ & 𝘟 𝘹 \\
+\verb|\symsfit{Y}| & $\symsfit{Y}$ & $\symsfit{y}$ & 𝘠 𝘺 \\
+\verb|\symsfit{Z}| & $\symsfit{Z}$ & $\symsfit{z}$ & 𝘡 𝘻 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfsf} (Sans-serif Bold)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfsf{A}| & $\symbfsf{A}$ & $\symbfsf{a}$ & $ 𝗔 𝗮 $ \\
+\verb|\symbfsf{B}| & $\symbfsf{B}$ & $\symbfsf{b}$ & $ 𝗕 𝗯 $ \\
+\verb|\symbfsf{C}| & $\symbfsf{C}$ & $\symbfsf{c}$ & $ 𝗖 𝗰 $ \\
+\verb|\symbfsf{D}| & $\symbfsf{D}$ & $\symbfsf{d}$ & $ 𝗗 𝗱 $ \\
+\verb|\symbfsf{E}| & $\symbfsf{E}$ & $\symbfsf{e}$ & $ 𝗘 𝗲 $ \\
+\verb|\symbfsf{F}| & $\symbfsf{F}$ & $\symbfsf{f}$ & $ 𝗙 𝗳 $ \\
+\verb|\symbfsf{G}| & $\symbfsf{G}$ & $\symbfsf{g}$ & $ 𝗚 𝗴 $ \\
+\verb|\symbfsf{H}| & $\symbfsf{H}$ & $\symbfsf{h}$ & $ 𝗛 𝗵 $ \\
+\verb|\symbfsf{I}| & $\symbfsf{I}$ & $\symbfsf{i}$ & $ 𝗜 𝗶 $ \\
+\verb|\symbfsf{J}| & $\symbfsf{J}$ & $\symbfsf{j}$ & $ 𝗝 𝗷 $ \\
+\verb|\symbfsf{K}| & $\symbfsf{K}$ & $\symbfsf{k}$ & $ 𝗞 𝗸 $ \\
+\verb|\symbfsf{L}| & $\symbfsf{L}$ & $\symbfsf{l}$ & $ 𝗟 𝗹 $ \\
+\verb|\symbfsf{M}| & $\symbfsf{M}$ & $\symbfsf{m}$ & $ 𝗠 𝗺 $ \\
+\verb|\symbfsf{N}| & $\symbfsf{N}$ & $\symbfsf{n}$ & $ 𝗡 𝗻 $ \\
+\verb|\symbfsf{O}| & $\symbfsf{O}$ & $\symbfsf{o}$ & $ 𝗢 𝗼 $ \\
+\verb|\symbfsf{P}| & $\symbfsf{P}$ & $\symbfsf{p}$ & $ 𝗣 𝗽 $ \\
+\verb|\symbfsf{Q}| & $\symbfsf{Q}$ & $\symbfsf{q}$ & $ 𝗤 𝗾 $ \\
+\verb|\symbfsf{R}| & $\symbfsf{R}$ & $\symbfsf{r}$ & $ 𝗥 𝗿 $ \\
+\verb|\symbfsf{S}| & $\symbfsf{S}$ & $\symbfsf{s}$ & $ 𝗦 𝘀 $ \\
+\verb|\symbfsf{T}| & $\symbfsf{T}$ & $\symbfsf{t}$ & $ 𝗧 𝘁 $ \\
+\verb|\symbfsf{U}| & $\symbfsf{U}$ & $\symbfsf{u}$ & $ 𝗨 𝘂 $ \\
+\verb|\symbfsf{V}| & $\symbfsf{V}$ & $\symbfsf{v}$ & $ 𝗩 𝘃 $ \\
+\verb|\symbfsf{W}| & $\symbfsf{W}$ & $\symbfsf{w}$ & $ 𝗪 𝘄 $ \\
+\verb|\symbfsf{X}| & $\symbfsf{X}$ & $\symbfsf{x}$ & $ 𝗫 𝘅 $ \\
+\verb|\symbfsf{Y}| & $\symbfsf{Y}$ & $\symbfsf{y}$ & $ 𝗬 𝘆 $ \\
+\verb|\symbfsf{Z}| & $\symbfsf{Z}$ & $\symbfsf{z}$ & $ 𝗭 𝘇 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfsfup} (Sans-Serif Bold Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfsfup{A}| & $\symbfsfup{A}$ & $\symbfsfup{a}$ & $ 𝗔 𝗮 $ \\
+\verb|\symbfsfup{B}| & $\symbfsfup{B}$ & $\symbfsfup{b}$ & $ 𝗕 𝗯 $ \\
+\verb|\symbfsfup{C}| & $\symbfsfup{C}$ & $\symbfsfup{c}$ & $ 𝗖 𝗰 $ \\
+\verb|\symbfsfup{D}| & $\symbfsfup{D}$ & $\symbfsfup{d}$ & $ 𝗗 𝗱 $ \\
+\verb|\symbfsfup{E}| & $\symbfsfup{E}$ & $\symbfsfup{e}$ & $ 𝗘 𝗲 $ \\
+\verb|\symbfsfup{F}| & $\symbfsfup{F}$ & $\symbfsfup{f}$ & $ 𝗙 𝗳 $ \\
+\verb|\symbfsfup{G}| & $\symbfsfup{G}$ & $\symbfsfup{g}$ & $ 𝗚 𝗴 $ \\
+\verb|\symbfsfup{H}| & $\symbfsfup{H}$ & $\symbfsfup{h}$ & $ 𝗛 𝗵 $ \\
+\verb|\symbfsfup{I}| & $\symbfsfup{I}$ & $\symbfsfup{i}$ & $ 𝗜 𝗶 $ \\
+\verb|\symbfsfup{J}| & $\symbfsfup{J}$ & $\symbfsfup{j}$ & $ 𝗝 𝗷 $ \\
+\verb|\symbfsfup{K}| & $\symbfsfup{K}$ & $\symbfsfup{k}$ & $ 𝗞 𝗸 $ \\
+\verb|\symbfsfup{L}| & $\symbfsfup{L}$ & $\symbfsfup{l}$ & $ 𝗟 𝗹 $ \\
+\verb|\symbfsfup{M}| & $\symbfsfup{M}$ & $\symbfsfup{m}$ & $ 𝗠 𝗺 $ \\
+\verb|\symbfsfup{N}| & $\symbfsfup{N}$ & $\symbfsfup{n}$ & $ 𝗡 𝗻 $ \\
+\verb|\symbfsfup{O}| & $\symbfsfup{O}$ & $\symbfsfup{o}$ & $ 𝗢 𝗼 $ \\
+\verb|\symbfsfup{P}| & $\symbfsfup{P}$ & $\symbfsfup{p}$ & $ 𝗣 𝗽 $ \\
+\verb|\symbfsfup{Q}| & $\symbfsfup{Q}$ & $\symbfsfup{q}$ & $ 𝗤 𝗾 $ \\
+\verb|\symbfsfup{R}| & $\symbfsfup{R}$ & $\symbfsfup{r}$ & $ 𝗥 𝗿 $ \\
+\verb|\symbfsfup{S}| & $\symbfsfup{S}$ & $\symbfsfup{s}$ & $ 𝗦 𝘀 $ \\
+\verb|\symbfsfup{T}| & $\symbfsfup{T}$ & $\symbfsfup{t}$ & $ 𝗧 𝘁 $ \\
+\verb|\symbfsfup{U}| & $\symbfsfup{U}$ & $\symbfsfup{u}$ & $ 𝗨 𝘂 $ \\
+\verb|\symbfsfup{V}| & $\symbfsfup{V}$ & $\symbfsfup{v}$ & $ 𝗩 𝘃 $ \\
+\verb|\symbfsfup{W}| & $\symbfsfup{W}$ & $\symbfsfup{w}$ & $ 𝗪 𝘄 $ \\
+\verb|\symbfsfup{X}| & $\symbfsfup{X}$ & $\symbfsfup{x}$ & $ 𝗫 𝘅 $ \\
+\verb|\symbfsfup{Y}| & $\symbfsfup{Y}$ & $\symbfsfup{y}$ & $ 𝗬 𝘆 $ \\
+\verb|\symbfsfup{Z}| & $\symbfsfup{Z}$ & $\symbfsfup{z}$ & $ 𝗭 𝘇 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfsfit} (Sans-serif Bold Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfsfit{A}| & $\symbfsfit{A}$ & $\symbfsfit{a}$ & 𝘼 𝙖 \\
+\verb|\symbfsfit{B}| & $\symbfsfit{B}$ & $\symbfsfit{b}$ & 𝘽 𝙗 \\
+\verb|\symbfsfit{C}| & $\symbfsfit{C}$ & $\symbfsfit{c}$ & 𝘾 𝙘 \\
+\verb|\symbfsfit{D}| & $\symbfsfit{D}$ & $\symbfsfit{d}$ & 𝘿 𝙙 \\
+\verb|\symbfsfit{E}| & $\symbfsfit{E}$ & $\symbfsfit{e}$ & 𝙀 𝙚 \\
+\verb|\symbfsfit{F}| & $\symbfsfit{F}$ & $\symbfsfit{f}$ & 𝙁 𝙛 \\
+\verb|\symbfsfit{G}| & $\symbfsfit{G}$ & $\symbfsfit{g}$ & 𝙂 𝙜 \\
+\verb|\symbfsfit{H}| & $\symbfsfit{H}$ & $\symbfsfit{h}$ & 𝙃 𝙝 \\
+\verb|\symbfsfit{I}| & $\symbfsfit{I}$ & $\symbfsfit{i}$ & 𝙄 𝙞 \\
+\verb|\symbfsfit{J}| & $\symbfsfit{J}$ & $\symbfsfit{j}$ & 𝙅 𝙟 \\
+\verb|\symbfsfit{K}| & $\symbfsfit{K}$ & $\symbfsfit{k}$ & 𝙆 𝙠 \\
+\verb|\symbfsfit{L}| & $\symbfsfit{L}$ & $\symbfsfit{l}$ & 𝙇 𝙡 \\
+\verb|\symbfsfit{M}| & $\symbfsfit{M}$ & $\symbfsfit{m}$ & 𝙈 𝙢 \\
+\verb|\symbfsfit{N}| & $\symbfsfit{N}$ & $\symbfsfit{n}$ & 𝙉 𝙣 \\
+\verb|\symbfsfit{O}| & $\symbfsfit{O}$ & $\symbfsfit{o}$ & 𝙊 𝙤 \\
+\verb|\symbfsfit{P}| & $\symbfsfit{P}$ & $\symbfsfit{p}$ & 𝙋 𝙥 \\
+\verb|\symbfsfit{Q}| & $\symbfsfit{Q}$ & $\symbfsfit{q}$ & 𝙌 𝙦 \\
+\verb|\symbfsfit{R}| & $\symbfsfit{R}$ & $\symbfsfit{r}$ & 𝙍 𝙧 \\
+\verb|\symbfsfit{S}| & $\symbfsfit{S}$ & $\symbfsfit{s}$ & 𝙎 𝙨 \\
+\verb|\symbfsfit{T}| & $\symbfsfit{T}$ & $\symbfsfit{t}$ & 𝙏 𝙩 \\
+\verb|\symbfsfit{U}| & $\symbfsfit{U}$ & $\symbfsfit{u}$ & 𝙐 𝙪 \\
+\verb|\symbfsfit{V}| & $\symbfsfit{V}$ & $\symbfsfit{v}$ & 𝙑 𝙫 \\
+\verb|\symbfsfit{W}| & $\symbfsfit{W}$ & $\symbfsfit{w}$ & 𝙒 𝙬 \\
+\verb|\symbfsfit{X}| & $\symbfsfit{X}$ & $\symbfsfit{x}$ & 𝙓 𝙭 \\
+\verb|\symbfsfit{Y}| & $\symbfsfit{Y}$ & $\symbfsfit{y}$ & 𝙔 𝙮 \\
+\verb|\symbfsfit{Z}| & $\symbfsfit{Z}$ & $\symbfsfit{z}$ & 𝙕 𝙯 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symcal} (Calligraphic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symcal{A}| & $\symcal{A}$ & $\symcal{a}$ & $ 𝒜 𝒶 $ \\
+\verb|\symcal{B}| & $\symcal{B}$ & $\symcal{b}$ & $ ℬ 𝒷 $ \\
+\verb|\symcal{C}| & $\symcal{C}$ & $\symcal{c}$ & $ 𝒞 𝒸 $ \\
+\verb|\symcal{D}| & $\symcal{D}$ & $\symcal{d}$ & $ 𝒟 𝒹 $ \\
+\verb|\symcal{E}| & $\symcal{E}$ & $\symcal{e}$ & $ ℰ ℯ $ \\
+\verb|\symcal{F}| & $\symcal{F}$ & $\symcal{f}$ & $ ℱ 𝒻 $ \\
+\verb|\symcal{G}| & $\symcal{G}$ & $\symcal{g}$ & $ 𝒢 ℊ $ \\
+\verb|\symcal{H}| & $\symcal{H}$ & $\symcal{h}$ & $ ℋ 𝒽 $ \\
+\verb|\symcal{I}| & $\symcal{I}$ & $\symcal{i}$ & $ ℐ 𝒾 $ \\
+\verb|\symcal{J}| & $\symcal{J}$ & $\symcal{j}$ & $ 𝒥 𝒿 $ \\
+\verb|\symcal{K}| & $\symcal{K}$ & $\symcal{k}$ & $ 𝒦 𝓀 $ \\
+\verb|\symcal{L}| & $\symcal{L}$ & $\symcal{l}$ & $ ℒ 𝓁 $ \\
+\verb|\symcal{M}| & $\symcal{M}$ & $\symcal{m}$ & $ ℳ 𝓂 $ \\
+\verb|\symcal{N}| & $\symcal{N}$ & $\symcal{n}$ & $ 𝒩 𝓃 $ \\
+\verb|\symcal{O}| & $\symcal{O}$ & $\symcal{o}$ & $ 𝒪 ℴ $ \\
+\verb|\symcal{P}| & $\symcal{P}$ & $\symcal{p}$ & $ 𝒫 𝓅 $ \\
+\verb|\symcal{Q}| & $\symcal{Q}$ & $\symcal{q}$ & $ 𝒬 𝓆 $ \\
+\verb|\symcal{R}| & $\symcal{R}$ & $\symcal{r}$ & $ ℛ 𝓇 $ \\
+\verb|\symcal{S}| & $\symcal{S}$ & $\symcal{s}$ & $ 𝒮 𝓈 $ \\
+\verb|\symcal{T}| & $\symcal{T}$ & $\symcal{t}$ & $ 𝒯 𝓉 $ \\
+\verb|\symcal{U}| & $\symcal{U}$ & $\symcal{u}$ & $ 𝒰 𝓊 $ \\
+\verb|\symcal{V}| & $\symcal{V}$ & $\symcal{v}$ & $ 𝒱 𝓋 $ \\
+\verb|\symcal{W}| & $\symcal{W}$ & $\symcal{w}$ & $ 𝒲 𝓌 $ \\
+\verb|\symcal{X}| & $\symcal{X}$ & $\symcal{x}$ & $ 𝒳 𝓍 $ \\
+\verb|\symcal{Y}| & $\symcal{Y}$ & $\symcal{y}$ & $ 𝒴 𝓎 $ \\
+\verb|\symcal{Z}| & $\symcal{Z}$ & $\symcal{z}$ & $ 𝒵 𝓏 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfcal} (Bold Calligraphic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfcal{A}| & $\symbfcal{A}$ & $\symbfcal{a}$ & $ 𝓐 𝓪 $ \\
+\verb|\symbfcal{B}| & $\symbfcal{B}$ & $\symbfcal{b}$ & $ 𝓑 𝓫 $ \\
+\verb|\symbfcal{C}| & $\symbfcal{C}$ & $\symbfcal{c}$ & $ 𝓒 𝓬 $ \\
+\verb|\symbfcal{D}| & $\symbfcal{D}$ & $\symbfcal{d}$ & $ 𝓓 𝓭 $ \\
+\verb|\symbfcal{E}| & $\symbfcal{E}$ & $\symbfcal{e}$ & $ 𝓔 𝓮 $ \\
+\verb|\symbfcal{F}| & $\symbfcal{F}$ & $\symbfcal{f}$ & $ 𝓕 𝓯 $ \\
+\verb|\symbfcal{G}| & $\symbfcal{G}$ & $\symbfcal{g}$ & $ 𝓖 𝓰 $ \\
+\verb|\symbfcal{H}| & $\symbfcal{H}$ & $\symbfcal{h}$ & $ 𝓗 𝓱 $ \\
+\verb|\symbfcal{I}| & $\symbfcal{I}$ & $\symbfcal{i}$ & $ 𝓘 𝓲 $ \\
+\verb|\symbfcal{J}| & $\symbfcal{J}$ & $\symbfcal{j}$ & $ 𝓙 𝓳 $ \\
+\verb|\symbfcal{K}| & $\symbfcal{K}$ & $\symbfcal{k}$ & $ 𝓚 𝓴 $ \\
+\verb|\symbfcal{L}| & $\symbfcal{L}$ & $\symbfcal{l}$ & $ 𝓛 𝓵 $ \\
+\verb|\symbfcal{M}| & $\symbfcal{M}$ & $\symbfcal{m}$ & $ 𝓜 𝓶 $ \\
+\verb|\symbfcal{N}| & $\symbfcal{N}$ & $\symbfcal{n}$ & $ 𝓝 𝓷 $ \\
+\verb|\symbfcal{O}| & $\symbfcal{O}$ & $\symbfcal{o}$ & $ 𝓞 𝓸 $ \\
+\verb|\symbfcal{P}| & $\symbfcal{P}$ & $\symbfcal{p}$ & $ 𝓟 𝓹 $ \\
+\verb|\symbfcal{Q}| & $\symbfcal{Q}$ & $\symbfcal{q}$ & $ 𝓠 𝓺 $ \\
+\verb|\symbfcal{R}| & $\symbfcal{R}$ & $\symbfcal{r}$ & $ 𝓡 𝓻 $ \\
+\verb|\symbfcal{S}| & $\symbfcal{S}$ & $\symbfcal{s}$ & $ 𝓢 𝓼 $ \\
+\verb|\symbfcal{T}| & $\symbfcal{T}$ & $\symbfcal{t}$ & $ 𝓣 𝓽 $ \\
+\verb|\symbfcal{U}| & $\symbfcal{U}$ & $\symbfcal{u}$ & $ 𝓤 𝓾 $ \\
+\verb|\symbfcal{V}| & $\symbfcal{V}$ & $\symbfcal{v}$ & $ 𝓥 𝓿 $ \\
+\verb|\symbfcal{W}| & $\symbfcal{W}$ & $\symbfcal{w}$ & $ 𝓦 𝔀 $ \\
+\verb|\symbfcal{X}| & $\symbfcal{X}$ & $\symbfcal{x}$ & $ 𝓧 𝔁 $ \\
+\verb|\symbfcal{Y}| & $\symbfcal{Y}$ & $\symbfcal{y}$ & $ 𝓨 𝔂 $ \\
+\verb|\symbfcal{Z}| & $\symbfcal{Z}$ & $\symbfcal{z}$ & $ 𝓩 𝔃 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symscr} (Script)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symscr{A}| & $\symscr{A}$ & $\symscr{a}$ & $ 𝒜 𝒶 $ \\
+\verb|\symscr{B}| & $\symscr{B}$ & $\symscr{b}$ & $ ℬ 𝒷 $ \\
+\verb|\symscr{C}| & $\symscr{C}$ & $\symscr{c}$ & $ 𝒞 𝒸 $ \\
+\verb|\symscr{D}| & $\symscr{D}$ & $\symscr{d}$ & $ 𝒟 𝒹 $ \\
+\verb|\symscr{E}| & $\symscr{E}$ & $\symscr{e}$ & $ ℰ ℯ $ \\
+\verb|\symscr{F}| & $\symscr{F}$ & $\symscr{f}$ & $ ℱ 𝒻 $ \\
+\verb|\symscr{G}| & $\symscr{G}$ & $\symscr{g}$ & $ 𝒢 ℊ $ \\
+\verb|\symscr{H}| & $\symscr{H}$ & $\symscr{h}$ & $ ℋ 𝒽 $ \\
+\verb|\symscr{I}| & $\symscr{I}$ & $\symscr{i}$ & $ ℐ 𝒾 $ \\
+\verb|\symscr{J}| & $\symscr{J}$ & $\symscr{j}$ & $ 𝒥 𝒿 $ \\
+\verb|\symscr{K}| & $\symscr{K}$ & $\symscr{k}$ & $ 𝒦 𝓀 $ \\
+\verb|\symscr{L}| & $\symscr{L}$ & $\symscr{l}$ & $ ℒ 𝓁 $ \\
+\verb|\symscr{M}| & $\symscr{M}$ & $\symscr{m}$ & $ ℳ 𝓂 $ \\
+\verb|\symscr{N}| & $\symscr{N}$ & $\symscr{n}$ & $ 𝒩 𝓃 $ \\
+\verb|\symscr{O}| & $\symscr{O}$ & $\symscr{o}$ & $ 𝒪 ℴ $ \\
+\verb|\symscr{P}| & $\symscr{P}$ & $\symscr{p}$ & $ 𝒫 𝓅 $ \\
+\verb|\symscr{Q}| & $\symscr{Q}$ & $\symscr{q}$ & $ 𝒬 𝓆 $ \\
+\verb|\symscr{R}| & $\symscr{R}$ & $\symscr{r}$ & $ ℛ 𝓇 $ \\
+\verb|\symscr{S}| & $\symscr{S}$ & $\symscr{s}$ & $ 𝒮 𝓈 $ \\
+\verb|\symscr{T}| & $\symscr{T}$ & $\symscr{t}$ & $ 𝒯 𝓉 $ \\
+\verb|\symscr{U}| & $\symscr{U}$ & $\symscr{u}$ & $ 𝒰 𝓊 $ \\
+\verb|\symscr{V}| & $\symscr{V}$ & $\symscr{v}$ & $ 𝒱 𝓋 $ \\
+\verb|\symscr{W}| & $\symscr{W}$ & $\symscr{w}$ & $ 𝒲 𝓌 $ \\
+\verb|\symscr{X}| & $\symscr{X}$ & $\symscr{x}$ & $ 𝒳 𝓍 $ \\
+\verb|\symscr{Y}| & $\symscr{Y}$ & $\symscr{y}$ & $ 𝒴 𝓎 $ \\
+\verb|\symscr{Z}| & $\symscr{Z}$ & $\symscr{z}$ & $ 𝒵 𝓏 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfscr} (Bold Script)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfscr{A}| & $\symbfscr{A}$ & $\symbfscr{a}$ & $ 𝓐 𝓪 $ \\
+\verb|\symbfscr{B}| & $\symbfscr{B}$ & $\symbfscr{b}$ & $ 𝓑 𝓫 $ \\
+\verb|\symbfscr{C}| & $\symbfscr{C}$ & $\symbfscr{c}$ & $ 𝓒 𝓬 $ \\
+\verb|\symbfscr{D}| & $\symbfscr{D}$ & $\symbfscr{d}$ & $ 𝓓 𝓭 $ \\
+\verb|\symbfscr{E}| & $\symbfscr{E}$ & $\symbfscr{e}$ & $ 𝓔 𝓮 $ \\
+\verb|\symbfscr{F}| & $\symbfscr{F}$ & $\symbfscr{f}$ & $ 𝓕 𝓯 $ \\
+\verb|\symbfscr{G}| & $\symbfscr{G}$ & $\symbfscr{g}$ & $ 𝓖 𝓰 $ \\
+\verb|\symbfscr{H}| & $\symbfscr{H}$ & $\symbfscr{h}$ & $ 𝓗 𝓱 $ \\
+\verb|\symbfscr{I}| & $\symbfscr{I}$ & $\symbfscr{i}$ & $ 𝓘 𝓲 $ \\
+\verb|\symbfscr{J}| & $\symbfscr{J}$ & $\symbfscr{j}$ & $ 𝓙 𝓳 $ \\
+\verb|\symbfscr{K}| & $\symbfscr{K}$ & $\symbfscr{k}$ & $ 𝓚 𝓴 $ \\
+\verb|\symbfscr{L}| & $\symbfscr{L}$ & $\symbfscr{l}$ & $ 𝓛 𝓵 $ \\
+\verb|\symbfscr{M}| & $\symbfscr{M}$ & $\symbfscr{m}$ & $ 𝓜 𝓶 $ \\
+\verb|\symbfscr{N}| & $\symbfscr{N}$ & $\symbfscr{n}$ & $ 𝓝 𝓷 $ \\
+\verb|\symbfscr{O}| & $\symbfscr{O}$ & $\symbfscr{o}$ & $ 𝓞 𝓸 $ \\
+\verb|\symbfscr{P}| & $\symbfscr{P}$ & $\symbfscr{p}$ & $ 𝓟 𝓹 $ \\
+\verb|\symbfscr{Q}| & $\symbfscr{Q}$ & $\symbfscr{q}$ & $ 𝓠 𝓺 $ \\
+\verb|\symbfscr{R}| & $\symbfscr{R}$ & $\symbfscr{r}$ & $ 𝓡 𝓻 $ \\
+\verb|\symbfscr{S}| & $\symbfscr{S}$ & $\symbfscr{s}$ & $ 𝓢 𝓼 $ \\
+\verb|\symbfscr{T}| & $\symbfscr{T}$ & $\symbfscr{t}$ & $ 𝓣 𝓽 $ \\
+\verb|\symbfscr{U}| & $\symbfscr{U}$ & $\symbfscr{u}$ & $ 𝓤 𝓾 $ \\
+\verb|\symbfscr{V}| & $\symbfscr{V}$ & $\symbfscr{v}$ & $ 𝓥 𝓿 $ \\
+\verb|\symbfscr{W}| & $\symbfscr{W}$ & $\symbfscr{w}$ & $ 𝓦 𝔀 $ \\
+\verb|\symbfscr{X}| & $\symbfscr{X}$ & $\symbfscr{x}$ & $ 𝓧 𝔁 $ \\
+\verb|\symbfscr{Y}| & $\symbfscr{Y}$ & $\symbfscr{y}$ & $ 𝓨 𝔂 $ \\
+\verb|\symbfscr{Z}| & $\symbfscr{Z}$ & $\symbfscr{z}$ & $ 𝓩 𝔃 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbb} (Blackboard Bold)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbb{A}| & $\symbb{A}$ & $\symbb{a}$ & $ 𝔸 𝕒 $ \\
+\verb|\symbb{B}| & $\symbb{B}$ & $\symbb{b}$ & $ 𝔹 𝕓 $ \\
+\verb|\symbb{C}| & $\symbb{C}$ & $\symbb{c}$ & $ ℂ 𝕔 $ \\
+\verb|\symbb{D}| & $\symbb{D}$ & $\symbb{d}$ & $ 𝔻 𝕕 $ \\
+\verb|\symbb{E}| & $\symbb{E}$ & $\symbb{e}$ & $ 𝔼 𝕖 $ \\
+\verb|\symbb{F}| & $\symbb{F}$ & $\symbb{f}$ & $ 𝔽 𝕗 $ \\
+\verb|\symbb{G}| & $\symbb{G}$ & $\symbb{g}$ & $ 𝔾 𝕘 $ \\
+\verb|\symbb{H}| & $\symbb{H}$ & $\symbb{h}$ & $ ℍ 𝕙 $ \\
+\verb|\symbb{I}| & $\symbb{I}$ & $\symbb{i}$ & $ 𝕀 𝕚 $ \\
+\verb|\symbb{J}| & $\symbb{J}$ & $\symbb{j}$ & $ 𝕁 𝕛 $ \\
+\verb|\symbb{K}| & $\symbb{K}$ & $\symbb{k}$ & $ 𝕂 𝕜 $ \\
+\verb|\symbb{L}| & $\symbb{L}$ & $\symbb{l}$ & $ 𝕃 𝕝 $ \\
+\verb|\symbb{M}| & $\symbb{M}$ & $\symbb{m}$ & $ 𝕄 𝕞 $ \\
+\verb|\symbb{N}| & $\symbb{N}$ & $\symbb{n}$ & $ ℕ 𝕟 $ \\
+\verb|\symbb{O}| & $\symbb{O}$ & $\symbb{o}$ & $ 𝕆 𝕠 $ \\
+\verb|\symbb{P}| & $\symbb{P}$ & $\symbb{p}$ & $ ℙ 𝕡 $ \\
+\verb|\symbb{Q}| & $\symbb{Q}$ & $\symbb{q}$ & $ ℚ 𝕢 $ \\
+\verb|\symbb{R}| & $\symbb{R}$ & $\symbb{r}$ & $ ℝ 𝕣 $ \\
+\verb|\symbb{S}| & $\symbb{S}$ & $\symbb{s}$ & $ 𝕊 𝕤 $ \\
+\verb|\symbb{T}| & $\symbb{T}$ & $\symbb{t}$ & $ 𝕋 𝕥 $ \\
+\verb|\symbb{U}| & $\symbb{U}$ & $\symbb{u}$ & $ 𝕌 𝕦 $ \\
+\verb|\symbb{V}| & $\symbb{V}$ & $\symbb{v}$ & $ 𝕍 𝕧 $ \\
+\verb|\symbb{W}| & $\symbb{W}$ & $\symbb{w}$ & $ 𝕎 𝕨 $ \\
+\verb|\symbb{X}| & $\symbb{X}$ & $\symbb{x}$ & $ 𝕏 𝕩 $ \\
+\verb|\symbb{Y}| & $\symbb{Y}$ & $\symbb{y}$ & $ 𝕐 𝕪 $ \\
+\verb|\symbb{Z}| & $\symbb{Z}$ & $\symbb{z}$ & $ ℤ 𝕫 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbbit} (Blackboard Bold Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbbit{A}| & $\symbbit{A}$ & $\symbbit{a}$ & $ 𝐴 𝑎 $ \\
+\verb|\symbbit{B}| & $\symbbit{B}$ & $\symbbit{b}$ & $ 𝐵 𝑏 $ \\
+\verb|\symbbit{C}| & $\symbbit{C}$ & $\symbbit{c}$ & $ 𝐶 𝑐 $ \\
+\verb|\symbbit{D}| & $\symbbit{D}$ & $\symbbit{d}$ & $ ⅅ ⅆ $ \\
+\verb|\symbbit{E}| & $\symbbit{E}$ & $\symbbit{e}$ & $ 𝐸 ⅇ $ \\
+\verb|\symbbit{F}| & $\symbbit{F}$ & $\symbbit{f}$ & $ 𝐹 𝑓 $ \\
+\verb|\symbbit{G}| & $\symbbit{G}$ & $\symbbit{g}$ & $ 𝐺 𝑔 $ \\
+\verb|\symbbit{H}| & $\symbbit{H}$ & $\symbbit{h}$ & $ 𝐻 ℎ $ \\
+\verb|\symbbit{I}| & $\symbbit{I}$ & $\symbbit{i}$ & $ 𝐼 ⅈ $ \\
+\verb|\symbbit{J}| & $\symbbit{J}$ & $\symbbit{j}$ & $ 𝐽 ⅉ $ \\
+\verb|\symbbit{K}| & $\symbbit{K}$ & $\symbbit{k}$ & $ 𝐾 𝑘 $ \\
+\verb|\symbbit{L}| & $\symbbit{L}$ & $\symbbit{l}$ & $ 𝐿 𝑙 $ \\
+\verb|\symbbit{M}| & $\symbbit{M}$ & $\symbbit{m}$ & $ 𝑀 𝑚 $ \\
+\verb|\symbbit{N}| & $\symbbit{N}$ & $\symbbit{n}$ & $ 𝑁 𝑛 $ \\
+\verb|\symbbit{O}| & $\symbbit{O}$ & $\symbbit{o}$ & $ 𝑂 𝑜 $ \\
+\verb|\symbbit{P}| & $\symbbit{P}$ & $\symbbit{p}$ & $ 𝑃 𝑝 $ \\
+\verb|\symbbit{Q}| & $\symbbit{Q}$ & $\symbbit{q}$ & $ 𝑄 𝑞 $ \\
+\verb|\symbbit{R}| & $\symbbit{R}$ & $\symbbit{r}$ & $ 𝑅 𝑟 $ \\
+\verb|\symbbit{S}| & $\symbbit{S}$ & $\symbbit{s}$ & $ 𝑆 𝑠 $ \\
+\verb|\symbbit{T}| & $\symbbit{T}$ & $\symbbit{t}$ & $ 𝑇 𝑡 $ \\
+\verb|\symbbit{U}| & $\symbbit{U}$ & $\symbbit{u}$ & $ 𝑈 𝑢 $ \\
+\verb|\symbbit{V}| & $\symbbit{V}$ & $\symbbit{v}$ & $ 𝑉 𝑣 $ \\
+\verb|\symbbit{W}| & $\symbbit{W}$ & $\symbbit{w}$ & $ 𝑊 𝑤 $ \\
+\verb|\symbbit{X}| & $\symbbit{X}$ & $\symbbit{x}$ & $ 𝑋 𝑥 $ \\
+\verb|\symbbit{Y}| & $\symbbit{Y}$ & $\symbbit{y}$ & $ 𝑌 𝑦 $ \\
+\verb|\symbbit{Z}| & $\symbbit{Z}$ & $\symbbit{z}$ & $ 𝑍 𝑧 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symfrak} (Fraktur)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symfrak{A}| & $\symfrak{A}$ & $\symfrak{a}$ & $ 𝔄 𝔞 $ \\
+\verb|\symfrak{B}| & $\symfrak{B}$ & $\symfrak{b}$ & $ 𝔅 𝔟 $ \\
+\verb|\symfrak{C}| & $\symfrak{C}$ & $\symfrak{c}$ & $ ℭ 𝔠 $ \\
+\verb|\symfrak{D}| & $\symfrak{D}$ & $\symfrak{d}$ & $ 𝔇 𝔡 $ \\
+\verb|\symfrak{E}| & $\symfrak{E}$ & $\symfrak{e}$ & $ 𝔈 𝔢 $ \\
+\verb|\symfrak{F}| & $\symfrak{F}$ & $\symfrak{f}$ & $ 𝔉 𝔣 $ \\
+\verb|\symfrak{G}| & $\symfrak{G}$ & $\symfrak{g}$ & $ 𝔊 𝔤 $ \\
+\verb|\symfrak{H}| & $\symfrak{H}$ & $\symfrak{h}$ & $ ℌ 𝔥 $ \\
+\verb|\symfrak{I}| & $\symfrak{I}$ & $\symfrak{i}$ & $ ℑ 𝔦 $ \\
+\verb|\symfrak{J}| & $\symfrak{J}$ & $\symfrak{j}$ & $ 𝔍 𝔧 $ \\
+\verb|\symfrak{K}| & $\symfrak{K}$ & $\symfrak{k}$ & $ 𝔎 𝔨 $ \\
+\verb|\symfrak{L}| & $\symfrak{L}$ & $\symfrak{l}$ & $ 𝔏 𝔩 $ \\
+\verb|\symfrak{M}| & $\symfrak{M}$ & $\symfrak{m}$ & $ 𝔐 𝔪 $ \\
+\verb|\symfrak{N}| & $\symfrak{N}$ & $\symfrak{n}$ & $ 𝔑 𝔫 $ \\
+\verb|\symfrak{O}| & $\symfrak{O}$ & $\symfrak{o}$ & $ 𝔒 𝔬 $ \\
+\verb|\symfrak{P}| & $\symfrak{P}$ & $\symfrak{p}$ & $ 𝔓 𝔭 $ \\
+\verb|\symfrak{Q}| & $\symfrak{Q}$ & $\symfrak{q}$ & $ 𝔔 𝔮 $ \\
+\verb|\symfrak{R}| & $\symfrak{R}$ & $\symfrak{r}$ & $ ℜ 𝔯 $ \\
+\verb|\symfrak{S}| & $\symfrak{S}$ & $\symfrak{s}$ & $ 𝔖 𝔰 $ \\
+\verb|\symfrak{T}| & $\symfrak{T}$ & $\symfrak{t}$ & $ 𝔗 𝔱 $ \\
+\verb|\symfrak{U}| & $\symfrak{U}$ & $\symfrak{u}$ & $ 𝔘 𝔲 $ \\
+\verb|\symfrak{V}| & $\symfrak{V}$ & $\symfrak{v}$ & $ 𝔙 𝔳 $ \\
+\verb|\symfrak{W}| & $\symfrak{W}$ & $\symfrak{w}$ & $ 𝔚 𝔴 $ \\
+\verb|\symfrak{X}| & $\symfrak{X}$ & $\symfrak{x}$ & $ 𝔛 𝔵 $ \\
+\verb|\symfrak{Y}| & $\symfrak{Y}$ & $\symfrak{y}$ & $ 𝔜 𝔶 $ \\
+\verb|\symfrak{Z}| & $\symfrak{Z}$ & $\symfrak{z}$ & $ ℨ 𝔷 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbffrak} (Bold Fraktur)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbffrak{A}| & $\symbffrak{A}$ & $\symbffrak{a}$ & $ 𝕬 𝖆 $ \\
+\verb|\symbffrak{B}| & $\symbffrak{B}$ & $\symbffrak{b}$ & $ 𝕭 𝖇 $ \\
+\verb|\symbffrak{C}| & $\symbffrak{C}$ & $\symbffrak{c}$ & $ 𝕮 𝖈 $ \\
+\verb|\symbffrak{D}| & $\symbffrak{D}$ & $\symbffrak{d}$ & $ 𝕯 𝖉 $ \\
+\verb|\symbffrak{E}| & $\symbffrak{E}$ & $\symbffrak{e}$ & $ 𝕰 𝖊 $ \\
+\verb|\symbffrak{F}| & $\symbffrak{F}$ & $\symbffrak{f}$ & $ 𝕱 𝖋 $ \\
+\verb|\symbffrak{G}| & $\symbffrak{G}$ & $\symbffrak{g}$ & $ 𝕲 𝖌 $ \\
+\verb|\symbffrak{H}| & $\symbffrak{H}$ & $\symbffrak{h}$ & $ 𝕳 𝖍 $ \\
+\verb|\symbffrak{I}| & $\symbffrak{I}$ & $\symbffrak{i}$ & $ 𝕴 𝖎 $ \\
+\verb|\symbffrak{J}| & $\symbffrak{J}$ & $\symbffrak{j}$ & $ 𝕵 𝖏 $ \\
+\verb|\symbffrak{K}| & $\symbffrak{K}$ & $\symbffrak{k}$ & $ 𝕶 𝖐 $ \\
+\verb|\symbffrak{L}| & $\symbffrak{L}$ & $\symbffrak{l}$ & $ 𝕷 𝖑 $ \\
+\verb|\symbffrak{M}| & $\symbffrak{M}$ & $\symbffrak{m}$ & $ 𝕸 𝖒 $ \\
+\verb|\symbffrak{N}| & $\symbffrak{N}$ & $\symbffrak{n}$ & $ 𝕹 𝖓 $ \\
+\verb|\symbffrak{O}| & $\symbffrak{O}$ & $\symbffrak{o}$ & $ 𝕺 𝖔 $ \\
+\verb|\symbffrak{P}| & $\symbffrak{P}$ & $\symbffrak{p}$ & $ 𝕻 𝖕 $ \\
+\verb|\symbffrak{Q}| & $\symbffrak{Q}$ & $\symbffrak{q}$ & $ 𝕼 𝖖 $ \\
+\verb|\symbffrak{R}| & $\symbffrak{R}$ & $\symbffrak{r}$ & $ 𝕽 𝖗 $ \\
+\verb|\symbffrak{S}| & $\symbffrak{S}$ & $\symbffrak{s}$ & $ 𝕾 𝖘 $ \\
+\verb|\symbffrak{T}| & $\symbffrak{T}$ & $\symbffrak{t}$ & $ 𝕿 𝖙 $ \\
+\verb|\symbffrak{U}| & $\symbffrak{U}$ & $\symbffrak{u}$ & $ 𝖀 𝖚 $ \\
+\verb|\symbffrak{V}| & $\symbffrak{V}$ & $\symbffrak{v}$ & $ 𝖁 𝖛 $ \\
+\verb|\symbffrak{W}| & $\symbffrak{W}$ & $\symbffrak{w}$ & $ 𝖂 𝖜 $ \\
+\verb|\symbffrak{X}| & $\symbffrak{X}$ & $\symbffrak{x}$ & $ 𝖃 𝖝 $ \\
+\verb|\symbffrak{Y}| & $\symbffrak{Y}$ & $\symbffrak{y}$ & $ 𝖄 𝖞 $ \\
+\verb|\symbffrak{Z}| & $\symbffrak{Z}$ & $\symbffrak{z}$ & $ 𝖅 𝖟 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Greek Letters: Full Alphabet (Α-Ω, α-ω) with Unicode Glyphs}
+
+\subsection*{\texttt{\textbackslash{}symup} (Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symup{\Alpha}| & $\symup{\Alpha}$ & $\symup{\alpha}$ & $ Α α $ \\
+\verb|\symup{\Beta}| & $\symup{\Beta}$ & $\symup{\beta}$ & $ Β β $ \\
+\verb|\symup{\Gamma}| & $\symup{\Gamma}$ & $\symup{\gamma}$ & $ Γ γ $ \\
+\verb|\symup{\Delta}| & $\symup{\Delta}$ & $\symup{\delta}$ & $ Δ δ $ \\
+\verb|\symup{\Epsilon}| & $\symup{\Epsilon}$ & $\symup{\epsilon}$ $\symup{\varepsilon}$ & $ Ε ϵ ε $ \\
+\verb|\symup{\Zeta}| & $\symup{\Zeta}$ & $\symup{\zeta}$ & $ Ζ ζ $ \\
+\verb|\symup{\Eta}| & $\symup{\Eta}$ & $\symup{\eta}$ & $ Η η $ \\
+\verb|\symup{\Theta}| & $\symup{\Theta}$ & $\symup{\theta}$ $\symup{\vartheta}$ & $ Θ θ ϑ $ \\
+\verb|\symup{\Iota}| & $\symup{\Iota}$ & $\symup{\iota}$ & $ Ι ι $ \\
+\verb|\symup{\Kappa}| & $\symup{\Kappa}$ & $\symup{\kappa}$ & $ Κ κ $ \\
+\verb|\symup{\Lambda}| & $\symup{\Lambda}$ & $\symup{\lambda}$ & $ Λ λ $ \\
+\verb|\symup{\Mu}| & $\symup{\Mu}$ & $\symup{\mu}$ & $ Μ μ $ \\
+\verb|\symup{\Nu}| & $\symup{\Nu}$ & $\symup{\nu}$ & $ Ν ν $ \\
+\verb|\symup{\Xi}| & $\symup{\Xi}$ & $\symup{\xi}$ & $ Ξ ξ $ \\
+\verb|\symup{\Omicron}| & $\symup{\Omicron}$ & $\symup{\omicron}$ & $ Ο ο $ \\
+\verb|\symup{\Pi}| & $\symup{\Pi}$ & $\symup{\pi}$ $\symup{\varpi}$ & $ Π π ϖ $ \\
+\verb|\symup{\Rho}| & $\symup{\Rho}$ & $\symup{\rho}$ $\symup{\varrho}$ & $ Ρ ρ ϱ $ \\
+\verb|\symup{\Sigma}| & $\symup{\Sigma}$ & $\symup{\sigma}$ $\symup{\varsigma}$ & $ Σ σ ς $ \\
+\verb|\symup{\Tau}| & $\symup{\Tau}$ & $\symup{\tau}$ & $ Τ τ $ \\
+\verb|\symup{\Upsilon}| & $\symup{\Upsilon}$ & $\symup{\upsilon}$ & $ Υ υ $ \\
+\verb|\symup{\Phi}| & $\symup{\Phi}$ & $\symup{\phi}$ $\symup{\varphi}$ & $ Φ φ ϕ $ \\
+\verb|\symup{\Chi}| & $\symup{\Chi}$ & $\symup{\chi}$ & $ Χ χ $ \\
+\verb|\symup{\Psi}| & $\symup{\Psi}$ & $\symup{\psi}$ & $ Ψ ψ $ \\
+\verb|\symup{\Omega}| & $\symup{\Omega}$ & $\symup{\omega}$ & $ Ω ω $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symit} (Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symit{\Alpha}| & $\symit{\Alpha}$ & $\symit{\alpha}$ & 𝛢 𝛼 \\
+\verb|\symit{\Beta}| & $\symit{\Beta}$ & $\symit{\beta}$ & 𝛣 𝛽 \\
+\verb|\symit{\Gamma}| & $\symit{\Gamma}$ & $\symit{\gamma}$ & 𝛤 𝛾 \\
+\verb|\symit{\Delta}| & $\symit{\Delta}$ & $\symit{\delta}$ & 𝛥 𝛿 \\
+\verb|\symit{\Epsilon}| & $\symit{\Epsilon}$ & $\symit{\epsilon}$ $\symit{\varepsilon}$ & 𝛦 𝜖 𝜀 \\
+\verb|\symit{\Zeta}| & $\symit{\Zeta}$ & $\symit{\zeta}$ & 𝛧 𝜁 \\
+\verb|\symit{\Eta}| & $\symit{\Eta}$ & $\symit{\eta}$ & 𝛨 𝜂 \\
+\verb|\symit{\Theta}| & $\symit{\Theta}$ & $\symit{\theta}$ $\symit{\vartheta}$ & 𝛩 𝜃 𝜗 \\
+\verb|\symit{\Iota}| & $\symit{\Iota}$ & $\symit{\iota}$ & 𝛪 𝜄 \\
+\verb|\symit{\Kappa}| & $\symit{\Kappa}$ & $\symit{\kappa}$ & 𝛫 𝜅 \\
+\verb|\symit{\Lambda}| & $\symit{\Lambda}$ & $\symit{\lambda}$ & 𝛬 𝜆 \\
+\verb|\symit{\Mu}| & $\symit{\Mu}$ & $\symit{\mu}$ & 𝛭 𝜇 \\
+\verb|\symit{\Nu}| & $\symit{\Nu}$ & $\symit{\nu}$ & 𝛮 𝜈 \\
+\verb|\symit{\Xi}| & $\symit{\Xi}$ & $\symit{\xi}$ & 𝛯 𝜉 \\
+\verb|\symit{\Omicron}| & $\symit{\Omicron}$ & $\symit{\omicron}$ & 𝛰 𝜊 \\
+\verb|\symit{\Pi}| & $\symit{\Pi}$ & $\symit{\pi}$ $\symit{\varpi}$ & 𝛱 𝜋 𝜛 \\
+\verb|\symit{\Rho}| & $\symit{\Rho}$ & $\symit{\rho}$ $\symit{\varrho}$ & 𝛲 𝜌 𝜚 \\
+\verb|\symit{\Sigma}| & $\symit{\Sigma}$ & $\symit{\sigma}$ $\symit{\varsigma}$ & 𝛴 𝜎 𝜍 \\
+\verb|\symit{\Tau}| & $\symit{\Tau}$ & $\symit{\tau}$ & 𝛵 𝜏 \\
+\verb|\symit{\Upsilon}| & $\symit{\Upsilon}$ & $\symit{\upsilon}$ & 𝛶 𝜐 \\
+\verb|\symit{\Phi}| & $\symit{\Phi}$ & $\symit{\phi}$ $\symit{\varphi}$ & 𝛷 𝜙 𝜑 \\
+\verb|\symit{\Chi}| & $\symit{\Chi}$ & $\symit{\chi}$ & 𝛸 𝜒 \\
+\verb|\symit{\Psi}| & $\symit{\Psi}$ & $\symit{\psi}$ & 𝛹 𝜓 \\
+\verb|\symit{\Omega}| & $\symit{\Omega}$ & $\symit{\omega}$ & 𝛺 𝜔 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbf} (Bold Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbf{\Alpha}| & $\symbf{\Alpha}$ & $\symbf{\alpha}$ & $ 𝚨 𝜶 $ \\
+\verb|\symbf{\Beta}| & $\symbf{\Beta}$ & $\symbf{\beta}$ & $ 𝚩 𝜷 $ \\
+\verb|\symbf{\Gamma}| & $\symbf{\Gamma}$ & $\symbf{\gamma}$ & $ 𝚪 𝜸 $ \\
+\verb|\symbf{\Delta}| & $\symbf{\Delta}$ & $\symbf{\delta}$ & $ 𝚫 𝜹 $ \\
+\verb|\symbf{\Epsilon}| & $\symbf{\Epsilon}$ & $\symbf{\epsilon}$ $\symbf{\varepsilon}$ & $ 𝚬 𝝐 𝜺 $ \\
+\verb|\symbf{\Zeta}| & $\symbf{\Zeta}$ & $\symbf{\zeta}$ & $ 𝚭 𝜻 $ \\
+\verb|\symbf{\Eta}| & $\symbf{\Eta}$ & $\symbf{\eta}$ & $ 𝚮 𝜼 $ \\
+\verb|\symbf{\Theta}| & $\symbf{\Theta}$ & $\symbf{\theta}$ $\symbf{\vartheta}$ & $ 𝚯 𝜽 𝝑$ \\
+\verb|\symbf{\Iota}| & $\symbf{\Iota}$ & $\symbf{\iota}$ & $ 𝚰 𝜾 $ \\
+\verb|\symbf{\Kappa}| & $\symbf{\Kappa}$ & $\symbf{\kappa}$ & $ 𝚱 𝜿 $ \\
+\verb|\symbf{\Lambda}| & $\symbf{\Lambda}$ & $\symbf{\lambda}$ & $ 𝚲 𝝀 $ \\
+\verb|\symbf{\Mu}| & $\symbf{\Mu}$ & $\symbf{\mu}$ & $ 𝚳 𝝁 $ \\
+\verb|\symbf{\Nu}| & $\symbf{\Nu}$ & $\symbf{\nu}$ & $ 𝚴 𝝂 $ \\
+\verb|\symbf{\Xi}| & $\symbf{\Xi}$ & $\symbf{\xi}$ & $ 𝚵 𝝃 $ \\
+\verb|\symbf{\Omicron}| & $\symbf{\Omicron}$ & $\symbf{\omicron}$ & $ 𝚶 𝝄 $ \\
+\verb|\symbf{\Pi}| & $\symbf{\Pi}$ & $\symbf{\pi}$ $\symbf{\varpi}$ & $ 𝚷 𝝅 𝝕  $ \\
+\verb|\symbf{\Rho}| & $\symbf{\Rho}$ & $\symbf{\rho}$ $\symbf{\varrho}$ & $ 𝚸 𝝆 𝝔 $ \\
+\verb|\symbf{\Sigma}| & $\symbf{\Sigma}$ & $\symbf{\sigma}$ $\symbf{\varsigma}$ & $ 𝚺 𝝈 𝝇 $ \\
+\verb|\symbf{\Tau}| & $\symbf{\Tau}$ & $\symbf{\tau}$ & $ 𝚻 𝝉 $ \\
+\verb|\symbf{\Upsilon}| & $\symbf{\Upsilon}$ & $\symbf{\upsilon}$ & $ 𝚼 𝝊 $ \\
+\verb|\symbf{\Phi}| & $\symbf{\Phi}$ & $\symbf{\phi}$ $\symbf{\varphi}$ & $ 𝚽 𝝓 𝝋 $ \\
+\verb|\symbf{\Chi}| & $\symbf{\Chi}$ & $\symbf{\chi}$ & $ 𝚾 𝝌 $ \\
+\verb|\symbf{\Psi}| & $\symbf{\Psi}$ & $\symbf{\psi}$ & $ 𝚿 𝝍 $ \\
+\verb|\symbf{\Omega}| & $\symbf{\Omega}$ & $\symbf{\omega}$ & $ 𝛀 𝝎 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symsf} (Sans-Serif)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symsf{\Alpha}| & $\symsf{\Alpha}$ & $\symsf{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symsf{\Beta}| & $\symsf{\Beta}$ & $\symsf{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symsf{\Gamma}| & $\symsf{\Gamma}$ & $\symsf{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symsf{\Delta}| & $\symsf{\Delta}$ & $\symsf{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symsf{\Epsilon}| & $\symsf{\Epsilon}$ & $\symsf{\epsilon}$ $\symsf{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symsf{\Zeta}| & $\symsf{\Zeta}$ & $\symsf{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symsf{\Eta}| & $\symsf{\Eta}$ & $\symsf{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symsf{\Theta}| & $\symsf{\Theta}$ & $\symsf{\theta}$ $\symsf{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symsf{\Iota}| & $\symsf{\Iota}$ & $\symsf{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symsf{\Kappa}| & $\symsf{\Kappa}$ & $\symsf{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symsf{\Lambda}| & $\symsf{\Lambda}$ & $\symsf{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symsf{\Mu}| & $\symsf{\Mu}$ & $\symsf{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symsf{\Nu}| & $\symsf{\Nu}$ & $\symsf{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symsf{\Xi}| & $\symsf{\Xi}$ & $\symsf{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symsf{\Omicron}| & $\symsf{\Omicron}$ & $\symsf{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symsf{\Pi}| & $\symsf{\Pi}$ & $\symsf{\pi}$ $\symsf{\varpi}$ & $ Π 𝜋 𝜛 $ \\
+\verb|\symsf{\Rho}| & $\symsf{\Rho}$ & $\symsf{\rho}$ $\symsf{\varrho}$ & $ Ρ 𝜌 𝜚 $ \\
+\verb|\symsf{\Sigma}| & $\symsf{\Sigma}$ & $\symsf{\sigma}$ $\symsf{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symsf{\Tau}| & $\symsf{\Tau}$ & $\symsf{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symsf{\Upsilon}| & $\symsf{\Upsilon}$ & $\symsf{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symsf{\Phi}| & $\symsf{\Phi}$ & $\symsf{\phi}$ $\symsf{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symsf{\Chi}| & $\symsf{\Chi}$ & $\symsf{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symsf{\Psi}| & $\symsf{\Psi}$ & $\symsf{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symsf{\Omega}| & $\symsf{\Omega}$ & $\symsf{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symtt} (Typewriter)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symtt{\Alpha}| & $\symtt{\Alpha}$ & $\symtt{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symtt{\Beta}| & $\symtt{\Beta}$ & $\symtt{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symtt{\Gamma}| & $\symtt{\Gamma}$ & $\symtt{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symtt{\Delta}| & $\symtt{\Delta}$ & $\symtt{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symtt{\Epsilon}| & $\symtt{\Epsilon}$ & $\symtt{\epsilon}$ $\symtt{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symtt{\Zeta}| & $\symtt{\Zeta}$ & $\symtt{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symtt{\Eta}| & $\symtt{\Eta}$ & $\symtt{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symtt{\Theta}| & $\symtt{\Theta}$ & $\symtt{\theta}$ $\symtt{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symtt{\Iota}| & $\symtt{\Iota}$ & $\symtt{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symtt{\Kappa}| & $\symtt{\Kappa}$ & $\symtt{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symtt{\Lambda}| & $\symtt{\Lambda}$ & $\symtt{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symtt{\Mu}| & $\symtt{\Mu}$ & $\symtt{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symtt{\Nu}| & $\symtt{\Nu}$ & $\symtt{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symtt{\Xi}| & $\symtt{\Xi}$ & $\symtt{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symtt{\Omicron}| & $\symtt{\Omicron}$ & $\symtt{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symtt{\Pi}| & $\symtt{\Pi}$ & $\symtt{\pi}$ $\symtt{\varpi}$ & $ Π 𝜋 𝜛  $ \\
+\verb|\symtt{\Rho}| & $\symtt{\Rho}$ & $\symtt{\rho}$ $\symtt{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symtt{\Sigma}| & $\symtt{\Sigma}$ & $\symtt{\sigma}$ $\symtt{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symtt{\Tau}| & $\symtt{\Tau}$ & $\symtt{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symtt{\Upsilon}| & $\symtt{\Upsilon}$ & $\symtt{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symtt{\Phi}| & $\symtt{\Phi}$ & $\symtt{\phi}$ $\symtt{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symtt{\Chi}| & $\symtt{\Chi}$ & $\symtt{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symtt{\Psi}| & $\symtt{\Psi}$ & $\symtt{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symtt{\Omega}| & $\symtt{\Omega}$ & $\symtt{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfup} (Upright)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfup{\Alpha}| & $\symbfup{\Alpha}$ & $\symbfup{\alpha}$ & $ 𝚨 𝛂 $ \\
+\verb|\symbfup{\Beta}| & $\symbfup{\Beta}$ & $\symbfup{\beta}$ & $ 𝚩 𝛃 $ \\
+\verb|\symbfup{\Gamma}| & $\symbfup{\Gamma}$ & $\symbfup{\gamma}$ & $ 𝚪 𝛄 $ \\
+\verb|\symbfup{\Delta}| & $\symbfup{\Delta}$ & $\symbfup{\delta}$ & $ 𝚫 𝛅 $ \\
+\verb|\symbfup{\Epsilon}| & $\symbfup{\Epsilon}$ & $\symbfup{\epsilon}$ $\symbfup{\varepsilon}$ & $ 𝚬 𝛜 𝛆 $ \\
+\verb|\symbfup{\Zeta}| & $\symbfup{\Zeta}$ & $\symbfup{\zeta}$ & $ 𝚭 𝛇 $ \\
+\verb|\symbfup{\Eta}| & $\symbfup{\Eta}$ & $\symbfup{\eta}$ & $ 𝚮 𝛈 $ \\
+\verb|\symbfup{\Theta}| & $\symbfup{\Theta}$ & $\symbfup{\theta}$ $\symbfup{\vartheta}$ & $ 𝚯 𝛉 𝛝 $ \\
+\verb|\symbfup{\Iota}| & $\symbfup{\Iota}$ & $\symbfup{\iota}$ & $ 𝚰 𝛊 $ \\
+\verb|\symbfup{\Kappa}| & $\symbfup{\Kappa}$ & $\symbfup{\kappa}$ & $ 𝚱 𝛋 $ \\
+\verb|\symbfup{\Lambda}| & $\symbfup{\Lambda}$ & $\symbfup{\lambda}$ & $ 𝚲 𝛌 $ \\
+\verb|\symbfup{\Mu}| & $\symbfup{\Mu}$ & $\symbfup{\mu}$ & $ 𝚳 𝛍 $ \\
+\verb|\symbfup{\Nu}| & $\symbfup{\Nu}$ & $\symbfup{\nu}$ & $ 𝚴 𝛎 $ \\
+\verb|\symbfup{\Xi}| & $\symbfup{\Xi}$ & $\symbfup{\xi}$ & $ 𝚵 𝛏 $ \\
+\verb|\symbfup{\Omicron}| & $\symbfup{\Omicron}$ & $\symbfup{\omicron}$ & $ 𝚶 𝛐 $ \\
+\verb|\symbfup{\Pi}| & $\symbfup{\Pi}$ & $\symbfup{\pi}$ $\symbfup{\varpi}$ & $ 𝚷 𝛑 𝛡  $ \\
+\verb|\symbfup{\Rho}| & $\symbfup{\Rho}$ & $\symbfup{\rho}$ $\symbfup{\varrho}$ & $ 𝚸 𝛒 𝛠 $ \\
+\verb|\symbfup{\Sigma}| & $\symbfup{\Sigma}$ & $\symbfup{\sigma}$ $\symbfup{\varsigma}$ & $ 𝚺 𝛔 𝛓 $ \\
+\verb|\symbfup{\Tau}| & $\symbfup{\Tau}$ & $\symbfup{\tau}$ & $ 𝚻 𝛕 $ \\
+\verb|\symbfup{\Upsilon}| & $\symbfup{\Upsilon}$ & $\symbfup{\upsilon}$ & $ 𝚼 𝛖 $ \\
+\verb|\symbfup{\Phi}| & $\symbfup{\Phi}$ & $\symbfup{\phi}$ $\symbfup{\varphi}$ & $ 𝚽 𝛟 𝛗 $ \\
+\verb|\symbfup{\Chi}| & $\symbfup{\Chi}$ & $\symbfup{\chi}$ & $ 𝚾 𝛘 $ \\
+\verb|\symbfup{\Psi}| & $\symbfup{\Psi}$ & $\symbfup{\psi}$ & $ 𝚿 𝛙 $ \\
+\verb|\symbfup{\Omega}| & $\symbfup{\Omega}$ & $\symbfup{\omega}$ & $ 𝛀 𝛚 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfit} (Bold Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfit{\Alpha}| & $\symbfit{\Alpha}$ & $\symbfit{\alpha}$ & 𝜜 𝜶 \\
+\verb|\symbfit{\Beta}| & $\symbfit{\Beta}$ & $\symbfit{\beta}$ & 𝜝 𝜷 \\
+\verb|\symbfit{\Gamma}| & $\symbfit{\Gamma}$ & $\symbfit{\gamma}$ & 𝜞 𝜸 \\
+\verb|\symbfit{\Delta}| & $\symbfit{\Delta}$ & $\symbfit{\delta}$ & 𝜟 𝜹 \\
+\verb|\symbfit{\Epsilon}| & $\symbfit{\Epsilon}$ & $\symbfit{\epsilon}$ $\symbfit{\varepsilon}$ & 𝜠 𝝐 𝜺 \\
+\verb|\symbfit{\Zeta}| & $\symbfit{\Zeta}$ & $\symbfit{\zeta}$ & 𝜡 𝜻 \\
+\verb|\symbfit{\Eta}| & $\symbfit{\Eta}$ & $\symbfit{\eta}$ & 𝜢 𝜼 \\
+\verb|\symbfit{\Theta}| & $\symbfit{\Theta}$ & $\symbfit{\theta}$ $\symbfit{\vartheta}$ & 𝜣 𝜽 𝝑 \\
+\verb|\symbfit{\Iota}| & $\symbfit{\Iota}$ & $\symbfit{\iota}$ & 𝜤 𝜾 \\
+\verb|\symbfit{\Kappa}| & $\symbfit{\Kappa}$ & $\symbfit{\kappa}$ & 𝜥 𝜿 \\
+\verb|\symbfit{\Lambda}| & $\symbfit{\Lambda}$ & $\symbfit{\lambda}$ & 𝜦 𝝀 \\
+\verb|\symbfit{\Mu}| & $\symbfit{\Mu}$ & $\symbfit{\mu}$ & 𝜧 𝝁 \\
+\verb|\symbfit{\Nu}| & $\symbfit{\Nu}$ & $\symbfit{\nu}$ & 𝜨 𝝂 \\
+\verb|\symbfit{\Xi}| & $\symbfit{\Xi}$ & $\symbfit{\xi}$ & 𝜩 𝝃 \\
+\verb|\symbfit{\Omicron}| & $\symbfit{\Omicron}$ & $\symbfit{\omicron}$ & 𝜪 𝝄 \\
+\verb|\symbfit{\Pi}| & $\symbfit{\Pi}$ & $\symbfit{\pi}$ $\symbfit{\varpi}$ & 𝜫 𝝅 𝝕 \\
+\verb|\symbfit{\Rho}| & $\symbfit{\Rho}$ & $\symbfit{\rho}$ $\symbfit{\varrho}$ & 𝜬 𝝆 𝝔 \\
+\verb|\symbfit{\Sigma}| & $\symbfit{\Sigma}$ & $\symbfit{\sigma}$ $\symbfit{\varsigma}$ & 𝜮 𝝈 𝝇 \\
+\verb|\symbfit{\Tau}| & $\symbfit{\Tau}$ & $\symbfit{\tau}$ & 𝜯 𝝉 \\
+\verb|\symbfit{\Upsilon}| & $\symbfit{\Upsilon}$ & $\symbfit{\upsilon}$ & 𝜰 𝝊 \\
+\verb|\symbfit{\Phi}| & $\symbfit{\Phi}$ & $\symbfit{\phi}$ $\symbfit{\varphi}$ & 𝜱 𝝓 𝝋 \\
+\verb|\symbfit{\Chi}| & $\symbfit{\Chi}$ & $\symbfit{\chi}$ & 𝜲 𝝌 \\
+\verb|\symbfit{\Psi}| & $\symbfit{\Psi}$ & $\symbfit{\psi}$ & 𝜳 𝝍 \\
+\verb|\symbfit{\Omega}| & $\symbfit{\Omega}$ & $\symbfit{\omega}$ & 𝜴 𝝎 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symsfup} (Sans-Serif)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symsfup{\Alpha}| & $\symsfup{\Alpha}$ & $\symsfup{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symsfup{\Beta}| & $\symsfup{\Beta}$ & $\symsfup{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symsfup{\Gamma}| & $\symsfup{\Gamma}$ & $\symsfup{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symsfup{\Delta}| & $\symsfup{\Delta}$ & $\symsfup{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symsfup{\Epsilon}| & $\symsfup{\Epsilon}$ & $\symsfup{\epsilon}$ $\symsfup{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symsfup{\Zeta}| & $\symsfup{\Zeta}$ & $\symsfup{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symsfup{\Eta}| & $\symsfup{\Eta}$ & $\symsfup{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symsfup{\Theta}| & $\symsfup{\Theta}$ & $\symsfup{\theta}$ $\symsfup{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symsfup{\Iota}| & $\symsfup{\Iota}$ & $\symsfup{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symsfup{\Kappa}| & $\symsfup{\Kappa}$ & $\symsfup{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symsfup{\Lambda}| & $\symsfup{\Lambda}$ & $\symsfup{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symsfup{\Mu}| & $\symsfup{\Mu}$ & $\symsfup{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symsfup{\Nu}| & $\symsfup{\Nu}$ & $\symsfup{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symsfup{\Xi}| & $\symsfup{\Xi}$ & $\symsfup{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symsfup{\Omicron}| & $\symsfup{\Omicron}$ & $\symsfup{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symsfup{\Pi}| & $\symsfup{\Pi}$ & $\symsfup{\pi}$ $\symsfup{\varpi}$ & $ Π 𝜋 𝜛 $ \\
+\verb|\symsfup{\Rho}| & $\symsfup{\Rho}$ & $\symsfup{\rho}$ $\symsfup{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symsfup{\Sigma}| & $\symsfup{\Sigma}$ & $\symsfup{\sigma}$ $\symsfup{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symsfup{\Tau}| & $\symsfup{\Tau}$ & $\symsfup{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symsfup{\Upsilon}| & $\symsfup{\Upsilon}$ & $\symsfup{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symsfup{\Phi}| & $\symsfup{\Phi}$ & $\symsfup{\phi}$ $\symsfup{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symsfup{\Chi}| & $\symsfup{\Chi}$ & $\symsfup{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symsfup{\Psi}| & $\symsfup{\Psi}$ & $\symsfup{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symsfup{\Omega}| & $\symsfup{\Omega}$ & $\symsfup{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symsfit} (Sans-serif Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symsfit{\Alpha}| & $\symsfit{\Alpha}$ & $\symsfit{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symsfit{\Beta}| & $\symsfit{\Beta}$ & $\symsfit{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symsfit{\Gamma}| & $\symsfit{\Gamma}$ & $\symsfit{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symsfit{\Delta}| & $\symsfit{\Delta}$ & $\symsfit{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symsfit{\Epsilon}| & $\symsfit{\Epsilon}$ & $\symsfit{\epsilon}$ $\symsfit{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symsfit{\Zeta}| & $\symsfit{\Zeta}$ & $\symsfit{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symsfit{\Eta}| & $\symsfit{\Eta}$ & $\symsfit{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symsfit{\Theta}| & $\symsfit{\Theta}$ & $\symsfit{\theta}$ $\symsfit{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symsfit{\Iota}| & $\symsfit{\Iota}$ & $\symsfit{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symsfit{\Kappa}| & $\symsfit{\Kappa}$ & $\symsfit{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symsfit{\Lambda}| & $\symsfit{\Lambda}$ & $\symsfit{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symsfit{\Mu}| & $\symsfit{\Mu}$ & $\symsfit{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symsfit{\Nu}| & $\symsfit{\Nu}$ & $\symsfit{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symsfit{\Xi}| & $\symsfit{\Xi}$ & $\symsfit{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symsfit{\Omicron}| & $\symsfit{\Omicron}$ & $\symsfit{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symsfit{\Pi}| & $\symsfit{\Pi}$ & $\symsfit{\pi}$ $\symsfit{\varpi}$ & $ Π 𝜋 𝜛 $ \\
+\verb|\symsfit{\Rho}| & $\symsfit{\Rho}$ & $\symsfit{\rho}$ $\symsfit{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symsfit{\Sigma}| & $\symsfit{\Sigma}$ & $\symsfit{\sigma}$ $\symsfit{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symsfit{\Tau}| & $\symsfit{\Tau}$ & $\symsfit{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symsfit{\Upsilon}| & $\symsfit{\Upsilon}$ & $\symsfit{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symsfit{\Phi}| & $\symsfit{\Phi}$ & $\symsfit{\phi}$ $\symsfit{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symsfit{\Chi}| & $\symsfit{\Chi}$ & $\symsfit{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symsfit{\Psi}| & $\symsfit{\Psi}$ & $\symsfit{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symsfit{\Omega}| & $\symsfit{\Omega}$ & $\symsfit{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfsf} (Sans-serif Bold)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfsf{\Alpha}| & $\symbfsf{\Alpha}$ & $\symbfsf{\alpha}$ & $ 𝝖 𝝰 $ \\
+\verb|\symbfsf{\Beta}| & $\symbfsf{\Beta}$ & $\symbfsf{\beta}$ & $ 𝝗 𝝱 $ \\
+\verb|\symbfsf{\Gamma}| & $\symbfsf{\Gamma}$ & $\symbfsf{\gamma}$ & $ 𝝘 𝝲 $ \\
+\verb|\symbfsf{\Delta}| & $\symbfsf{\Delta}$ & $\symbfsf{\delta}$ & $ 𝝙 𝝳 $ \\
+\verb|\symbfsf{\Epsilon}| & $\symbfsf{\Epsilon}$ & $\symbfsf{\epsilon}$ $\symbfsf{\varepsilon}$ & $ 𝝚 𝞊 𝝴 $ \\
+\verb|\symbfsf{\Zeta}| & $\symbfsf{\Zeta}$ & $\symbfsf{\zeta}$ & $ 𝝛 𝝵 $ \\
+\verb|\symbfsf{\Eta}| & $\symbfsf{\Eta}$ & $\symbfsf{\eta}$ & $ 𝝜 𝝶 $ \\
+\verb|\symbfsf{\Theta}| & $\symbfsf{\Theta}$ & $\symbfsf{\theta}$ $\symbfsf{\vartheta}$ & $ 𝝝 𝝷 𝞋 $ \\
+\verb|\symbfsf{\Iota}| & $\symbfsf{\Iota}$ & $\symbfsf{\iota}$ & $ 𝝞 𝝸 $ \\
+\verb|\symbfsf{\Kappa}| & $\symbfsf{\Kappa}$ & $\symbfsf{\kappa}$ & $ 𝝟 𝝹 $ \\
+\verb|\symbfsf{\Lambda}| & $\symbfsf{\Lambda}$ & $\symbfsf{\lambda}$ & $ 𝝠 𝝺 $ \\
+\verb|\symbfsf{\Mu}| & $\symbfsf{\Mu}$ & $\symbfsf{\mu}$ & $ 𝝡 𝝻 $ \\
+\verb|\symbfsf{\Nu}| & $\symbfsf{\Nu}$ & $\symbfsf{\nu}$ & $ 𝝢 𝝼 $ \\
+\verb|\symbfsf{\Xi}| & $\symbfsf{\Xi}$ & $\symbfsf{\xi}$ & $ 𝝣 𝝽 $ \\
+\verb|\symbfsf{\Omicron}| & $\symbfsf{\Omicron}$ & $\symbfsf{\omicron}$ & $ 𝝤 𝝾 $ \\
+\verb|\symbfsf{\Pi}| & $\symbfsf{\Pi}$ & $\symbfsf{\pi}$ $\symbfsf{\varpi}$ & $ 𝝥 𝝿 𝞏  $ \\
+\verb|\symbfsf{\Rho}| & $\symbfsf{\Rho}$ & $\symbfsf{\rho}$ $\symbfsf{\varrho}$ & $ 𝝦 𝞀 𝞎  $ \\
+\verb|\symbfsf{\Sigma}| & $\symbfsf{\Sigma}$ & $\symbfsf{\sigma}$ $\symbfsf{\varsigma}$ & $ 𝝨 𝞂 𝞁  $ \\
+\verb|\symbfsf{\Tau}| & $\symbfsf{\Tau}$ & $\symbfsf{\tau}$ & $ 𝝩 𝞃 $ \\
+\verb|\symbfsf{\Upsilon}| & $\symbfsf{\Upsilon}$ & $\symbfsf{\upsilon}$ & $ 𝝪 𝞄 $ \\
+\verb|\symbfsf{\Phi}| & $\symbfsf{\Phi}$ & $\symbfsf{\phi}$ $\symbfsf{\varphi}$ & $ 𝝫 𝞍 𝞅 $ \\
+\verb|\symbfsf{\Chi}| & $\symbfsf{\Chi}$ & $\symbfsf{\chi}$ & $ 𝝬 𝞆 $ \\
+\verb|\symbfsf{\Psi}| & $\symbfsf{\Psi}$ & $\symbfsf{\psi}$ & $ 𝝭 𝞇 $ \\
+\verb|\symbfsf{\Omega}| & $\symbfsf{\Omega}$ & $\symbfsf{\omega}$ & $ 𝝮 𝞈 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfsfup} (Sans-serif Bold)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfsfup{\Alpha}| & $\symbfsfup{\Alpha}$ & $\symbfsfup{\alpha}$ & $ 𝝖 𝝰 $ \\
+\verb|\symbfsfup{\Beta}| & $\symbfsfup{\Beta}$ & $\symbfsfup{\beta}$ & $ 𝝗 𝝱 $ \\
+\verb|\symbfsfup{\Gamma}| & $\symbfsfup{\Gamma}$ & $\symbfsfup{\gamma}$ & $ 𝝘 𝝲 $ \\
+\verb|\symbfsfup{\Delta}| & $\symbfsfup{\Delta}$ & $\symbfsfup{\delta}$ & $ 𝝙 𝝳 $ \\
+\verb|\symbfsfup{\Epsilon}| & $\symbfsfup{\Epsilon}$ & $\symbfsfup{\epsilon}$ $\symbfsfup{\varepsilon}$ & $ 𝝚 𝞊 𝝴 $ \\
+\verb|\symbfsfup{\Zeta}| & $\symbfsfup{\Zeta}$ & $\symbfsfup{\zeta}$ & $ 𝝛 𝝵 $ \\
+\verb|\symbfsfup{\Eta}| & $\symbfsfup{\Eta}$ & $\symbfsfup{\eta}$ & $ 𝝜 𝝶 $ \\
+\verb|\symbfsfup{\Theta}| & $\symbfsfup{\Theta}$ & $\symbfsfup{\theta}$ $\symbfsfup{\vartheta}$ & $ 𝝝 𝝷 𝞋 $ \\
+\verb|\symbfsfup{\Iota}| & $\symbfsfup{\Iota}$ & $\symbfsfup{\iota}$ & $ 𝝞 𝝸 $ \\
+\verb|\symbfsfup{\Kappa}| & $\symbfsfup{\Kappa}$ & $\symbfsfup{\kappa}$ & $ 𝝟 𝝹 $ \\
+\verb|\symbfsfup{\Lambda}| & $\symbfsfup{\Lambda}$ & $\symbfsfup{\lambda}$ & $ 𝝠 𝝺 $ \\
+\verb|\symbfsfup{\Mu}| & $\symbfsfup{\Mu}$ & $\symbfsfup{\mu}$ & $ 𝝡 𝝻 $ \\
+\verb|\symbfsfup{\Nu}| & $\symbfsfup{\Nu}$ & $\symbfsfup{\nu}$ & $ 𝝢 𝝼 $ \\
+\verb|\symbfsfup{\Xi}| & $\symbfsfup{\Xi}$ & $\symbfsfup{\xi}$ & $ 𝝣 𝝽 $ \\
+\verb|\symbfsfup{\Omicron}| & $\symbfsfup{\Omicron}$ & $\symbfsfup{\omicron}$ & $ 𝝤 𝝾 $ \\
+\verb|\symbfsfup{\Pi}| & $\symbfsfup{\Pi}$ & $\symbfsfup{\pi}$ $\symbfsfup{\varpi}$ & $ 𝝥 𝝿 𝞏  $ \\
+\verb|\symbfsfup{\Rho}| & $\symbfsfup{\Rho}$ & $\symbfsfup{\rho}$ $\symbfsfup{\varrho}$ & $ 𝝦 𝞀 𝞎  $ \\
+\verb|\symbfsfup{\Sigma}| & $\symbfsfup{\Sigma}$ & $\symbfsfup{\sigma}$ $\symbfsfup{\varsigma}$ & $ 𝝨 𝞂 𝞁  $ \\
+\verb|\symbfsfup{\Tau}| & $\symbfsfup{\Tau}$ & $\symbfsfup{\tau}$ & $ 𝝩 𝞃 $ \\
+\verb|\symbfsfup{\Upsilon}| & $\symbfsfup{\Upsilon}$ & $\symbfsfup{\upsilon}$ & $ 𝝪 𝞄 $ \\
+\verb|\symbfsfup{\Phi}| & $\symbfsfup{\Phi}$ & $\symbfsfup{\phi}$ $\symbfsfup{\varphi}$ & $ 𝝫 𝞍 𝞅 $ \\
+\verb|\symbfsfup{\Chi}| & $\symbfsfup{\Chi}$ & $\symbfsfup{\chi}$ & $ 𝝬 𝞆 $ \\
+\verb|\symbfsfup{\Psi}| & $\symbfsfup{\Psi}$ & $\symbfsfup{\psi}$ & $ 𝝭 𝞇 $ \\
+\verb|\symbfsfup{\Omega}| & $\symbfsfup{\Omega}$ & $\symbfsfup{\omega}$ & $ 𝝮 𝞈 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfsfit} (Sans-serif Bold Italic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfsfit{\Alpha}| & $\symbfsfit{\Alpha}$ & $\symbfsfit{\alpha}$ & 𝞐 𝞪 \\
+\verb|\symbfsfit{\Beta}| & $\symbfsfit{\Beta}$ & $\symbfsfit{\beta}$ & 𝞑 𝞫 \\
+\verb|\symbfsfit{\Gamma}| & $\symbfsfit{\Gamma}$ & $\symbfsfit{\gamma}$ & 𝞒 𝞬 \\
+\verb|\symbfsfit{\Delta}| & $\symbfsfit{\Delta}$ & $\symbfsfit{\delta}$ & 𝞓 𝞭 \\
+\verb|\symbfsfit{\Epsilon}| & $\symbfsfit{\Epsilon}$ & $\symbfsfit{\epsilon}$ $\symbfsfit{\varepsilon}$ & 𝞔 𝞊 𝞮 \\
+\verb|\symbfsfit{\Zeta}| & $\symbfsfit{\Zeta}$ & $\symbfsfit{\zeta}$ & 𝞕 𝞯 \\
+\verb|\symbfsfit{\Eta}| & $\symbfsfit{\Eta}$ & $\symbfsfit{\eta}$ & 𝞖 𝞰 \\
+\verb|\symbfsfit{\Theta}| & $\symbfsfit{\Theta}$ & $\symbfsfit{\theta}$ $\symbfsfit{\vartheta}$ & 𝞗 𝞱 𝟅 \\
+\verb|\symbfsfit{\Iota}| & $\symbfsfit{\Iota}$ & $\symbfsfit{\iota}$ & 𝞘 𝞲 \\
+\verb|\symbfsfit{\Kappa}| & $\symbfsfit{\Kappa}$ & $\symbfsfit{\kappa}$ & 𝞙 𝞳 \\
+\verb|\symbfsfit{\Lambda}| & $\symbfsfit{\Lambda}$ & $\symbfsfit{\lambda}$ & 𝞚 𝞴 \\
+\verb|\symbfsfit{\Mu}| & $\symbfsfit{\Mu}$ & $\symbfsfit{\mu}$ & 𝞛 𝞵 \\
+\verb|\symbfsfit{\Nu}| & $\symbfsfit{\Nu}$ & $\symbfsfit{\nu}$ & 𝞜 𝞶 \\
+\verb|\symbfsfit{\Xi}| & $\symbfsfit{\Xi}$ & $\symbfsfit{\xi}$ & 𝞝 𝞷 \\
+\verb|\symbfsfit{\Omicron}| & $\symbfsfit{\Omicron}$ & $\symbfsfit{\omicron}$ & 𝞞 𝞸 \\
+\verb|\symbfsfit{\Pi}| & $\symbfsfit{\Pi}$ & $\symbfsfit{\pi}$ $\symbfsfit{\varpi}$ & 𝞟 𝞹 𝟉 \\
+\verb|\symbfsfit{\Rho}| & $\symbfsfit{\Rho}$ & $\symbfsfit{\rho}$ $\symbfsfit{\varrho}$ & 𝞠 𝞺 𝟈 \\
+\verb|\symbfsfit{\Sigma}| & $\symbfsfit{\Sigma}$ & $\symbfsfit{\sigma}$ $\symbfsfit{\varsigma}$ & 𝞢 𝞼 𝞁 \\
+\verb|\symbfsfit{\Tau}| & $\symbfsfit{\Tau}$ & $\symbfsfit{\tau}$ & 𝞣 𝞽 \\
+\verb|\symbfsfit{\Upsilon}| & $\symbfsfit{\Upsilon}$ & $\symbfsfit{\upsilon}$ & 𝞤 𝞾 \\
+\verb|\symbfsfit{\Phi}| & $\symbfsfit{\Phi}$ & $\symbfsfit{\phi}$ $\symbfsfit{\varphi}$ & 𝞥 𝟇 𝞿 \\
+\verb|\symbfsfit{\Chi}| & $\symbfsfit{\Chi}$ & $\symbfsfit{\chi}$ & 𝞦 𝟀 \\
+\verb|\symbfsfit{\Psi}| & $\symbfsfit{\Psi}$ & $\symbfsfit{\psi}$ & 𝞧 𝟁 \\
+\verb|\symbfsfit{\Omega}| & $\symbfsfit{\Omega}$ & $\symbfsfit{\omega}$ & 𝞨 𝟂 \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symcal} (Calligraphic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symcal{\Alpha}| & $\symcal{\Alpha}$ & $\symcal{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symcal{\Beta}| & $\symcal{\Beta}$ & $\symcal{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symcal{\Gamma}| & $\symcal{\Gamma}$ & $\symcal{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symcal{\Delta}| & $\symcal{\Delta}$ & $\symcal{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symcal{\Epsilon}| & $\symcal{\Epsilon}$ & $\symcal{\epsilon}$ $\symcal{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symcal{\Zeta}| & $\symcal{\Zeta}$ & $\symcal{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symcal{\Eta}| & $\symcal{\Eta}$ & $\symcal{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symcal{\Theta}| & $\symcal{\Theta}$ & $\symcal{\theta}$ $\symcal{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symcal{\Iota}| & $\symcal{\Iota}$ & $\symcal{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symcal{\Kappa}| & $\symcal{\Kappa}$ & $\symcal{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symcal{\Lambda}| & $\symcal{\Lambda}$ & $\symcal{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symcal{\Mu}| & $\symcal{\Mu}$ & $\symcal{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symcal{\Nu}| & $\symcal{\Nu}$ & $\symcal{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symcal{\Xi}| & $\symcal{\Xi}$ & $\symcal{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symcal{\Omicron}| & $\symcal{\Omicron}$ & $\symcal{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symcal{\Pi}| & $\symcal{\Pi}$ & $\symcal{\pi}$ $\symcal{\varpi}$ & $ Π 𝜋 𝜛  $ \\
+\verb|\symcal{\Rho}| & $\symcal{\Rho}$ & $\symcal{\rho}$ $\symcal{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symcal{\Sigma}| & $\symcal{\Sigma}$ & $\symcal{\sigma}$ $\symcal{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symcal{\Tau}| & $\symcal{\Tau}$ & $\symcal{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symcal{\Upsilon}| & $\symcal{\Upsilon}$ & $\symcal{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symcal{\Phi}| & $\symcal{\Phi}$ & $\symcal{\phi}$ $\symcal{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symcal{\Chi}| & $\symcal{\Chi}$ & $\symcal{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symcal{\Psi}| & $\symcal{\Psi}$ & $\symcal{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symcal{\Omega}| & $\symcal{\Omega}$ & $\symcal{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfcal} (Bold Calligraphic)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfcal{\Alpha}| & $\symbfcal{\Alpha}$ & $\symbfcal{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symbfcal{\Beta}| & $\symbfcal{\Beta}$ & $\symbfcal{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symbfcal{\Gamma}| & $\symbfcal{\Gamma}$ & $\symbfcal{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symbfcal{\Delta}| & $\symbfcal{\Delta}$ & $\symbfcal{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symbfcal{\Epsilon}| & $\symbfcal{\Epsilon}$ & $\symbfcal{\epsilon}$ $\symbfcal{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symbfcal{\Zeta}| & $\symbfcal{\Zeta}$ & $\symbfcal{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symbfcal{\Eta}| & $\symbfcal{\Eta}$ & $\symbfcal{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symbfcal{\Theta}| & $\symbfcal{\Theta}$ & $\symbfcal{\theta}$ $\symbfcal{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symbfcal{\Iota}| & $\symbfcal{\Iota}$ & $\symbfcal{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symbfcal{\Kappa}| & $\symbfcal{\Kappa}$ & $\symbfcal{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symbfcal{\Lambda}| & $\symbfcal{\Lambda}$ & $\symbfcal{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symbfcal{\Mu}| & $\symbfcal{\Mu}$ & $\symbfcal{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symbfcal{\Nu}| & $\symbfcal{\Nu}$ & $\symbfcal{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symbfcal{\Xi}| & $\symbfcal{\Xi}$ & $\symbfcal{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symbfcal{\Omicron}| & $\symbfcal{\Omicron}$ & $\symbfcal{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symbfcal{\Pi}| & $\symbfcal{\Pi}$ & $\symbfcal{\pi}$ $\symbfcal{\varpi}$ & $ Π 𝜋 𝜛  $ \\
+\verb|\symbfcal{\Rho}| & $\symbfcal{\Rho}$ & $\symbfcal{\rho}$ $\symbfcal{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symbfcal{\Sigma}| & $\symbfcal{\Sigma}$ & $\symbfcal{\sigma}$ $\symbfcal{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symbfcal{\Tau}| & $\symbfcal{\Tau}$ & $\symbfcal{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symbfcal{\Upsilon}| & $\symbfcal{\Upsilon}$ & $\symbfcal{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symbfcal{\Phi}| & $\symbfcal{\Phi}$ & $\symbfcal{\phi}$ $\symbfcal{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symbfcal{\Chi}| & $\symbfcal{\Chi}$ & $\symbfcal{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symbfcal{\Psi}| & $\symbfcal{\Psi}$ & $\symbfcal{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symbfcal{\Omega}| & $\symbfcal{\Omega}$ & $\symbfcal{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symscr} (Script)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symscr{\Alpha}| & $\symscr{\Alpha}$ & $\symscr{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symscr{\Beta}| & $\symscr{\Beta}$ & $\symscr{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symscr{\Gamma}| & $\symscr{\Gamma}$ & $\symscr{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symscr{\Delta}| & $\symscr{\Delta}$ & $\symscr{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symscr{\Epsilon}| & $\symscr{\Epsilon}$ & $\symscr{\epsilon}$ $\symscr{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symscr{\Zeta}| & $\symscr{\Zeta}$ & $\symscr{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symscr{\Eta}| & $\symscr{\Eta}$ & $\symscr{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symscr{\Theta}| & $\symscr{\Theta}$ & $\symscr{\theta}$ $\symscr{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symscr{\Iota}| & $\symscr{\Iota}$ & $\symscr{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symscr{\Kappa}| & $\symscr{\Kappa}$ & $\symscr{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symscr{\Lambda}| & $\symscr{\Lambda}$ & $\symscr{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symscr{\Mu}| & $\symscr{\Mu}$ & $\symscr{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symscr{\Nu}| & $\symscr{\Nu}$ & $\symscr{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symscr{\Xi}| & $\symscr{\Xi}$ & $\symscr{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symscr{\Omicron}| & $\symscr{\Omicron}$ & $\symscr{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symscr{\Pi}| & $\symscr{\Pi}$ & $\symscr{\pi}$ $\symscr{\varpi}$ & $ Π 𝜋 𝜛  $ \\
+\verb|\symscr{\Rho}| & $\symscr{\Rho}$ & $\symscr{\rho}$ $\symscr{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symscr{\Sigma}| & $\symscr{\Sigma}$ & $\symscr{\sigma}$ $\symscr{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symscr{\Tau}| & $\symscr{\Tau}$ & $\symscr{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symscr{\Upsilon}| & $\symscr{\Upsilon}$ & $\symscr{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symscr{\Phi}| & $\symscr{\Phi}$ & $\symscr{\phi}$ $\symscr{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symscr{\Chi}| & $\symscr{\Chi}$ & $\symscr{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symscr{\Psi}| & $\symscr{\Psi}$ & $\symscr{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symscr{\Omega}| & $\symscr{\Omega}$ & $\symscr{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbfscr} (Bold Script)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbfscr{\Alpha}| & $\symbfscr{\Alpha}$ & $\symbfscr{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symbfscr{\Beta}| & $\symbfscr{\Beta}$ & $\symbfscr{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symbfscr{\Gamma}| & $\symbfscr{\Gamma}$ & $\symbfscr{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symbfscr{\Delta}| & $\symbfscr{\Delta}$ & $\symbfscr{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symbfscr{\Epsilon}| & $\symbfscr{\Epsilon}$ & $\symbfscr{\epsilon}$ $\symbfscr{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symbfscr{\Zeta}| & $\symbfscr{\Zeta}$ & $\symbfscr{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symbfscr{\Eta}| & $\symbfscr{\Eta}$ & $\symbfscr{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symbfscr{\Theta}| & $\symbfscr{\Theta}$ & $\symbfscr{\theta}$ $\symbfscr{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symbfscr{\Iota}| & $\symbfscr{\Iota}$ & $\symbfscr{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symbfscr{\Kappa}| & $\symbfscr{\Kappa}$ & $\symbfscr{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symbfscr{\Lambda}| & $\symbfscr{\Lambda}$ & $\symbfscr{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symbfscr{\Mu}| & $\symbfscr{\Mu}$ & $\symbfscr{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symbfscr{\Nu}| & $\symbfscr{\Nu}$ & $\symbfscr{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symbfscr{\Xi}| & $\symbfscr{\Xi}$ & $\symbfscr{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symbfscr{\Omicron}| & $\symbfscr{\Omicron}$ & $\symbfscr{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symbfscr{\Pi}| & $\symbfscr{\Pi}$ & $\symbfscr{\pi}$ $\symbfscr{\varpi}$ & $ Π 𝜋 𝜛  $ \\
+\verb|\symbfscr{\Rho}| & $\symbfscr{\Rho}$ & $\symbfscr{\rho}$ $\symbfscr{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symbfscr{\Sigma}| & $\symbfscr{\Sigma}$ & $\symbfscr{\sigma}$ $\symbfscr{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symbfscr{\Tau}| & $\symbfscr{\Tau}$ & $\symbfscr{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symbfscr{\Upsilon}| & $\symbfscr{\Upsilon}$ & $\symbfscr{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symbfscr{\Phi}| & $\symbfscr{\Phi}$ & $\symbfscr{\phi}$ $\symbfscr{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symbfscr{\Chi}| & $\symbfscr{\Chi}$ & $\symbfscr{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symbfscr{\Psi}| & $\symbfscr{\Psi}$ & $\symbfscr{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symbfscr{\Omega}| & $\symbfscr{\Omega}$ & $\symbfscr{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbb} (Blackboard Bold)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbb{\Alpha}| & $\symbb{\Alpha}$ & $\symbb{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symbb{\Beta}| & $\symbb{\Beta}$ & $\symbb{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symbb{\Gamma}| & $\symbb{\Gamma}$ & $\symbb{\gamma}$ & $ ℾ ℽ $ \\
+\verb|\symbb{\Delta}| & $\symbb{\Delta}$ & $\symbb{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symbb{\Epsilon}| & $\symbb{\Epsilon}$ & $\symbb{\epsilon}$ $\symbb{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symbb{\Zeta}| & $\symbb{\Zeta}$ & $\symbb{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symbb{\Eta}| & $\symbb{\Eta}$ & $\symbb{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symbb{\Theta}| & $\symbb{\Theta}$ & $\symbb{\theta}$ $\symbb{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symbb{\Iota}| & $\symbb{\Iota}$ & $\symbb{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symbb{\Kappa}| & $\symbb{\Kappa}$ & $\symbb{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symbb{\Lambda}| & $\symbb{\Lambda}$ & $\symbb{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symbb{\Mu}| & $\symbb{\Mu}$ & $\symbb{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symbb{\Nu}| & $\symbb{\Nu}$ & $\symbb{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symbb{\Xi}| & $\symbb{\Xi}$ & $\symbb{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symbb{\Omicron}| & $\symbb{\Omicron}$ & $\symbb{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symbb{\Pi}| & $\symbb{\Pi}$ & $\symbb{\pi}$ $\symbb{\varpi}$ & $ ℿ  ℼ 𝜛  $ \\
+\verb|\symbb{\Rho}| & $\symbb{\Rho}$ & $\symbb{\rho}$ $\symbb{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symbb{\Sigma}| & $\symbb{\Sigma}$ & $\symbb{\sigma}$ $\symbb{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symbb{\Tau}| & $\symbb{\Tau}$ & $\symbb{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symbb{\Upsilon}| & $\symbb{\Upsilon}$ & $\symbb{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symbb{\Phi}| & $\symbb{\Phi}$ & $\symbb{\phi}$ $\symbb{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symbb{\Chi}| & $\symbb{\Chi}$ & $\symbb{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symbb{\Psi}| & $\symbb{\Psi}$ & $\symbb{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symbb{\Omega}| & $\symbb{\Omega}$ & $\symbb{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbbit} (Bold Script)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbbit{\Alpha}| & $\symbbit{\Alpha}$ & $\symbbit{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symbbit{\Beta}| & $\symbbit{\Beta}$ & $\symbbit{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symbbit{\Gamma}| & $\symbbit{\Gamma}$ & $\symbbit{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symbbit{\Delta}| & $\symbbit{\Delta}$ & $\symbbit{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symbbit{\Epsilon}| & $\symbbit{\Epsilon}$ & $\symbbit{\epsilon}$ $\symbbit{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symbbit{\Zeta}| & $\symbbit{\Zeta}$ & $\symbbit{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symbbit{\Eta}| & $\symbbit{\Eta}$ & $\symbbit{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symbbit{\Theta}| & $\symbbit{\Theta}$ & $\symbbit{\theta}$ $\symbbit{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symbbit{\Iota}| & $\symbbit{\Iota}$ & $\symbbit{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symbbit{\Kappa}| & $\symbbit{\Kappa}$ & $\symbbit{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symbbit{\Lambda}| & $\symbbit{\Lambda}$ & $\symbbit{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symbbit{\Mu}| & $\symbbit{\Mu}$ & $\symbbit{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symbbit{\Nu}| & $\symbbit{\Nu}$ & $\symbbit{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symbbit{\Xi}| & $\symbbit{\Xi}$ & $\symbbit{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symbbit{\Omicron}| & $\symbbit{\Omicron}$ & $\symbbit{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symbbit{\Pi}| & $\symbbit{\Pi}$ & $\symbbit{\pi}$ $\symbbit{\varpi}$ & $ Π 𝜋 𝜛  $ \\
+\verb|\symbbit{\Rho}| & $\symbbit{\Rho}$ & $\symbbit{\rho}$ $\symbbit{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symbbit{\Sigma}| & $\symbbit{\Sigma}$ & $\symbbit{\sigma}$ $\symbbit{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symbbit{\Tau}| & $\symbbit{\Tau}$ & $\symbbit{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symbbit{\Upsilon}| & $\symbbit{\Upsilon}$ & $\symbbit{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symbbit{\Phi}| & $\symbbit{\Phi}$ & $\symbbit{\phi}$ $\symbbit{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symbbit{\Chi}| & $\symbbit{\Chi}$ & $\symbbit{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symbbit{\Psi}| & $\symbbit{\Psi}$ & $\symbbit{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symbbit{\Omega}| & $\symbbit{\Omega}$ & $\symbbit{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symfrak} (Fraktur)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symfrak{\Alpha}| & $\symfrak{\Alpha}$ & $\symfrak{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symfrak{\Beta}| & $\symfrak{\Beta}$ & $\symfrak{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symfrak{\Gamma}| & $\symfrak{\Gamma}$ & $\symfrak{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symfrak{\Delta}| & $\symfrak{\Delta}$ & $\symfrak{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symfrak{\Epsilon}| & $\symfrak{\Epsilon}$ & $\symfrak{\epsilon}$ $\symfrak{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symfrak{\Zeta}| & $\symfrak{\Zeta}$ & $\symfrak{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symfrak{\Eta}| & $\symfrak{\Eta}$ & $\symfrak{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symfrak{\Theta}| & $\symfrak{\Theta}$ & $\symfrak{\theta}$ $\symfrak{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symfrak{\Iota}| & $\symfrak{\Iota}$ & $\symfrak{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symfrak{\Kappa}| & $\symfrak{\Kappa}$ & $\symfrak{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symfrak{\Lambda}| & $\symfrak{\Lambda}$ & $\symfrak{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symfrak{\Mu}| & $\symfrak{\Mu}$ & $\symfrak{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symfrak{\Nu}| & $\symfrak{\Nu}$ & $\symfrak{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symfrak{\Xi}| & $\symfrak{\Xi}$ & $\symfrak{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symfrak{\Omicron}| & $\symfrak{\Omicron}$ & $\symfrak{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symfrak{\Pi}| & $\symfrak{\Pi}$ & $\symfrak{\pi}$ $\symfrak{\varpi}$ & $ Π 𝜋 𝜛  $ \\
+\verb|\symfrak{\Rho}| & $\symfrak{\Rho}$ & $\symfrak{\rho}$ $\symfrak{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symfrak{\Sigma}| & $\symfrak{\Sigma}$ & $\symfrak{\sigma}$ $\symfrak{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symfrak{\Tau}| & $\symfrak{\Tau}$ & $\symfrak{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symfrak{\Upsilon}| & $\symfrak{\Upsilon}$ & $\symfrak{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symfrak{\Phi}| & $\symfrak{\Phi}$ & $\symfrak{\phi}$ $\symfrak{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symfrak{\Chi}| & $\symfrak{\Chi}$ & $\symfrak{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symfrak{\Psi}| & $\symfrak{\Psi}$ & $\symfrak{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symfrak{\Omega}| & $\symfrak{\Omega}$ & $\symfrak{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\newpage
+
+\subsection*{\texttt{\textbackslash{}symbffrak} (Bold Fraktur)}
+
+\begin{longtable}{|c|c|c|c|}
+\hline
+\textbf{Command} & \textbf{Uppercase} & \textbf{Lowercase} & \textbf{Unicode Glyph} \\
+\hline
+\verb|\symbffrak{\Alpha}| & $\symbffrak{\Alpha}$ & $\symbffrak{\alpha}$ & $ Α 𝛼 $ \\
+\verb|\symbffrak{\Beta}| & $\symbffrak{\Beta}$ & $\symbffrak{\beta}$ & $ Β 𝛽 $ \\
+\verb|\symbffrak{\Gamma}| & $\symbffrak{\Gamma}$ & $\symbffrak{\gamma}$ & $ Γ 𝛾 $ \\
+\verb|\symbffrak{\Delta}| & $\symbffrak{\Delta}$ & $\symbffrak{\delta}$ & $ Δ 𝛿 $ \\
+\verb|\symbffrak{\Epsilon}| & $\symbffrak{\Epsilon}$ & $\symbffrak{\epsilon}$ $\symbffrak{\varepsilon}$ & $ Ε 𝜖 𝜀 $ \\
+\verb|\symbffrak{\Zeta}| & $\symbffrak{\Zeta}$ & $\symbffrak{\zeta}$ & $ Ζ 𝜁 $ \\
+\verb|\symbffrak{\Eta}| & $\symbffrak{\Eta}$ & $\symbffrak{\eta}$ & $ Η 𝜂 $ \\
+\verb|\symbffrak{\Theta}| & $\symbffrak{\Theta}$ & $\symbffrak{\theta}$ $\symbffrak{\vartheta}$ & $ Θ 𝜃 𝜗 $ \\
+\verb|\symbffrak{\Iota}| & $\symbffrak{\Iota}$ & $\symbffrak{\iota}$ & $ Ι 𝜄 $ \\
+\verb|\symbffrak{\Kappa}| & $\symbffrak{\Kappa}$ & $\symbffrak{\kappa}$ & $ Κ 𝜅 $ \\
+\verb|\symbffrak{\Lambda}| & $\symbffrak{\Lambda}$ & $\symbffrak{\lambda}$ & $ Λ 𝜆 $ \\
+\verb|\symbffrak{\Mu}| & $\symbffrak{\Mu}$ & $\symbffrak{\mu}$ & $ Μ 𝜇 $ \\
+\verb|\symbffrak{\Nu}| & $\symbffrak{\Nu}$ & $\symbffrak{\nu}$ & $ Ν 𝜈 $ \\
+\verb|\symbffrak{\Xi}| & $\symbffrak{\Xi}$ & $\symbffrak{\xi}$ & $ Ξ 𝜉 $ \\
+\verb|\symbffrak{\Omicron}| & $\symbffrak{\Omicron}$ & $\symbffrak{\omicron}$ & $ Ο 𝜊 $ \\
+\verb|\symbffrak{\Pi}| & $\symbffrak{\Pi}$ & $\symbffrak{\pi}$ $\symbffrak{\varpi}$ & $ Π 𝜋 𝜛  $ \\
+\verb|\symbffrak{\Rho}| & $\symbffrak{\Rho}$ & $\symbffrak{\rho}$ $\symbffrak{\varrho}$ & $ Ρ 𝜌 𝜚  $ \\
+\verb|\symbffrak{\Sigma}| & $\symbffrak{\Sigma}$ & $\symbffrak{\sigma}$ $\symbffrak{\varsigma}$ & $ Σ 𝜎 𝜍 $ \\
+\verb|\symbffrak{\Tau}| & $\symbffrak{\Tau}$ & $\symbffrak{\tau}$ & $ Τ 𝜏 $ \\
+\verb|\symbffrak{\Upsilon}| & $\symbffrak{\Upsilon}$ & $\symbffrak{\upsilon}$ & $ Υ 𝜐 $ \\
+\verb|\symbffrak{\Phi}| & $\symbffrak{\Phi}$ & $\symbffrak{\phi}$ $\symbffrak{\varphi}$ & $ Φ 𝜙 𝜑 $ \\
+\verb|\symbffrak{\Chi}| & $\symbffrak{\Chi}$ & $\symbffrak{\chi}$ & $ Χ 𝜒 $ \\
+\verb|\symbffrak{\Psi}| & $\symbffrak{\Psi}$ & $\symbffrak{\psi}$ & $ Ψ 𝜓 $ \\
+\verb|\symbffrak{\Omega}| & $\symbffrak{\Omega}$ & $\symbffrak{\omega}$ & $ Ω 𝜔 $ \\
+\hline
+\end{longtable}
+
+\end{document}

@@ -1,0 +1,243 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\part[short title]{main part}
+\part*{part without number}
+\addpart{addpart without number}
+\addpart*{addpart without number}
+
+\chapter[short title]{main chapter}
+\chapter*{chapter without number}
+\addchap{addchap without number}
+\addchap*{addchap without number}
+
+\section[short title]{main section}
+\section*{section without number}
+\addsec{addsec without number}
+\addsec*{addsec without number}
+
+\subsection[short title]{main subsection}
+\subsection*{subsection without number}
+
+\subsubsection[short title]{main subsubsection}
+\subsubsection*{subsubsection without number}
+
+\paragraph[short title]{main paragraph}
+\paragraph*{paragraph without number}
+
+\subparagraph[short title]{main subparagraph}
+\subparagraph*{subparagraph without number}
+
+\section{Commands}
+
+% Horizontal spaces
+Text with \hfill filling.
+
+% Vertical spaces
+\vfill
+\smallskip
+\medskip
+\bigskip
+
+% Commands with arguments
+\hspace{1cm}
+\vspace{2cm}
+\hspace{\fill}
+
+% Phantoms
+\phantom{hidden text}
+\hphantom{hidden text}
+\vphantom{hidden text}
+
+% Box
+\fbox{accent}
+\mbox{filled}
+
+% Others
+\centering
+\clearpage
+\enlargethispage
+\indent
+\linebreak
+\newpage
+\noindent
+\nolinebreak
+\nopagebreak
+\pagebreak
+\raggedleft
+\raggedright
+
+% Vertical spaces
+\vfill
+\smallskip
+\medskip
+\bigskip
+
+% Mixed examples
+\begin{equation}
+x \quad y \qquad z
+\end{equation}
+
+\[
+x = \text{condition}
+\intertext{and also}
+y = \text{other condition}
+\shortintertext{finally}
+z = \text{last}
+
+% Horizontal spaces
+Text with \quad space.
+Text with \qquad space.
+Text with \hfill filling.
+Text with \thinspace space.
+Text with \medspace space.
+Text with \thickspace space.
+
+% Commands with arguments
+\hspace{1cm}
+\vspace{2cm}
+\hspace{\fill}
+
+% Phantoms
+\phantom{hidden text}
+\hphantom{hidden text}
+\vphantom{hidden text}
+
+\phantom{\text{text}}
+\hphantom{\intertext{text}}
+
+\fbox{accent}
+\mbox{filled}
+\]
+\section{Ligatures}
+\rq \i \j \AE \ae \oe \OE \o \O \aa \AA \ss
+
+In text: \rq{} \i{} \j{} \AE{} \ae{} \oe{} \OE{} \o{} \O{} \aa{} \AA{} \ss{}
+
+\section{Text commands}
+
+\textbf{bold}
+\textit{italic}
+\textlf{light}
+\textmd{medium}
+\textrm{roman}
+\textsc{small caps}
+\textsl{slanted}
+\textsf{sans serif}
+\texttc{typewriter-caps}
+\texttt{typewriter}
+\textulc{uppercase/lowercase}
+\textup{upright}
+\textnormal{normal}
+
+\emph{emphasized}
+
+\rmfamily{roman family}
+\sffamily{sans family}
+\ttfamily{typewriter family}
+
+\itshape{italic shape}
+\scshape{small caps shape}
+\slshape{slanted shape}
+\upshape{upright shape}
+
+\bfseries{bold series}
+\mdseries{medium series}
+
+\section{Math font commands}
+
+% Standard (no packages needed)
+$ \mathrm{r} $ — roman
+$ \mathtt{x} $ — typewriter
+$ \mathsf{x} $ — sans serif
+$ \mathnormal{normal} $ — normal math
+$ \mathbf{x} $ — bold
+$ \mathit{x} $ — italic
+$ \mathcal{X} $ — calligraphic
+
+% Require amsmath
+$ \mathbfit{X} $ — bold italic
+
+% Require amsfonts or amssymb
+$ \mathbb{A} $ — blackboard bold
+$ \mathfrak{X} $ — fraktur
+
+% Require mathrsfs
+$ \mathscr{X} $ — script
+
+% Require bm
+$ \bm{\alpha} $ — bold math symbol
+
+\section{Font size}
+
+\tiny tiny text
+
+\scriptsize scriptsize text
+
+\footnotesize footnotesize text
+
+\small small text
+
+\normalsize normalsize text
+
+\large large text
+
+\Large Large text
+
+\LARGE LARGE text
+
+\huge huge text
+
+\Huge Huge text
+
+\normalfont normal text
+
+$ \text{\Huge Huge text} $
+
+\text{\Huge Huge text}
+\[
+\cos \csc \exp \ker \limsup \min \sinh \arcsin \cosh \deg \gcd \lg \ln \Pr \sup
+\arctan \cot \det \hom \lim \log \sec \tan \arg \coth \dim \liminf \max \sin \tanh
+
+% Basic trigonometric functions
+\sin(x) \cos(x) \tan(x) \csc(x) \sec(x) \cot(x)
+
+% Inverse trigonometric functions
+\arcsin(x) \arccos(x) \arctan(x)
+
+% Hyperbolic functions (lowercase, standard LaTeX)
+\sinh(x) \cosh(x) \tanh(x)
+\]
+\section{Greek letters}
+\[
+\alpha \beta \gamma \delta \epsilon \varepsilon \zeta \eta
+\theta \vartheta \iota \kappa \lambda \mu \nu \xi
+\pi \varpi \rho \varrho \sigma \varsigma \tau
+\upsilon \phi \varphi \chi \psi \omega
+
+\Gamma \Delta \Theta \Lambda \Xi \Pi \Sigma \Upsilon \Phi \Chi \Psi \Omega
+
+\alpha+\beta=\gamma
+\]
+\section{Delimiters}
+\[
+\Biggl( \biggl( \Bigl( \bigl( x \bigr) \Bigr) \biggr) \Biggr)  \langle \bigl[ \{ x \} \bigr] \rangle \lVert \frac{\partial f}{\partial x}  \rVert
+
+( \frac{a}{b} ) [ x ] \{ y \} \langle z \rangle  \lvert w  \rvert  \lVert v  \rVert  u
+
+\bigl[ x \bigr] \Bigl[ x \Bigr] \biggl[ x \biggr] \Biggl[ x \Biggr]
+
+\lvert x \rvert \lVert x \rVert \langle x \rangle \lceil x \rceil \lfloor x \rfloor \lgroup x \rgroup \lmoustache x \rmoustache
+
+\lvert x \rvert \lVert x \rVert \langle x \rangle \lbrace x \rbrace \lceil x \rceil \lfloor x \rfloor \lgroup x \rgroup \lmoustache x \rmoustache
+\]
+\section{Symbols}
+
+\colon \dots \cdots \ldots \cdot
+
+\[
+\colon \dots \cdots \ldots \cdot
+\]
+\end{document}
