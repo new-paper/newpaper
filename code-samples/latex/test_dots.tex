@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{mathdots}  % for \iddots, \dddot, \ddddot
+\usepackage{amssymb}
+
+\begin{document}
+
+\section*{All Dots Commands}
+
+\subsection*{Horizontal ellipses}
+
+\noindent
+\begin{tabular}{ll}
+\texttt{\textbackslash{}ldots}   & $a_1, a_2, \ldots, a_n$ \\
+\texttt{\textbackslash{}cdots}   & $1 + 2 + \cdots + n$ \\
+\texttt{\textbackslash{}dotsc}   & $x_1, x_2, \dotsc, x_n$ (comma dots) \\
+\texttt{\textbackslash{}dotsb}   & $p_1 + p_2 + \dotsb + p_n$ (binary dots) \\
+\texttt{\textbackslash{}dotsm}   & $A_1 \times A_2 \times \dotsm \times A_n$ (multiplication dots) \\
+\texttt{\textbackslash{}dotso}   & $\text{First, second, } \dotso \text{ last}$ (other dots) \\
+\end{tabular}
+
+\subsection*{Vertical and diagonal ellipses}
+
+\noindent
+\begin{tabular}{ll}
+\texttt{\textbackslash{}vdots}   & $\begin{pmatrix} a_1 \\ \vdots \\ a_n \end{pmatrix}$ \\
+\texttt{\textbackslash{}ddots}   & $\begin{pmatrix} a_{11} & \cdots \\ \vdots & \ddots \end{pmatrix}$ \\
+\texttt{\textbackslash{}iddots}   & $\begin{pmatrix} a_{11} & \cdots \\ \iddots & a_{nn} \end{pmatrix}$ (inverse diagonal) \\
+\end{tabular}
+
+\subsection*{Ellipses with integrals}
+
+\noindent
+\begin{tabular}{ll}
+\texttt{\textbackslash{}dotsi}   & $\int_{0}^{1} \int_{0}^{1} \dotsi \int_{0}^{1} f(x_1, \dots, x_n) \, dx_1 \dotsi dx_n$ \\
+\end{tabular}
+
+\subsection*{Dots above letters (derivatives)}
+
+\noindent
+\begin{tabular}{ll}
+\texttt{\textbackslash{}dot}      & $\dot{a}$ \\
+\texttt{\textbackslash{}ddot}     & $\ddot{a}$ \\
+\texttt{\textbackslash{}dddot}    & $\dddot{a}$ \\
+\texttt{\textbackslash{}ddddot}   & $\ddddot{a}$ \\
+\end{tabular}
+
+\subsection*{Single dot for multiplication}
+
+\noindent
+\begin{tabular}{ll}
+\texttt{\textbackslash{}cdot}     & $a \cdot b$ \\
+\end{tabular}
+
+\subsection*{All commands summary}
+
+The following dot commands are demonstrated in this document:
+
+\begin{verbatim}
+\ldots      \cdots      \vdots      \ddots      \iddots
+\dotsc      \dotsb      \dotsm      \dotso      \dotsi
+\dot        \ddot       \dddot      \ddddot
+\cdot
+\end{verbatim}
+
+\end{document}
