@@ -1,541 +1,1370 @@
+% !TeX program = lualatex
 \documentclass[12pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amssymb}
-\usepackage{array}
+\usepackage{fontspec}
+\setmainfont{STIX}
+\usepackage{unicode-math}
+\setmathfont{STIXTwoMath-Regular.otf}
+\usepackage{amsmath}
 \usepackage{longtable}
 \usepackage{geometry}
 \geometry{margin=0.5cm, landscape}
 
 \begin{document}
 
-\section*{Accented Symbols: Bar, Hat, Dot, Ddot, Widetilde}
+\section*{Summary of Accents}
 
-\subsection*{\texttt{\textbackslash bar} (Macron above)}
+\begin{tabular}{|l|c|c|l|}
+\hline
+\textbf{Accent command}    & \textbf{Math mode: \texttt{a}}   & \textbf{Unicode glyph}   & \textbf{Description} \\
+\hline
+\verb|\acute{a}|           & $\acute{a}$                      & á                        & Acute accent \\
+\verb|\bar{a}|             & $\bar{a}$                        & ā                        & Macron (overline) \\
+\verb|\breve{a}|           & $\breve{a}$                      & ă                        & Breve \\
+\verb|\check{a}|           & $\check{a}$                      & ǎ                        & Check (caron) \\
+\verb|\ddot{a}|            & $\ddot{a}$                       & ä                        & Diaeresis (double dot) \\
+\verb|\dddot{a}|           & $\dddot{a}$                      & a⃛                        & Triple dot \\
+\verb|\ddddot{a}|          & $\ddddot{a}$                     & a⃜                        & Four dots \\
+\verb|\dot{a}|             & $\dot{a}$                        & ȧ                        & Single dot \\
+\verb|\grave{a}|           & $\grave{a}$                      & à                        & Grave accent \\
+\verb|\hat{a}|             & $\hat{a}$                        & â                        & Circumflex (hat) \\
+\verb|\tilde{a}|           & $\tilde{a}$                      & ã                        & Tilde \\
+\verb|\vec{a}|             & $\vec{a}$                        & a⃗                        & Vector arrow \\
+\verb|\overleftarrow{a}|   & $\overleftarrow{a}$              &                          & Left arrow \\
+\verb|\overrightarrow{a}|  & $\overrightarrow{a}$             &                          & Right arrow \\
+\verb|\overline{a}|        & $\overline{a}$                   &                          & Overline \\
+\verb|\widehat{a}|         & $\widehat{a}$                    &                          & Wide hat \\
+\verb|\widetilde{a}|       & $\widetilde{a}$                  &                          & Wide tilde \\
+\verb|\overleftarrow{abc}| & $\overleftarrow{abc}$            &                          & Left arrow over word \\
+\verb|\overrightarrow{abc}|& $\overrightarrow{abc}$           &                          & Right arrow over word \\
+\verb|\overline{abc}|      & $\overline{abc}$                 &                          & Overline over word \\
+\verb|\widehat{abc}|       & $\widehat{abc}$                  &                          & Wide hat over word \\
+\verb|\widetilde{abc}|     & $\widetilde{abc}$                &                          & Wide tilde over word \\
+\hline
+\end{tabular}
 
-\begin{longtable}{|c|c|c|}
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash acute} (Acute accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
 \hline
-\textbf{Command} & \textbf{Output} & \textbf{Unicode Glyph} \\
+\textbf{Upper}             & \textbf{Output}    & \textbf{Lower}             & \textbf{Output}       & \textbf{Glyph} \\
 \hline
-\verb|\bar{a}| & $\bar{a}$ & a̅ \\
-\verb|\bar{b}| & $\bar{b}$ & b̅ \\
-\verb|\bar{c}| & $\bar{c}$ & c̅ \\
-\verb|\bar{d}| & $\bar{d}$ & d̅ \\
-\verb|\bar{e}| & $\bar{e}$ & e̅ \\
-\verb|\bar{f}| & $\bar{f}$ & f̅ \\
-\verb|\bar{g}| & $\bar{g}$ & g̅ \\
-\verb|\bar{h}| & $\bar{h}$ & h̅ \\
-\verb|\bar{i}| & $\bar{i}$ & i̅ \\
-\verb|\bar{j}| & $\bar{j}$ & j̅ \\
-\verb|\bar{k}| & $\bar{k}$ & k̅ \\
-\verb|\bar{l}| & $\bar{l}$ & l̅ \\
-\verb|\bar{m}| & $\bar{m}$ & m̅ \\
-\verb|\bar{n}| & $\bar{n}$ & n̅ \\
-\verb|\bar{o}| & $\bar{o}$ & o̅ \\
-\verb|\bar{p}| & $\bar{p}$ & p̅ \\
-\verb|\bar{q}| & $\bar{q}$ & q̅ \\
-\verb|\bar{r}| & $\bar{r}$ & r̅ \\
-\verb|\bar{s}| & $\bar{s}$ & s̅ \\
-\verb|\bar{t}| & $\bar{t}$ & t̅ \\
-\verb|\bar{u}| & $\bar{u}$ & u̅ \\
-\verb|\bar{v}| & $\bar{v}$ & v̅ \\
-\verb|\bar{w}| & $\bar{w}$ & w̅ \\
-\verb|\bar{x}| & $\bar{x}$ & x̅ \\
-\verb|\bar{y}| & $\bar{y}$ & y̅ \\
-\verb|\bar{z}| & $\bar{z}$ & z̅ \\
-\verb|\bar{A}| & $\bar{A}$ & A̅ \\
-\verb|\bar{B}| & $\bar{B}$ & B̅ \\
-\verb|\bar{C}| & $\bar{C}$ & C̅ \\
-\verb|\bar{D}| & $\bar{D}$ & D̅ \\
-\verb|\bar{E}| & $\bar{E}$ & E̅ \\
-\verb|\bar{F}| & $\bar{F}$ & F̅ \\
-\verb|\bar{G}| & $\bar{G}$ & G̅ \\
-\verb|\bar{H}| & $\bar{H}$ & H̅ \\
-\verb|\bar{I}| & $\bar{I}$ & I̅ \\
-\verb|\bar{J}| & $\bar{J}$ & J̅ \\
-\verb|\bar{K}| & $\bar{K}$ & K̅ \\
-\verb|\bar{L}| & $\bar{L}$ & L̅ \\
-\verb|\bar{M}| & $\bar{M}$ & M̅ \\
-\verb|\bar{N}| & $\bar{N}$ & N̅ \\
-\verb|\bar{O}| & $\bar{O}$ & O̅ \\
-\verb|\bar{P}| & $\bar{P}$ & P̅ \\
-\verb|\bar{Q}| & $\bar{Q}$ & Q̅ \\
-\verb|\bar{R}| & $\bar{R}$ & R̅ \\
-\verb|\bar{S}| & $\bar{S}$ & S̅ \\
-\verb|\bar{T}| & $\bar{T}$ & T̅ \\
-\verb|\bar{U}| & $\bar{U}$ & U̅ \\
-\verb|\bar{V}| & $\bar{V}$ & V̅ \\
-\verb|\bar{W}| & $\bar{W}$ & W̅ \\
-\verb|\bar{X}| & $\bar{X}$ & X̅ \\
-\verb|\bar{Y}| & $\bar{Y}$ & Y̅ \\
-\verb|\bar{Z}| & $\bar{Z}$ & Z̅ \\
-\verb|\bar{\alpha}| & $\bar{\alpha}$ & α̅ \\
-\verb|\bar{\beta}| & $\bar{\beta}$ & β̅ \\
-\verb|\bar{\gamma}| & $\bar{\gamma}$ & γ̅ \\
-\verb|\bar{\delta}| & $\bar{\delta}$ & δ̅ \\
-\verb|\bar{\epsilon}| & $\bar{\epsilon}$ & ε̅ \\
-\verb|\bar{\zeta}| & $\bar{\zeta}$ & ζ̅ \\
-\verb|\bar{\eta}| & $\bar{\eta}$ & η̅ \\
-\verb|\bar{\theta}| & $\bar{\theta}$ & θ̅ \\
-\verb|\bar{\iota}| & $\bar{\iota}$ & ι̅ \\
-\verb|\bar{\kappa}| & $\bar{\kappa}$ & κ̅ \\
-\verb|\bar{\lambda}| & $\bar{\lambda}$ & λ̅ \\
-\verb|\bar{\mu}| & $\bar{\mu}$ & μ̅ \\
-\verb|\bar{\nu}| & $\bar{\nu}$ & ν̅ \\
-\verb|\bar{\xi}| & $\bar{\xi}$ & ξ̅ \\
-\verb|\bar{\omicron}| & $\bar{\omicron}$ & ο̅ \\
-\verb|\bar{\pi}| & $\bar{\pi}$ & π̅ \\
-\verb|\bar{\rho}| & $\bar{\rho}$ & ρ̅ \\
-\verb|\bar{\sigma}| & $\bar{\sigma}$ & σ̅ \\
-\verb|\bar{\tau}| & $\bar{\tau}$ & τ̅ \\
-\verb|\bar{\upsilon}| & $\bar{\upsilon}$ & υ̅ \\
-\verb|\bar{\phi}| & $\bar{\phi}$ & φ̅ \\
-\verb|\bar{\chi}| & $\bar{\chi}$ & χ̅ \\
-\verb|\bar{\psi}| & $\bar{\psi}$ & ψ̅ \\
-\verb|\bar{\omega}| & $\bar{\omega}$ & ω̅ \\
+\verb|\acute{\Alpha}|      & $\acute{\Alpha}$   & \verb|\acute{\alpha}|      & $\acute{\alpha}$      & Ά ά \\
+\verb|\acute{\Beta}|       & $\acute{\Beta}$    & \verb|\acute{\beta}|       & $\acute{\beta}$       & Β́ β́ \\
+\verb|\acute{\Gamma}|      & $\acute{\Gamma}$   & \verb|\acute{\gamma}|      & $\acute{\gamma}$      & Γ́ γ́ \\
+\verb|\acute{\Delta}|      & $\acute{\Delta}$   & \verb|\acute{\delta}|      & $\acute{\delta}$      & Δ́ δ́ \\
+\verb|\acute{\Digamma}|    & $\acute{\Digamma}$ & \verb|\acute{\digamma}|    & $\acute{\digamma}$    & Ϝ́ ϝ́ \\
+\verb|\acute{\Epsilon}|    & $\acute{\Epsilon}$ & \verb|\acute{\epsilon}|    & $\acute{\epsilon}$    & Έ ϵ́ \\
+\verb|\acute{\Zeta}|       & $\acute{\Zeta}$    & \verb|\acute{\zeta}|       & $\acute{\zeta}$       & Ζ́ ζ́ \\
+\verb|\acute{\Eta}|        & $\acute{\Eta}$     & \verb|\acute{\eta}|        & $\acute{\eta}$        & Ή ή \\
+\verb|\acute{\Theta}|      & $\acute{\Theta}$   & \verb|\acute{\theta}|      & $\acute{\theta}$      & Θ́ θ́ \\
+\verb|\acute{\Iota}|       & $\acute{\Iota}$    & \verb|\acute{\iota}|       & $\acute{\iota}$       & Ί ί \\
+\verb|\acute{\Kappa}|      & $\acute{\Kappa}$   & \verb|\acute{\kappa}|      & $\acute{\kappa}$      & Κ́ κ́ \\
+\verb|\acute{\Lambda}|     & $\acute{\Lambda}$  & \verb|\acute{\lambda}|     & $\acute{\lambda}$     & Λ́ λ́ \\
+\verb|\acute{\Mu}|         & $\acute{\Mu}$      & \verb|\acute{\mu}|         & $\acute{\mu}$         & Μ́ μ́ \\
+\verb|\acute{\Nu}|         & $\acute{\Nu}$      & \verb|\acute{\nu}|         & $\acute{\nu}$         & Ν́ ν́ \\
+\verb|\acute{\Xi}|         & $\acute{\Xi}$      & \verb|\acute{\xi}|         & $\acute{\xi}$         & Ξ́ ξ́ \\
+\verb|\acute{\Omicron}|    & $\acute{\Omicron}$ & \verb|\acute{\omicron}|    & $\acute{\omicron}$    & Ό ό \\
+\verb|\acute{\Pi}|         & $\acute{\Pi}$      & \verb|\acute{\pi}|         & $\acute{\pi}$         & Π́ π́ \\
+\verb|\acute{\Rho}|        & $\acute{\Rho}$     & \verb|\acute{\rho}|        & $\acute{\rho}$        & Ρ́ ρ́ \\
+\verb|\acute{\Sigma}|      & $\acute{\Sigma}$   & \verb|\acute{\sigma}|      & $\acute{\sigma}$      & Σ́ σ́ \\
+\verb|\acute{\Tau}|        & $\acute{\Tau}$     & \verb|\acute{\tau}|        & $\acute{\tau}$        & Τ́ τ́ \\
+\verb|\acute{\Upsilon}|    & $\acute{\Upsilon}$ & \verb|\acute{\upsilon}|    & $\acute{\upsilon}$    & Ύ ύ \\
+\verb|\acute{\Phi}|        & $\acute{\Phi}$     & \verb|\acute{\phi}|        & $\acute{\phi}$        & Φ́ φ́ \\
+\verb|\acute{\Chi}|        & $\acute{\Chi}$     & \verb|\acute{\chi}|        & $\acute{\chi}$        & Χ́ χ́ \\
+\verb|\acute{\Psi}|        & $\acute{\Psi}$     & \verb|\acute{\psi}|        & $\acute{\psi}$        & Ψ́ ψ́ \\
+\verb|\acute{\Omega}|      & $\acute{\Omega}$   & \verb|\acute{\omega}|      & $\acute{\omega}$      & Ώ ώ \\
+                           &                    & \verb|\acute{\varepsilon}| & $\acute{\varepsilon}$ & έ \\
+                           &                    & \verb|\acute{\vartheta}|   & $\acute{\vartheta}$   & ϑ́ \\
+                           &                    & \verb|\acute{\varkappa}|   & $\acute{\varkappa}$   & ϰ́ \\
+                           &                    & \verb|\acute{\varpi}|      & $\acute{\varpi}$      & ϖ́ \\
+                           &                    & \verb|\acute{\varrho}|     & $\acute{\varrho}$     & ϱ́ \\
+                           &                    & \verb|\acute{\varsigma}|   & $\acute{\varsigma}$   & ς́ \\
+                           &                    & \verb|\acute{\varphi}|     & $\acute{\varphi}$     & ϕ́ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}     & \textbf{Output} & \textbf{Lower}     & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}  & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\acute{A}|   & $\acute{A}$     & \verb|\acute{a}|   & $\acute{a}$     & Á á            & \verb|\acute{0}| & $\acute{0}$     & 0́ \\
+\verb|\acute{B}|   & $\acute{B}$     & \verb|\acute{b}|   & $\acute{b}$     & B́ b́            & \verb|\acute{1}| & $\acute{1}$     & 1́ \\
+\verb|\acute{C}|   & $\acute{C}$     & \verb|\acute{c}|   & $\acute{c}$     & Ć ć            & \verb|\acute{2}| & $\acute{2}$     & 2́ \\
+\verb|\acute{D}|   & $\acute{D}$     & \verb|\acute{d}|   & $\acute{d}$     & D́ d́            & \verb|\acute{3}| & $\acute{3}$     & 3́ \\
+\verb|\acute{E}|   & $\acute{E}$     & \verb|\acute{e}|   & $\acute{e}$     & É é            & \verb|\acute{4}| & $\acute{4}$     & 4́ \\
+\verb|\acute{F}|   & $\acute{F}$     & \verb|\acute{f}|   & $\acute{f}$     & F́ f́            & \verb|\acute{5}| & $\acute{5}$     & 5́ \\
+\verb|\acute{G}|   & $\acute{G}$     & \verb|\acute{g}|   & $\acute{g}$     & Ǵ ǵ            & \verb|\acute{6}| & $\acute{6}$     & 6́ \\
+\verb|\acute{H}|   & $\acute{H}$     & \verb|\acute{h}|   & $\acute{h}$     & H́ h́            & \verb|\acute{7}| & $\acute{7}$     & 7́ \\
+\verb|\acute{I}|   & $\acute{I}$     & \verb|\acute{i}|   & $\acute{i}$     & Í í            & \verb|\acute{8}| & $\acute{8}$     & 8́ \\
+\verb|\acute{J}|   & $\acute{J}$     & \verb|\acute{j}|   & $\acute{j}$     & J́ j́            & \verb|\acute{9}| & $\acute{9}$     & 9́ \\
+\verb|\acute{K}|   & $\acute{K}$     & \verb|\acute{k}|   & $\acute{k}$     & Ḱ ḱ            &                  &                 & \\
+\verb|\acute{L}|   & $\acute{L}$     & \verb|\acute{l}|   & $\acute{l}$     & Ĺ ĺ            &                  &                 & \\
+\verb|\acute{M}|   & $\acute{M}$     & \verb|\acute{m}|   & $\acute{m}$     & Ḿ ḿ            &                  &                 & \\
+\verb|\acute{N}|   & $\acute{N}$     & \verb|\acute{n}|   & $\acute{n}$     & Ń ń            &                  &                 & \\
+\verb|\acute{O}|   & $\acute{O}$     & \verb|\acute{o}|   & $\acute{o}$     & Ó ó            &                  &                 & \\
+\verb|\acute{P}|   & $\acute{P}$     & \verb|\acute{p}|   & $\acute{p}$     & Ṕ ṕ            &                  &                 & \\
+\verb|\acute{Q}|   & $\acute{Q}$     & \verb|\acute{q}|   & $\acute{q}$     & Q́ q́            &                  &                 & \\
+\verb|\acute{R}|   & $\acute{R}$     & \verb|\acute{r}|   & $\acute{r}$     & Ŕ ŕ            &                  &                 & \\
+\verb|\acute{S}|   & $\acute{S}$     & \verb|\acute{s}|   & $\acute{s}$     & Ś ś            &                  &                 & \\
+\verb|\acute{T}|   & $\acute{T}$     & \verb|\acute{t}|   & $\acute{t}$     & T́ t́            &                  &                 & \\
+\verb|\acute{U}|   & $\acute{U}$     & \verb|\acute{u}|   & $\acute{u}$     & Ú ú            &                  &                 & \\
+\verb|\acute{V}|   & $\acute{V}$     & \verb|\acute{v}|   & $\acute{v}$     & V́ v́            &                  &                 & \\
+\verb|\acute{W}|   & $\acute{W}$     & \verb|\acute{w}|   & $\acute{w}$     & Ẃ ẃ            &                  &                 & \\
+\verb|\acute{X}|   & $\acute{X}$     & \verb|\acute{x}|   & $\acute{x}$     & X́ x́            &                  &                 & \\
+\verb|\acute{Y}|   & $\acute{Y}$     & \verb|\acute{y}|   & $\acute{y}$     & Ý ý            &                  &                 & \\
+\verb|\acute{Z}|   & $\acute{Z}$     & \verb|\acute{z}|   & $\acute{z}$     & Ź ź            &                  &                 & \\
 \hline
 \end{longtable}
 
 \newpage
 
-\subsection*{\texttt{\textbackslash hat} (Circumflex above)}
+\section*{Accented Symbols: \texttt{\textbackslash bar} (Macron accent)}
 
-\begin{longtable}{|c|c|c|}
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
 \hline
-\textbf{Command} & \textbf{Output} & \textbf{Unicode Glyph} \\
+\textbf{Upper}           & \textbf{Output}  & \textbf{Lower}           & \textbf{Output}     & \textbf{Glyph} \\
 \hline
-\verb|\hat{a}| & $\hat{a}$ & â \\
-\verb|\hat{b}| & $\hat{b}$ & b̂ \\
-\verb|\hat{c}| & $\hat{c}$ & ĉ \\
-\verb|\hat{d}| & $\hat{d}$ & d̂ \\
-\verb|\hat{e}| & $\hat{e}$ & ê \\
-\verb|\hat{f}| & $\hat{f}$ & f̂ \\
-\verb|\hat{g}| & $\hat{g}$ & ĝ \\
-\verb|\hat{h}| & $\hat{h}$ & ĥ \\
-\verb|\hat{i}| & $\hat{i}$ & î \\
-\verb|\hat{j}| & $\hat{j}$ & ĵ \\
-\verb|\hat{k}| & $\hat{k}$ & k̂ \\
-\verb|\hat{l}| & $\hat{l}$ & l̂ \\
-\verb|\hat{m}| & $\hat{m}$ & m̂ \\
-\verb|\hat{n}| & $\hat{n}$ & n̂ \\
-\verb|\hat{o}| & $\hat{o}$ & ô \\
-\verb|\hat{p}| & $\hat{p}$ & p̂ \\
-\verb|\hat{q}| & $\hat{q}$ & q̂ \\
-\verb|\hat{r}| & $\hat{r}$ & r̂ \\
-\verb|\hat{s}| & $\hat{s}$ & ŝ \\
-\verb|\hat{t}| & $\hat{t}$ & t̂ \\
-\verb|\hat{u}| & $\hat{u}$ & û \\
-\verb|\hat{v}| & $\hat{v}$ & v̂ \\
-\verb|\hat{w}| & $\hat{w}$ & ŵ \\
-\verb|\hat{x}| & $\hat{x}$ & x̂ \\
-\verb|\hat{y}| & $\hat{y}$ & ŷ \\
-\verb|\hat{z}| & $\hat{z}$ & ẑ \\
-\verb|\hat{A}| & $\hat{A}$ & Â \\
-\verb|\hat{B}| & $\hat{B}$ & B̂ \\
-\verb|\hat{C}| & $\hat{C}$ & Ĉ \\
-\verb|\hat{D}| & $\hat{D}$ & D̂ \\
-\verb|\hat{E}| & $\hat{E}$ & Ê \\
-\verb|\hat{F}| & $\hat{F}$ & F̂ \\
-\verb|\hat{G}| & $\hat{G}$ & Ĝ \\
-\verb|\hat{H}| & $\hat{H}$ & Ĥ \\
-\verb|\hat{I}| & $\hat{I}$ & Î \\
-\verb|\hat{J}| & $\hat{J}$ & Ĵ \\
-\verb|\hat{K}| & $\hat{K}$ & K̂ \\
-\verb|\hat{L}| & $\hat{L}$ & L̂ \\
-\verb|\hat{M}| & $\hat{M}$ & M̂ \\
-\verb|\hat{N}| & $\hat{N}$ & N̂ \\
-\verb|\hat{O}| & $\hat{O}$ & Ô \\
-\verb|\hat{P}| & $\hat{P}$ & P̂ \\
-\verb|\hat{Q}| & $\hat{Q}$ & Q̂ \\
-\verb|\hat{R}| & $\hat{R}$ & R̂ \\
-\verb|\hat{S}| & $\hat{S}$ & Ŝ \\
-\verb|\hat{T}| & $\hat{T}$ & T̂ \\
-\verb|\hat{U}| & $\hat{U}$ & Û \\
-\verb|\hat{V}| & $\hat{V}$ & V̂ \\
-\verb|\hat{W}| & $\hat{W}$ & Ŵ \\
-\verb|\hat{X}| & $\hat{X}$ & X̂ \\
-\verb|\hat{Y}| & $\hat{Y}$ & Ŷ \\
-\verb|\hat{Z}| & $\hat{Z}$ & Ẑ \\
-\verb|\hat{\alpha}| & $\hat{\alpha}$ & α̂ \\
-\verb|\hat{\beta}| & $\hat{\beta}$ & β̂ \\
-\verb|\hat{\gamma}| & $\hat{\gamma}$ & γ̂ \\
-\verb|\hat{\delta}| & $\hat{\delta}$ & δ̂ \\
-\verb|\hat{\epsilon}| & $\hat{\epsilon}$ & ε̂ \\
-\verb|\hat{\zeta}| & $\hat{\zeta}$ & ζ̂ \\
-\verb|\hat{\eta}| & $\hat{\eta}$ & η̂ \\
-\verb|\hat{\theta}| & $\hat{\theta}$ & θ̂ \\
-\verb|\hat{\iota}| & $\hat{\iota}$ & ι̂ \\
-\verb|\hat{\kappa}| & $\hat{\kappa}$ & κ̂ \\
-\verb|\hat{\lambda}| & $\hat{\lambda}$ & λ̂ \\
-\verb|\hat{\mu}| & $\hat{\mu}$ & μ̂ \\
-\verb|\hat{\nu}| & $\hat{\nu}$ & ν̂ \\
-\verb|\hat{\xi}| & $\hat{\xi}$ & ξ̂ \\
-\verb|\hat{\omicron}| & $\hat{\omicron}$ & ο̂ \\
-\verb|\hat{\pi}| & $\hat{\pi}$ & π̂ \\
-\verb|\hat{\rho}| & $\hat{\rho}$ & ρ̂ \\
-\verb|\hat{\sigma}| & $\hat{\sigma}$ & σ̂ \\
-\verb|\hat{\tau}| & $\hat{\tau}$ & τ̂ \\
-\verb|\hat{\upsilon}| & $\hat{\upsilon}$ & υ̂ \\
-\verb|\hat{\phi}| & $\hat{\phi}$ & φ̂ \\
-\verb|\hat{\chi}| & $\hat{\chi}$ & χ̂ \\
-\verb|\hat{\psi}| & $\hat{\psi}$ & ψ̂ \\
-\verb|\hat{\omega}| & $\hat{\omega}$ & ω̂ \\
-\verb|\hat{\Alpha}| & $\hat{\Alpha}$ & Α̂ \\
-\verb|\hat{\Beta}| & $\hat{\Beta}$ & Β̂ \\
-\verb|\hat{\Gamma}| & $\hat{\Gamma}$ & Γ̂ \\
-\verb|\hat{\Delta}| & $\hat{\Delta}$ & Δ̂ \\
-\verb|\hat{\Epsilon}| & $\hat{\Epsilon}$ & Ε̂ \\
-\verb|\hat{\Zeta}| & $\hat{\Zeta}$ & Ζ̂ \\
-\verb|\hat{\Eta}| & $\hat{\Eta}$ & Η̂ \\
-\verb|\hat{\Theta}| & $\hat{\Theta}$ & Θ̂ \\
-\verb|\hat{\Iota}| & $\hat{\Iota}$ & Ι̂ \\
-\verb|\hat{\Kappa}| & $\hat{\Kappa}$ & Κ̂ \\
-\verb|\hat{\Lambda}| & $\hat{\Lambda}$ & Λ̂ \\
-\verb|\hat{\Mu}| & $\hat{\Mu}$ & Μ̂ \\
-\verb|\hat{\Nu}| & $\hat{\Nu}$ & Ν̂ \\
-\verb|\hat{\Xi}| & $\hat{\Xi}$ & Ξ̂ \\
-\verb|\hat{\Omicron}| & $\hat{\Omicron}$ & Ο̂ \\
-\verb|\hat{\Pi}| & $\hat{\Pi}$ & Π̂ \\
-\verb|\hat{\Rho}| & $\hat{\Rho}$ & Ρ̂ \\
-\verb|\hat{\Sigma}| & $\hat{\Sigma}$ & Σ̂ \\
-\verb|\hat{\Tau}| & $\hat{\Tau}$ & Τ̂ \\
-\verb|\hat{\Upsilon}| & $\hat{\Upsilon}$ & Υ̂ \\
-\verb|\hat{\Phi}| & $\hat{\Phi}$ & Φ̂ \\
-\verb|\hat{\Chi}| & $\hat{\Chi}$ & Χ̂ \\
-\verb|\hat{\Psi}| & $\hat{\Psi}$ & Ψ̂ \\
-\verb|\hat{\Omega}| & $\hat{\Omega}$ & Ω̂ \\
+\verb|\bar{\Alpha}|      & $\bar{\Alpha}$   & \verb|\bar{\alpha}|      & $\bar{\alpha}$      & Ᾱ ᾱ \\
+\verb|\bar{\Beta}|       & $\bar{\Beta}$    & \verb|\bar{\beta}|       & $\bar{\beta}$       & Β̄ β̄ \\
+\verb|\bar{\Gamma}|      & $\bar{\Gamma}$   & \verb|\bar{\gamma}|      & $\bar{\gamma}$      & Γ̄ γ̄ \\
+\verb|\bar{\Delta}|      & $\bar{\Delta}$   & \verb|\bar{\delta}|      & $\bar{\delta}$      & Δ̄ δ̄ \\
+\verb|\bar{\Digamma}|    & $\bar{\Digamma}$ & \verb|\bar{\digamma}|    & $\bar{\digamma}$    & Ϝ̄ ϝ̄ \\
+\verb|\bar{\Epsilon}|    & $\bar{\Epsilon}$ & \verb|\bar{\epsilon}|    & $\bar{\epsilon}$    & Ε̄ ϵ̄ \\
+\verb|\bar{\Zeta}|       & $\bar{\Zeta}$    & \verb|\bar{\zeta}|       & $\bar{\zeta}$       & Ζ̄ ζ̄ \\
+\verb|\bar{\Eta}|        & $\bar{\Eta}$     & \verb|\bar{\eta}|        & $\bar{\eta}$        & Η̄ η̄ \\
+\verb|\bar{\Theta}|      & $\bar{\Theta}$   & \verb|\bar{\theta}|      & $\bar{\theta}$      & Θ̄ θ̄ \\
+\verb|\bar{\Iota}|       & $\bar{\Iota}$    & \verb|\bar{\iota}|       & $\bar{\iota}$       & Ῑ ῑ \\
+\verb|\bar{\Kappa}|      & $\bar{\Kappa}$   & \verb|\bar{\kappa}|      & $\bar{\kappa}$      & Κ̄ κ̄ \\
+\verb|\bar{\Lambda}|     & $\bar{\Lambda}$  & \verb|\bar{\lambda}|     & $\bar{\lambda}$     & Λ̄ λ̄ \\
+\verb|\bar{\Mu}|         & $\bar{\Mu}$      & \verb|\bar{\mu}|         & $\bar{\mu}$         & Μ̄ μ̄ \\
+\verb|\bar{\Nu}|         & $\bar{\Nu}$      & \verb|\bar{\nu}|         & $\bar{\nu}$         & Ν̄ ν̄ \\
+\verb|\bar{\Xi}|         & $\bar{\Xi}$      & \verb|\bar{\xi}|         & $\bar{\xi}$         & Ξ̄ ξ̄ \\
+\verb|\bar{\Omicron}|    & $\bar{\Omicron}$ & \verb|\bar{\omicron}|    & $\bar{\omicron}$    & Ο̄ ο̄ \\
+\verb|\bar{\Pi}|         & $\bar{\Pi}$      & \verb|\bar{\pi}|         & $\bar{\pi}$         & Π̄ π̄ \\
+\verb|\bar{\Rho}|        & $\bar{\Rho}$     & \verb|\bar{\rho}|        & $\bar{\rho}$        & Ρ̄ ρ̄ \\
+\verb|\bar{\Sigma}|      & $\bar{\Sigma}$   & \verb|\bar{\sigma}|      & $\bar{\sigma}$      & Σ̄ σ̄ \\
+\verb|\bar{\Tau}|        & $\bar{\Tau}$     & \verb|\bar{\tau}|        & $\bar{\tau}$        & Τ̄ τ̄ \\
+\verb|\bar{\Upsilon}|    & $\bar{\Upsilon}$ & \verb|\bar{\upsilon}|    & $\bar{\upsilon}$    & Ῡ ῡ \\
+\verb|\bar{\Phi}|        & $\bar{\Phi}$     & \verb|\bar{\phi}|        & $\bar{\phi}$        & Φ̄ φ̄ \\
+\verb|\bar{\Chi}|        & $\bar{\Chi}$     & \verb|\bar{\chi}|        & $\bar{\chi}$        & Χ̄ χ̄ \\
+\verb|\bar{\Psi}|        & $\bar{\Psi}$     & \verb|\bar{\psi}|        & $\bar{\psi}$        & Ψ̄ ψ̄ \\
+\verb|\bar{\Omega}|      & $\bar{\Omega}$   & \verb|\bar{\omega}|      & $\bar{\omega}$      & Ω̄ ω̄ \\
+                         &                  & \verb|\bar{\varepsilon}| & $\bar{\varepsilon}$ & ε̄ \\
+                         &                  & \verb|\bar{\vartheta}|   & $\bar{\vartheta}$   & ϑ̄ \\
+                         &                  & \verb|\bar{\varkappa}|   & $\bar{\varkappa}$   & ϰ̄ \\
+                         &                  & \verb|\bar{\varpi}|      & $\bar{\varpi}$      & ϖ̄ \\
+                         &                  & \verb|\bar{\varrho}|     & $\bar{\varrho}$     & ϱ̄ \\
+                         &                  & \verb|\bar{\varsigma}|   & $\bar{\varsigma}$   & ς̄ \\
+                         &                  & \verb|\bar{\varphi}|     & $\bar{\varphi}$     & ϕ̄ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}     & \textbf{Output} & \textbf{Lower}     & \textbf{Output} & \textbf{Glyph} & \textbf{Digits} & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\bar{A}|     & $\bar{A}$       & \verb|\bar{a}|     & $\bar{a}$       & Ā ā            & \verb|\bar{0}|  & $\bar{0}$       & 0̄ \\
+\verb|\bar{B}|     & $\bar{B}$       & \verb|\bar{b}|     & $\bar{b}$       & B̄ b̄            & \verb|\bar{1}|  & $\bar{1}$       & 1̄ \\
+\verb|\bar{C}|     & $\bar{C}$       & \verb|\bar{c}|     & $\bar{c}$       & C̄ c̄            & \verb|\bar{2}|  & $\bar{2}$       & 2̄ \\
+\verb|\bar{D}|     & $\bar{D}$       & \verb|\bar{d}|     & $\bar{d}$       & D̄ d̄            & \verb|\bar{3}|  & $\bar{3}$       & 3̄ \\
+\verb|\bar{E}|     & $\bar{E}$       & \verb|\bar{e}|     & $\bar{e}$       & Ē ē            & \verb|\bar{4}|  & $\bar{4}$       & 4̄ \\
+\verb|\bar{F}|     & $\bar{F}$       & \verb|\bar{f}|     & $\bar{f}$       & F̄ f̄            & \verb|\bar{5}|  & $\bar{5}$       & 5̄ \\
+\verb|\bar{G}|     & $\bar{G}$       & \verb|\bar{g}|     & $\bar{g}$       & Ḡ ḡ            & \verb|\bar{6}|  & $\bar{6}$       & 6̄ \\
+\verb|\bar{H}|     & $\bar{H}$       & \verb|\bar{h}|     & $\bar{h}$       & H̄ h̄            & \verb|\bar{7}|  & $\bar{7}$       & 7̄ \\
+\verb|\bar{I}|     & $\bar{I}$       & \verb|\bar{i}|     & $\bar{i}$       & Ī ī            & \verb|\bar{8}|  & $\bar{8}$       & 8̄ \\
+\verb|\bar{J}|     & $\bar{J}$       & \verb|\bar{j}|     & $\bar{j}$       & J̄ j̄            & \verb|\bar{9}|  & $\bar{9}$       & 9̄ \\
+\verb|\bar{K}|     & $\bar{K}$       & \verb|\bar{k}|     & $\bar{k}$       & K̄ k̄            &                 &                 & \\
+\verb|\bar{L}|     & $\bar{L}$       & \verb|\bar{l}|     & $\bar{l}$       & L̄ l̄            &                 &                 & \\
+\verb|\bar{M}|     & $\bar{M}$       & \verb|\bar{m}|     & $\bar{m}$       & M̄ m̄            &                 &                 & \\
+\verb|\bar{N}|     & $\bar{N}$       & \verb|\bar{n}|     & $\bar{n}$       & N̄ n̄            &                 &                 & \\
+\verb|\bar{O}|     & $\bar{O}$       & \verb|\bar{o}|     & $\bar{o}$       & Ō ō            &                 &                 & \\
+\verb|\bar{P}|     & $\bar{P}$       & \verb|\bar{p}|     & $\bar{p}$       & P̄ p̄            &                 &                 & \\
+\verb|\bar{Q}|     & $\bar{Q}$       & \verb|\bar{q}|     & $\bar{q}$       & Q̄ q̄            &                 &                 & \\
+\verb|\bar{R}|     & $\bar{R}$       & \verb|\bar{r}|     & $\bar{r}$       & R̄ r̄            &                 &                 & \\
+\verb|\bar{S}|     & $\bar{S}$       & \verb|\bar{s}|     & $\bar{s}$       & S̄ s̄            &                 &                 & \\
+\verb|\bar{T}|     & $\bar{T}$       & \verb|\bar{t}|     & $\bar{t}$       & T̄ t̄            &                 &                 & \\
+\verb|\bar{U}|     & $\bar{U}$       & \verb|\bar{u}|     & $\bar{u}$       & Ū ū            &                 &                 & \\
+\verb|\bar{V}|     & $\bar{V}$       & \verb|\bar{v}|     & $\bar{v}$       & V̄ v̄            &                 &                 & \\
+\verb|\bar{W}|     & $\bar{W}$       & \verb|\bar{w}|     & $\bar{w}$       & W̄ w̄            &                 &                 & \\
+\verb|\bar{X}|     & $\bar{X}$       & \verb|\bar{x}|     & $\bar{x}$       & X̄ x̄            &                 &                 & \\
+\verb|\bar{Y}|     & $\bar{Y}$       & \verb|\bar{y}|     & $\bar{y}$       & Ȳ ȳ            &                 &                 & \\
+\verb|\bar{Z}|     & $\bar{Z}$       & \verb|\bar{z}|     & $\bar{z}$       & Z̄ z̄            &                 &                 & \\
 \hline
 \end{longtable}
 
 \newpage
 
-\subsection*{\texttt{\textbackslash dot} (Dot above)}
+\section*{Accented Symbols: \texttt{\textbackslash bre} (Breve accent)}
 
-\begin{longtable}{|c|c|c|}
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
 \hline
-\textbf{Command} & \textbf{Output} & \textbf{Unicode Glyph} \\
+\textbf{Upper}             & \textbf{Output}    & \textbf{Lower}             & \textbf{Output}       & \textbf{Glyph} \\
 \hline
-\verb|\dot{a}| & $\dot{a}$ & ȧ \\
-\verb|\dot{b}| & $\dot{b}$ & ḃ \\
-\verb|\dot{c}| & $\dot{c}$ & ċ \\
-\verb|\dot{d}| & $\dot{d}$ & ḋ \\
-\verb|\dot{e}| & $\dot{e}$ & ė \\
-\verb|\dot{f}| & $\dot{f}$ & ḟ \\
-\verb|\dot{g}| & $\dot{g}$ & ġ \\
-\verb|\dot{h}| & $\dot{h}$ & ḣ \\
-\verb|\dot{i}| & $\dot{i}$ & i̇ \\
-\verb|\dot{j}| & $\dot{j}$ & j̇ \\
-\verb|\dot{k}| & $\dot{k}$ & k̇ \\
-\verb|\dot{l}| & $\dot{l}$ & l̇ \\
-\verb|\dot{m}| & $\dot{m}$ & ṁ \\
-\verb|\dot{n}| & $\dot{n}$ & ṅ \\
-\verb|\dot{o}| & $\dot{o}$ & ȯ \\
-\verb|\dot{p}| & $\dot{p}$ & ṗ \\
-\verb|\dot{q}| & $\dot{q}$ & q̇ \\
-\verb|\dot{r}| & $\dot{r}$ & ṙ \\
-\verb|\dot{s}| & $\dot{s}$ & ṡ \\
-\verb|\dot{t}| & $\dot{t}$ & ṫ \\
-\verb|\dot{u}| & $\dot{u}$ & u̇ \\
-\verb|\dot{v}| & $\dot{v}$ & v̇ \\
-\verb|\dot{w}| & $\dot{w}$ & ẇ \\
-\verb|\dot{x}| & $\dot{x}$ & ẋ \\
-\verb|\dot{y}| & $\dot{y}$ & ẏ \\
-\verb|\dot{z}| & $\dot{z}$ & ż \\
-\verb|\dot{A}| & $\dot{A}$ & Ȧ \\
-\verb|\dot{B}| & $\dot{B}$ & Ḃ \\
-\verb|\dot{C}| & $\dot{C}$ & Ċ \\
-\verb|\dot{D}| & $\dot{D}$ & Ḋ \\
-\verb|\dot{E}| & $\dot{E}$ & Ė \\
-\verb|\dot{F}| & $\dot{F}$ & Ḟ \\
-\verb|\dot{G}| & $\dot{G}$ & Ġ \\
-\verb|\dot{H}| & $\dot{H}$ & Ḣ \\
-\verb|\dot{I}| & $\dot{I}$ & İ \\
-\verb|\dot{J}| & $\dot{J}$ & J̇ \\
-\verb|\dot{K}| & $\dot{K}$ & K̇ \\
-\verb|\dot{L}| & $\dot{L}$ & L̇ \\
-\verb|\dot{M}| & $\dot{M}$ & Ṁ \\
-\verb|\dot{N}| & $\dot{N}$ & Ṅ \\
-\verb|\dot{O}| & $\dot{O}$ & Ȯ \\
-\verb|\dot{P}| & $\dot{P}$ & Ṗ \\
-\verb|\dot{Q}| & $\dot{Q}$ & Q̇ \\
-\verb|\dot{R}| & $\dot{R}$ & Ṙ \\
-\verb|\dot{S}| & $\dot{S}$ & Ṡ \\
-\verb|\dot{T}| & $\dot{T}$ & Ṫ \\
-\verb|\dot{U}| & $\dot{U}$ & U̇ \\
-\verb|\dot{V}| & $\dot{V}$ & V̇ \\
-\verb|\dot{W}| & $\dot{W}$ & Ẇ \\
-\verb|\dot{X}| & $\dot{X}$ & Ẋ \\
-\verb|\dot{Y}| & $\dot{Y}$ & Ẏ \\
-\verb|\dot{Z}| & $\dot{Z}$ & Ż \\
-\verb|\dot{\alpha}| & $\dot{\alpha}$ & α̇ \\
-\verb|\dot{\beta}| & $\dot{\beta}$ & β̇ \\
-\verb|\dot{\gamma}| & $\dot{\gamma}$ & γ̇ \\
-\verb|\dot{\delta}| & $\dot{\delta}$ & δ̇ \\
-\verb|\dot{\epsilon}| & $\dot{\epsilon}$ & ε̇ \\
-\verb|\dot{\zeta}| & $\dot{\zeta}$ & ζ̇ \\
-\verb|\dot{\eta}| & $\dot{\eta}$ & η̇ \\
-\verb|\dot{\theta}| & $\dot{\theta}$ & θ̇ \\
-\verb|\dot{\iota}| & $\dot{\iota}$ & ι̇ \\
-\verb|\dot{\kappa}| & $\dot{\kappa}$ & κ̇ \\
-\verb|\dot{\lambda}| & $\dot{\lambda}$ & λ̇ \\
-\verb|\dot{\mu}| & $\dot{\mu}$ & μ̇ \\
-\verb|\dot{\nu}| & $\dot{\nu}$ & ν̇ \\
-\verb|\dot{\xi}| & $\dot{\xi}$ & ξ̇ \\
-\verb|\dot{\omicron}| & $\dot{\omicron}$ & ο̇ \\
-\verb|\dot{\pi}| & $\dot{\pi}$ & π̇ \\
-\verb|\dot{\rho}| & $\dot{\rho}$ & ρ̇ \\
-\verb|\dot{\sigma}| & $\dot{\sigma}$ & σ̇ \\
-\verb|\dot{\tau}| & $\dot{\tau}$ & τ̇ \\
-\verb|\dot{\upsilon}| & $\dot{\upsilon}$ & υ̇ \\
-\verb|\dot{\phi}| & $\dot{\phi}$ & φ̇ \\
-\verb|\dot{\chi}| & $\dot{\chi}$ & χ̇ \\
-\verb|\dot{\psi}| & $\dot{\psi}$ & ψ̇ \\
-\verb|\dot{\omega}| & $\dot{\omega}$ & ω̇ \\
-\verb|\dot{\Alpha}| & $\dot{\Alpha}$ & Α̇ \\
-\verb|\dot{\Beta}| & $\dot{\Beta}$ & Β̇ \\
-\verb|\dot{\Gamma}| & $\dot{\Gamma}$ & Γ̇ \\
-\verb|\dot{\Delta}| & $\dot{\Delta}$ & Δ̇ \\
-\verb|\dot{\Epsilon}| & $\dot{\Epsilon}$ & Ε̇ \\
-\verb|\dot{\Zeta}| & $\dot{\Zeta}$ & Ζ̇ \\
-\verb|\dot{\Eta}| & $\dot{\Eta}$ & Η̇ \\
-\verb|\dot{\Theta}| & $\dot{\Theta}$ & Θ̇ \\
-\verb|\dot{\Iota}| & $\dot{\Iota}$ & Ι̇ \\
-\verb|\dot{\Kappa}| & $\dot{\Kappa}$ & Κ̇ \\
-\verb|\dot{\Lambda}| & $\dot{\Lambda}$ & Λ̇ \\
-\verb|\dot{\Mu}| & $\dot{\Mu}$ & Μ̇ \\
-\verb|\dot{\Nu}| & $\dot{\Nu}$ & Ν̇ \\
-\verb|\dot{\Xi}| & $\dot{\Xi}$ & Ξ̇ \\
-\verb|\dot{\Omicron}| & $\dot{\Omicron}$ & Ο̇ \\
-\verb|\dot{\Pi}| & $\dot{\Pi}$ & Π̇ \\
-\verb|\dot{\Rho}| & $\dot{\Rho}$ & Ρ̇ \\
-\verb|\dot{\Sigma}| & $\dot{\Sigma}$ & Σ̇ \\
-\verb|\dot{\Tau}| & $\dot{\Tau}$ & Τ̇ \\
-\verb|\dot{\Upsilon}| & $\dot{\Upsilon}$ & Υ̇ \\
-\verb|\dot{\Phi}| & $\dot{\Phi}$ & Φ̇ \\
-\verb|\dot{\Chi}| & $\dot{\Chi}$ & Χ̇ \\
-\verb|\dot{\Psi}| & $\dot{\Psi}$ & Ψ̇ \\
-\verb|\dot{\Omega}| & $\dot{\Omega}$ & Ω̇ \\
+\verb|\breve{\Alpha}|      & $\breve{\Alpha}$   & \verb|\breve{\alpha}|      & $\breve{\alpha}$      & Ᾰ ᾰ \\
+\verb|\breve{\Beta}|       & $\breve{\Beta}$    & \verb|\breve{\beta}|       & $\breve{\beta}$       & Β̆ β̆ \\
+\verb|\breve{\Gamma}|      & $\breve{\Gamma}$   & \verb|\breve{\gamma}|      & $\breve{\gamma}$      & Γ̆ γ̆ \\
+\verb|\breve{\Delta}|      & $\breve{\Delta}$   & \verb|\breve{\delta}|      & $\breve{\delta}$      & Δ̆ δ̆ \\
+\verb|\breve{\Digamma}|    & $\breve{\Digamma}$ & \verb|\breve{\digamma}|    & $\breve{\digamma}$    & Ϝ̆ ϝ̆ \\
+\verb|\breve{\Epsilon}|    & $\breve{\Epsilon}$ & \verb|\breve{\epsilon}|    & $\breve{\epsilon}$    & Ε̆ ϵ̆ \\
+\verb|\breve{\Zeta}|       & $\breve{\Zeta}$    & \verb|\breve{\zeta}|       & $\breve{\zeta}$       & Ζ̆ ζ̆ \\
+\verb|\breve{\Eta}|        & $\breve{\Eta}$     & \verb|\breve{\eta}|        & $\breve{\eta}$        & Η̆ η̆ \\
+\verb|\breve{\Theta}|      & $\breve{\Theta}$   & \verb|\breve{\theta}|      & $\breve{\theta}$      & Θ̆ θ̆ \\
+\verb|\breve{\Iota}|       & $\breve{\Iota}$    & \verb|\breve{\iota}|       & $\breve{\iota}$       & Ῐ ῐ \\
+\verb|\breve{\Kappa}|      & $\breve{\Kappa}$   & \verb|\breve{\kappa}|      & $\breve{\kappa}$      & Κ̆ κ̆ \\
+\verb|\breve{\Lambda}|     & $\breve{\Lambda}$  & \verb|\breve{\lambda}|     & $\breve{\lambda}$     & Λ̆ λ̆ \\
+\verb|\breve{\Mu}|         & $\breve{\Mu}$      & \verb|\breve{\mu}|         & $\breve{\mu}$         & Μ̆ μ̆ \\
+\verb|\breve{\Nu}|         & $\breve{\Nu}$      & \verb|\breve{\nu}|         & $\breve{\nu}$         & Ν̆ ν̆ \\
+\verb|\breve{\Xi}|         & $\breve{\Xi}$      & \verb|\breve{\xi}|         & $\breve{\xi}$         & Ξ̆ ξ̆ \\
+\verb|\breve{\Omicron}|    & $\breve{\Omicron}$ & \verb|\breve{\omicron}|    & $\breve{\omicron}$    & Ο̆ ο̆ \\
+\verb|\breve{\Pi}|         & $\breve{\Pi}$      & \verb|\breve{\pi}|         & $\breve{\pi}$         & Π̆ π̆ \\
+\verb|\breve{\Rho}|        & $\breve{\Rho}$     & \verb|\breve{\rho}|        & $\breve{\rho}$        & Ρ̆ ρ̆ \\
+\verb|\breve{\Sigma}|      & $\breve{\Sigma}$   & \verb|\breve{\sigma}|      & $\breve{\sigma}$      & Σ̆ σ̆ \\
+\verb|\breve{\Tau}|        & $\breve{\Tau}$     & \verb|\breve{\tau}|        & $\breve{\tau}$        & Τ̆ τ̆ \\
+\verb|\breve{\Upsilon}|    & $\breve{\Upsilon}$ & \verb|\breve{\upsilon}|    & $\breve{\upsilon}$    & Ῠ ῠ \\
+\verb|\breve{\Phi}|        & $\breve{\Phi}$     & \verb|\breve{\phi}|        & $\breve{\phi}$        & Φ̆ φ̆ \\
+\verb|\breve{\Chi}|        & $\breve{\Chi}$     & \verb|\breve{\chi}|        & $\breve{\chi}$        & Χ̆ χ̆ \\
+\verb|\breve{\Psi}|        & $\breve{\Psi}$     & \verb|\breve{\psi}|        & $\breve{\psi}$        & Ψ̆ ψ̆ \\
+\verb|\breve{\Omega}|      & $\breve{\Omega}$   & \verb|\breve{\omega}|      & $\breve{\omega}$      & Ω̆ ω̆ \\
+                           &                    & \verb|\breve{\varepsilon}| & $\breve{\varepsilon}$ & ε̆ \\
+                           &                    & \verb|\breve{\vartheta}|   & $\breve{\vartheta}$   & ϑ̆ \\
+                           &                    & \verb|\breve{\varkappa}|   & $\breve{\varkappa}$   & ϰ̆ \\
+                           &                    & \verb|\breve{\varpi}|      & $\breve{\varpi}$      & ϖ̆ \\
+                           &                    & \verb|\breve{\varrho}|     & $\breve{\varrho}$     & ϱ̆ \\
+                           &                    & \verb|\breve{\varsigma}|   & $\breve{\varsigma}$   & ς̆ \\
+                           &                    & \verb|\breve{\varphi}|     & $\breve{\varphi}$     & ϕ̆ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}   & \textbf{Output} & \textbf{Lower}   & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}  & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\breve{A}| & $\breve{A}$     & \verb|\breve{a}| & $\breve{a}$     & Ă ă            & \verb|\breve{0}| & $\breve{0}$     & 0̆ \\
+\verb|\breve{B}| & $\breve{B}$     & \verb|\breve{b}| & $\breve{b}$     & B̆ b̆            & \verb|\breve{1}| & $\breve{1}$     & 1̆ \\
+\verb|\breve{C}| & $\breve{C}$     & \verb|\breve{c}| & $\breve{c}$     & C̆ c̆            & \verb|\breve{2}| & $\breve{2}$     & 2̆ \\
+\verb|\breve{D}| & $\breve{D}$     & \verb|\breve{d}| & $\breve{d}$     & D̆ d̆            & \verb|\breve{3}| & $\breve{3}$     & 3̆ \\
+\verb|\breve{E}| & $\breve{E}$     & \verb|\breve{e}| & $\breve{e}$     & Ĕ ĕ            & \verb|\breve{4}| & $\breve{4}$     & 4̆ \\
+\verb|\breve{F}| & $\breve{F}$     & \verb|\breve{f}| & $\breve{f}$     & F̆ f̆            & \verb|\breve{5}| & $\breve{5}$     & 5̆ \\
+\verb|\breve{G}| & $\breve{G}$     & \verb|\breve{g}| & $\breve{g}$     & Ğ ğ            & \verb|\breve{6}| & $\breve{6}$     & 6̆ \\
+\verb|\breve{H}| & $\breve{H}$     & \verb|\breve{h}| & $\breve{h}$     & H̆ h̆            & \verb|\breve{7}| & $\breve{7}$     & 7̆ \\
+\verb|\breve{I}| & $\breve{I}$     & \verb|\breve{i}| & $\breve{i}$     & Ĭ ĭ            & \verb|\breve{8}| & $\breve{8}$     & 8̆ \\
+\verb|\breve{J}| & $\breve{J}$     & \verb|\breve{j}| & $\breve{j}$     & J̆ j̆            & \verb|\breve{9}| & $\breve{9}$     & 9̆ \\
+\verb|\breve{K}| & $\breve{K}$     & \verb|\breve{k}| & $\breve{k}$     & K̆ k̆            &                  &                 & \\
+\verb|\breve{L}| & $\breve{L}$     & \verb|\breve{l}| & $\breve{l}$     & L̆ l̆            &                  &                 & \\
+\verb|\breve{M}| & $\breve{M}$     & \verb|\breve{m}| & $\breve{m}$     & M̆ m̆            &                  &                 & \\
+\verb|\breve{N}| & $\breve{N}$     & \verb|\breve{n}| & $\breve{n}$     & N̆ n̆            &                  &                 & \\
+\verb|\breve{O}| & $\breve{O}$     & \verb|\breve{o}| & $\breve{o}$     & Ŏ ŏ            &                  &                 & \\
+\verb|\breve{P}| & $\breve{P}$     & \verb|\breve{p}| & $\breve{p}$     & P̆ p̆            &                  &                 & \\
+\verb|\breve{Q}| & $\breve{Q}$     & \verb|\breve{q}| & $\breve{q}$     & Q̆ q̆            &                  &                 & \\
+\verb|\breve{R}| & $\breve{R}$     & \verb|\breve{r}| & $\breve{r}$     & R̆ r̆            &                  &                 & \\
+\verb|\breve{S}| & $\breve{S}$     & \verb|\breve{s}| & $\breve{s}$     & S̆ s̆            &                  &                 & \\
+\verb|\breve{T}| & $\breve{T}$     & \verb|\breve{t}| & $\breve{t}$     & T̆ t̆            &                  &                 & \\
+\verb|\breve{U}| & $\breve{U}$     & \verb|\breve{u}| & $\breve{u}$     & Ŭ ŭ            &                  &                 & \\
+\verb|\breve{V}| & $\breve{V}$     & \verb|\breve{v}| & $\breve{v}$     & V̆ v̆            &                  &                 & \\
+\verb|\breve{W}| & $\breve{W}$     & \verb|\breve{w}| & $\breve{w}$     & W̆ w̆            &                  &                 & \\
+\verb|\breve{X}| & $\breve{X}$     & \verb|\breve{x}| & $\breve{x}$     & X̆ x̆            &                  &                 & \\
+\verb|\breve{Y}| & $\breve{Y}$     & \verb|\breve{y}| & $\breve{y}$     & Y̆ y̆            &                  &                 & \\
+\verb|\breve{Z}| & $\breve{Z}$     & \verb|\breve{z}| & $\breve{z}$     & Z̆ z̆            &                  &                 & \\
 \hline
 \end{longtable}
 
 \newpage
 
-\subsection*{\texttt{\textbackslash ddot} (Double dot above)}
+\section*{Accented Symbols: \texttt{\textbackslash check} (Check accent)}
 
-\begin{longtable}{|c|c|c|}
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
 \hline
-\textbf{Command} & \textbf{Output} & \textbf{Unicode Glyph} \\
+\textbf{Upper}             & \textbf{Output}    & \textbf{Lower}             & \textbf{Output}       & \textbf{Glyph} \\
 \hline
-\verb|\ddot{a}| & $\ddot{a}$ & ä \\
-\verb|\ddot{b}| & $\ddot{b}$ & b̈ \\
-\verb|\ddot{c}| & $\ddot{c}$ & c̈ \\
-\verb|\ddot{d}| & $\ddot{d}$ & d̈ \\
-\verb|\ddot{e}| & $\ddot{e}$ & ë \\
-\verb|\ddot{f}| & $\ddot{f}$ & f̈ \\
-\verb|\ddot{g}| & $\ddot{g}$ & g̈ \\
-\verb|\ddot{h}| & $\ddot{h}$ & ḧ \\
-\verb|\ddot{i}| & $\ddot{i}$ & ï \\
-\verb|\ddot{j}| & $\ddot{j}$ & j̈ \\
-\verb|\ddot{k}| & $\ddot{k}$ & k̈ \\
-\verb|\ddot{l}| & $\ddot{l}$ & l̈ \\
-\verb|\ddot{m}| & $\ddot{m}$ & m̈ \\
-\verb|\ddot{n}| & $\ddot{n}$ & n̈ \\
-\verb|\ddot{o}| & $\ddot{o}$ & ö \\
-\verb|\ddot{p}| & $\ddot{p}$ & p̈ \\
-\verb|\ddot{q}| & $\ddot{q}$ & q̈ \\
-\verb|\ddot{r}| & $\ddot{r}$ & r̈ \\
-\verb|\ddot{s}| & $\ddot{s}$ & s̈ \\
-\verb|\ddot{t}| & $\ddot{t}$ & ẗ \\
-\verb|\ddot{u}| & $\ddot{u}$ & ü \\
-\verb|\ddot{v}| & $\ddot{v}$ & v̈ \\
-\verb|\ddot{w}| & $\ddot{w}$ & ẅ \\
-\verb|\ddot{x}| & $\ddot{x}$ & ẍ \\
-\verb|\ddot{y}| & $\ddot{y}$ & ÿ \\
-\verb|\ddot{z}| & $\ddot{z}$ & z̈ \\
-\verb|\ddot{A}| & $\ddot{A}$ & Ä \\
-\verb|\ddot{B}| & $\ddot{B}$ & B̈ \\
-\verb|\ddot{C}| & $\ddot{C}$ & C̈ \\
-\verb|\ddot{D}| & $\ddot{D}$ & D̈ \\
-\verb|\ddot{E}| & $\ddot{E}$ & Ë \\
-\verb|\ddot{F}| & $\ddot{F}$ & F̈ \\
-\verb|\ddot{G}| & $\ddot{G}$ & G̈ \\
-\verb|\ddot{H}| & $\ddot{H}$ & Ḧ \\
-\verb|\ddot{I}| & $\ddot{I}$ & Ï \\
-\verb|\ddot{J}| & $\ddot{J}$ & J̈ \\
-\verb|\ddot{K}| & $\ddot{K}$ & K̈ \\
-\verb|\ddot{L}| & $\ddot{L}$ & L̈ \\
-\verb|\ddot{M}| & $\ddot{M}$ & M̈ \\
-\verb|\ddot{N}| & $\ddot{N}$ & N̈ \\
-\verb|\ddot{O}| & $\ddot{O}$ & Ö \\
-\verb|\ddot{P}| & $\ddot{P}$ & P̈ \\
-\verb|\ddot{Q}| & $\ddot{Q}$ & Q̈ \\
-\verb|\ddot{R}| & $\ddot{R}$ & R̈ \\
-\verb|\ddot{S}| & $\ddot{S}$ & S̈ \\
-\verb|\ddot{T}| & $\ddot{T}$ & T̈ \\
-\verb|\ddot{U}| & $\ddot{U}$ & Ü \\
-\verb|\ddot{V}| & $\ddot{V}$ & V̈ \\
-\verb|\ddot{W}| & $\ddot{W}$ & Ẅ \\
-\verb|\ddot{X}| & $\ddot{X}$ & Ẍ \\
-\verb|\ddot{Y}| & $\ddot{Y}$ & Ÿ \\
-\verb|\ddot{Z}| & $\ddot{Z}$ & Z̈ \\
-\verb|\ddot{\alpha}| & $\ddot{\alpha}$ & α̈ \\
-\verb|\ddot{\beta}| & $\ddot{\beta}$ & β̈ \\
-\verb|\ddot{\gamma}| & $\ddot{\gamma}$ & γ̈ \\
-\verb|\ddot{\delta}| & $\ddot{\delta}$ & δ̈ \\
-\verb|\ddot{\epsilon}| & $\ddot{\epsilon}$ & ε̈ \\
-\verb|\ddot{\zeta}| & $\ddot{\zeta}$ & ζ̈ \\
-\verb|\ddot{\eta}| & $\ddot{\eta}$ & η̈ \\
-\verb|\ddot{\theta}| & $\ddot{\theta}$ & θ̈ \\
-\verb|\ddot{\iota}| & $\ddot{\iota}$ & ϊ \\
-\verb|\ddot{\kappa}| & $\ddot{\kappa}$ & κ̈ \\
-\verb|\ddot{\lambda}| & $\ddot{\lambda}$ & λ̈ \\
-\verb|\ddot{\mu}| & $\ddot{\mu}$ & μ̈ \\
-\verb|\ddot{\nu}| & $\ddot{\nu}$ & ν̈ \\
-\verb|\ddot{\xi}| & $\ddot{\xi}$ & ξ̈ \\
-\verb|\ddot{\omicron}| & $\ddot{\omicron}$ & ο̈ \\
-\verb|\ddot{\pi}| & $\ddot{\pi}$ & π̈ \\
-\verb|\ddot{\rho}| & $\ddot{\rho}$ & ρ̈ \\
-\verb|\ddot{\sigma}| & $\ddot{\sigma}$ & σ̈ \\
-\verb|\ddot{\tau}| & $\ddot{\tau}$ & τ̈ \\
-\verb|\ddot{\upsilon}| & $\ddot{\upsilon}$ & ϋ \\
-\verb|\ddot{\phi}| & $\ddot{\phi}$ & φ̈ \\
-\verb|\ddot{\chi}| & $\ddot{\chi}$ & χ̈ \\
-\verb|\ddot{\psi}| & $\ddot{\psi}$ & ψ̈ \\
-\verb|\ddot{\omega}| & $\ddot{\omega}$ & ω̈ \\
-\verb|\ddot{\Alpha}| & $\ddot{\Alpha}$ & Α̈ \\
-\verb|\ddot{\Beta}| & $\ddot{\Beta}$ & Β̈ \\
-\verb|\ddot{\Gamma}| & $\ddot{\Gamma}$ & Γ̈ \\
-\verb|\ddot{\Delta}| & $\ddot{\Delta}$ & Δ̈ \\
-\verb|\ddot{\Epsilon}| & $\ddot{\Epsilon}$ & Ε̈ \\
-\verb|\ddot{\Zeta}| & $\ddot{\Zeta}$ & Ζ̈ \\
-\verb|\ddot{\Eta}| & $\ddot{\Eta}$ & Η̈ \\
-\verb|\ddot{\Theta}| & $\ddot{\Theta}$ & Θ̈ \\
-\verb|\ddot{\Iota}| & $\ddot{\Iota}$ & Ϊ \\
-\verb|\ddot{\Kappa}| & $\ddot{\Kappa}$ & Κ̈ \\
-\verb|\ddot{\Lambda}| & $\ddot{\Lambda}$ & Λ̈ \\
-\verb|\ddot{\Mu}| & $\ddot{\Mu}$ & Μ̈ \\
-\verb|\ddot{\Nu}| & $\ddot{\Nu}$ & Ν̈ \\
-\verb|\ddot{\Xi}| & $\ddot{\Xi}$ & Ξ̈ \\
-\verb|\ddot{\Omicron}| & $\ddot{\Omicron}$ & Ο̈ \\
-\verb|\ddot{\Pi}| & $\ddot{\Pi}$ & Π̈ \\
-\verb|\ddot{\Rho}| & $\ddot{\Rho}$ & Ρ̈ \\
-\verb|\ddot{\Sigma}| & $\ddot{\Sigma}$ & Σ̈ \\
-\verb|\ddot{\Tau}| & $\ddot{\Tau}$ & Τ̈ \\
-\verb|\ddot{\Upsilon}| & $\ddot{\Upsilon}$ & Ϋ \\
-\verb|\ddot{\Phi}| & $\ddot{\Phi}$ & Φ̈ \\
-\verb|\ddot{\Chi}| & $\ddot{\Chi}$ & Χ̈ \\
-\verb|\ddot{\Psi}| & $\ddot{\Psi}$ & Ψ̈ \\
-\verb|\ddot{\Omega}| & $\ddot{\Omega}$ & Ω̈ \\
+\verb|\check{\Alpha}|      & $\check{\Alpha}$   & \verb|\check{\alpha}|      & $\check{\alpha}$      & Α̌ α̌ \\
+\verb|\check{\Beta}|       & $\check{\Beta}$    & \verb|\check{\beta}|       & $\check{\beta}$       & Β̌ β̌ \\
+\verb|\check{\Gamma}|      & $\check{\Gamma}$   & \verb|\check{\gamma}|      & $\check{\gamma}$      & Γ̌ γ̌ \\
+\verb|\check{\Delta}|      & $\check{\Delta}$   & \verb|\check{\delta}|      & $\check{\delta}$      & Δ̌ δ̌ \\
+\verb|\check{\Digamma}|    & $\check{\Digamma}$ & \verb|\check{\digamma}|    & $\check{\digamma}$    & Ϝ̌ ϝ̌ \\
+\verb|\check{\Epsilon}|    & $\check{\Epsilon}$ & \verb|\check{\epsilon}|    & $\check{\epsilon}$    & Ε̌ ϵ̌ \\
+\verb|\check{\Zeta}|       & $\check{\Zeta}$    & \verb|\check{\zeta}|       & $\check{\zeta}$       & Ζ̌ ζ̌ \\
+\verb|\check{\Eta}|        & $\check{\Eta}$     & \verb|\check{\eta}|        & $\check{\eta}$        & Η̌ η̌ \\
+\verb|\check{\Theta}|      & $\check{\Theta}$   & \verb|\check{\theta}|      & $\check{\theta}$      & Θ̌ θ̌ \\
+\verb|\check{\Iota}|       & $\check{\Iota}$    & \verb|\check{\iota}|       & $\check{\iota}$       & Ι̌ ι̌ \\
+\verb|\check{\Kappa}|      & $\check{\Kappa}$   & \verb|\check{\kappa}|      & $\check{\kappa}$      & Κ̌ κ̌ \\
+\verb|\check{\Lambda}|     & $\check{\Lambda}$  & \verb|\check{\lambda}|     & $\check{\lambda}$     & Λ̌ λ̌ \\
+\verb|\check{\Mu}|         & $\check{\Mu}$      & \verb|\check{\mu}|         & $\check{\mu}$         & Μ̌ μ̌ \\
+\verb|\check{\Nu}|         & $\check{\Nu}$      & \verb|\check{\nu}|         & $\check{\nu}$         & Ν̌ ν̌ \\
+\verb|\check{\Xi}|         & $\check{\Xi}$      & \verb|\check{\xi}|         & $\check{\xi}$         & Ξ̌ ξ̌ \\
+\verb|\check{\Omicron}|    & $\check{\Omicron}$ & \verb|\check{\omicron}|    & $\check{\omicron}$    & Ο̌ ο̌ \\
+\verb|\check{\Pi}|         & $\check{\Pi}$      & \verb|\check{\pi}|         & $\check{\pi}$         & Π̌ π̌ \\
+\verb|\check{\Rho}|        & $\check{\Rho}$     & \verb|\check{\rho}|        & $\check{\rho}$        & Ρ̌ ρ̌ \\
+\verb|\check{\Sigma}|      & $\check{\Sigma}$   & \verb|\check{\sigma}|      & $\check{\sigma}$      & Σ̌ σ̌ \\
+\verb|\check{\Tau}|        & $\check{\Tau}$     & \verb|\check{\tau}|        & $\check{\tau}$        & Τ̌ τ̌ \\
+\verb|\check{\Upsilon}|    & $\check{\Upsilon}$ & \verb|\check{\upsilon}|    & $\check{\upsilon}$    & Υ̌ υ̌ \\
+\verb|\check{\Phi}|        & $\check{\Phi}$     & \verb|\check{\phi}|        & $\check{\phi}$        & Φ̌ φ̌ \\
+\verb|\check{\Chi}|        & $\check{\Chi}$     & \verb|\check{\chi}|        & $\check{\chi}$        & Χ̌ χ̌ \\
+\verb|\check{\Psi}|        & $\check{\Psi}$     & \verb|\check{\psi}|        & $\check{\psi}$        & Ψ̌ ψ̌ \\
+\verb|\check{\Omega}|      & $\check{\Omega}$   & \verb|\check{\omega}|      & $\check{\omega}$      & Ω̌ ω̌ \\
+                           &                    & \verb|\check{\varepsilon}| & $\check{\varepsilon}$ & ε̌ \\
+                           &                    & \verb|\check{\vartheta}|   & $\check{\vartheta}$   & ϑ̌ \\
+                           &                    & \verb|\check{\varkappa}|   & $\check{\varkappa}$   & ϰ̌ \\
+                           &                    & \verb|\check{\varpi}|      & $\check{\varpi}$      & ϖ̌ \\
+                           &                    & \verb|\check{\varrho}|     & $\check{\varrho}$     & ϱ̌ \\
+                           &                    & \verb|\check{\varsigma}|   & $\check{\varsigma}$   & ς̌ \\
+                           &                    & \verb|\check{\varphi}|     & $\check{\varphi}$     & ϕ̌ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}   & \textbf{Output} & \textbf{Lower}   & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}  & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\check{A}| & $\check{A}$     & \verb|\check{a}| & $\check{a}$     & Ǎ ǎ            & \verb|\check{0}| & $\check{0}$     & 0̌ \\
+\verb|\check{B}| & $\check{B}$     & \verb|\check{b}| & $\check{b}$     & B̌ b̌            & \verb|\check{1}| & $\check{1}$     & 1̌ \\
+\verb|\check{C}| & $\check{C}$     & \verb|\check{c}| & $\check{c}$     & Č č            & \verb|\check{2}| & $\check{2}$     & 2̌ \\
+\verb|\check{D}| & $\check{D}$     & \verb|\check{d}| & $\check{d}$     & Ď ď            & \verb|\check{3}| & $\check{3}$     & 3̌ \\
+\verb|\check{E}| & $\check{E}$     & \verb|\check{e}| & $\check{e}$     & Ě ě            & \verb|\check{4}| & $\check{4}$     & 4̌ \\
+\verb|\check{F}| & $\check{F}$     & \verb|\check{f}| & $\check{f}$     & F̌ f̌            & \verb|\check{5}| & $\check{5}$     & 5̌ \\
+\verb|\check{G}| & $\check{G}$     & \verb|\check{g}| & $\check{g}$     & Ǧ ǧ            & \verb|\check{6}| & $\check{6}$     & 6̌ \\
+\verb|\check{H}| & $\check{H}$     & \verb|\check{h}| & $\check{h}$     & Ȟ ȟ            & \verb|\check{7}| & $\check{7}$     & 7̌ \\
+\verb|\check{I}| & $\check{I}$     & \verb|\check{i}| & $\check{i}$     & Ǐ ǐ            & \verb|\check{8}| & $\check{8}$     & 8̌ \\
+\verb|\check{J}| & $\check{J}$     & \verb|\check{j}| & $\check{j}$     & J̌ ǰ            & \verb|\check{9}| & $\check{9}$     & 9̌ \\
+\verb|\check{K}| & $\check{K}$     & \verb|\check{k}| & $\check{k}$     & Ǩ ǩ            &                  &                 & \\
+\verb|\check{L}| & $\check{L}$     & \verb|\check{l}| & $\check{l}$     & Ľ ľ            &                  &                 & \\
+\verb|\check{M}| & $\check{M}$     & \verb|\check{m}| & $\check{m}$     & M̌ m̌            &                  &                 & \\
+\verb|\check{N}| & $\check{N}$     & \verb|\check{n}| & $\check{n}$     & Ň ň            &                  &                 & \\
+\verb|\check{O}| & $\check{O}$     & \verb|\check{o}| & $\check{o}$     & Ǒ ǒ            &                  &                 & \\
+\verb|\check{P}| & $\check{P}$     & \verb|\check{p}| & $\check{p}$     & P̌ p̌            &                  &                 & \\
+\verb|\check{Q}| & $\check{Q}$     & \verb|\check{q}| & $\check{q}$     & Q̌ q̌            &                  &                 & \\
+\verb|\check{R}| & $\check{R}$     & \verb|\check{r}| & $\check{r}$     & Ř ř            &                  &                 & \\
+\verb|\check{S}| & $\check{S}$     & \verb|\check{s}| & $\check{s}$     & Š š            &                  &                 & \\
+\verb|\check{T}| & $\check{T}$     & \verb|\check{t}| & $\check{t}$     & Ť ť            &                  &                 & \\
+\verb|\check{U}| & $\check{U}$     & \verb|\check{u}| & $\check{u}$     & Ǔ ǔ            &                  &                 & \\
+\verb|\check{V}| & $\check{V}$     & \verb|\check{v}| & $\check{v}$     & V̌ v̌            &                  &                 & \\
+\verb|\check{W}| & $\check{W}$     & \verb|\check{w}| & $\check{w}$     & W̌ w̌            &                  &                 & \\
+\verb|\check{X}| & $\check{X}$     & \verb|\check{x}| & $\check{x}$     & X̌ x̌            &                  &                 & \\
+\verb|\check{Y}| & $\check{Y}$     & \verb|\check{y}| & $\check{y}$     & Y̌ y̌            &                  &                 & \\
+\verb|\check{Z}| & $\check{Z}$     & \verb|\check{z}| & $\check{z}$     & Ž ž            &                  &                 & \\
 \hline
 \end{longtable}
 
 \newpage
 
-\subsection*{\texttt{\textbackslash widetilde} (Tilde above)}
+\section*{Accented Symbols: \texttt{\textbackslash ddot} (Double dot accent)}
 
-\begin{longtable}{|c|c|c|}
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
 \hline
-\textbf{Command} & \textbf{Output} & \textbf{Unicode Glyph} \\
+\textbf{Upper}            & \textbf{Output}   & \textbf{Lower}            & \textbf{Output}      & \textbf{Glyph} \\
 \hline
-\verb|\widetilde{a}| & $\widetilde{a}$ & ã \\
-\verb|\widetilde{b}| & $\widetilde{b}$ & b̃ \\
-\verb|\widetilde{c}| & $\widetilde{c}$ & c̃ \\
-\verb|\widetilde{d}| & $\widetilde{d}$ & d̃ \\
-\verb|\widetilde{e}| & $\widetilde{e}$ & ẽ \\
-\verb|\widetilde{f}| & $\widetilde{f}$ & f̃ \\
-\verb|\widetilde{g}| & $\widetilde{g}$ & g̃ \\
-\verb|\widetilde{h}| & $\widetilde{h}$ & h̃ \\
-\verb|\widetilde{i}| & $\widetilde{i}$ & ĩ \\
-\verb|\widetilde{j}| & $\widetilde{j}$ & j̃ \\
-\verb|\widetilde{k}| & $\widetilde{k}$ & k̃ \\
-\verb|\widetilde{l}| & $\widetilde{l}$ & l̃ \\
-\verb|\widetilde{m}| & $\widetilde{m}$ & m̃ \\
-\verb|\widetilde{n}| & $\widetilde{n}$ & ñ \\
-\verb|\widetilde{o}| & $\widetilde{o}$ & õ \\
-\verb|\widetilde{p}| & $\widetilde{p}$ & p̃ \\
-\verb|\widetilde{q}| & $\widetilde{q}$ & q̃ \\
-\verb|\widetilde{r}| & $\widetilde{r}$ & r̃ \\
-\verb|\widetilde{s}| & $\widetilde{s}$ & s̃ \\
-\verb|\widetilde{t}| & $\widetilde{t}$ & t̃ \\
-\verb|\widetilde{u}| & $\widetilde{u}$ & ũ \\
-\verb|\widetilde{v}| & $\widetilde{v}$ & ṽ \\
-\verb|\widetilde{w}| & $\widetilde{w}$ & w̃ \\
-\verb|\widetilde{x}| & $\widetilde{x}$ & x̃ \\
-\verb|\widetilde{y}| & $\widetilde{y}$ & ỹ \\
-\verb|\widetilde{z}| & $\widetilde{z}$ & z̃ \\
-\verb|\widetilde{A}| & $\widetilde{A}$ & Ã \\
-\verb|\widetilde{B}| & $\widetilde{B}$ & B̃ \\
-\verb|\widetilde{C}| & $\widetilde{C}$ & C̃ \\
-\verb|\widetilde{D}| & $\widetilde{D}$ & D̃ \\
-\verb|\widetilde{E}| & $\widetilde{E}$ & Ẽ \\
-\verb|\widetilde{F}| & $\widetilde{F}$ & F̃ \\
-\verb|\widetilde{G}| & $\widetilde{G}$ & G̃ \\
-\verb|\widetilde{H}| & $\widetilde{H}$ & H̃ \\
-\verb|\widetilde{I}| & $\widetilde{I}$ & Ĩ \\
-\verb|\widetilde{J}| & $\widetilde{J}$ & J̃ \\
-\verb|\widetilde{K}| & $\widetilde{K}$ & K̃ \\
-\verb|\widetilde{L}| & $\widetilde{L}$ & L̃ \\
-\verb|\widetilde{M}| & $\widetilde{M}$ & M̃ \\
-\verb|\widetilde{N}| & $\widetilde{N}$ & Ñ \\
-\verb|\widetilde{O}| & $\widetilde{O}$ & Õ \\
-\verb|\widetilde{P}| & $\widetilde{P}$ & P̃ \\
-\verb|\widetilde{Q}| & $\widetilde{Q}$ & Q̃ \\
-\verb|\widetilde{R}| & $\widetilde{R}$ & R̃ \\
-\verb|\widetilde{S}| & $\widetilde{S}$ & S̃ \\
-\verb|\widetilde{T}| & $\widetilde{T}$ & T̃ \\
-\verb|\widetilde{U}| & $\widetilde{U}$ & Ũ \\
-\verb|\widetilde{V}| & $\widetilde{V}$ & Ṽ \\
-\verb|\widetilde{W}| & $\widetilde{W}$ & W̃ \\
-\verb|\widetilde{X}| & $\widetilde{X}$ & X̃ \\
-\verb|\widetilde{Y}| & $\widetilde{Y}$ & Ỹ \\
-\verb|\widetilde{Z}| & $\widetilde{Z}$ & Z̃ \\
-\verb|\widetilde{\alpha}| & $\widetilde{\alpha}$ & α̃ \\
-\verb|\widetilde{\beta}| & $\widetilde{\beta}$ & β̃ \\
-\verb|\widetilde{\gamma}| & $\widetilde{\gamma}$ & γ̃ \\
-\verb|\widetilde{\delta}| & $\widetilde{\delta}$ & δ̃ \\
-\verb|\widetilde{\epsilon}| & $\widetilde{\epsilon}$ & ε̃ \\
-\verb|\widetilde{\zeta}| & $\widetilde{\zeta}$ & ζ̃ \\
-\verb|\widetilde{\eta}| & $\widetilde{\eta}$ & η̃ \\
-\verb|\widetilde{\theta}| & $\widetilde{\theta}$ & θ̃ \\
-\verb|\widetilde{\iota}| & $\widetilde{\iota}$ & ι̃ \\
-\verb|\widetilde{\kappa}| & $\widetilde{\kappa}$ & κ̃ \\
-\verb|\widetilde{\lambda}| & $\widetilde{\lambda}$ & λ̃ \\
-\verb|\widetilde{\mu}| & $\widetilde{\mu}$ & μ̃ \\
-\verb|\widetilde{\nu}| & $\widetilde{\nu}$ & ν̃ \\
-\verb|\widetilde{\xi}| & $\widetilde{\xi}$ & ξ̃ \\
-\verb|\widetilde{\omicron}| & $\widetilde{\omicron}$ & ο̃ \\
-\verb|\widetilde{\pi}| & $\widetilde{\pi}$ & π̃ \\
-\verb|\widetilde{\rho}| & $\widetilde{\rho}$ & ρ̃ \\
-\verb|\widetilde{\sigma}| & $\widetilde{\sigma}$ & σ̃ \\
-\verb|\widetilde{\tau}| & $\widetilde{\tau}$ & τ̃ \\
-\verb|\widetilde{\upsilon}| & $\widetilde{\upsilon}$ & υ̃ \\
-\verb|\widetilde{\phi}| & $\widetilde{\phi}$ & φ̃ \\
-\verb|\widetilde{\chi}| & $\widetilde{\chi}$ & χ̃ \\
-\verb|\widetilde{\psi}| & $\widetilde{\psi}$ & ψ̃ \\
-\verb|\widetilde{\omega}| & $\widetilde{\omega}$ & ω̃ \\
-\verb|\widetilde{\Alpha}| & $\widetilde{\Alpha}$ & Α̃ \\
-\verb|\widetilde{\Beta}| & $\widetilde{\Beta}$ & Β̃ \\
-\verb|\widetilde{\Gamma}| & $\widetilde{\Gamma}$ & Γ̃ \\
-\verb|\widetilde{\Delta}| & $\widetilde{\Delta}$ & Δ̃ \\
-\verb|\widetilde{\Epsilon}| & $\widetilde{\Epsilon}$ & Ε̃ \\
-\verb|\widetilde{\Zeta}| & $\widetilde{\Zeta}$ & Ζ̃ \\
-\verb|\widetilde{\Eta}| & $\widetilde{\Eta}$ & Η̃ \\
-\verb|\widetilde{\Theta}| & $\widetilde{\Theta}$ & Θ̃ \\
-\verb|\widetilde{\Iota}| & $\widetilde{\Iota}$ & Ι̃ \\
-\verb|\widetilde{\Kappa}| & $\widetilde{\Kappa}$ & Κ̃ \\
-\verb|\widetilde{\Lambda}| & $\widetilde{\Lambda}$ & Λ̃ \\
-\verb|\widetilde{\Mu}| & $\widetilde{\Mu}$ & Μ̃ \\
-\verb|\widetilde{\Nu}| & $\widetilde{\Nu}$ & Ν̃ \\
-\verb|\widetilde{\Xi}| & $\widetilde{\Xi}$ & Ξ̃ \\
-\verb|\widetilde{\Omicron}| & $\widetilde{\Omicron}$ & Ο̃ \\
-\verb|\widetilde{\Pi}| & $\widetilde{\Pi}$ & Π̃ \\
-\verb|\widetilde{\Rho}| & $\widetilde{\Rho}$ & Ρ̃ \\
-\verb|\widetilde{\Sigma}| & $\widetilde{\Sigma}$ & Σ̃ \\
-\verb|\widetilde{\Tau}| & $\widetilde{\Tau}$ & Τ̃ \\
-\verb|\widetilde{\Upsilon}| & $\widetilde{\Upsilon}$ & Υ̃ \\
-\verb|\widetilde{\Phi}| & $\widetilde{\Phi}$ & Φ̃ \\
-\verb|\widetilde{\Chi}| & $\widetilde{\Chi}$ & Χ̃ \\
-\verb|\widetilde{\Psi}| & $\widetilde{\Psi}$ & Ψ̃ \\
-\verb|\widetilde{\Omega}| & $\widetilde{\Omega}$ & Ω̃ \\
+\verb|\ddot{\Alpha}|      & $\ddot{\Alpha}$   & \verb|\ddot{\alpha}|      & $\ddot{\alpha}$      & Α̈ α̈ \\
+\verb|\ddot{\Beta}|       & $\ddot{\Beta}$    & \verb|\ddot{\beta}|       & $\ddot{\beta}$       & Β̈ β̈ \\
+\verb|\ddot{\Gamma}|      & $\ddot{\Gamma}$   & \verb|\ddot{\gamma}|      & $\ddot{\gamma}$      & Γ̈ γ̈ \\
+\verb|\ddot{\Delta}|      & $\ddot{\Delta}$   & \verb|\ddot{\delta}|      & $\ddot{\delta}$      & Δ̈ δ̈ \\
+\verb|\ddot{\Digamma}|    & $\ddot{\Digamma}$ & \verb|\ddot{\digamma}|    & $\ddot{\digamma}$    & Ϝ̈ ϝ̈ \\
+\verb|\ddot{\Epsilon}|    & $\ddot{\Epsilon}$ & \verb|\ddot{\epsilon}|    & $\ddot{\epsilon}$    & Ε̈ ϵ̈ \\
+\verb|\ddot{\Zeta}|       & $\ddot{\Zeta}$    & \verb|\ddot{\zeta}|       & $\ddot{\zeta}$       & Ζ̈ ζ̈ \\
+\verb|\ddot{\Eta}|        & $\ddot{\Eta}$     & \verb|\ddot{\eta}|        & $\ddot{\eta}$        & Η̈ η̈ \\
+\verb|\ddot{\Theta}|      & $\ddot{\Theta}$   & \verb|\ddot{\theta}|      & $\ddot{\theta}$      & Θ̈ θ̈ \\
+\verb|\ddot{\Iota}|       & $\ddot{\Iota}$    & \verb|\ddot{\iota}|       & $\ddot{\iota}$       & Ϊ ϊ \\
+\verb|\ddot{\Kappa}|      & $\ddot{\Kappa}$   & \verb|\ddot{\kappa}|      & $\ddot{\kappa}$      & Κ̈ κ̈ \\
+\verb|\ddot{\Lambda}|     & $\ddot{\Lambda}$  & \verb|\ddot{\lambda}|     & $\ddot{\lambda}$     & Λ̈ λ̈ \\
+\verb|\ddot{\Mu}|         & $\ddot{\Mu}$      & \verb|\ddot{\mu}|         & $\ddot{\mu}$         & Μ̈ μ̈ \\
+\verb|\ddot{\Nu}|         & $\ddot{\Nu}$      & \verb|\ddot{\nu}|         & $\ddot{\nu}$         & Ν̈ ν̈ \\
+\verb|\ddot{\Xi}|         & $\ddot{\Xi}$      & \verb|\ddot{\xi}|         & $\ddot{\xi}$         & Ξ̈ ξ̈ \\
+\verb|\ddot{\Omicron}|    & $\ddot{\Omicron}$ & \verb|\ddot{\omicron}|    & $\ddot{\omicron}$    & Ο̈ ο̈ \\
+\verb|\ddot{\Pi}|         & $\ddot{\Pi}$      & \verb|\ddot{\pi}|         & $\ddot{\pi}$         & Π̈ π̈ \\
+\verb|\ddot{\Rho}|        & $\ddot{\Rho}$     & \verb|\ddot{\rho}|        & $\ddot{\rho}$        & Ρ̈ ρ̈ \\
+\verb|\ddot{\Sigma}|      & $\ddot{\Sigma}$   & \verb|\ddot{\sigma}|      & $\ddot{\sigma}$      & Σ̈ σ̈ \\
+\verb|\ddot{\Tau}|        & $\ddot{\Tau}$     & \verb|\ddot{\tau}|        & $\ddot{\tau}$        & Τ̈ τ̈ \\
+\verb|\ddot{\Upsilon}|    & $\ddot{\Upsilon}$ & \verb|\ddot{\upsilon}|    & $\ddot{\upsilon}$    & Ϋ ϋ \\
+\verb|\ddot{\Phi}|        & $\ddot{\Phi}$     & \verb|\ddot{\phi}|        & $\ddot{\phi}$        & Φ̈ φ̈ \\
+\verb|\ddot{\Chi}|        & $\ddot{\Chi}$     & \verb|\ddot{\chi}|        & $\ddot{\chi}$        & Χ̈ χ̈ \\
+\verb|\ddot{\Psi}|        & $\ddot{\Psi}$     & \verb|\ddot{\psi}|        & $\ddot{\psi}$        & Ψ̈ ψ̈ \\
+\verb|\ddot{\Omega}|      & $\ddot{\Omega}$   & \verb|\ddot{\omega}|      & $\ddot{\omega}$      & Ω̈ ω̈ \\
+                          &                   & \verb|\ddot{\varepsilon}| & $\ddot{\varepsilon}$ & ε̈ \\
+                          &                   & \verb|\ddot{\vartheta}|   & $\ddot{\vartheta}$   & ϑ̈ \\
+                          &                   & \verb|\ddot{\varkappa}|   & $\ddot{\varkappa}$   & ϰ̈ \\
+                          &                   & \verb|\ddot{\varpi}|      & $\ddot{\varpi}$      & ϖ̈ \\
+                          &                   & \verb|\ddot{\varrho}|     & $\ddot{\varrho}$     & ϱ̈ \\
+                          &                   & \verb|\ddot{\varsigma}|   & $\ddot{\varsigma}$   & ς̈ \\
+                          &                   & \verb|\ddot{\varphi}|     & $\ddot{\varphi}$     & ϕ̈ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}  & \textbf{Output} & \textbf{Lower}  & \textbf{Output} & \textbf{Glyph} & \textbf{Digits} & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\ddot{A}| & $\ddot{A}$      & \verb|\ddot{a}| & $\ddot{a}$      & Ä ä            & \verb|\ddot{0}| & $\ddot{0}$      & 0̈ \\
+\verb|\ddot{B}| & $\ddot{B}$      & \verb|\ddot{b}| & $\ddot{b}$      & B̈ b̈            & \verb|\ddot{1}| & $\ddot{1}$      & 1̈ \\
+\verb|\ddot{C}| & $\ddot{C}$      & \verb|\ddot{c}| & $\ddot{c}$      & C̈ c̈            & \verb|\ddot{2}| & $\ddot{2}$      & 2̈ \\
+\verb|\ddot{D}| & $\ddot{D}$      & \verb|\ddot{d}| & $\ddot{d}$      & D̈ d̈            & \verb|\ddot{3}| & $\ddot{3}$      & 3̈ \\
+\verb|\ddot{E}| & $\ddot{E}$      & \verb|\ddot{e}| & $\ddot{e}$      & Ë ë            & \verb|\ddot{4}| & $\ddot{4}$      & 4̈ \\
+\verb|\ddot{F}| & $\ddot{F}$      & \verb|\ddot{f}| & $\ddot{f}$      & F̈ f̈            & \verb|\ddot{5}| & $\ddot{5}$      & 5̈ \\
+\verb|\ddot{G}| & $\ddot{G}$      & \verb|\ddot{g}| & $\ddot{g}$      & G̈ g̈            & \verb|\ddot{6}| & $\ddot{6}$      & 6̈ \\
+\verb|\ddot{H}| & $\ddot{H}$      & \verb|\ddot{h}| & $\ddot{h}$      & Ḧ ḧ            & \verb|\ddot{7}| & $\ddot{7}$      & 7̈ \\
+\verb|\ddot{I}| & $\ddot{I}$      & \verb|\ddot{i}| & $\ddot{i}$      & Ï ï            & \verb|\ddot{8}| & $\ddot{8}$      & 8̈ \\
+\verb|\ddot{J}| & $\ddot{J}$      & \verb|\ddot{j}| & $\ddot{j}$      & J̈ j̈            & \verb|\ddot{9}| & $\ddot{9}$      & 9̈ \\
+\verb|\ddot{K}| & $\ddot{K}$      & \verb|\ddot{k}| & $\ddot{k}$      & K̈ k̈            &                 &                 & \\
+\verb|\ddot{L}| & $\ddot{L}$      & \verb|\ddot{l}| & $\ddot{l}$      & L̈ l̈            &                 &                 & \\
+\verb|\ddot{M}| & $\ddot{M}$      & \verb|\ddot{m}| & $\ddot{m}$      & M̈ m̈            &                 &                 & \\
+\verb|\ddot{N}| & $\ddot{N}$      & \verb|\ddot{n}| & $\ddot{n}$      & N̈ n̈            &                 &                 & \\
+\verb|\ddot{O}| & $\ddot{O}$      & \verb|\ddot{o}| & $\ddot{o}$      & Ö ö            &                 &                 & \\
+\verb|\ddot{P}| & $\ddot{P}$      & \verb|\ddot{p}| & $\ddot{p}$      & P̈ p̈            &                 &                 & \\
+\verb|\ddot{Q}| & $\ddot{Q}$      & \verb|\ddot{q}| & $\ddot{q}$      & Q̈ q̈            &                 &                 & \\
+\verb|\ddot{R}| & $\ddot{R}$      & \verb|\ddot{r}| & $\ddot{r}$      & R̈ r̈            &                 &                 & \\
+\verb|\ddot{S}| & $\ddot{S}$      & \verb|\ddot{s}| & $\ddot{s}$      & S̈ s̈            &                 &                 & \\
+\verb|\ddot{T}| & $\ddot{T}$      & \verb|\ddot{t}| & $\ddot{t}$      & T̈ ẗ            &                 &                 & \\
+\verb|\ddot{U}| & $\ddot{U}$      & \verb|\ddot{u}| & $\ddot{u}$      & Ü ü            &                 &                 & \\
+\verb|\ddot{V}| & $\ddot{V}$      & \verb|\ddot{v}| & $\ddot{v}$      & V̈ v̈            &                 &                 & \\
+\verb|\ddot{W}| & $\ddot{W}$      & \verb|\ddot{w}| & $\ddot{w}$      & Ẅ ẅ            &                 &                 & \\
+\verb|\ddot{X}| & $\ddot{X}$      & \verb|\ddot{x}| & $\ddot{x}$      & Ẍ ẍ            &                 &                 & \\
+\verb|\ddot{Y}| & $\ddot{Y}$      & \verb|\ddot{y}| & $\ddot{y}$      & Ÿ ÿ            &                 &                 & \\
+\verb|\ddot{Z}| & $\ddot{Z}$      & \verb|\ddot{z}| & $\ddot{z}$      & Z̈ z̈            &                 &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash dddot} (Three dots accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}             & \textbf{Output}    & \textbf{Lower}             & \textbf{Output}       & \textbf{Glyph} \\
+\hline
+\verb|\dddot{\Alpha}|      & $\dddot{\Alpha}$   & \verb|\dddot{\alpha}|      & $\dddot{\alpha}$      & Α⃛ α⃛ \\
+\verb|\dddot{\Beta}|       & $\dddot{\Beta}$    & \verb|\dddot{\beta}|       & $\dddot{\beta}$       & Β⃛ β⃛ \\
+\verb|\dddot{\Gamma}|      & $\dddot{\Gamma}$   & \verb|\dddot{\gamma}|      & $\dddot{\gamma}$      & Γ⃛ γ⃛ \\
+\verb|\dddot{\Delta}|      & $\dddot{\Delta}$   & \verb|\dddot{\delta}|      & $\dddot{\delta}$      & Δ⃛ δ⃛ \\
+\verb|\dddot{\Digamma}|    & $\dddot{\Digamma}$ & \verb|\dddot{\digamma}|    & $\dddot{\digamma}$    & Ϝ⃛ ϝ⃛ \\
+\verb|\dddot{\Epsilon}|    & $\dddot{\Epsilon}$ & \verb|\dddot{\epsilon}|    & $\dddot{\epsilon}$    & Ε⃛ ϵ⃛ \\
+\verb|\dddot{\Zeta}|       & $\dddot{\Zeta}$    & \verb|\dddot{\zeta}|       & $\dddot{\zeta}$       & Ζ⃛ ζ⃛ \\
+\verb|\dddot{\Eta}|        & $\dddot{\Eta}$     & \verb|\dddot{\eta}|        & $\dddot{\eta}$        & Η⃛ η⃛ \\
+\verb|\dddot{\Theta}|      & $\dddot{\Theta}$   & \verb|\dddot{\theta}|      & $\dddot{\theta}$      & Θ⃛ θ⃛ \\
+\verb|\dddot{\Iota}|       & $\dddot{\Iota}$    & \verb|\dddot{\iota}|       & $\dddot{\iota}$       & Ι⃛ ι⃛ \\
+\verb|\dddot{\Kappa}|      & $\dddot{\Kappa}$   & \verb|\dddot{\kappa}|      & $\dddot{\kappa}$      & Κ⃛ κ⃛ \\
+\verb|\dddot{\Lambda}|     & $\dddot{\Lambda}$  & \verb|\dddot{\lambda}|     & $\dddot{\lambda}$     & Λ⃛ λ⃛ \\
+\verb|\dddot{\Mu}|         & $\dddot{\Mu}$      & \verb|\dddot{\mu}|         & $\dddot{\mu}$         & Μ⃛ μ⃛ \\
+\verb|\dddot{\Nu}|         & $\dddot{\Nu}$      & \verb|\dddot{\nu}|         & $\dddot{\nu}$         & Ν⃛ ν⃛ \\
+\verb|\dddot{\Xi}|         & $\dddot{\Xi}$      & \verb|\dddot{\xi}|         & $\dddot{\xi}$         & Ξ⃛ ξ⃛ \\
+\verb|\dddot{\Omicron}|    & $\dddot{\Omicron}$ & \verb|\dddot{\omicron}|    & $\dddot{\omicron}$    & Ο⃛ ο⃛ \\
+\verb|\dddot{\Pi}|         & $\dddot{\Pi}$      & \verb|\dddot{\pi}|         & $\dddot{\pi}$         & Π⃛ π⃛ \\
+\verb|\dddot{\Rho}|        & $\dddot{\Rho}$     & \verb|\dddot{\rho}|        & $\dddot{\rho}$        & Ρ⃛ ρ⃛ \\
+\verb|\dddot{\Sigma}|      & $\dddot{\Sigma}$   & \verb|\dddot{\sigma}|      & $\dddot{\sigma}$      & Σ⃛ σ⃛ \\
+\verb|\dddot{\Tau}|        & $\dddot{\Tau}$     & \verb|\dddot{\tau}|        & $\dddot{\tau}$        & Τ⃛ τ⃛ \\
+\verb|\dddot{\Upsilon}|    & $\dddot{\Upsilon}$ & \verb|\dddot{\upsilon}|    & $\dddot{\upsilon}$    & Υ⃛ υ⃛ \\
+\verb|\dddot{\Phi}|        & $\dddot{\Phi}$     & \verb|\dddot{\phi}|        & $\dddot{\phi}$        & Φ⃛ φ⃛ \\
+\verb|\dddot{\Chi}|        & $\dddot{\Chi}$     & \verb|\dddot{\chi}|        & $\dddot{\chi}$        & Χ⃛ χ⃛ \\
+\verb|\dddot{\Psi}|        & $\dddot{\Psi}$     & \verb|\dddot{\psi}|        & $\dddot{\psi}$        & Ψ⃛ ψ⃛ \\
+\verb|\dddot{\Omega}|      & $\dddot{\Omega}$   & \verb|\dddot{\omega}|      & $\dddot{\omega}$      & Ω⃛ ω⃛ \\
+                           &                    & \verb|\dddot{\varepsilon}| & $\dddot{\varepsilon}$ & ε⃛ \\
+                           &                    & \verb|\dddot{\vartheta}|   & $\dddot{\vartheta}$   & ϑ⃛ \\
+                           &                    & \verb|\dddot{\varkappa}|   & $\dddot{\varkappa}$   & ϰ⃛ \\
+                           &                    & \verb|\dddot{\varpi}|      & $\dddot{\varpi}$      & ϖ⃛ \\
+                           &                    & \verb|\dddot{\varrho}|     & $\dddot{\varrho}$     & ϱ⃛ \\
+                           &                    & \verb|\dddot{\varsigma}|   & $\dddot{\varsigma}$   & ς⃛ \\
+                           &                    & \verb|\dddot{\varphi}|     & $\dddot{\varphi}$     & ϕ⃛ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}   & \textbf{Output} & \textbf{Lower}   & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}  & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\dddot{A}| & $\dddot{A}$     & \verb|\dddot{a}| & $\dddot{a}$     & A⃛ a⃛            & \verb|\dddot{0}| & $\dddot{0}$     & 0⃛ \\
+\verb|\dddot{B}| & $\dddot{B}$     & \verb|\dddot{b}| & $\dddot{b}$     & B⃛ b⃛            & \verb|\dddot{1}| & $\dddot{1}$     & 1⃛ \\
+\verb|\dddot{C}| & $\dddot{C}$     & \verb|\dddot{c}| & $\dddot{c}$     & C⃛ c⃛            & \verb|\dddot{2}| & $\dddot{2}$     & 2⃛ \\
+\verb|\dddot{D}| & $\dddot{D}$     & \verb|\dddot{d}| & $\dddot{d}$     & D⃛ d⃛            & \verb|\dddot{3}| & $\dddot{3}$     & 3⃛ \\
+\verb|\dddot{E}| & $\dddot{E}$     & \verb|\dddot{e}| & $\dddot{e}$     & E⃛ e⃛            & \verb|\dddot{4}| & $\dddot{4}$     & 4⃛ \\
+\verb|\dddot{F}| & $\dddot{F}$     & \verb|\dddot{f}| & $\dddot{f}$     & F⃛ f⃛            & \verb|\dddot{5}| & $\dddot{5}$     & 5⃛ \\
+\verb|\dddot{G}| & $\dddot{G}$     & \verb|\dddot{g}| & $\dddot{g}$     & G⃛ g⃛            & \verb|\dddot{6}| & $\dddot{6}$     & 6⃛ \\
+\verb|\dddot{H}| & $\dddot{H}$     & \verb|\dddot{h}| & $\dddot{h}$     & H⃛ h⃛            & \verb|\dddot{7}| & $\dddot{7}$     & 7⃛ \\
+\verb|\dddot{I}| & $\dddot{I}$     & \verb|\dddot{i}| & $\dddot{i}$     & I⃛ i⃛            & \verb|\dddot{8}| & $\dddot{8}$     & 8⃛ \\
+\verb|\dddot{J}| & $\dddot{J}$     & \verb|\dddot{j}| & $\dddot{j}$     & J⃛ j⃛            & \verb|\dddot{9}| & $\dddot{9}$     & 9⃛ \\
+\verb|\dddot{K}| & $\dddot{K}$     & \verb|\dddot{k}| & $\dddot{k}$     & K⃛ k⃛            &                  &                 & \\
+\verb|\dddot{L}| & $\dddot{L}$     & \verb|\dddot{l}| & $\dddot{l}$     & L⃛ l⃛            &                  &                 & \\
+\verb|\dddot{M}| & $\dddot{M}$     & \verb|\dddot{m}| & $\dddot{m}$     & M⃛ m⃛            &                  &                 & \\
+\verb|\dddot{N}| & $\dddot{N}$     & \verb|\dddot{n}| & $\dddot{n}$     & N⃛ n⃛            &                  &                 & \\
+\verb|\dddot{O}| & $\dddot{O}$     & \verb|\dddot{o}| & $\dddot{o}$     & O⃛ o⃛            &                  &                 & \\
+\verb|\dddot{P}| & $\dddot{P}$     & \verb|\dddot{p}| & $\dddot{p}$     & P⃛ p⃛            &                  &                 & \\
+\verb|\dddot{Q}| & $\dddot{Q}$     & \verb|\dddot{q}| & $\dddot{q}$     & Q⃛ q⃛            &                  &                 & \\
+\verb|\dddot{R}| & $\dddot{R}$     & \verb|\dddot{r}| & $\dddot{r}$     & R⃛ r⃛            &                  &                 & \\
+\verb|\dddot{S}| & $\dddot{S}$     & \verb|\dddot{s}| & $\dddot{s}$     & S⃛ s⃛            &                  &                 & \\
+\verb|\dddot{T}| & $\dddot{T}$     & \verb|\dddot{t}| & $\dddot{t}$     & T⃛ t⃛            &                  &                 & \\
+\verb|\dddot{U}| & $\dddot{U}$     & \verb|\dddot{u}| & $\dddot{u}$     & U⃛ u⃛            &                  &                 & \\
+\verb|\dddot{V}| & $\dddot{V}$     & \verb|\dddot{v}| & $\dddot{v}$     & V⃛ v⃛            &                  &                 & \\
+\verb|\dddot{W}| & $\dddot{W}$     & \verb|\dddot{w}| & $\dddot{w}$     & W⃛ w⃛            &                  &                 & \\
+\verb|\dddot{X}| & $\dddot{X}$     & \verb|\dddot{x}| & $\dddot{x}$     & X⃛ x⃛            &                  &                 & \\
+\verb|\dddot{Y}| & $\dddot{Y}$     & \verb|\dddot{y}| & $\dddot{y}$     & Y⃛ y⃛            &                  &                 & \\
+\verb|\dddot{Z}| & $\dddot{Z}$     & \verb|\dddot{z}| & $\dddot{z}$     & Z⃛ z⃛            &                  &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash ddddot} (Four dots accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}              & \textbf{Output}     & \textbf{Lower}              & \textbf{Output}        & \textbf{Glyph} \\
+\hline
+\verb|\ddddot{\Alpha}|      & $\ddddot{\Alpha}$   & \verb|\ddddot{\alpha}|      & $\ddddot{\alpha}$      & Α⃜ α⃜ \\
+\verb|\ddddot{\Beta}|       & $\ddddot{\Beta}$    & \verb|\ddddot{\beta}|       & $\ddddot{\beta}$       & Β⃜ β⃜ \\
+\verb|\ddddot{\Gamma}|      & $\ddddot{\Gamma}$   & \verb|\ddddot{\gamma}|      & $\ddddot{\gamma}$      & Γ⃜ γ⃜ \\
+\verb|\ddddot{\Delta}|      & $\ddddot{\Delta}$   & \verb|\ddddot{\delta}|      & $\ddddot{\delta}$      & Δ⃜ δ⃜ \\
+\verb|\ddddot{\Digamma}|    & $\ddddot{\Digamma}$ & \verb|\ddddot{\digamma}|    & $\ddddot{\digamma}$    & Ϝ⃜ ϝ⃜ \\
+\verb|\ddddot{\Epsilon}|    & $\ddddot{\Epsilon}$ & \verb|\ddddot{\epsilon}|    & $\ddddot{\epsilon}$    & Ε⃜ ϵ⃜ \\
+\verb|\ddddot{\Zeta}|       & $\ddddot{\Zeta}$    & \verb|\ddddot{\zeta}|       & $\ddddot{\zeta}$       & Ζ⃜ ζ⃜ \\
+\verb|\ddddot{\Eta}|        & $\ddddot{\Eta}$     & \verb|\ddddot{\eta}|        & $\ddddot{\eta}$        & Η⃜ η⃜ \\
+\verb|\ddddot{\Theta}|      & $\ddddot{\Theta}$   & \verb|\ddddot{\theta}|      & $\ddddot{\theta}$      & Θ⃜ θ⃜ \\
+\verb|\ddddot{\Iota}|       & $\ddddot{\Iota}$    & \verb|\ddddot{\iota}|       & $\ddddot{\iota}$       & Ι⃜ ι⃜ \\
+\verb|\ddddot{\Kappa}|      & $\ddddot{\Kappa}$   & \verb|\ddddot{\kappa}|      & $\ddddot{\kappa}$      & Κ⃜ κ⃜ \\
+\verb|\ddddot{\Lambda}|     & $\ddddot{\Lambda}$  & \verb|\ddddot{\lambda}|     & $\ddddot{\lambda}$     & Λ⃜ λ⃜ \\
+\verb|\ddddot{\Mu}|         & $\ddddot{\Mu}$      & \verb|\ddddot{\mu}|         & $\ddddot{\mu}$         & Μ⃜ μ⃜ \\
+\verb|\ddddot{\Nu}|         & $\ddddot{\Nu}$      & \verb|\ddddot{\nu}|         & $\ddddot{\nu}$         & Ν⃜ ν⃜ \\
+\verb|\ddddot{\Xi}|         & $\ddddot{\Xi}$      & \verb|\ddddot{\xi}|         & $\ddddot{\xi}$         & Ξ⃜ ξ⃜ \\
+\verb|\ddddot{\Omicron}|    & $\ddddot{\Omicron}$ & \verb|\ddddot{\omicron}|    & $\ddddot{\omicron}$    & Ο⃜ ο⃜ \\
+\verb|\ddddot{\Pi}|         & $\ddddot{\Pi}$      & \verb|\ddddot{\pi}|         & $\ddddot{\pi}$         & Π⃜ π⃜ \\
+\verb|\ddddot{\Rho}|        & $\ddddot{\Rho}$     & \verb|\ddddot{\rho}|        & $\ddddot{\rho}$        & Ρ⃜ ρ⃜ \\
+\verb|\ddddot{\Sigma}|      & $\ddddot{\Sigma}$   & \verb|\ddddot{\sigma}|      & $\ddddot{\sigma}$      & Σ⃜ σ⃜ \\
+\verb|\ddddot{\Tau}|        & $\ddddot{\Tau}$     & \verb|\ddddot{\tau}|        & $\ddddot{\tau}$        & Τ⃜ τ⃜ \\
+\verb|\ddddot{\Upsilon}|    & $\ddddot{\Upsilon}$ & \verb|\ddddot{\upsilon}|    & $\ddddot{\upsilon}$    & Υ⃜ υ⃜ \\
+\verb|\ddddot{\Phi}|        & $\ddddot{\Phi}$     & \verb|\ddddot{\phi}|        & $\ddddot{\phi}$        & Φ⃜ φ⃜ \\
+\verb|\ddddot{\Chi}|        & $\ddddot{\Chi}$     & \verb|\ddddot{\chi}|        & $\ddddot{\chi}$        & Χ⃜ χ⃜ \\
+\verb|\ddddot{\Psi}|        & $\ddddot{\Psi}$     & \verb|\ddddot{\psi}|        & $\ddddot{\psi}$        & Ψ⃜ ψ⃜ \\
+\verb|\ddddot{\Omega}|      & $\ddddot{\Omega}$   & \verb|\ddddot{\omega}|      & $\ddddot{\omega}$      & Ω⃜ ω⃜ \\
+                            &                     & \verb|\ddddot{\varepsilon}| & $\ddddot{\varepsilon}$ & ε⃜ \\
+                            &                     & \verb|\ddddot{\vartheta}|   & $\ddddot{\vartheta}$   & ϑ⃜ \\
+                            &                     & \verb|\ddddot{\varkappa}|   & $\ddddot{\varkappa}$   & ϰ⃜ \\
+                            &                     & \verb|\ddddot{\varpi}|      & $\ddddot{\varpi}$      & ϖ⃜ \\
+                            &                     & \verb|\ddddot{\varrho}|     & $\ddddot{\varrho}$     & ϱ⃜ \\
+                            &                     & \verb|\ddddot{\varsigma}|   & $\ddddot{\varsigma}$   & ς⃜ \\
+                            &                     & \verb|\ddddot{\varphi}|     & $\ddddot{\varphi}$     & ϕ⃜ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}    & \textbf{Output} & \textbf{Lower}    & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}   & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\ddddot{A}| & $\ddddot{A}$    & \verb|\ddddot{a}| & $\ddddot{a}$    & A⃜ a⃜            & \verb|\ddddot{0}| & $\ddddot{0}$    & 0⃜ \\
+\verb|\ddddot{B}| & $\ddddot{B}$    & \verb|\ddddot{b}| & $\ddddot{b}$    & B⃜ b⃜            & \verb|\ddddot{1}| & $\ddddot{1}$    & 1⃜ \\
+\verb|\ddddot{C}| & $\ddddot{C}$    & \verb|\ddddot{c}| & $\ddddot{c}$    & C⃜ c⃜            & \verb|\ddddot{2}| & $\ddddot{2}$    & 2⃜ \\
+\verb|\ddddot{D}| & $\ddddot{D}$    & \verb|\ddddot{d}| & $\ddddot{d}$    & D⃜ d⃜            & \verb|\ddddot{3}| & $\ddddot{3}$    & 3⃜ \\
+\verb|\ddddot{E}| & $\ddddot{E}$    & \verb|\ddddot{e}| & $\ddddot{e}$    & E⃜ e⃜            & \verb|\ddddot{4}| & $\ddddot{4}$    & 4⃜ \\
+\verb|\ddddot{F}| & $\ddddot{F}$    & \verb|\ddddot{f}| & $\ddddot{f}$    & F⃜ f⃜            & \verb|\ddddot{5}| & $\ddddot{5}$    & 5⃜ \\
+\verb|\ddddot{G}| & $\ddddot{G}$    & \verb|\ddddot{g}| & $\ddddot{g}$    & G⃜ g⃜            & \verb|\ddddot{6}| & $\ddddot{6}$    & 6⃜ \\
+\verb|\ddddot{H}| & $\ddddot{H}$    & \verb|\ddddot{h}| & $\ddddot{h}$    & H⃜ h⃜            & \verb|\ddddot{7}| & $\ddddot{7}$    & 7⃜ \\
+\verb|\ddddot{I}| & $\ddddot{I}$    & \verb|\ddddot{i}| & $\ddddot{i}$    & I⃜ i⃜            & \verb|\ddddot{8}| & $\ddddot{8}$    & 8⃜ \\
+\verb|\ddddot{J}| & $\ddddot{J}$    & \verb|\ddddot{j}| & $\ddddot{j}$    & J⃜ j⃜            & \verb|\ddddot{9}| & $\ddddot{9}$    & 9⃜ \\
+\verb|\ddddot{K}| & $\ddddot{K}$    & \verb|\ddddot{k}| & $\ddddot{k}$    & K⃜ k⃜            &                   &                 & \\
+\verb|\ddddot{L}| & $\ddddot{L}$    & \verb|\ddddot{l}| & $\ddddot{l}$    & L⃜ l⃜            &                   &                 & \\
+\verb|\ddddot{M}| & $\ddddot{M}$    & \verb|\ddddot{m}| & $\ddddot{m}$    & M⃜ m⃜            &                   &                 & \\
+\verb|\ddddot{N}| & $\ddddot{N}$    & \verb|\ddddot{n}| & $\ddddot{n}$    & N⃜ n⃜            &                   &                 & \\
+\verb|\ddddot{O}| & $\ddddot{O}$    & \verb|\ddddot{o}| & $\ddddot{o}$    & O⃜ o⃜            &                   &                 & \\
+\verb|\ddddot{P}| & $\ddddot{P}$    & \verb|\ddddot{p}| & $\ddddot{p}$    & P⃜ p⃜            &                   &                 & \\
+\verb|\ddddot{Q}| & $\ddddot{Q}$    & \verb|\ddddot{q}| & $\ddddot{q}$    & Q⃜ q⃜            &                   &                 & \\
+\verb|\ddddot{R}| & $\ddddot{R}$    & \verb|\ddddot{r}| & $\ddddot{r}$    & R⃜ r⃜            &                   &                 & \\
+\verb|\ddddot{S}| & $\ddddot{S}$    & \verb|\ddddot{s}| & $\ddddot{s}$    & S⃜ s⃜            &                   &                 & \\
+\verb|\ddddot{T}| & $\ddddot{T}$    & \verb|\ddddot{t}| & $\ddddot{t}$    & T⃜ t⃜            &                   &                 & \\
+\verb|\ddddot{U}| & $\ddddot{U}$    & \verb|\ddddot{u}| & $\ddddot{u}$    & U⃜ u⃜            &                   &                 & \\
+\verb|\ddddot{V}| & $\ddddot{V}$    & \verb|\ddddot{v}| & $\ddddot{v}$    & V⃜ v⃜            &                   &                 & \\
+\verb|\ddddot{W}| & $\ddddot{W}$    & \verb|\ddddot{w}| & $\ddddot{w}$    & W⃜ w⃜            &                   &                 & \\
+\verb|\ddddot{X}| & $\ddddot{X}$    & \verb|\ddddot{x}| & $\ddddot{x}$    & X⃜ x⃜            &                   &                 & \\
+\verb|\ddddot{Y}| & $\ddddot{Y}$    & \verb|\ddddot{y}| & $\ddddot{y}$    & Y⃜ y⃜            &                   &                 & \\
+\verb|\ddddot{Z}| & $\ddddot{Z}$    & \verb|\ddddot{z}| & $\ddddot{z}$    & Z⃜ z⃜            &                   &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash dot} (Dot accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}           & \textbf{Output}  & \textbf{Lower}           & \textbf{Output}     & \textbf{Glyph} \\
+\hline
+\verb|\dot{\Alpha}|      & $\dot{\Alpha}$   & \verb|\dot{\alpha}|      & $\dot{\alpha}$      & Α̇ α̇ \\
+\verb|\dot{\Beta}|       & $\dot{\Beta}$    & \verb|\dot{\beta}|       & $\dot{\beta}$       & Β̇ β̇ \\
+\verb|\dot{\Gamma}|      & $\dot{\Gamma}$   & \verb|\dot{\gamma}|      & $\dot{\gamma}$      & Γ̇ γ̇ \\
+\verb|\dot{\Delta}|      & $\dot{\Delta}$   & \verb|\dot{\delta}|      & $\dot{\delta}$      & Δ̇ δ̇ \\
+\verb|\dot{\Digamma}|    & $\dot{\Digamma}$ & \verb|\dot{\digamma}|    & $\dot{\digamma}$    & Ϝ̇ ϝ̇ \\
+\verb|\dot{\Epsilon}|    & $\dot{\Epsilon}$ & \verb|\dot{\epsilon}|    & $\dot{\epsilon}$    & Ε̇ ϵ̇ \\
+\verb|\dot{\Zeta}|       & $\dot{\Zeta}$    & \verb|\dot{\zeta}|       & $\dot{\zeta}$       & Ζ̇ ζ̇ \\
+\verb|\dot{\Eta}|        & $\dot{\Eta}$     & \verb|\dot{\eta}|        & $\dot{\eta}$        & Η̇ η̇ \\
+\verb|\dot{\Theta}|      & $\dot{\Theta}$   & \verb|\dot{\theta}|      & $\dot{\theta}$      & Θ̇ θ̇ \\
+\verb|\dot{\Iota}|       & $\dot{\Iota}$    & \verb|\dot{\iota}|       & $\dot{\iota}$       & Ι̇ ι̇ \\
+\verb|\dot{\Kappa}|      & $\dot{\Kappa}$   & \verb|\dot{\kappa}|      & $\dot{\kappa}$      & Κ̇ κ̇ \\
+\verb|\dot{\Lambda}|     & $\dot{\Lambda}$  & \verb|\dot{\lambda}|     & $\dot{\lambda}$     & Λ̇ λ̇ \\
+\verb|\dot{\Mu}|         & $\dot{\Mu}$      & \verb|\dot{\mu}|         & $\dot{\mu}$         & Μ̇ μ̇ \\
+\verb|\dot{\Nu}|         & $\dot{\Nu}$      & \verb|\dot{\nu}|         & $\dot{\nu}$         & Ν̇ ν̇ \\
+\verb|\dot{\Xi}|         & $\dot{\Xi}$      & \verb|\dot{\xi}|         & $\dot{\xi}$         & Ξ̇ ξ̇ \\
+\verb|\dot{\Omicron}|    & $\dot{\Omicron}$ & \verb|\dot{\omicron}|    & $\dot{\omicron}$    & Ο̇ ο̇ \\
+\verb|\dot{\Pi}|         & $\dot{\Pi}$      & \verb|\dot{\pi}|         & $\dot{\pi}$         & Π̇ π̇ \\
+\verb|\dot{\Rho}|        & $\dot{\Rho}$     & \verb|\dot{\rho}|        & $\dot{\rho}$        & Ρ̇ ρ̇ \\
+\verb|\dot{\Sigma}|      & $\dot{\Sigma}$   & \verb|\dot{\sigma}|      & $\dot{\sigma}$      & Σ̇ σ̇ \\
+\verb|\dot{\Tau}|        & $\dot{\Tau}$     & \verb|\dot{\tau}|        & $\dot{\tau}$        & Τ̇ τ̇ \\
+\verb|\dot{\Upsilon}|    & $\dot{\Upsilon}$ & \verb|\dot{\upsilon}|    & $\dot{\upsilon}$    & Υ̇ υ̇ \\
+\verb|\dot{\Phi}|        & $\dot{\Phi}$     & \verb|\dot{\phi}|        & $\dot{\phi}$        & Φ̇ φ̇ \\
+\verb|\dot{\Chi}|        & $\dot{\Chi}$     & \verb|\dot{\chi}|        & $\dot{\chi}$        & Χ̇ χ̇ \\
+\verb|\dot{\Psi}|        & $\dot{\Psi}$     & \verb|\dot{\psi}|        & $\dot{\psi}$        & Ψ̇ ψ̇ \\
+\verb|\dot{\Omega}|      & $\dot{\Omega}$   & \verb|\dot{\omega}|      & $\dot{\omega}$      & Ω̇ ω̇ \\
+                         &                  & \verb|\dot{\varepsilon}| & $\dot{\varepsilon}$ & ε̇ \\
+                         &                  & \verb|\dot{\vartheta}|   & $\dot{\vartheta}$   & ϑ̇ \\
+                         &                  & \verb|\dot{\varkappa}|   & $\dot{\varkappa}$   & ϰ̇ \\
+                         &                  & \verb|\dot{\varpi}|      & $\dot{\varpi}$      & ϖ̇ \\
+                         &                  & \verb|\dot{\varrho}|     & $\dot{\varrho}$     & ϱ̇ \\
+                         &                  & \verb|\dot{\varsigma}|   & $\dot{\varsigma}$   & ς̇ \\
+                         &                  & \verb|\dot{\varphi}|     & $\dot{\varphi}$     & ϕ̇ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper} & \textbf{Output} & \textbf{Lower} & \textbf{Output} & \textbf{Glyph} & \textbf{Digits} & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\dot{A}| & $\dot{A}$       & \verb|\dot{a}| & $\dot{a}$       & Ȧ ȧ            & \verb|\dot{0}|  & $\dot{0}$       & 0̇ \\
+\verb|\dot{B}| & $\dot{B}$       & \verb|\dot{b}| & $\dot{b}$       & Ḃ ḃ            & \verb|\dot{1}|  & $\dot{1}$       & 1̇ \\
+\verb|\dot{C}| & $\dot{C}$       & \verb|\dot{c}| & $\dot{c}$       & Ċ ċ            & \verb|\dot{2}|  & $\dot{2}$       & 2̇ \\
+\verb|\dot{D}| & $\dot{D}$       & \verb|\dot{d}| & $\dot{d}$       & Ḋ ḋ            & \verb|\dot{3}|  & $\dot{3}$       & 3̇ \\
+\verb|\dot{E}| & $\dot{E}$       & \verb|\dot{e}| & $\dot{e}$       & Ė ė            & \verb|\dot{4}|  & $\dot{4}$       & 4̇ \\
+\verb|\dot{F}| & $\dot{F}$       & \verb|\dot{f}| & $\dot{f}$       & Ḟ ḟ            & \verb|\dot{5}|  & $\dot{5}$       & 5̇ \\
+\verb|\dot{G}| & $\dot{G}$       & \verb|\dot{g}| & $\dot{g}$       & Ġ ġ            & \verb|\dot{6}|  & $\dot{6}$       & 6̇ \\
+\verb|\dot{H}| & $\dot{H}$       & \verb|\dot{h}| & $\dot{h}$       & Ḣ ḣ            & \verb|\dot{7}|  & $\dot{7}$       & 7̇ \\
+\verb|\dot{I}| & $\dot{I}$       & \verb|\dot{i}| & $\dot{i}$       & İ i̇            & \verb|\dot{8}|  & $\dot{8}$       & 8̇ \\
+\verb|\dot{J}| & $\dot{J}$       & \verb|\dot{j}| & $\dot{j}$       & J̇ j̇            & \verb|\dot{9}|  & $\dot{9}$       & 9̇ \\
+\verb|\dot{K}| & $\dot{K}$       & \verb|\dot{k}| & $\dot{k}$       & K̇ k̇            &                 &                 & \\
+\verb|\dot{L}| & $\dot{L}$       & \verb|\dot{l}| & $\dot{l}$       & L̇ l̇            &                 &                 & \\
+\verb|\dot{M}| & $\dot{M}$       & \verb|\dot{m}| & $\dot{m}$       & Ṁ ṁ            &                 &                 & \\
+\verb|\dot{N}| & $\dot{N}$       & \verb|\dot{n}| & $\dot{n}$       & Ṅ ṅ            &                 &                 & \\
+\verb|\dot{O}| & $\dot{O}$       & \verb|\dot{o}| & $\dot{o}$       & Ȯ ȯ            &                 &                 & \\
+\verb|\dot{P}| & $\dot{P}$       & \verb|\dot{p}| & $\dot{p}$       & Ṗ ṗ            &                 &                 & \\
+\verb|\dot{Q}| & $\dot{Q}$       & \verb|\dot{q}| & $\dot{q}$       & Q̇ q̇            &                 &                 & \\
+\verb|\dot{R}| & $\dot{R}$       & \verb|\dot{r}| & $\dot{r}$       & Ṙ ṙ            &                 &                 & \\
+\verb|\dot{S}| & $\dot{S}$       & \verb|\dot{s}| & $\dot{s}$       & Ṡ ṡ            &                 &                 & \\
+\verb|\dot{T}| & $\dot{T}$       & \verb|\dot{t}| & $\dot{t}$       & Ṫ ṫ            &                 &                 & \\
+\verb|\dot{U}| & $\dot{U}$       & \verb|\dot{u}| & $\dot{u}$       & U̇ u̇            &                 &                 & \\
+\verb|\dot{V}| & $\dot{V}$       & \verb|\dot{v}| & $\dot{v}$       & V̇ v̇            &                 &                 & \\
+\verb|\dot{W}| & $\dot{W}$       & \verb|\dot{w}| & $\dot{w}$       & Ẇ ẇ            &                 &                 & \\
+\verb|\dot{X}| & $\dot{X}$       & \verb|\dot{x}| & $\dot{x}$       & Ẋ ẋ            &                 &                 & \\
+\verb|\dot{Y}| & $\dot{Y}$       & \verb|\dot{y}| & $\dot{y}$       & Ẏ ẏ            &                 &                 & \\
+\verb|\dot{Z}| & $\dot{Z}$       & \verb|\dot{z}| & $\dot{z}$       & Ż ż            &                 &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash grave} (Grave accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}             & \textbf{Output}    & \textbf{Lower}             & \textbf{Output}       & \textbf{Glyph} \\
+\hline
+\verb|\grave{\Alpha}|      & $\grave{\Alpha}$   & \verb|\grave{\alpha}|      & $\grave{\alpha}$      & Ὰ ὰ \\
+\verb|\grave{\Beta}|       & $\grave{\Beta}$    & \verb|\grave{\beta}|       & $\grave{\beta}$       & Β̀ β̀ \\
+\verb|\grave{\Gamma}|      & $\grave{\Gamma}$   & \verb|\grave{\gamma}|      & $\grave{\gamma}$      & Γ̀ γ̀ \\
+\verb|\grave{\Delta}|      & $\grave{\Delta}$   & \verb|\grave{\delta}|      & $\grave{\delta}$      & Δ̀ δ̀ \\
+\verb|\grave{\Digamma}|    & $\grave{\Digamma}$ & \verb|\grave{\digamma}|    & $\grave{\digamma}$    & Ϝ̀ ϝ̀ \\
+\verb|\grave{\Epsilon}|    & $\grave{\Epsilon}$ & \verb|\grave{\epsilon}|    & $\grave{\epsilon}$    & Ὲ ϵ̀ \\
+\verb|\grave{\Zeta}|       & $\grave{\Zeta}$    & \verb|\grave{\zeta}|       & $\grave{\zeta}$       & Ζ̀ ζ̀ \\
+\verb|\grave{\Eta}|        & $\grave{\Eta}$     & \verb|\grave{\eta}|        & $\grave{\eta}$        & Ὴ ὴ \\
+\verb|\grave{\Theta}|      & $\grave{\Theta}$   & \verb|\grave{\theta}|      & $\grave{\theta}$      & Θ̀ θ̀ \\
+\verb|\grave{\Iota}|       & $\grave{\Iota}$    & \verb|\grave{\iota}|       & $\grave{\iota}$       & Ὶ ὶ \\
+\verb|\grave{\Kappa}|      & $\grave{\Kappa}$   & \verb|\grave{\kappa}|      & $\grave{\kappa}$      & Κ̀ κ̀ \\
+\verb|\grave{\Lambda}|     & $\grave{\Lambda}$  & \verb|\grave{\lambda}|     & $\grave{\lambda}$     & Λ̀ λ̀ \\
+\verb|\grave{\Mu}|         & $\grave{\Mu}$      & \verb|\grave{\mu}|         & $\grave{\mu}$         & Μ̀ μ̀ \\
+\verb|\grave{\Nu}|         & $\grave{\Nu}$      & \verb|\grave{\nu}|         & $\grave{\nu}$         & Ν̀ ν̀ \\
+\verb|\grave{\Xi}|         & $\grave{\Xi}$      & \verb|\grave{\xi}|         & $\grave{\xi}$         & Ξ̀ ξ̀ \\
+\verb|\grave{\Omicron}|    & $\grave{\Omicron}$ & \verb|\grave{\omicron}|    & $\grave{\omicron}$    & Ὸ ὸ \\
+\verb|\grave{\Pi}|         & $\grave{\Pi}$      & \verb|\grave{\pi}|         & $\grave{\pi}$         & Π̀ π̀ \\
+\verb|\grave{\Rho}|        & $\grave{\Rho}$     & \verb|\grave{\rho}|        & $\grave{\rho}$        & Ρ̀ ρ̀ \\
+\verb|\grave{\Sigma}|      & $\grave{\Sigma}$   & \verb|\grave{\sigma}|      & $\grave{\sigma}$      & Σ̀ σ̀ \\
+\verb|\grave{\Tau}|        & $\grave{\Tau}$     & \verb|\grave{\tau}|        & $\grave{\tau}$        & Τ̀ τ̀ \\
+\verb|\grave{\Upsilon}|    & $\grave{\Upsilon}$ & \verb|\grave{\upsilon}|    & $\grave{\upsilon}$    & Ὺ ὺ \\
+\verb|\grave{\Phi}|        & $\grave{\Phi}$     & \verb|\grave{\phi}|        & $\grave{\phi}$        & Φ̀ φ̀ \\
+\verb|\grave{\Chi}|        & $\grave{\Chi}$     & \verb|\grave{\chi}|        & $\grave{\chi}$        & Χ̀ χ̀ \\
+\verb|\grave{\Psi}|        & $\grave{\Psi}$     & \verb|\grave{\psi}|        & $\grave{\psi}$        & Ψ̀ ψ̀ \\
+\verb|\grave{\Omega}|      & $\grave{\Omega}$   & \verb|\grave{\omega}|      & $\grave{\omega}$      & Ὼ ὼ \\
+                           &                    & \verb|\grave{\varepsilon}| & $\grave{\varepsilon}$ & ὲ \\
+                           &                    & \verb|\grave{\vartheta}|   & $\grave{\vartheta}$   & ϑ̀ \\
+                           &                    & \verb|\grave{\varkappa}|   & $\grave{\varkappa}$   & ϰ̀ \\
+                           &                    & \verb|\grave{\varpi}|      & $\grave{\varpi}$      & ϖ̀ \\
+                           &                    & \verb|\grave{\varrho}|     & $\grave{\varrho}$     & ϱ̀ \\
+                           &                    & \verb|\grave{\varsigma}|   & $\grave{\varsigma}$   & ς̀ \\
+                           &                    & \verb|\grave{\varphi}|     & $\grave{\varphi}$     & ϕ̀ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}   & \textbf{Output} & \textbf{Lower}   & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}  & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\grave{A}| & $\grave{A}$     & \verb|\grave{a}| & $\grave{a}$     & À à            & \verb|\grave{0}| & $\grave{0}$     & 0̀ \\
+\verb|\grave{B}| & $\grave{B}$     & \verb|\grave{b}| & $\grave{b}$     & B̀ b̀            & \verb|\grave{1}| & $\grave{1}$     & 1̀ \\
+\verb|\grave{C}| & $\grave{C}$     & \verb|\grave{c}| & $\grave{c}$     & C̀ c̀            & \verb|\grave{2}| & $\grave{2}$     & 2̀ \\
+\verb|\grave{D}| & $\grave{D}$     & \verb|\grave{d}| & $\grave{d}$     & D̀ d̀            & \verb|\grave{3}| & $\grave{3}$     & 3̀ \\
+\verb|\grave{E}| & $\grave{E}$     & \verb|\grave{e}| & $\grave{e}$     & È è            & \verb|\grave{4}| & $\grave{4}$     & 4̀ \\
+\verb|\grave{F}| & $\grave{F}$     & \verb|\grave{f}| & $\grave{f}$     & F̀ f̀            & \verb|\grave{5}| & $\grave{5}$     & 5̀ \\
+\verb|\grave{G}| & $\grave{G}$     & \verb|\grave{g}| & $\grave{g}$     & G̀ g̀            & \verb|\grave{6}| & $\grave{6}$     & 6̀ \\
+\verb|\grave{H}| & $\grave{H}$     & \verb|\grave{h}| & $\grave{h}$     & H̀ h̀            & \verb|\grave{7}| & $\grave{7}$     & 7̀ \\
+\verb|\grave{I}| & $\grave{I}$     & \verb|\grave{i}| & $\grave{i}$     & Ì ì            & \verb|\grave{8}| & $\grave{8}$     & 8̀ \\
+\verb|\grave{J}| & $\grave{J}$     & \verb|\grave{j}| & $\grave{j}$     & J̀ j̀            & \verb|\grave{9}| & $\grave{9}$     & 9̀ \\
+\verb|\grave{K}| & $\grave{K}$     & \verb|\grave{k}| & $\grave{k}$     & K̀ k̀            &                  &                 & \\
+\verb|\grave{L}| & $\grave{L}$     & \verb|\grave{l}| & $\grave{l}$     & L̀ l̀            &                  &                 & \\
+\verb|\grave{M}| & $\grave{M}$     & \verb|\grave{m}| & $\grave{m}$     & M̀ m̀            &                  &                 & \\
+\verb|\grave{N}| & $\grave{N}$     & \verb|\grave{n}| & $\grave{n}$     & Ǹ ǹ            &                  &                 & \\
+\verb|\grave{O}| & $\grave{O}$     & \verb|\grave{o}| & $\grave{o}$     & Ò ò            &                  &                 & \\
+\verb|\grave{P}| & $\grave{P}$     & \verb|\grave{p}| & $\grave{p}$     & P̀ p̀            &                  &                 & \\
+\verb|\grave{Q}| & $\grave{Q}$     & \verb|\grave{q}| & $\grave{q}$     & Q̀ q̀            &                  &                 & \\
+\verb|\grave{R}| & $\grave{R}$     & \verb|\grave{r}| & $\grave{r}$     & R̀ r̀            &                  &                 & \\
+\verb|\grave{S}| & $\grave{S}$     & \verb|\grave{s}| & $\grave{s}$     & S̀ s̀            &                  &                 & \\
+\verb|\grave{T}| & $\grave{T}$     & \verb|\grave{t}| & $\grave{t}$     & T̀ t̀            &                  &                 & \\
+\verb|\grave{U}| & $\grave{U}$     & \verb|\grave{u}| & $\grave{u}$     & Ù ù            &                  &                 & \\
+\verb|\grave{V}| & $\grave{V}$     & \verb|\grave{v}| & $\grave{v}$     & V̀ v̀            &                  &                 & \\
+\verb|\grave{W}| & $\grave{W}$     & \verb|\grave{w}| & $\grave{w}$     & Ẁ ẁ            &                  &                 & \\
+\verb|\grave{X}| & $\grave{X}$     & \verb|\grave{x}| & $\grave{x}$     & X̀ x̀            &                  &                 & \\
+\verb|\grave{Y}| & $\grave{Y}$     & \verb|\grave{y}| & $\grave{y}$     & Ỳ ỳ            &                  &                 & \\
+\verb|\grave{Z}| & $\grave{Z}$     & \verb|\grave{z}| & $\grave{z}$     & Z̀ z̀            &                  &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash hat} (Hat accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}           & \textbf{Output}  & \textbf{Lower}           & \textbf{Output}     & \textbf{Glyph} \\
+\hline
+\verb|\hat{\Alpha}|      & $\hat{\Alpha}$   & \verb|\hat{\alpha}|      & $\hat{\alpha}$      & Α̂ α̂ \\
+\verb|\hat{\Beta}|       & $\hat{\Beta}$    & \verb|\hat{\beta}|       & $\hat{\beta}$       & Β̂ β̂ \\
+\verb|\hat{\Gamma}|      & $\hat{\Gamma}$   & \verb|\hat{\gamma}|      & $\hat{\gamma}$      & Γ̂ γ̂ \\
+\verb|\hat{\Delta}|      & $\hat{\Delta}$   & \verb|\hat{\delta}|      & $\hat{\delta}$      & Δ̂ δ̂ \\
+\verb|\hat{\Digamma}|    & $\hat{\Digamma}$ & \verb|\hat{\digamma}|    & $\hat{\digamma}$    & Ϝ̂ ϝ̂ \\
+\verb|\hat{\Epsilon}|    & $\hat{\Epsilon}$ & \verb|\hat{\epsilon}|    & $\hat{\epsilon}$    & Ε̂ ϵ̂ \\
+\verb|\hat{\Zeta}|       & $\hat{\Zeta}$    & \verb|\hat{\zeta}|       & $\hat{\zeta}$       & Ζ̂ ζ̂ \\
+\verb|\hat{\Eta}|        & $\hat{\Eta}$     & \verb|\hat{\eta}|        & $\hat{\eta}$        & Η̂ η̂ \\
+\verb|\hat{\Theta}|      & $\hat{\Theta}$   & \verb|\hat{\theta}|      & $\hat{\theta}$      & Θ̂ θ̂ \\
+\verb|\hat{\Iota}|       & $\hat{\Iota}$    & \verb|\hat{\iota}|       & $\hat{\iota}$       & Ι̂ ι̂ \\
+\verb|\hat{\Kappa}|      & $\hat{\Kappa}$   & \verb|\hat{\kappa}|      & $\hat{\kappa}$      & Κ̂ κ̂ \\
+\verb|\hat{\Lambda}|     & $\hat{\Lambda}$  & \verb|\hat{\lambda}|     & $\hat{\lambda}$     & Λ̂ λ̂ \\
+\verb|\hat{\Mu}|         & $\hat{\Mu}$      & \verb|\hat{\mu}|         & $\hat{\mu}$         & Μ̂ μ̂ \\
+\verb|\hat{\Nu}|         & $\hat{\Nu}$      & \verb|\hat{\nu}|         & $\hat{\nu}$         & Ν̂ ν̂ \\
+\verb|\hat{\Xi}|         & $\hat{\Xi}$      & \verb|\hat{\xi}|         & $\hat{\xi}$         & Ξ̂ ξ̂ \\
+\verb|\hat{\Omicron}|    & $\hat{\Omicron}$ & \verb|\hat{\omicron}|    & $\hat{\omicron}$    & Ο̂ ο̂ \\
+\verb|\hat{\Pi}|         & $\hat{\Pi}$      & \verb|\hat{\pi}|         & $\hat{\pi}$         & Π̂ π̂ \\
+\verb|\hat{\Rho}|        & $\hat{\Rho}$     & \verb|\hat{\rho}|        & $\hat{\rho}$        & Ρ̂ ρ̂ \\
+\verb|\hat{\Sigma}|      & $\hat{\Sigma}$   & \verb|\hat{\sigma}|      & $\hat{\sigma}$      & Σ̂ σ̂ \\
+\verb|\hat{\Tau}|        & $\hat{\Tau}$     & \verb|\hat{\tau}|        & $\hat{\tau}$        & Τ̂ τ̂ \\
+\verb|\hat{\Upsilon}|    & $\hat{\Upsilon}$ & \verb|\hat{\upsilon}|    & $\hat{\upsilon}$    & Υ̂ υ̂ \\
+\verb|\hat{\Phi}|        & $\hat{\Phi}$     & \verb|\hat{\phi}|        & $\hat{\phi}$        & Φ̂ φ̂ \\
+\verb|\hat{\Chi}|        & $\hat{\Chi}$     & \verb|\hat{\chi}|        & $\hat{\chi}$        & Χ̂ χ̂ \\
+\verb|\hat{\Psi}|        & $\hat{\Psi}$     & \verb|\hat{\psi}|        & $\hat{\psi}$        & Ψ̂ ψ̂ \\
+\verb|\hat{\Omega}|      & $\hat{\Omega}$   & \verb|\hat{\omega}|      & $\hat{\omega}$      & Ω̂ ω̂ \\
+                         &                  & \verb|\hat{\varepsilon}| & $\hat{\varepsilon}$ & ε̂ \\
+                         &                  & \verb|\hat{\vartheta}|   & $\hat{\vartheta}$   & ϑ̂ \\
+                         &                  & \verb|\hat{\varkappa}|   & $\hat{\varkappa}$   & ϰ̂ \\
+                         &                  & \verb|\hat{\varpi}|      & $\hat{\varpi}$      & ϖ̂ \\
+                         &                  & \verb|\hat{\varrho}|     & $\hat{\varrho}$     & ϱ̂ \\
+                         &                  & \verb|\hat{\varsigma}|   & $\hat{\varsigma}$   & ς̂ \\
+                         &                  & \verb|\hat{\varphi}|     & $\hat{\varphi}$     & ϕ̂ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper} & \textbf{Output} & \textbf{Lower} & \textbf{Output} & \textbf{Glyph} & \textbf{Digits} & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\hat{A}| & $\hat{A}$       & \verb|\hat{a}| & $\hat{a}$       & Â â            & \verb|\hat{0}|  & $\hat{0}$       & 0̂ \\
+\verb|\hat{B}| & $\hat{B}$       & \verb|\hat{b}| & $\hat{b}$       & B̂ b̂            & \verb|\hat{1}|  & $\hat{1}$       & 1̂ \\
+\verb|\hat{C}| & $\hat{C}$       & \verb|\hat{c}| & $\hat{c}$       & Ĉ ĉ            & \verb|\hat{2}|  & $\hat{2}$       & 2̂ \\
+\verb|\hat{D}| & $\hat{D}$       & \verb|\hat{d}| & $\hat{d}$       & D̂ d̂            & \verb|\hat{3}|  & $\hat{3}$       & 3̂ \\
+\verb|\hat{E}| & $\hat{E}$       & \verb|\hat{e}| & $\hat{e}$       & Ê ê            & \verb|\hat{4}|  & $\hat{4}$       & 4̂ \\
+\verb|\hat{F}| & $\hat{F}$       & \verb|\hat{f}| & $\hat{f}$       & F̂ f̂            & \verb|\hat{5}|  & $\hat{5}$       & 5̂ \\
+\verb|\hat{G}| & $\hat{G}$       & \verb|\hat{g}| & $\hat{g}$       & Ĝ ĝ            & \verb|\hat{6}|  & $\hat{6}$       & 6̂ \\
+\verb|\hat{H}| & $\hat{H}$       & \verb|\hat{h}| & $\hat{h}$       & Ĥ ĥ            & \verb|\hat{7}|  & $\hat{7}$       & 7̂ \\
+\verb|\hat{I}| & $\hat{I}$       & \verb|\hat{i}| & $\hat{i}$       & Î î            & \verb|\hat{8}|  & $\hat{8}$       & 8̂ \\
+\verb|\hat{J}| & $\hat{J}$       & \verb|\hat{j}| & $\hat{j}$       & Ĵ ĵ            & \verb|\hat{9}|  & $\hat{9}$       & 9̂ \\
+\verb|\hat{K}| & $\hat{K}$       & \verb|\hat{k}| & $\hat{k}$       & K̂ k̂            &                 &                 & \\
+\verb|\hat{L}| & $\hat{L}$       & \verb|\hat{l}| & $\hat{l}$       & L̂ l̂            &                 &                 & \\
+\verb|\hat{M}| & $\hat{M}$       & \verb|\hat{m}| & $\hat{m}$       & M̂ m̂            &                 &                 & \\
+\verb|\hat{N}| & $\hat{N}$       & \verb|\hat{n}| & $\hat{n}$       & N̂ n̂            &                 &                 & \\
+\verb|\hat{O}| & $\hat{O}$       & \verb|\hat{o}| & $\hat{o}$       & Ô ô            &                 &                 & \\
+\verb|\hat{P}| & $\hat{P}$       & \verb|\hat{p}| & $\hat{p}$       & P̂ p̂            &                 &                 & \\
+\verb|\hat{Q}| & $\hat{Q}$       & \verb|\hat{q}| & $\hat{q}$       & Q̂ q̂            &                 &                 & \\
+\verb|\hat{R}| & $\hat{R}$       & \verb|\hat{r}| & $\hat{r}$       & R̂ r̂            &                 &                 & \\
+\verb|\hat{S}| & $\hat{S}$       & \verb|\hat{s}| & $\hat{s}$       & Ŝ ŝ            &                 &                 & \\
+\verb|\hat{T}| & $\hat{T}$       & \verb|\hat{t}| & $\hat{t}$       & T̂ t̂            &                 &                 & \\
+\verb|\hat{U}| & $\hat{U}$       & \verb|\hat{u}| & $\hat{u}$       & Û û            &                 &                 & \\
+\verb|\hat{V}| & $\hat{V}$       & \verb|\hat{v}| & $\hat{v}$       & V̂ v̂            &                 &                 & \\
+\verb|\hat{W}| & $\hat{W}$       & \verb|\hat{w}| & $\hat{w}$       & Ŵ ŵ            &                 &                 & \\
+\verb|\hat{X}| & $\hat{X}$       & \verb|\hat{x}| & $\hat{x}$       & X̂ x̂            &                 &                 & \\
+\verb|\hat{Y}| & $\hat{Y}$       & \verb|\hat{y}| & $\hat{y}$       & Ŷ ŷ            &                 &                 & \\
+\verb|\hat{Z}| & $\hat{Z}$       & \verb|\hat{z}| & $\hat{z}$       & Ẑ ẑ            &                 &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash tilde} (Tilde accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}             & \textbf{Output}    & \textbf{Lower}             & \textbf{Output}       & \textbf{Glyph} \\
+\hline
+\verb|\tilde{\Alpha}|      & $\tilde{\Alpha}$   & \verb|\tilde{\alpha}|      & $\tilde{\alpha}$      & Α̃ α̃ \\
+\verb|\tilde{\Beta}|       & $\tilde{\Beta}$    & \verb|\tilde{\beta}|       & $\tilde{\beta}$       & Β̃ β̃ \\
+\verb|\tilde{\Gamma}|      & $\tilde{\Gamma}$   & \verb|\tilde{\gamma}|      & $\tilde{\gamma}$      & Γ̃ γ̃ \\
+\verb|\tilde{\Delta}|      & $\tilde{\Delta}$   & \verb|\tilde{\delta}|      & $\tilde{\delta}$      & Δ̃ δ̃ \\
+\verb|\tilde{\Digamma}|    & $\tilde{\Digamma}$ & \verb|\tilde{\digamma}|    & $\tilde{\digamma}$    & Ϝ̃ ϝ̃ \\
+\verb|\tilde{\Epsilon}|    & $\tilde{\Epsilon}$ & \verb|\tilde{\epsilon}|    & $\tilde{\epsilon}$    & Ε̃ ϵ̃ \\
+\verb|\tilde{\Zeta}|       & $\tilde{\Zeta}$    & \verb|\tilde{\zeta}|       & $\tilde{\zeta}$       & Ζ̃ ζ̃ \\
+\verb|\tilde{\Eta}|        & $\tilde{\Eta}$     & \verb|\tilde{\eta}|        & $\tilde{\eta}$        & Η̃ η̃ \\
+\verb|\tilde{\Theta}|      & $\tilde{\Theta}$   & \verb|\tilde{\theta}|      & $\tilde{\theta}$      & Θ̃ θ̃ \\
+\verb|\tilde{\Iota}|       & $\tilde{\Iota}$    & \verb|\tilde{\iota}|       & $\tilde{\iota}$       & Ι̃ ι̃ \\
+\verb|\tilde{\Kappa}|      & $\tilde{\Kappa}$   & \verb|\tilde{\kappa}|      & $\tilde{\kappa}$      & Κ̃ κ̃ \\
+\verb|\tilde{\Lambda}|     & $\tilde{\Lambda}$  & \verb|\tilde{\lambda}|     & $\tilde{\lambda}$     & Λ̃ λ̃ \\
+\verb|\tilde{\Mu}|         & $\tilde{\Mu}$      & \verb|\tilde{\mu}|         & $\tilde{\mu}$         & Μ̃ μ̃ \\
+\verb|\tilde{\Nu}|         & $\tilde{\Nu}$      & \verb|\tilde{\nu}|         & $\tilde{\nu}$         & Ν̃ ν̃ \\
+\verb|\tilde{\Xi}|         & $\tilde{\Xi}$      & \verb|\tilde{\xi}|         & $\tilde{\xi}$         & Ξ̃ ξ̃ \\
+\verb|\tilde{\Omicron}|    & $\tilde{\Omicron}$ & \verb|\tilde{\omicron}|    & $\tilde{\omicron}$    & Ο̃ ο̃ \\
+\verb|\tilde{\Pi}|         & $\tilde{\Pi}$      & \verb|\tilde{\pi}|         & $\tilde{\pi}$         & Π̃ π̃ \\
+\verb|\tilde{\Rho}|        & $\tilde{\Rho}$     & \verb|\tilde{\rho}|        & $\tilde{\rho}$        & Ρ̃ ρ̃ \\
+\verb|\tilde{\Sigma}|      & $\tilde{\Sigma}$   & \verb|\tilde{\sigma}|      & $\tilde{\sigma}$      & Σ̃ σ̃ \\
+\verb|\tilde{\Tau}|        & $\tilde{\Tau}$     & \verb|\tilde{\tau}|        & $\tilde{\tau}$        & Τ̃ τ̃ \\
+\verb|\tilde{\Upsilon}|    & $\tilde{\Upsilon}$ & \verb|\tilde{\upsilon}|    & $\tilde{\upsilon}$    & Υ̃ υ̃ \\
+\verb|\tilde{\Phi}|        & $\tilde{\Phi}$     & \verb|\tilde{\phi}|        & $\tilde{\phi}$        & Φ̃ φ̃ \\
+\verb|\tilde{\Chi}|        & $\tilde{\Chi}$     & \verb|\tilde{\chi}|        & $\tilde{\chi}$        & Χ̃ χ̃ \\
+\verb|\tilde{\Psi}|        & $\tilde{\Psi}$     & \verb|\tilde{\psi}|        & $\tilde{\psi}$        & Ψ̃ ψ̃ \\
+\verb|\tilde{\Omega}|      & $\tilde{\Omega}$   & \verb|\tilde{\omega}|      & $\tilde{\omega}$      & Ω̃ ω̃ \\
+                           &                    & \verb|\tilde{\varepsilon}| & $\tilde{\varepsilon}$ & ε̃ \\
+                           &                    & \verb|\tilde{\vartheta}|   & $\tilde{\vartheta}$   & ϑ̃ \\
+                           &                    & \verb|\tilde{\varkappa}|   & $\tilde{\varkappa}$   & ϰ̃ \\
+                           &                    & \verb|\tilde{\varpi}|      & $\tilde{\varpi}$      & ϖ̃ \\
+                           &                    & \verb|\tilde{\varrho}|     & $\tilde{\varrho}$     & ϱ̃ \\
+                           &                    & \verb|\tilde{\varsigma}|   & $\tilde{\varsigma}$   & ς̃ \\
+                           &                    & \verb|\tilde{\varphi}|     & $\tilde{\varphi}$     & ϕ̃ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}   & \textbf{Output} & \textbf{Lower}   & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}  & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\tilde{A}| & $\tilde{A}$     & \verb|\tilde{a}| & $\tilde{a}$     & Ã ã            & \verb|\tilde{0}| & $\tilde{0}$     & 0̃ \\
+\verb|\tilde{B}| & $\tilde{B}$     & \verb|\tilde{b}| & $\tilde{b}$     & B̃ b̃            & \verb|\tilde{1}| & $\tilde{1}$     & 1̃ \\
+\verb|\tilde{C}| & $\tilde{C}$     & \verb|\tilde{c}| & $\tilde{c}$     & C̃ c̃            & \verb|\tilde{2}| & $\tilde{2}$     & 2̃ \\
+\verb|\tilde{D}| & $\tilde{D}$     & \verb|\tilde{d}| & $\tilde{d}$     & D̃ d̃            & \verb|\tilde{3}| & $\tilde{3}$     & 3̃ \\
+\verb|\tilde{E}| & $\tilde{E}$     & \verb|\tilde{e}| & $\tilde{e}$     & Ẽ ẽ            & \verb|\tilde{4}| & $\tilde{4}$     & 4̃ \\
+\verb|\tilde{F}| & $\tilde{F}$     & \verb|\tilde{f}| & $\tilde{f}$     & F̃ f̃            & \verb|\tilde{5}| & $\tilde{5}$     & 5̃ \\
+\verb|\tilde{G}| & $\tilde{G}$     & \verb|\tilde{g}| & $\tilde{g}$     & G̃ g̃            & \verb|\tilde{6}| & $\tilde{6}$     & 6̃ \\
+\verb|\tilde{H}| & $\tilde{H}$     & \verb|\tilde{h}| & $\tilde{h}$     & H̃ h̃            & \verb|\tilde{7}| & $\tilde{7}$     & 7̃ \\
+\verb|\tilde{I}| & $\tilde{I}$     & \verb|\tilde{i}| & $\tilde{i}$     & Ĩ ĩ            & \verb|\tilde{8}| & $\tilde{8}$     & 8̃ \\
+\verb|\tilde{J}| & $\tilde{J}$     & \verb|\tilde{j}| & $\tilde{j}$     & J̃ j̃            & \verb|\tilde{9}| & $\tilde{9}$     & 9̃ \\
+\verb|\tilde{K}| & $\tilde{K}$     & \verb|\tilde{k}| & $\tilde{k}$     & K̃ k̃            &                  &                 & \\
+\verb|\tilde{L}| & $\tilde{L}$     & \verb|\tilde{l}| & $\tilde{l}$     & L̃ l̃            &                  &                 & \\
+\verb|\tilde{M}| & $\tilde{M}$     & \verb|\tilde{m}| & $\tilde{m}$     & M̃ m̃            &                  &                 & \\
+\verb|\tilde{N}| & $\tilde{N}$     & \verb|\tilde{n}| & $\tilde{n}$     & Ñ ñ            &                  &                 & \\
+\verb|\tilde{O}| & $\tilde{O}$     & \verb|\tilde{o}| & $\tilde{o}$     & Õ õ            &                  &                 & \\
+\verb|\tilde{P}| & $\tilde{P}$     & \verb|\tilde{p}| & $\tilde{p}$     & P̃ p̃            &                  &                 & \\
+\verb|\tilde{Q}| & $\tilde{Q}$     & \verb|\tilde{q}| & $\tilde{q}$     & Q̃ q̃            &                  &                 & \\
+\verb|\tilde{R}| & $\tilde{R}$     & \verb|\tilde{r}| & $\tilde{r}$     & R̃ r̃            &                  &                 & \\
+\verb|\tilde{S}| & $\tilde{S}$     & \verb|\tilde{s}| & $\tilde{s}$     & S̃ s̃            &                  &                 & \\
+\verb|\tilde{T}| & $\tilde{T}$     & \verb|\tilde{t}| & $\tilde{t}$     & T̃ t̃            &                  &                 & \\
+\verb|\tilde{U}| & $\tilde{U}$     & \verb|\tilde{u}| & $\tilde{u}$     & Ũ ũ            &                  &                 & \\
+\verb|\tilde{V}| & $\tilde{V}$     & \verb|\tilde{v}| & $\tilde{v}$     & Ṽ ṽ            &                  &                 & \\
+\verb|\tilde{W}| & $\tilde{W}$     & \verb|\tilde{w}| & $\tilde{w}$     & W̃ w̃            &                  &                 & \\
+\verb|\tilde{X}| & $\tilde{X}$     & \verb|\tilde{x}| & $\tilde{x}$     & X̃ x̃            &                  &                 & \\
+\verb|\tilde{Y}| & $\tilde{Y}$     & \verb|\tilde{y}| & $\tilde{y}$     & Ỹ ỹ            &                  &                 & \\
+\verb|\tilde{Z}| & $\tilde{Z}$     & \verb|\tilde{z}| & $\tilde{z}$     & Z̃ z̃            &                  &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash vec} (Vector accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}           & \textbf{Output}  & \textbf{Lower}           & \textbf{Output}     & \textbf{Glyph} \\
+\hline
+\verb|\vec{\Alpha}|      & $\vec{\Alpha}$   & \verb|\vec{\alpha}|      & $\vec{\alpha}$      & Α⃗ α⃗ \\
+\verb|\vec{\Beta}|       & $\vec{\Beta}$    & \verb|\vec{\beta}|       & $\vec{\beta}$       & Β⃗ β⃗ \\
+\verb|\vec{\Gamma}|      & $\vec{\Gamma}$   & \verb|\vec{\gamma}|      & $\vec{\gamma}$      & Γ⃗ γ⃗ \\
+\verb|\vec{\Delta}|      & $\vec{\Delta}$   & \verb|\vec{\delta}|      & $\vec{\delta}$      & Δ⃗ δ⃗ \\
+\verb|\vec{\Digamma}|    & $\vec{\Digamma}$ & \verb|\vec{\digamma}|    & $\vec{\digamma}$    & Ϝ⃗ ϝ⃗ \\
+\verb|\vec{\Epsilon}|    & $\vec{\Epsilon}$ & \verb|\vec{\epsilon}|    & $\vec{\epsilon}$    & Ε⃗ ϵ⃗ \\
+\verb|\vec{\Zeta}|       & $\vec{\Zeta}$    & \verb|\vec{\zeta}|       & $\vec{\zeta}$       & Ζ⃗ ζ⃗ \\
+\verb|\vec{\Eta}|        & $\vec{\Eta}$     & \verb|\vec{\eta}|        & $\vec{\eta}$        & Η⃗ η⃗ \\
+\verb|\vec{\Theta}|      & $\vec{\Theta}$   & \verb|\vec{\theta}|      & $\vec{\theta}$      & Θ⃗ θ⃗ \\
+\verb|\vec{\Iota}|       & $\vec{\Iota}$    & \verb|\vec{\iota}|       & $\vec{\iota}$       & Ι⃗ ι⃗ \\
+\verb|\vec{\Kappa}|      & $\vec{\Kappa}$   & \verb|\vec{\kappa}|      & $\vec{\kappa}$      & Κ⃗ κ⃗ \\
+\verb|\vec{\Lambda}|     & $\vec{\Lambda}$  & \verb|\vec{\lambda}|     & $\vec{\lambda}$     & Λ⃗ λ⃗ \\
+\verb|\vec{\Mu}|         & $\vec{\Mu}$      & \verb|\vec{\mu}|         & $\vec{\mu}$         & Μ⃗ μ⃗ \\
+\verb|\vec{\Nu}|         & $\vec{\Nu}$      & \verb|\vec{\nu}|         & $\vec{\nu}$         & Ν⃗ ν⃗ \\
+\verb|\vec{\Xi}|         & $\vec{\Xi}$      & \verb|\vec{\xi}|         & $\vec{\xi}$         & Ξ⃗ ξ⃗ \\
+\verb|\vec{\Omicron}|    & $\vec{\Omicron}$ & \verb|\vec{\omicron}|    & $\vec{\omicron}$    & Ο⃗ ο⃗ \\
+\verb|\vec{\Pi}|         & $\vec{\Pi}$      & \verb|\vec{\pi}|         & $\vec{\pi}$         & Π⃗ π⃗ \\
+\verb|\vec{\Rho}|        & $\vec{\Rho}$     & \verb|\vec{\rho}|        & $\vec{\rho}$        & Ρ⃗ ρ⃗ \\
+\verb|\vec{\Sigma}|      & $\vec{\Sigma}$   & \verb|\vec{\sigma}|      & $\vec{\sigma}$      & Σ⃗ σ⃗ \\
+\verb|\vec{\Tau}|        & $\vec{\Tau}$     & \verb|\vec{\tau}|        & $\vec{\tau}$        & Τ⃗ τ⃗ \\
+\verb|\vec{\Upsilon}|    & $\vec{\Upsilon}$ & \verb|\vec{\upsilon}|    & $\vec{\upsilon}$    & Υ⃗ υ⃗ \\
+\verb|\vec{\Phi}|        & $\vec{\Phi}$     & \verb|\vec{\phi}|        & $\vec{\phi}$        & Φ⃗ φ⃗ \\
+\verb|\vec{\Chi}|        & $\vec{\Chi}$     & \verb|\vec{\chi}|        & $\vec{\chi}$        & Χ⃗ χ⃗ \\
+\verb|\vec{\Psi}|        & $\vec{\Psi}$     & \verb|\vec{\psi}|        & $\vec{\psi}$        & Ψ⃗ ψ⃗ \\
+\verb|\vec{\Omega}|      & $\vec{\Omega}$   & \verb|\vec{\omega}|      & $\vec{\omega}$      & Ω⃗ ω⃗ \\
+                         &                  & \verb|\vec{\varepsilon}| & $\vec{\varepsilon}$ & ε⃗ \\
+                         &                  & \verb|\vec{\vartheta}|   & $\vec{\vartheta}$   & ϑ⃗ \\
+                         &                  & \verb|\vec{\varkappa}|   & $\vec{\varkappa}$   & ϰ⃗ \\
+                         &                  & \verb|\vec{\varpi}|      & $\vec{\varpi}$      & ϖ⃗ \\
+                         &                  & \verb|\vec{\varrho}|     & $\vec{\varrho}$     & ϱ⃗ \\
+                         &                  & \verb|\vec{\varsigma}|   & $\vec{\varsigma}$   & ς⃗ \\
+                         &                  & \verb|\vec{\varphi}|     & $\vec{\varphi}$     & ϕ⃗ \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper} & \textbf{Output} & \textbf{Lower} & \textbf{Output} & \textbf{Glyph} & \textbf{Digits} & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\vec{A}| & $\vec{A}$       & \verb|\vec{a}| & $\vec{a}$       & A⃗ a⃗            & \verb|\vec{0}|  & $\vec{0}$       & 0⃗ \\
+\verb|\vec{B}| & $\vec{B}$       & \verb|\vec{b}| & $\vec{b}$       & B⃗ b⃗            & \verb|\vec{1}|  & $\vec{1}$       & 1⃗ \\
+\verb|\vec{C}| & $\vec{C}$       & \verb|\vec{c}| & $\vec{c}$       & C⃗ c⃗            & \verb|\vec{2}|  & $\vec{2}$       & 2⃗ \\
+\verb|\vec{D}| & $\vec{D}$       & \verb|\vec{d}| & $\vec{d}$       & D⃗ d⃗            & \verb|\vec{3}|  & $\vec{3}$       & 3⃗ \\
+\verb|\vec{E}| & $\vec{E}$       & \verb|\vec{e}| & $\vec{e}$       & E⃗ e⃗            & \verb|\vec{4}|  & $\vec{4}$       & 4⃗ \\
+\verb|\vec{F}| & $\vec{F}$       & \verb|\vec{f}| & $\vec{f}$       & F⃗ f⃗            & \verb|\vec{5}|  & $\vec{5}$       & 5⃗ \\
+\verb|\vec{G}| & $\vec{G}$       & \verb|\vec{g}| & $\vec{g}$       & G⃗ g⃗            & \verb|\vec{6}|  & $\vec{6}$       & 6⃗ \\
+\verb|\vec{H}| & $\vec{H}$       & \verb|\vec{h}| & $\vec{h}$       & H⃗ h⃗            & \verb|\vec{7}|  & $\vec{7}$       & 7⃗ \\
+\verb|\vec{I}| & $\vec{I}$       & \verb|\vec{i}| & $\vec{i}$       & I⃗ i⃗            & \verb|\vec{8}|  & $\vec{8}$       & 8⃗ \\
+\verb|\vec{J}| & $\vec{J}$       & \verb|\vec{j}| & $\vec{j}$       & J⃗ j⃗            & \verb|\vec{9}|  & $\vec{9}$       & 9⃗ \\
+\verb|\vec{K}| & $\vec{K}$       & \verb|\vec{k}| & $\vec{k}$       & K⃗ k⃗            &                 &                 & \\
+\verb|\vec{L}| & $\vec{L}$       & \verb|\vec{l}| & $\vec{l}$       & L⃗ l⃗            &                 &                 & \\
+\verb|\vec{M}| & $\vec{M}$       & \verb|\vec{m}| & $\vec{m}$       & M⃗ m⃗            &                 &                 & \\
+\verb|\vec{N}| & $\vec{N}$       & \verb|\vec{n}| & $\vec{n}$       & N⃗ n⃗            &                 &                 & \\
+\verb|\vec{O}| & $\vec{O}$       & \verb|\vec{o}| & $\vec{o}$       & O⃗ o⃗            &                 &                 & \\
+\verb|\vec{P}| & $\vec{P}$       & \verb|\vec{p}| & $\vec{p}$       & P⃗ p⃗            &                 &                 & \\
+\verb|\vec{Q}| & $\vec{Q}$       & \verb|\vec{q}| & $\vec{q}$       & Q⃗ q⃗            &                 &                 & \\
+\verb|\vec{R}| & $\vec{R}$       & \verb|\vec{r}| & $\vec{r}$       & R⃗ r⃗            &                 &                 & \\
+\verb|\vec{S}| & $\vec{S}$       & \verb|\vec{s}| & $\vec{s}$       & S⃗ s⃗            &                 &                 & \\
+\verb|\vec{T}| & $\vec{T}$       & \verb|\vec{t}| & $\vec{t}$       & T⃗ t⃗            &                 &                 & \\
+\verb|\vec{U}| & $\vec{U}$       & \verb|\vec{u}| & $\vec{u}$       & U⃗ u⃗            &                 &                 & \\
+\verb|\vec{V}| & $\vec{V}$       & \verb|\vec{v}| & $\vec{v}$       & V⃗ v⃗            &                 &                 & \\
+\verb|\vec{W}| & $\vec{W}$       & \verb|\vec{w}| & $\vec{w}$       & W⃗ w⃗            &                 &                 & \\
+\verb|\vec{X}| & $\vec{X}$       & \verb|\vec{x}| & $\vec{x}$       & X⃗ x⃗            &                 &                 & \\
+\verb|\vec{Y}| & $\vec{Y}$       & \verb|\vec{y}| & $\vec{y}$       & Y⃗ y⃗            &                 &                 & \\
+\verb|\vec{Z}| & $\vec{Z}$       & \verb|\vec{z}| & $\vec{z}$       & Z⃗ z⃗            &                 &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash overleftarrow} (Overleftarrow)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}                     & \textbf{Output}               & \textbf{Lower}                     & \textbf{Output}               & \textbf{Glyph} \\
+\hline
+\verb|\overleftarrow{\Alpha}|      & $\overleftarrow{\Alpha}$      & \verb|\overleftarrow{\alpha}|      & $\overleftarrow{\alpha}$      & \\
+\verb|\overleftarrow{\Beta}|       & $\overleftarrow{\Beta}$       & \verb|\overleftarrow{\beta}|       & $\overleftarrow{\beta}$       & \\
+\verb|\overleftarrow{\Gamma}|      & $\overleftarrow{\Gamma}$      & \verb|\overleftarrow{\gamma}|      & $\overleftarrow{\gamma}$      & \\
+\verb|\overleftarrow{\Delta}|      & $\overleftarrow{\Delta}$      & \verb|\overleftarrow{\delta}|      & $\overleftarrow{\delta}$      & \\
+\verb|\overleftarrow{\Digamma}|    & $\overleftarrow{\Digamma}$    & \verb|\overleftarrow{\digamma}|    & $\overleftarrow{\digamma}$    & \\
+\verb|\overleftarrow{\Epsilon}|    & $\overleftarrow{\Epsilon}$    & \verb|\overleftarrow{\epsilon}|    & $\overleftarrow{\epsilon}$    & \\
+\verb|\overleftarrow{\Zeta}|       & $\overleftarrow{\Zeta}$       & \verb|\overleftarrow{\zeta}|       & $\overleftarrow{\zeta}$       & \\
+\verb|\overleftarrow{\Eta}|        & $\overleftarrow{\Eta}$        & \verb|\overleftarrow{\eta}|        & $\overleftarrow{\eta}$        & \\
+\verb|\overleftarrow{\Theta}|      & $\overleftarrow{\Theta}$      & \verb|\overleftarrow{\theta}|      & $\overleftarrow{\theta}$      & \\
+\verb|\overleftarrow{\Iota}|       & $\overleftarrow{\Iota}$       & \verb|\overleftarrow{\iota}|       & $\overleftarrow{\iota}$       & \\
+\verb|\overleftarrow{\Kappa}|      & $\overleftarrow{\Kappa}$      & \verb|\overleftarrow{\kappa}|      & $\overleftarrow{\kappa}$      & \\
+\verb|\overleftarrow{\Lambda}|     & $\overleftarrow{\Lambda}$     & \verb|\overleftarrow{\lambda}|     & $\overleftarrow{\lambda}$     & \\
+\verb|\overleftarrow{\Mu}|         & $\overleftarrow{\Mu}$         & \verb|\overleftarrow{\mu}|         & $\overleftarrow{\mu}$         & \\
+\verb|\overleftarrow{\Nu}|         & $\overleftarrow{\Nu}$         & \verb|\overleftarrow{\nu}|         & $\overleftarrow{\nu}$         & \\
+\verb|\overleftarrow{\Xi}|         & $\overleftarrow{\Xi}$         & \verb|\overleftarrow{\xi}|         & $\overleftarrow{\xi}$         & \\
+\verb|\overleftarrow{\Omicron}|    & $\overleftarrow{\Omicron}$    & \verb|\overleftarrow{\omicron}|    & $\overleftarrow{\omicron}$    & \\
+\verb|\overleftarrow{\Pi}|         & $\overleftarrow{\Pi}$         & \verb|\overleftarrow{\pi}|         & $\overleftarrow{\pi}$         & \\
+\verb|\overleftarrow{\Rho}|        & $\overleftarrow{\Rho}$        & \verb|\overleftarrow{\rho}|        & $\overleftarrow{\rho}$        & \\
+\verb|\overleftarrow{\Sigma}|      & $\overleftarrow{\Sigma}$      & \verb|\overleftarrow{\sigma}|      & $\overleftarrow{\sigma}$      & \\
+\verb|\overleftarrow{\Tau}|        & $\overleftarrow{\Tau}$        & \verb|\overleftarrow{\tau}|        & $\overleftarrow{\tau}$        & \\
+\verb|\overleftarrow{\Upsilon}|    & $\overleftarrow{\Upsilon}$    & \verb|\overleftarrow{\upsilon}|    & $\overleftarrow{\upsilon}$    & \\
+\verb|\overleftarrow{\Phi}|        & $\overleftarrow{\Phi}$        & \verb|\overleftarrow{\phi}|        & $\overleftarrow{\phi}$        & \\
+\verb|\overleftarrow{\Chi}|        & $\overleftarrow{\Chi}$        & \verb|\overleftarrow{\chi}|        & $\overleftarrow{\chi}$        & \\
+\verb|\overleftarrow{\Psi}|        & $\overleftarrow{\Psi}$        & \verb|\overleftarrow{\psi}|        & $\overleftarrow{\psi}$        & \\
+\verb|\overleftarrow{\Omega}|      & $\overleftarrow{\Omega}$      & \verb|\overleftarrow{\omega}|      & $\overleftarrow{\omega}$      & \\
+                                   &                               & \verb|\overleftarrow{\varepsilon}| & $\overleftarrow{\varepsilon}$ & \\
+                                   &                               & \verb|\overleftarrow{\vartheta}|   & $\overleftarrow{\vartheta}$   & \\
+                                   &                               & \verb|\overleftarrow{\varkappa}|   & $\overleftarrow{\varkappa}$   & \\
+                                   &                               & \verb|\overleftarrow{\varpi}|      & $\overleftarrow{\varpi}$      & \\
+                                   &                               & \verb|\overleftarrow{\varrho}|     & $\overleftarrow{\varrho}$     & \\
+                                   &                               & \verb|\overleftarrow{\varsigma}|   & $\overleftarrow{\varsigma}$   & \\
+                                   &                               & \verb|\overleftarrow{\varphi}|     & $\overleftarrow{\varphi}$     & \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper} & \textbf{Output} & \textbf{Lower} & \textbf{Output} & \textbf{Glyph} & \textbf{Digits} & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\overleftarrow{A}| & $\overleftarrow{A}$ & \verb|\overleftarrow{a}| & $\overleftarrow{a}$ & & \verb|\overleftarrow{0}| & $\overleftarrow{0}$ & \\
+\verb|\overleftarrow{B}| & $\overleftarrow{B}$ & \verb|\overleftarrow{b}| & $\overleftarrow{b}$ & & \verb|\overleftarrow{1}| & $\overleftarrow{1}$ & \\
+\verb|\overleftarrow{C}| & $\overleftarrow{C}$ & \verb|\overleftarrow{c}| & $\overleftarrow{c}$ & & \verb|\overleftarrow{2}| & $\overleftarrow{2}$ & \\
+\verb|\overleftarrow{D}| & $\overleftarrow{D}$ & \verb|\overleftarrow{d}| & $\overleftarrow{d}$ & & \verb|\overleftarrow{3}| & $\overleftarrow{3}$ & \\
+\verb|\overleftarrow{E}| & $\overleftarrow{E}$ & \verb|\overleftarrow{e}| & $\overleftarrow{e}$ & & \verb|\overleftarrow{4}| & $\overleftarrow{4}$ & \\
+\verb|\overleftarrow{F}| & $\overleftarrow{F}$ & \verb|\overleftarrow{f}| & $\overleftarrow{f}$ & & \verb|\overleftarrow{5}| & $\overleftarrow{5}$ & \\
+\verb|\overleftarrow{G}| & $\overleftarrow{G}$ & \verb|\overleftarrow{g}| & $\overleftarrow{g}$ & & \verb|\overleftarrow{6}| & $\overleftarrow{6}$ & \\
+\verb|\overleftarrow{H}| & $\overleftarrow{H}$ & \verb|\overleftarrow{h}| & $\overleftarrow{h}$ & & \verb|\overleftarrow{7}| & $\overleftarrow{7}$ & \\
+\verb|\overleftarrow{I}| & $\overleftarrow{I}$ & \verb|\overleftarrow{i}| & $\overleftarrow{i}$ & & \verb|\overleftarrow{8}| & $\overleftarrow{8}$ & \\
+\verb|\overleftarrow{J}| & $\overleftarrow{J}$ & \verb|\overleftarrow{j}| & $\overleftarrow{j}$ & & \verb|\overleftarrow{9}| & $\overleftarrow{9}$ & \\
+\verb|\overleftarrow{K}| & $\overleftarrow{K}$ & \verb|\overleftarrow{k}| & $\overleftarrow{k}$ & & & & \\
+\verb|\overleftarrow{L}| & $\overleftarrow{L}$ & \verb|\overleftarrow{l}| & $\overleftarrow{l}$ & & & & \\
+\verb|\overleftarrow{M}| & $\overleftarrow{M}$ & \verb|\overleftarrow{m}| & $\overleftarrow{m}$ & & & & \\
+\verb|\overleftarrow{N}| & $\overleftarrow{N}$ & \verb|\overleftarrow{n}| & $\overleftarrow{n}$ & & & & \\
+\verb|\overleftarrow{O}| & $\overleftarrow{O}$ & \verb|\overleftarrow{o}| & $\overleftarrow{o}$ & & & & \\
+\verb|\overleftarrow{P}| & $\overleftarrow{P}$ & \verb|\overleftarrow{p}| & $\overleftarrow{p}$ & & & & \\
+\verb|\overleftarrow{Q}| & $\overleftarrow{Q}$ & \verb|\overleftarrow{q}| & $\overleftarrow{q}$ & & & & \\
+\verb|\overleftarrow{R}| & $\overleftarrow{R}$ & \verb|\overleftarrow{r}| & $\overleftarrow{r}$ & & & & \\
+\verb|\overleftarrow{S}| & $\overleftarrow{S}$ & \verb|\overleftarrow{s}| & $\overleftarrow{s}$ & & & & \\
+\verb|\overleftarrow{T}| & $\overleftarrow{T}$ & \verb|\overleftarrow{t}| & $\overleftarrow{t}$ & & & & \\
+\verb|\overleftarrow{U}| & $\overleftarrow{U}$ & \verb|\overleftarrow{u}| & $\overleftarrow{u}$ & & & & \\
+\verb|\overleftarrow{V}| & $\overleftarrow{V}$ & \verb|\overleftarrow{v}| & $\overleftarrow{v}$ & & & & \\
+\verb|\overleftarrow{W}| & $\overleftarrow{W}$ & \verb|\overleftarrow{w}| & $\overleftarrow{w}$ & & & & \\
+\verb|\overleftarrow{X}| & $\overleftarrow{X}$ & \verb|\overleftarrow{x}| & $\overleftarrow{x}$ & & & & \\
+\verb|\overleftarrow{Y}| & $\overleftarrow{Y}$ & \verb|\overleftarrow{y}| & $\overleftarrow{y}$ & & & & \\
+\verb|\overleftarrow{Z}| & $\overleftarrow{Z}$ & \verb|\overleftarrow{z}| & $\overleftarrow{z}$ & & & & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash overrightarrow} (Overrightarrow)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}                      & \textbf{Output}             & \textbf{Lower}                      & \textbf{Output}                & \textbf{Glyph} \\
+\hline
+\verb|\overrightarrow{\Alpha}|      & $\overrightarrow{\Alpha}$   & \verb|\overrightarrow{\alpha}|      & $\overrightarrow{\alpha}$      & \\
+\verb|\overrightarrow{\Beta}|       & $\overrightarrow{\Beta}$    & \verb|\overrightarrow{\beta}|       & $\overrightarrow{\beta}$       & \\
+\verb|\overrightarrow{\Gamma}|      & $\overrightarrow{\Gamma}$   & \verb|\overrightarrow{\gamma}|      & $\overrightarrow{\gamma}$      & \\
+\verb|\overrightarrow{\Delta}|      & $\overrightarrow{\Delta}$   & \verb|\overrightarrow{\delta}|      & $\overrightarrow{\delta}$      & \\
+\verb|\overrightarrow{\Digamma}|    & $\overrightarrow{\Digamma}$ & \verb|\overrightarrow{\digamma}|    & $\overrightarrow{\digamma}$    & \\
+\verb|\overrightarrow{\Epsilon}|    & $\overrightarrow{\Epsilon}$ & \verb|\overrightarrow{\epsilon}|    & $\overrightarrow{\epsilon}$    & \\
+\verb|\overrightarrow{\Zeta}|       & $\overrightarrow{\Zeta}$    & \verb|\overrightarrow{\zeta}|       & $\overrightarrow{\zeta}$       & \\
+\verb|\overrightarrow{\Eta}|        & $\overrightarrow{\Eta}$     & \verb|\overrightarrow{\eta}|        & $\overrightarrow{\eta}$        & \\
+\verb|\overrightarrow{\Theta}|      & $\overrightarrow{\Theta}$   & \verb|\overrightarrow{\theta}|      & $\overrightarrow{\theta}$      & \\
+\verb|\overrightarrow{\Iota}|       & $\overrightarrow{\Iota}$    & \verb|\overrightarrow{\iota}|       & $\overrightarrow{\iota}$       & \\
+\verb|\overrightarrow{\Kappa}|      & $\overrightarrow{\Kappa}$   & \verb|\overrightarrow{\kappa}|      & $\overrightarrow{\kappa}$      & \\
+\verb|\overrightarrow{\Lambda}|     & $\overrightarrow{\Lambda}$  & \verb|\overrightarrow{\lambda}|     & $\overrightarrow{\lambda}$     & \\
+\verb|\overrightarrow{\Mu}|         & $\overrightarrow{\Mu}$      & \verb|\overrightarrow{\mu}|         & $\overrightarrow{\mu}$         & \\
+\verb|\overrightarrow{\Nu}|         & $\overrightarrow{\Nu}$      & \verb|\overrightarrow{\nu}|         & $\overrightarrow{\nu}$         & \\
+\verb|\overrightarrow{\Xi}|         & $\overrightarrow{\Xi}$      & \verb|\overrightarrow{\xi}|         & $\overrightarrow{\xi}$         & \\
+\verb|\overrightarrow{\Omicron}|    & $\overrightarrow{\Omicron}$ & \verb|\overrightarrow{\omicron}|    & $\overrightarrow{\omicron}$    & \\
+\verb|\overrightarrow{\Pi}|         & $\overrightarrow{\Pi}$      & \verb|\overrightarrow{\pi}|         & $\overrightarrow{\pi}$         & \\
+\verb|\overrightarrow{\Rho}|        & $\overrightarrow{\Rho}$     & \verb|\overrightarrow{\rho}|        & $\overrightarrow{\rho}$        & \\
+\verb|\overrightarrow{\Sigma}|      & $\overrightarrow{\Sigma}$   & \verb|\overrightarrow{\sigma}|      & $\overrightarrow{\sigma}$      & \\
+\verb|\overrightarrow{\Tau}|        & $\overrightarrow{\Tau}$     & \verb|\overrightarrow{\tau}|        & $\overrightarrow{\tau}$        & \\
+\verb|\overrightarrow{\Upsilon}|    & $\overrightarrow{\Upsilon}$ & \verb|\overrightarrow{\upsilon}|    & $\overrightarrow{\upsilon}$    & \\
+\verb|\overrightarrow{\Phi}|        & $\overrightarrow{\Phi}$     & \verb|\overrightarrow{\phi}|        & $\overrightarrow{\phi}$        & \\
+\verb|\overrightarrow{\Chi}|        & $\overrightarrow{\Chi}$     & \verb|\overrightarrow{\chi}|        & $\overrightarrow{\chi}$        & \\
+\verb|\overrightarrow{\Psi}|        & $\overrightarrow{\Psi}$     & \verb|\overrightarrow{\psi}|        & $\overrightarrow{\psi}$        & \\
+\verb|\overrightarrow{\Omega}|      & $\overrightarrow{\Omega}$   & \verb|\overrightarrow{\omega}|      & $\overrightarrow{\omega}$      & \\
+                                    &                             & \verb|\overrightarrow{\varepsilon}| & $\overrightarrow{\varepsilon}$ & \\
+                                    &                             & \verb|\overrightarrow{\vartheta}|   & $\overrightarrow{\vartheta}$   & \\
+                                    &                             & \verb|\overrightarrow{\varkappa}|   & $\overrightarrow{\varkappa}$   & \\
+                                    &                             & \verb|\overrightarrow{\varpi}|      & $\overrightarrow{\varpi}$      & \\
+                                    &                             & \verb|\overrightarrow{\varrho}|     & $\overrightarrow{\varrho}$     & \\
+                                    &                             & \verb|\overrightarrow{\varsigma}|   & $\overrightarrow{\varsigma}$   & \\
+                                    &                             & \verb|\overrightarrow{\varphi}|     & $\overrightarrow{\varphi}$     & \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}            & \textbf{Output}      & \textbf{Lower}            & \textbf{Output}      & \textbf{Glyph} & \textbf{Digits}           & \textbf{Output}      & \textbf{Glyph} \\
+\hline
+\verb|\overrightarrow{A}| & $\overrightarrow{A}$ & \verb|\overrightarrow{a}| & $\overrightarrow{a}$ &                & \verb|\overrightarrow{0}| & $\overrightarrow{0}$ & \\
+\verb|\overrightarrow{B}| & $\overrightarrow{B}$ & \verb|\overrightarrow{b}| & $\overrightarrow{b}$ &                & \verb|\overrightarrow{1}| & $\overrightarrow{1}$ & \\
+\verb|\overrightarrow{C}| & $\overrightarrow{C}$ & \verb|\overrightarrow{c}| & $\overrightarrow{c}$ &                & \verb|\overrightarrow{2}| & $\overrightarrow{2}$ & \\
+\verb|\overrightarrow{D}| & $\overrightarrow{D}$ & \verb|\overrightarrow{d}| & $\overrightarrow{d}$ &                & \verb|\overrightarrow{3}| & $\overrightarrow{3}$ & \\
+\verb|\overrightarrow{E}| & $\overrightarrow{E}$ & \verb|\overrightarrow{e}| & $\overrightarrow{e}$ &                & \verb|\overrightarrow{4}| & $\overrightarrow{4}$ & \\
+\verb|\overrightarrow{F}| & $\overrightarrow{F}$ & \verb|\overrightarrow{f}| & $\overrightarrow{f}$ &                & \verb|\overrightarrow{5}| & $\overrightarrow{5}$ & \\
+\verb|\overrightarrow{G}| & $\overrightarrow{G}$ & \verb|\overrightarrow{g}| & $\overrightarrow{g}$ &                & \verb|\overrightarrow{6}| & $\overrightarrow{6}$ & \\
+\verb|\overrightarrow{H}| & $\overrightarrow{H}$ & \verb|\overrightarrow{h}| & $\overrightarrow{h}$ &                & \verb|\overrightarrow{7}| & $\overrightarrow{7}$ & \\
+\verb|\overrightarrow{I}| & $\overrightarrow{I}$ & \verb|\overrightarrow{i}| & $\overrightarrow{i}$ &                & \verb|\overrightarrow{8}| & $\overrightarrow{8}$ & \\
+\verb|\overrightarrow{J}| & $\overrightarrow{J}$ & \verb|\overrightarrow{j}| & $\overrightarrow{j}$ &                & \verb|\overrightarrow{9}| & $\overrightarrow{9}$ & \\
+\verb|\overrightarrow{K}| & $\overrightarrow{K}$ & \verb|\overrightarrow{k}| & $\overrightarrow{k}$ &                &                           &                      & \\
+\verb|\overrightarrow{L}| & $\overrightarrow{L}$ & \verb|\overrightarrow{l}| & $\overrightarrow{l}$ &                &                           &                      & \\
+\verb|\overrightarrow{M}| & $\overrightarrow{M}$ & \verb|\overrightarrow{m}| & $\overrightarrow{m}$ &                &                           &                      & \\
+\verb|\overrightarrow{N}| & $\overrightarrow{N}$ & \verb|\overrightarrow{n}| & $\overrightarrow{n}$ &                &                           &                      & \\
+\verb|\overrightarrow{O}| & $\overrightarrow{O}$ & \verb|\overrightarrow{o}| & $\overrightarrow{o}$ &                &                           &                      & \\
+\verb|\overrightarrow{P}| & $\overrightarrow{P}$ & \verb|\overrightarrow{p}| & $\overrightarrow{p}$ &                &                           &                      & \\
+\verb|\overrightarrow{Q}| & $\overrightarrow{Q}$ & \verb|\overrightarrow{q}| & $\overrightarrow{q}$ &                &                           &                      & \\
+\verb|\overrightarrow{R}| & $\overrightarrow{R}$ & \verb|\overrightarrow{r}| & $\overrightarrow{r}$ &                &                           &                      & \\
+\verb|\overrightarrow{S}| & $\overrightarrow{S}$ & \verb|\overrightarrow{s}| & $\overrightarrow{s}$ &                &                           &                      & \\
+\verb|\overrightarrow{T}| & $\overrightarrow{T}$ & \verb|\overrightarrow{t}| & $\overrightarrow{t}$ &                &                           &                      & \\
+\verb|\overrightarrow{U}| & $\overrightarrow{U}$ & \verb|\overrightarrow{u}| & $\overrightarrow{u}$ &                &                           &                      & \\
+\verb|\overrightarrow{V}| & $\overrightarrow{V}$ & \verb|\overrightarrow{v}| & $\overrightarrow{v}$ &                &                           &                      & \\
+\verb|\overrightarrow{W}| & $\overrightarrow{W}$ & \verb|\overrightarrow{w}| & $\overrightarrow{w}$ &                &                           &                      & \\
+\verb|\overrightarrow{X}| & $\overrightarrow{X}$ & \verb|\overrightarrow{x}| & $\overrightarrow{x}$ &                &                           &                      & \\
+\verb|\overrightarrow{Y}| & $\overrightarrow{Y}$ & \verb|\overrightarrow{y}| & $\overrightarrow{y}$ &                &                           &                      & \\
+\verb|\overrightarrow{Z}| & $\overrightarrow{Z}$ & \verb|\overrightarrow{z}| & $\overrightarrow{z}$ &                &                           &                      & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash overline} (Overline)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper} & \textbf{Output} & \textbf{Lower}        & \textbf{Output}               & \textbf{Glyph} \\
+\hline
+\verb|\overline{\Alpha}|         & $\overline{\Alpha}$   & \verb|\overline{\alpha}|      & $\overline{\alpha}$      & \\
+\verb|\overline{\Beta}|          & $\overline{\Beta}$    & \verb|\overline{\beta}|       & $\overline{\beta}$       & \\
+\verb|\overline{\Gamma}|         & $\overline{\Gamma}$   & \verb|\overline{\gamma}|      & $\overline{\gamma}$      & \\
+\verb|\overline{\Delta}|         & $\overline{\Delta}$   & \verb|\overline{\delta}|      & $\overline{\delta}$      & \\
+\verb|\overline{\Digamma}|       & $\overline{\Digamma}$ & \verb|\overline{\digamma}|    & $\overline{\digamma}$    & \\
+\verb|\overline{\Epsilon}|       & $\overline{\Epsilon}$ & \verb|\overline{\epsilon}|    & $\overline{\epsilon}$    & \\
+\verb|\overline{\Zeta}|          & $\overline{\Zeta}$    & \verb|\overline{\zeta}|       & $\overline{\zeta}$       & \\
+\verb|\overline{\Eta}|           & $\overline{\Eta}$     & \verb|\overline{\eta}|        & $\overline{\eta}$        & \\
+\verb|\overline{\Theta}|         & $\overline{\Theta}$   & \verb|\overline{\theta}|      & $\overline{\theta}$      & \\
+\verb|\overline{\Iota}|          & $\overline{\Iota}$    & \verb|\overline{\iota}|       & $\overline{\iota}$       & \\
+\verb|\overline{\Kappa}|         & $\overline{\Kappa}$   & \verb|\overline{\kappa}|      & $\overline{\kappa}$      & \\
+\verb|\overline{\Lambda}|        & $\overline{\Lambda}$  & \verb|\overline{\lambda}|     & $\overline{\lambda}$     & \\
+\verb|\overline{\Mu}|            & $\overline{\Mu}$      & \verb|\overline{\mu}|         & $\overline{\mu}$         & \\
+\verb|\overline{\Nu}|            & $\overline{\Nu}$      & \verb|\overline{\nu}|         & $\overline{\nu}$         & \\
+\verb|\overline{\Xi}|            & $\overline{\Xi}$      & \verb|\overline{\xi}|         & $\overline{\xi}$         & \\
+\verb|\overline{\Omicron}|       & $\overline{\Omicron}$ & \verb|\overline{\omicron}|    & $\overline{\omicron}$    & \\
+\verb|\overline{\Pi}|            & $\overline{\Pi}$      & \verb|\overline{\pi}|         & $\overline{\pi}$         & \\
+\verb|\overline{\Rho}|           & $\overline{\Rho}$     & \verb|\overline{\rho}|        & $\overline{\rho}$        & \\
+\verb|\overline{\Sigma}|         & $\overline{\Sigma}$   & \verb|\overline{\sigma}|      & $\overline{\sigma}$      & \\
+\verb|\overline{\Tau}|           & $\overline{\Tau}$     & \verb|\overline{\tau}|        & $\overline{\tau}$        & \\
+\verb|\overline{\Upsilon}|       & $\overline{\Upsilon}$ & \verb|\overline{\upsilon}|    & $\overline{\upsilon}$    & \\
+\verb|\overline{\Phi}|           & $\overline{\Phi}$     & \verb|\overline{\phi}|        & $\overline{\phi}$        & \\
+\verb|\overline{\Chi}|           & $\overline{\Chi}$     & \verb|\overline{\chi}|        & $\overline{\chi}$        & \\
+\verb|\overline{\Psi}|           & $\overline{\Psi}$     & \verb|\overline{\psi}|        & $\overline{\psi}$        & \\
+\verb|\overline{\Omega}|         & $\overline{\Omega}$   & \verb|\overline{\omega}|      & $\overline{\omega}$      & \\
+                                 &                       & \verb|\overline{\varepsilon}| & $\overline{\varepsilon}$ & \\
+                                 &                       & \verb|\overline{\vartheta}|   & $\overline{\vartheta}$   & \\
+                                 &                       & \verb|\overline{\varkappa}|   & $\overline{\varkappa}$   & \\
+                                 &                       & \verb|\overline{\varpi}|      & $\overline{\varpi}$      & \\
+                                 &                       & \verb|\overline{\varrho}|     & $\overline{\varrho}$     & \\
+                                 &                       & \verb|\overline{\varsigma}|   & $\overline{\varsigma}$   & \\
+                                 &                       & \verb|\overline{\varphi}|     & $\overline{\varphi}$     & \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}      & \textbf{Output} & \textbf{Lower}      & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}     & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\overline{A}| & $\overline{A}$  & \verb|\overline{a}| & $\overline{a}$  &                & \verb|\overline{0}| & $\overline{0}$  & \\
+\verb|\overline{B}| & $\overline{B}$  & \verb|\overline{b}| & $\overline{b}$  &                & \verb|\overline{1}| & $\overline{1}$  & \\
+\verb|\overline{C}| & $\overline{C}$  & \verb|\overline{c}| & $\overline{c}$  &                & \verb|\overline{2}| & $\overline{2}$  & \\
+\verb|\overline{D}| & $\overline{D}$  & \verb|\overline{d}| & $\overline{d}$  &                & \verb|\overline{3}| & $\overline{3}$  & \\
+\verb|\overline{E}| & $\overline{E}$  & \verb|\overline{e}| & $\overline{e}$  &                & \verb|\overline{4}| & $\overline{4}$  & \\
+\verb|\overline{F}| & $\overline{F}$  & \verb|\overline{f}| & $\overline{f}$  &                & \verb|\overline{5}| & $\overline{5}$  & \\
+\verb|\overline{G}| & $\overline{G}$  & \verb|\overline{g}| & $\overline{g}$  &                & \verb|\overline{6}| & $\overline{6}$  & \\
+\verb|\overline{H}| & $\overline{H}$  & \verb|\overline{h}| & $\overline{h}$  &                & \verb|\overline{7}| & $\overline{7}$  & \\
+\verb|\overline{I}| & $\overline{I}$  & \verb|\overline{i}| & $\overline{i}$  &                & \verb|\overline{8}| & $\overline{8}$  & \\
+\verb|\overline{J}| & $\overline{J}$  & \verb|\overline{j}| & $\overline{j}$  &                & \verb|\overline{9}| & $\overline{9}$  & \\
+\verb|\overline{K}| & $\overline{K}$  & \verb|\overline{k}| & $\overline{k}$  &                &                     &                 & \\
+\verb|\overline{L}| & $\overline{L}$  & \verb|\overline{l}| & $\overline{l}$  &                &                     &                 & \\
+\verb|\overline{M}| & $\overline{M}$  & \verb|\overline{m}| & $\overline{m}$  &                &                     &                 & \\
+\verb|\overline{N}| & $\overline{N}$  & \verb|\overline{n}| & $\overline{n}$  &                &                     &                 & \\
+\verb|\overline{O}| & $\overline{O}$  & \verb|\overline{o}| & $\overline{o}$  &                &                     &                 & \\
+\verb|\overline{P}| & $\overline{P}$  & \verb|\overline{p}| & $\overline{p}$  &                &                     &                 & \\
+\verb|\overline{Q}| & $\overline{Q}$  & \verb|\overline{q}| & $\overline{q}$  &                &                     &                 & \\
+\verb|\overline{R}| & $\overline{R}$  & \verb|\overline{r}| & $\overline{r}$  &                &                     &                 & \\
+\verb|\overline{S}| & $\overline{S}$  & \verb|\overline{s}| & $\overline{s}$  &                &                     &                 & \\
+\verb|\overline{T}| & $\overline{T}$  & \verb|\overline{t}| & $\overline{t}$  &                &                     &                 & \\
+\verb|\overline{U}| & $\overline{U}$  & \verb|\overline{u}| & $\overline{u}$  &                &                     &                 & \\
+\verb|\overline{V}| & $\overline{V}$  & \verb|\overline{v}| & $\overline{v}$  &                &                     &                 & \\
+\verb|\overline{W}| & $\overline{W}$  & \verb|\overline{w}| & $\overline{w}$  &                &                     &                 & \\
+\verb|\overline{X}| & $\overline{X}$  & \verb|\overline{x}| & $\overline{x}$  &                &                     &                 & \\
+\verb|\overline{Y}| & $\overline{Y}$  & \verb|\overline{y}| & $\overline{y}$  &                &                     &                 & \\
+\verb|\overline{Z}| & $\overline{Z}$  & \verb|\overline{z}| & $\overline{z}$  &                &                     &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash widehat} (Wide hat accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}               & \textbf{Output}      & \textbf{Lower}               & \textbf{Output}         & \textbf{Glyph} \\
+\hline
+\verb|\widehat{\Alpha}|      & $\widehat{\Alpha}$   & \verb|\widehat{\alpha}|      & $\widehat{\alpha}$      & \\
+\verb|\widehat{\Beta}|       & $\widehat{\Beta}$    & \verb|\widehat{\beta}|       & $\widehat{\beta}$       & \\
+\verb|\widehat{\Gamma}|      & $\widehat{\Gamma}$   & \verb|\widehat{\gamma}|      & $\widehat{\gamma}$      & \\
+\verb|\widehat{\Delta}|      & $\widehat{\Delta}$   & \verb|\widehat{\delta}|      & $\widehat{\delta}$      & \\
+\verb|\widehat{\Digamma}|    & $\widehat{\Digamma}$ & \verb|\widehat{\digamma}|    & $\widehat{\digamma}$    & \\
+\verb|\widehat{\Epsilon}|    & $\widehat{\Epsilon}$ & \verb|\widehat{\epsilon}|    & $\widehat{\epsilon}$    & \\
+\verb|\widehat{\Zeta}|       & $\widehat{\Zeta}$    & \verb|\widehat{\zeta}|       & $\widehat{\zeta}$       & \\
+\verb|\widehat{\Eta}|        & $\widehat{\Eta}$     & \verb|\widehat{\eta}|        & $\widehat{\eta}$        & \\
+\verb|\widehat{\Theta}|      & $\widehat{\Theta}$   & \verb|\widehat{\theta}|      & $\widehat{\theta}$      & \\
+\verb|\widehat{\Iota}|       & $\widehat{\Iota}$    & \verb|\widehat{\iota}|       & $\widehat{\iota}$       & \\
+\verb|\widehat{\Kappa}|      & $\widehat{\Kappa}$   & \verb|\widehat{\kappa}|      & $\widehat{\kappa}$      & \\
+\verb|\widehat{\Lambda}|     & $\widehat{\Lambda}$  & \verb|\widehat{\lambda}|     & $\widehat{\lambda}$     & \\
+\verb|\widehat{\Mu}|         & $\widehat{\Mu}$      & \verb|\widehat{\mu}|         & $\widehat{\mu}$         & \\
+\verb|\widehat{\Nu}|         & $\widehat{\Nu}$      & \verb|\widehat{\nu}|         & $\widehat{\nu}$         & \\
+\verb|\widehat{\Xi}|         & $\widehat{\Xi}$      & \verb|\widehat{\xi}|         & $\widehat{\xi}$         & \\
+\verb|\widehat{\Omicron}|    & $\widehat{\Omicron}$ & \verb|\widehat{\omicron}|    & $\widehat{\omicron}$    & \\
+\verb|\widehat{\Pi}|         & $\widehat{\Pi}$      & \verb|\widehat{\pi}|         & $\widehat{\pi}$         & \\
+\verb|\widehat{\Rho}|        & $\widehat{\Rho}$     & \verb|\widehat{\rho}|        & $\widehat{\rho}$        & \\
+\verb|\widehat{\Sigma}|      & $\widehat{\Sigma}$   & \verb|\widehat{\sigma}|      & $\widehat{\sigma}$      & \\
+\verb|\widehat{\Tau}|        & $\widehat{\Tau}$     & \verb|\widehat{\tau}|        & $\widehat{\tau}$        & \\
+\verb|\widehat{\Upsilon}|    & $\widehat{\Upsilon}$ & \verb|\widehat{\upsilon}|    & $\widehat{\upsilon}$    & \\
+\verb|\widehat{\Phi}|        & $\widehat{\Phi}$     & \verb|\widehat{\phi}|        & $\widehat{\phi}$        & \\
+\verb|\widehat{\Chi}|        & $\widehat{\Chi}$     & \verb|\widehat{\chi}|        & $\widehat{\chi}$        & \\
+\verb|\widehat{\Psi}|        & $\widehat{\Psi}$     & \verb|\widehat{\psi}|        & $\widehat{\psi}$        & \\
+\verb|\widehat{\Omega}|      & $\widehat{\Omega}$   & \verb|\widehat{\omega}|      & $\widehat{\omega}$      & \\
+                             &                      & \verb|\widehat{\varepsilon}| & $\widehat{\varepsilon}$ & \\
+                             &                      & \verb|\widehat{\vartheta}|   & $\widehat{\vartheta}$   & \\
+                             &                      & \verb|\widehat{\varkappa}|   & $\widehat{\varkappa}$   & \\
+                             &                      & \verb|\widehat{\varpi}|      & $\widehat{\varpi}$      & \\
+                             &                      & \verb|\widehat{\varrho}|     & $\widehat{\varrho}$     & \\
+                             &                      & \verb|\widehat{\varsigma}|   & $\widehat{\varsigma}$   & \\
+                             &                      & \verb|\widehat{\varphi}|     & $\widehat{\varphi}$     & \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}     & \textbf{Output} & \textbf{Lower}     & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}    & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\widehat{A}| & $\widehat{A}$   & \verb|\widehat{a}| & $\widehat{a}$   &                & \verb|\widehat{0}| & $\widehat{0}$   & \\
+\verb|\widehat{B}| & $\widehat{B}$   & \verb|\widehat{b}| & $\widehat{b}$   &                & \verb|\widehat{1}| & $\widehat{1}$   & \\
+\verb|\widehat{C}| & $\widehat{C}$   & \verb|\widehat{c}| & $\widehat{c}$   &                & \verb|\widehat{2}| & $\widehat{2}$   & \\
+\verb|\widehat{D}| & $\widehat{D}$   & \verb|\widehat{d}| & $\widehat{d}$   &                & \verb|\widehat{3}| & $\widehat{3}$   & \\
+\verb|\widehat{E}| & $\widehat{E}$   & \verb|\widehat{e}| & $\widehat{e}$   &                & \verb|\widehat{4}| & $\widehat{4}$   & \\
+\verb|\widehat{F}| & $\widehat{F}$   & \verb|\widehat{f}| & $\widehat{f}$   &                & \verb|\widehat{5}| & $\widehat{5}$   & \\
+\verb|\widehat{G}| & $\widehat{G}$   & \verb|\widehat{g}| & $\widehat{g}$   &                & \verb|\widehat{6}| & $\widehat{6}$   & \\
+\verb|\widehat{H}| & $\widehat{H}$   & \verb|\widehat{h}| & $\widehat{h}$   &                & \verb|\widehat{7}| & $\widehat{7}$   & \\
+\verb|\widehat{I}| & $\widehat{I}$   & \verb|\widehat{i}| & $\widehat{i}$   &                & \verb|\widehat{8}| & $\widehat{8}$   & \\
+\verb|\widehat{J}| & $\widehat{J}$   & \verb|\widehat{j}| & $\widehat{j}$   &                & \verb|\widehat{9}| & $\widehat{9}$   & \\
+\verb|\widehat{K}| & $\widehat{K}$   & \verb|\widehat{k}| & $\widehat{k}$   &                &                    &                 & \\
+\verb|\widehat{L}| & $\widehat{L}$   & \verb|\widehat{l}| & $\widehat{l}$   &                &                    &                 & \\
+\verb|\widehat{M}| & $\widehat{M}$   & \verb|\widehat{m}| & $\widehat{m}$   &                &                    &                 & \\
+\verb|\widehat{N}| & $\widehat{N}$   & \verb|\widehat{n}| & $\widehat{n}$   &                &                    &                 & \\
+\verb|\widehat{O}| & $\widehat{O}$   & \verb|\widehat{o}| & $\widehat{o}$   &                &                    &                 & \\
+\verb|\widehat{P}| & $\widehat{P}$   & \verb|\widehat{p}| & $\widehat{p}$   &                &                    &                 & \\
+\verb|\widehat{Q}| & $\widehat{Q}$   & \verb|\widehat{q}| & $\widehat{q}$   &                &                    &                 & \\
+\verb|\widehat{R}| & $\widehat{R}$   & \verb|\widehat{r}| & $\widehat{r}$   &                &                    &                 & \\
+\verb|\widehat{S}| & $\widehat{S}$   & \verb|\widehat{s}| & $\widehat{s}$   &                &                    &                 & \\
+\verb|\widehat{T}| & $\widehat{T}$   & \verb|\widehat{t}| & $\widehat{t}$   &                &                    &                 & \\
+\verb|\widehat{U}| & $\widehat{U}$   & \verb|\widehat{u}| & $\widehat{u}$   &                &                    &                 & \\
+\verb|\widehat{V}| & $\widehat{V}$   & \verb|\widehat{v}| & $\widehat{v}$   &                &                    &                 & \\
+\verb|\widehat{W}| & $\widehat{W}$   & \verb|\widehat{w}| & $\widehat{w}$   &                &                    &                 & \\
+\verb|\widehat{X}| & $\widehat{X}$   & \verb|\widehat{x}| & $\widehat{x}$   &                &                    &                 & \\
+\verb|\widehat{Y}| & $\widehat{Y}$   & \verb|\widehat{y}| & $\widehat{y}$   &                &                    &                 & \\
+\verb|\widehat{Z}| & $\widehat{Z}$   & \verb|\widehat{z}| & $\widehat{z}$   &                &                    &                 & \\
+\hline
+\end{longtable}
+
+\newpage
+
+\section*{Accented Symbols: \texttt{\textbackslash widetilde} (Wide tilde accent)}
+
+\subsection*{Greek Letters}
+\begin{longtable}{|l|c|l|c|c|}
+\hline
+\textbf{Upper}                 & \textbf{Output}        & \textbf{Lower}                 & \textbf{Output}           & \textbf{Glyph} \\
+\hline
+\verb|\widetilde{\Alpha}|      & $\widetilde{\Alpha}$   & \verb|\widetilde{\alpha}|      & $\widetilde{\alpha}$      & \\
+\verb|\widetilde{\Beta}|       & $\widetilde{\Beta}$    & \verb|\widetilde{\beta}|       & $\widetilde{\beta}$       & \\
+\verb|\widetilde{\Gamma}|      & $\widetilde{\Gamma}$   & \verb|\widetilde{\gamma}|      & $\widetilde{\gamma}$      & \\
+\verb|\widetilde{\Delta}|      & $\widetilde{\Delta}$   & \verb|\widetilde{\delta}|      & $\widetilde{\delta}$      & \\
+\verb|\widetilde{\Digamma}|    & $\widetilde{\Digamma}$ & \verb|\widetilde{\digamma}|    & $\widetilde{\digamma}$    & \\
+\verb|\widetilde{\Epsilon}|    & $\widetilde{\Epsilon}$ & \verb|\widetilde{\epsilon}|    & $\widetilde{\epsilon}$    & \\
+\verb|\widetilde{\Zeta}|       & $\widetilde{\Zeta}$    & \verb|\widetilde{\zeta}|       & $\widetilde{\zeta}$       & \\
+\verb|\widetilde{\Eta}|        & $\widetilde{\Eta}$     & \verb|\widetilde{\eta}|        & $\widetilde{\eta}$        & \\
+\verb|\widetilde{\Theta}|      & $\widetilde{\Theta}$   & \verb|\widetilde{\theta}|      & $\widetilde{\theta}$      & \\
+\verb|\widetilde{\Iota}|       & $\widetilde{\Iota}$    & \verb|\widetilde{\iota}|       & $\widetilde{\iota}$       & \\
+\verb|\widetilde{\Kappa}|      & $\widetilde{\Kappa}$   & \verb|\widetilde{\kappa}|      & $\widetilde{\kappa}$      & \\
+\verb|\widetilde{\Lambda}|     & $\widetilde{\Lambda}$  & \verb|\widetilde{\lambda}|     & $\widetilde{\lambda}$     & \\
+\verb|\widetilde{\Mu}|         & $\widetilde{\Mu}$      & \verb|\widetilde{\mu}|         & $\widetilde{\mu}$         & \\
+\verb|\widetilde{\Nu}|         & $\widetilde{\Nu}$      & \verb|\widetilde{\nu}|         & $\widetilde{\nu}$         & \\
+\verb|\widetilde{\Xi}|         & $\widetilde{\Xi}$      & \verb|\widetilde{\xi}|         & $\widetilde{\xi}$         & \\
+\verb|\widetilde{\Omicron}|    & $\widetilde{\Omicron}$ & \verb|\widetilde{\omicron}|    & $\widetilde{\omicron}$    & \\
+\verb|\widetilde{\Pi}|         & $\widetilde{\Pi}$      & \verb|\widetilde{\pi}|         & $\widetilde{\pi}$         & \\
+\verb|\widetilde{\Rho}|        & $\widetilde{\Rho}$     & \verb|\widetilde{\rho}|        & $\widetilde{\rho}$        & \\
+\verb|\widetilde{\Sigma}|      & $\widetilde{\Sigma}$   & \verb|\widetilde{\sigma}|      & $\widetilde{\sigma}$      & \\
+\verb|\widetilde{\Tau}|        & $\widetilde{\Tau}$     & \verb|\widetilde{\tau}|        & $\widetilde{\tau}$        & \\
+\verb|\widetilde{\Upsilon}|    & $\widetilde{\Upsilon}$ & \verb|\widetilde{\upsilon}|    & $\widetilde{\upsilon}$    & \\
+\verb|\widetilde{\Phi}|        & $\widetilde{\Phi}$     & \verb|\widetilde{\phi}|        & $\widetilde{\phi}$        & \\
+\verb|\widetilde{\Chi}|        & $\widetilde{\Chi}$     & \verb|\widetilde{\chi}|        & $\widetilde{\chi}$        & \\
+\verb|\widetilde{\Psi}|        & $\widetilde{\Psi}$     & \verb|\widetilde{\psi}|        & $\widetilde{\psi}$        & \\
+\verb|\widetilde{\Omega}|      & $\widetilde{\Omega}$   & \verb|\widetilde{\omega}|      & $\widetilde{\omega}$      & \\
+                               &                        & \verb|\widetilde{\varepsilon}| & $\widetilde{\varepsilon}$ & \\
+                               &                        & \verb|\widetilde{\vartheta}|   & $\widetilde{\vartheta}$   & \\
+                               &                        & \verb|\widetilde{\varkappa}|   & $\widetilde{\varkappa}$   & \\
+                               &                        & \verb|\widetilde{\varpi}|      & $\widetilde{\varpi}$      & \\
+                               &                        & \verb|\widetilde{\varrho}|     & $\widetilde{\varrho}$     & \\
+                               &                        & \verb|\widetilde{\varsigma}|   & $\widetilde{\varsigma}$   & \\
+                               &                        & \verb|\widetilde{\varphi}|     & $\widetilde{\varphi}$     & \\
+\hline
+\end{longtable}
+
+\subsection*{Latin Letters and Digits}
+\begin{longtable}{|l|c|l|c|c|l|c|c|}
+\hline
+\textbf{Upper}       & \textbf{Output} & \textbf{Lower}       & \textbf{Output} & \textbf{Glyph} & \textbf{Digits}      & \textbf{Output} & \textbf{Glyph} \\
+\hline
+\verb|\widetilde{A}| & $\widetilde{A}$ & \verb|\widetilde{a}| & $\widetilde{a}$ &                & \verb|\widetilde{0}| & $\widetilde{0}$ & \\
+\verb|\widetilde{B}| & $\widetilde{B}$ & \verb|\widetilde{b}| & $\widetilde{b}$ &                & \verb|\widetilde{1}| & $\widetilde{1}$ & \\
+\verb|\widetilde{C}| & $\widetilde{C}$ & \verb|\widetilde{c}| & $\widetilde{c}$ &                & \verb|\widetilde{2}| & $\widetilde{2}$ & \\
+\verb|\widetilde{D}| & $\widetilde{D}$ & \verb|\widetilde{d}| & $\widetilde{d}$ &                & \verb|\widetilde{3}| & $\widetilde{3}$ & \\
+\verb|\widetilde{E}| & $\widetilde{E}$ & \verb|\widetilde{e}| & $\widetilde{e}$ &                & \verb|\widetilde{4}| & $\widetilde{4}$ & \\
+\verb|\widetilde{F}| & $\widetilde{F}$ & \verb|\widetilde{f}| & $\widetilde{f}$ &                & \verb|\widetilde{5}| & $\widetilde{5}$ & \\
+\verb|\widetilde{G}| & $\widetilde{G}$ & \verb|\widetilde{g}| & $\widetilde{g}$ &                & \verb|\widetilde{6}| & $\widetilde{6}$ & \\
+\verb|\widetilde{H}| & $\widetilde{H}$ & \verb|\widetilde{h}| & $\widetilde{h}$ &                & \verb|\widetilde{7}| & $\widetilde{7}$ & \\
+\verb|\widetilde{I}| & $\widetilde{I}$ & \verb|\widetilde{i}| & $\widetilde{i}$ &                & \verb|\widetilde{8}| & $\widetilde{8}$ & \\
+\verb|\widetilde{J}| & $\widetilde{J}$ & \verb|\widetilde{j}| & $\widetilde{j}$ &                & \verb|\widetilde{9}| & $\widetilde{9}$ & \\
+\verb|\widetilde{K}| & $\widetilde{K}$ & \verb|\widetilde{k}| & $\widetilde{k}$ &                &                      &                 & \\
+\verb|\widetilde{L}| & $\widetilde{L}$ & \verb|\widetilde{l}| & $\widetilde{l}$ &                &                      &                 & \\
+\verb|\widetilde{M}| & $\widetilde{M}$ & \verb|\widetilde{m}| & $\widetilde{m}$ &                &                      &                 & \\
+\verb|\widetilde{N}| & $\widetilde{N}$ & \verb|\widetilde{n}| & $\widetilde{n}$ &                &                      &                 & \\
+\verb|\widetilde{O}| & $\widetilde{O}$ & \verb|\widetilde{o}| & $\widetilde{o}$ &                &                      &                 & \\
+\verb|\widetilde{P}| & $\widetilde{P}$ & \verb|\widetilde{p}| & $\widetilde{p}$ &                &                      &                 & \\
+\verb|\widetilde{Q}| & $\widetilde{Q}$ & \verb|\widetilde{q}| & $\widetilde{q}$ &                &                      &                 & \\
+\verb|\widetilde{R}| & $\widetilde{R}$ & \verb|\widetilde{r}| & $\widetilde{r}$ &                &                      &                 & \\
+\verb|\widetilde{S}| & $\widetilde{S}$ & \verb|\widetilde{s}| & $\widetilde{s}$ &                &                      &                 & \\
+\verb|\widetilde{T}| & $\widetilde{T}$ & \verb|\widetilde{t}| & $\widetilde{t}$ &                &                      &                 & \\
+\verb|\widetilde{U}| & $\widetilde{U}$ & \verb|\widetilde{u}| & $\widetilde{u}$ &                &                      &                 & \\
+\verb|\widetilde{V}| & $\widetilde{V}$ & \verb|\widetilde{v}| & $\widetilde{v}$ &                &                      &                 & \\
+\verb|\widetilde{W}| & $\widetilde{W}$ & \verb|\widetilde{w}| & $\widetilde{w}$ &                &                      &                 & \\
+\verb|\widetilde{X}| & $\widetilde{X}$ & \verb|\widetilde{x}| & $\widetilde{x}$ &                &                      &                 & \\
+\verb|\widetilde{Y}| & $\widetilde{Y}$ & \verb|\widetilde{y}| & $\widetilde{y}$ &                &                      &                 & \\
+\verb|\widetilde{Z}| & $\widetilde{Z}$ & \verb|\widetilde{z}| & $\widetilde{z}$ &                &                      &                 & \\
 \hline
 \end{longtable}
 
