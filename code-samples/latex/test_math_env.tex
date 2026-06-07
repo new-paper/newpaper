@@ -2,129 +2,137 @@
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+\usepackage{breqn}
+\usepackage{empheq}
 
 \begin{document}
 
-\section*{MATH}
+\section*{Standard math environments}
 
-$y^2 + x^2 = z^2$
+\begin{math}
+    y^2 + x^2 = z^2 \quad \textAlpha \quad \Alpha \quad \nabla
+\end{math}
 
-\[
-y^2 + x^2 = z^2
-\]
+\begin{displaymath}
+    y^2 + x^2 = z^2 \quad \textAlpha \quad \Alpha \quad \nabla
+\end{displaymath}
 
-\[
-y^2 + x^2 = z^2
-\]
+\begin{displaymath*}
+    y^2 + x^2 = z^2 \quad \textAlpha \quad \Alpha \quad \nabla
+\end{displaymath*}
 
 \begin{equation}
-	y^2 + x^2 = z^2
+    y^2 + x^2 = z^2 \quad \textAlpha \quad \Alpha \quad \nabla
 \end{equation}
 
 \begin{equation*}
-	y^2 + x^2 = z^2
+    y^2 + x^2 = z^2 \quad \textAlpha \quad \Alpha \quad \nabla
 \end{equation*}
 
 \begin{multline}
-	a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p \\
-	= q + r + s + t + u + v + w + x + y + z
+    a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p \\
+    = q + r + s + t + u + v + w + x + y + z \quad \textAlpha \quad \Alpha \quad \nabla
 \end{multline}
 
 \begin{multline*}
-	a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p \\
-	= q + r + s + t + u + v + w + x + y + z
+    a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p \\
+    = q + r + s + t + u + v + w + x + y + z \quad \textAlpha \quad \Alpha \quad \nabla
 \end{multline*}
 
 \begin{eqnarray}
-	y &=& x^2 \\
-	z &=& x^3
+    y &=& x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z &=& x^3
 \end{eqnarray}
 
 \begin{eqnarray*}
-	y &=& x^2 \\
-	z &=& x^3
+    y &=& x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z &=& x^3
 \end{eqnarray*}
 
 \begin{align}
-	y & = x^2 \\
-	z & = x^3
+    y &= x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z &= x^3
 \end{align}
 
 \begin{align*}
-	y & = x^2 \\
-	z & = x^3
+    y &= x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z &= x^3
 \end{align*}
 
-\begin{aligned}
-	y & = x^2 \\
-	z & = x^3
-\end{aligned}
-
-\begin{aligned*}
-	y &= x^2 \\
-	z &= x^3
-\end{aligned*}
-
-\begin{array*}{ccc}
-	& x & y \\
-	& a & b
-\end{array*}
-
-\begin{equation*}
-	\begin{split}
-		y & = x^2 \\
-		z & = x^3
-	\end{split}
-\end{equation*}
-
-\begin{alignat}{2}
-	y & = x^2 & \quad z & = x^3 \\
-	a & = b^2 & \quad c & = d^3
-\end{alignat}
-
-\begin{alignat*}{2}
-	y & = x^2 & \quad z & = x^3 \\
-	a & = b^2 & \quad c & = d^3
-\end{alignat*}
-
-\begin{alignedat}{2}
-	y & = x^2 & \quad z & = x^3 \\
-	a & = b^2 & \quad c & = d^3
-\end{alignedat}
-
-\begin{alignedat*}{2}
-	y &= x^2 & \quad z &= x^3 \\
-	a &= b^2 & \quad c &= d^3
-\end{alignedat*}
-
 \begin{gather}
-	y = x^2 \\
-	z = x^3
+    y = x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z = x^3
 \end{gather}
 
 \begin{gather*}
-	y = x^2 \\
-	z = x^3
+    y = x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z = x^3
 \end{gather*}
 
-\begin{gathered}
-	y = x^2 \\
-	z = x^3
-\end{gathered}
-
-\begin{gathered*}
-	y = x^2 \\
-	z = x^3
-\end{gathered*}
-
 \begin{flalign}
-	y & = x^2 & \\
-	z & = x^3 &
+    y &= x^2 & \textAlpha \quad \Alpha \quad \nabla & \\
+    z &= x^3 &
 \end{flalign}
 
 \begin{flalign*}
-	y & = x^2 & \\
-	z & = x^3 &
+    y &= x^2 & \textAlpha \quad \Alpha \quad \nabla & \\
+    z &= x^3 &
 \end{flalign*}
+
+\section*{Non-standard math environments}
+
+\begin{subequations}
+    y = x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z = x^3
+\end{subequations}
+
+\begin{empheq}[box=\fbox]{align}
+    y &= x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z &= x^3
+\end{empheq}
+
+\begin{termlist}
+    \item $(x,y)$ \quad \textAlpha \quad \Alpha \quad \nabla
+    \item $(z,w)$
+\end{termlist}
+
+\begin{termlist*}
+    \item $(x,y)$ \quad \textAlpha \quad \Alpha \quad \nabla
+    \item $(z,w)$
+\end{termlist*}
+
+\begin{dmath}
+    y^2 + x^2 = z^2 \quad \textAlpha \quad \Alpha \quad \nabla
+\end{dmath}
+
+\begin{dmath*}
+    y^2 + x^2 = z^2 \quad \textAlpha \quad \Alpha \quad \nabla
+\end{dmath*}
+
+\begin{dseries}
+    y = x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z = x^3
+\end{dseries}
+
+\begin{dseries*}
+    y = x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z = x^3
+\end{dseries*}
+
+\begin{dgroup}
+    y = x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z = x^3
+\end{dgroup}
+
+\begin{dgroup*}
+    y = x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z = x^3
+\end{dgroup*}
+
+\begin{multsubequations}
+    y = x^2 \quad \textAlpha \quad \Alpha \quad \nabla \\
+    z = x^3
+\end{multsubequations}
 
 \end{document}
