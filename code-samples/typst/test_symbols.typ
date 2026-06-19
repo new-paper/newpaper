@@ -1,4 +1,4 @@
-#set page(width: 210mm, height: 297mm, margin: 0.5cm)
+#set page(paper: "a4", margin: 1cm)
 #set text(font: ("STIX", "STIX Two Text"))
 
 $!=$ $-->$ $->$ $->>$ $...$ $::=$ $:=$ $<-$ $<--$ $<-->$ $<->$ $<<$ $<<-$ $<<<$ $<=$ $<==$ $<==>$ $<=>$ $=:$ $==>$ $=>$ $>=$
@@ -289,7 +289,7 @@ $bag.r$ $baht$ $ballot$ $ballot.check$ $ballot.check.heavy$ $ballot.cross$ $ball
 
 $bar.broken$ $bar.broken.v$ $bar.circle$ $bar.circle.v$ $bar.double$ $bar.double.v$ $bar.h$ $bar.o$ $bar.o.v$ $bar.triple$
 
-$bar.triple.v$ $bar.v$ $bar.v.broken$ $bar.v.circle$ $bar.v.double$ $bar.v.o$ $bar.v.triple$ $because$ $bet$ $beth$
+$bar.triple.v$ $bar.v$ $bar.v.broken$ $bar.v.circle$ $bar.v.double$ $bar.v.o$ $bar.v.triple$ $because$ $beth$
 
 $bitcoin$ $bot$ $brace$ $brace.b$ $brace.double$ $brace.double.l$ $brace.double.r$ $brace.l$ $brace.l.double$
 
@@ -337,7 +337,7 @@ $copyright$ $copyright.sound$ $corner$ $corner.b$ $corner.b.l$ $corner.b.r$ $cor
 
 $corner.r.b$ $corner.r.t$ $corner.t$ $corner.t.l$ $corner.t.r$ $crossmark$ $crossmark.heavy$ $currency$ $dagger$
 
-$dagger.double$ $dagger.inv$ $dagger.l$ $dagger.r$ $dagger.triple$ $dalet$ $daleth$ $dash$ $dash.circle$ $dash.colon$
+$dagger.double$ $dagger.inv$ $dagger.l$ $dagger.r$ $dagger.triple$ $daleth$ $dash$ $dash.circle$ $dash.colon$
 
 $dash.double$ $dash.double.wave$ $dash.em$ $dash.em.three$ $dash.em.two$ $dash.en$ $dash.fig$ $dash.o$ $dash.three$
 
@@ -349,7 +349,7 @@ $diamond.medium.filled$ $diamond.medium.stroked$ $diamond.small$ $diamond.small.
 
 $diamond.stroked$ $diamond.stroked.dot$ $diamond.stroked.medium$ $diamond.stroked.small$ $die$ $die.five$ $die.four$
 
-$die.one$ $die.six$ $die.three$ $die.two$ $diff$ $div$ $div.circle$ $div.o$ $div.o.slanted$ $div.slanted$ $div.slanted.o$
+$die.one$ $die.six$ $die.three$ $die.two$ $div$ $div.circle$ $div.o$ $div.o.slanted$ $div.slanted$ $div.slanted.o$
 
 $divides$ $divides.not$ $divides.not.rev$ $divides.rev$ $divides.rev.not$ $divides.struck$ $dollar$ $dong$ $dorome$ $dot$
 
@@ -383,7 +383,7 @@ $exists.not$ $fence$ $fence.dotted$ $fence.double$ $fence.double.l$ $fence.doubl
 
 $fence.r.double$ $flat$ $flat.b$ $flat.double$ $flat.quarter$ $flat.t$ $floor$ $floor.l$ $floor.r$ $floral$ $floral.l$
 
-$floral.r$ $forall$ $forces$ $forces.not$ $franc$ $frown$ $gimel$ $gimmel$ $gradient$ $grave$ $gt$ $gt.approx$ $gt.circle$
+$floral.r$ $forall$ $forces$ $forces.not$ $frown$ $gimel$ $gradient$ $grave$ $gt$ $gt.approx$ $gt.circle$
 
 $gt.dot$ $gt.double$ $gt.eq$ $gt.eq.lt$ $gt.eq.not$ $gt.eq.not.tri$ $gt.eq.slant$ $gt.eq.tri$ $gt.eq.tri.not$ $gt.equiv$
 
@@ -415,7 +415,7 @@ $harpoons.lbrb$ $harpoons.ltlb$ $harpoons.ltrb$ $harpoons.ltrt$ $harpoons.rblb$ 
 
 $harpoons.rtrb$ $harpoons.tlbr$ $harpoons.tltr$ $hash$ $hat$ $hexa$ $hexa.filled$ $hexa.stroked$ $hourglass$
 
-$hourglass.filled$ $hourglass.stroked$ $hryvnia$ $hyph$ $hyph.minus$ $hyph.nobreak$ $hyph.point$ $hyph.soft$ $image$
+$hourglass.filled$ $hourglass.stroked$ $hryvnia$ $hyph$ $hyph.minus$ $hyph.nobreak$ $hyph.point$ $image$
 
 $in$ $in.not$ $in.not.rev$ $in.rev$ $in.rev.not$ $in.rev.small$ $in.small$ $in.small.rev$ $infinity$ $infinity.bar$
 
@@ -431,13 +431,13 @@ $integral.union$ $integral.vol$ $inter$ $inter.and$ $inter.big$ $inter.big.sq$ $
 
 $inter.double.sq$ $inter.sq$ $inter.sq.big$ $inter.sq.double$ $interleave$ $interleave.big$ $interleave.struck$
 
-$interrobang$ $interrobang.inv$ $join$ $join.l$ $join.l.r$ $join.r$ $join.r.l$ $jupiter$ $kai$ $kip$ $laplace$ $lari$
+$interrobang$ $interrobang.inv$ $join$ $join.l$ $join.l.r$ $join.r$ $join.r.l$ $jupiter$ $kip$ $laplace$ $lari$
 
 $lat$ $lat.eq$ $lira$ $lozenge$ $lozenge.filled$ $lozenge.filled.medium$ $lozenge.filled.small$ $lozenge.medium$
 
 $lozenge.medium.filled$ $lozenge.medium.stroked$ $lozenge.small$ $lozenge.small.filled$ $lozenge.small.stroked$
 
-$lozenge.stroked$ $lozenge.stroked.medium$ $lozenge.stroked.small$ $lrm$ $lt$ $lt.approx$ $lt.circle$ $lt.dot$
+$lozenge.stroked$ $lozenge.stroked.medium$ $lozenge.stroked.small$  $lt$ $lt.approx$ $lt.circle$ $lt.dot$
 
 $lt.double$ $lt.eq$ $lt.eq.gt$ $lt.eq.not$ $lt.eq.not.tri$ $lt.eq.slant$ $lt.eq.tri$ $lt.eq.tri.not$ $lt.equiv$ $lt.gt$
 
@@ -539,17 +539,16 @@ $rect.h.stroked$ $rect.stroked$ $rect.stroked.h$ $rect.stroked.v$ $rect.v$ $rect
 
 $rest$ $rest.eighth$ $rest.half$ $rest.measure$ $rest.measure.multiple$ $rest.multiple$ $rest.multiple.measure$
 
-$rest.quarter$ $rest.sixteenth$ $rest.whole$ $riel$ $rlm$ $ruble$ $rupee$ $rupee.generic$ $rupee.indian$ $rupee.tamil$
+$rest.quarter$ $rest.sixteenth$ $rest.whole$ $riel$  $ruble$ $rupee$ $rupee.generic$ $rupee.indian$ $rupee.tamil$
 
-$rupee.wancho$ $saturn$ $sect$ $sect.and$ $sect.big$ $sect.big.sq$ $sect.dot$ $sect.double$ $sect.double.sq$ $sect.sq$
-
-$sect.sq.big$ $sect.sq.double$ $section$ $semi$ $semi.inv$ $semi.rev$ $sha$ $sharp$ $sharp.b$ $sharp.double$
+$rupee.wancho$ $saturn$
+$section$ $semi$ $semi.inv$ $semi.rev$ $sha$ $sharp$ $sharp.b$ $sharp.double$
 
 $sharp.quarter$ $sharp.t$ $shekel$ $shell$ $shell.b$ $shell.double$ $shell.double.l$ $shell.double.r$ $shell.filled$
 
 $shell.filled.l$ $shell.filled.r$ $shell.l$ $shell.l.double$ $shell.l.filled$ $shell.l.stroked$ $shell.r$ $shell.r.double$
 
-$shell.r.filled$ $shell.r.stroked$ $shell.stroked$ $shell.stroked.l$ $shell.stroked.r$ $shell.t$ $shin$ $slash$
+$shell.r.filled$ $shell.r.stroked$ $shell.stroked$ $shell.stroked.l$ $shell.stroked.r$ $shell.t$ $slash$
 
 $slash.big$ $slash.double$ $slash.o$ $slash.triple$ $smash$ $smile$ $smt$ $smt.eq$ $som$ $space$ $space.en$ $space.fig$
 
@@ -667,6 +666,6 @@ $triangle.tr.filled$ $triangle.tr.stroked$ $union$ $union.arrow$ $union.big$ $un
 
 $union.big.sq$ $union.dot$ $union.dot.big$ $union.double$ $union.double.sq$ $union.minus$ $union.or$ $union.plus$
 
-$union.plus.big$ $union.sq$ $union.sq.big$ $union.sq.double$ $uranus$ $uranus.alt$ $venus$ $without$ $wj$ $won$ $wreath$
+$union.plus.big$ $union.sq$ $union.sq.big$ $union.sq.double$ $uranus$ $uranus.alt$ $venus$ $without$ $won$ $wreath$
 
-$xor$ $xor.big$ $yen$ $yuan$ $zwj$ $zwnj$ $zws$ $|->$ $~>$ $~~>$
+$xor$ $xor.big$ $yen$ $yuan$ $|->$ $~>$ $~~>$

@@ -1,3 +1,6 @@
+#set page(paper: "a4", margin: 1cm)
+#set text(size: 14pt)
+
 #let x = 10
 #let dict = (a: 1, b: 2, c: 3)
 #let arr = (1, 2, 3)
@@ -19,7 +22,7 @@
 #let is_in = (x in (1, 2, 3))
 #let both = (x > 0 and x < 100)
 #let either = (x < 0 or x > 100)
-#let neg = not(x == 0)
+#let neg = not (x == 0)
 
 #let items = [a, b, c]
 #let my_var = 42
@@ -27,8 +30,8 @@
 #show "foo": it => "bar"
 
 #for i in range(5) {
-    if i == 3 { break }
-    if i == 2 { continue }
+  if i == 3 { break }
+  if i == 2 { continue }
 }
 
 #let letters = ("a", "b")
@@ -37,11 +40,11 @@
 #let x = 10
 
 #if x > 0 {
-    "positive"
+  "positive"
 } else if x < 0 {
-    "negative"
+  "negative"
 } else {
-    "zero"
+  "zero"
 }
 
 #let n = 42
@@ -87,20 +90,20 @@ Regular paragraph text.
 1. item one
 2. item two
 
-$ frac(a,b) $
-$ frac(x^2 + 1,x - 1^b) $
-$ frac((x^2 + 1),(x - 1^b)) $
+$ frac(a, b) $
+$ frac(x^2 + 1, x - 1^b) $
+$ frac((x^2 + 1), (x - 1^b)) $
 
-$ frac(x^2 + 1,x - 1^b) $
-$ frac(1,2_a) < frac(a,3^6) $
+$ frac(x^2 + 1, x - 1^b) $
+$ frac(1, 2_a) < frac(a, 3^6) $
 $ 1/2 $
 $ (x+1)/2 $
 
-$ frac(1,2) $
-$ frac(x+1,y-1) $
-$ frac((x+1),(y-1)) $
+$ frac(1, 2) $
+$ frac(x+1, y-1) $
+$ frac((x+1), (y-1)) $
 
-$ frac(x,y,style: "vertical") $
+$ frac(x, y, style: "vertical") $
 $ frac(x, y, style: "skewed") $
 $ frac(x, y, style: "horizontal") $
 
@@ -127,25 +130,33 @@ $a, b in { 1/2, sqrt(4 a b) } dot.c$
 
 "double" 'single'
 
+// dif
+$dif f / dif x$
+$dif(f)/dif(x)$
+$dif(f(g(x)))/dif(x)$
+$(dif^2(f))/dif(x^2)$
+$(dif^2 f)/(dif x^2)$
+$dif(f/g)$
+
 // arrow right
 $ ==> $ $ => $ $ -> $ $ |-> $ $ ->> $ $ --> $ $ ~> $ $ ~~> $ \
 // arrow left
-$<- $ $<<- $ $<-- $ $<== $
+$<-$ $<<-$ $<--$ $<==$
 // arrow both
-$<-> $ $<--> $ $<=> $ $<==> $
+$<->$ $<-->$ $<=>$ $<==>$
 // cmp eq
-$:= $
-$::= $
-$=: $
-$!= $
+$:=$
+$::=$
+$=:$
+$!=$
 // cmp less
-$<= $ $<< $ $<<< $
+$<=$ $<<$ $<<<$
 // cmp greater
-$>= $ $>> $ $>>> $
+$>=$ $>>$ $>>>$
 
 $ x^2 $
 
-$ x < y  a! > b! $
+$ x < y a! > b! $
 
 $ (x + y) * z / w $
 
