@@ -74,6 +74,28 @@ It explains #name.
 
 This is *strong* and _emph_ text.
 
+This is _emphasized._ \
+This is #emph[emphasized too]
+
+This is #strong[strong too] \
+#strong(delta: 800)[also strong] \
+#strong(delta: 800,[also strong again])
+
+This is #strike[strike] \
+This is #strike(offset: auto)[strike too] \
+#strike(stroke: auto,[also strike])
+
+This is #underline[underline] \
+#underline(offset: 5pt)[underline too] \
+#underline(stroke: 1.5pt + red,offset: 2pt,[also underline])
+
+Revenue#sub[yearly] \
+N#sub(typographic: true)[1] \
+N#sub(typographic: false)[1]
+
+1#super[st] try! \
+N#super(typographic: true)[1]
+
 Regular paragraph text.
 
 -- --- -? ~ ...
@@ -89,6 +111,28 @@ Regular paragraph text.
 
 1. item one
 2. item two
+
+Normal list.
+- Text
+- Math
+- Layout
+- ...
+
+Multiple lines.
+- This list item spans multiple
+  lines because it is indented.
+
+Function call.
+#list(
+  [Foundations],
+  [Calculate],
+  [Construct],
+  [Data Loading],
+)
+
+She left without a word.
+#divider()
+Three days later, she returned.
 
 $ frac(a, b) $
 $ frac(x^2 + 1, x - 1^b) $
@@ -108,7 +152,7 @@ $ frac(x, y, style: "skewed") $
 $ frac(x, y, style: "horizontal") $
 
 #set math.frac(style: "skewed")
-$ (a + b) / b $
+$ (a + b)/b $
 
 #show math.equation.where(block: false): set math.frac(style: "horizontal")
 
@@ -158,7 +202,26 @@ $ x^2 $
 
 $ x < y a! > b! $
 
-$ (x + y) * z / w $
+$ ((x + y)dot z) / w $
+
+$ (a dot b dot cancel(x))/cancel(x) $
+$ a + cancel(x, length: #200%) - cancel(x, length: #200%) $
+$ (a cancel((b + c), inverted: #true))/cancel(b + c, inverted: #true) $
+$ cancel(Pi, cross: #true) $
+$
+  cancel(Pi)
+  cancel(Pi, angle: #0deg)
+  cancel(Pi, angle: #45deg)
+  cancel(Pi, angle: #90deg)
+  cancel(1/(1+x), angle: #(a => a + 45deg))
+  cancel(1/(1+x), angle: #(a => a + 90deg))
+$
+$
+  cancel(
+    sum x,
+    stroke: #(paint: red, thickness: 1.5pt, dash: "dashed"),
+  )
+$
 
 `inline code`
 

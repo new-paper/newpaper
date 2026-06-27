@@ -36,19 +36,13 @@
   [Scale with lr], `$ lr( ... mid(|) ... ) $`, $ P( lr(A mid(|) B) ) $,
 
   table.cell(colspan: 3)[Angle Delimiters],
-  [Basic angle], `$ angle.l ... angle.r $`, $ angle.l x angle.r $,
-  [Curly angle], `$ angle.curly.l ... angle.curly.r $`, $ angle.curly.l x angle.curly.r $,
-  [Dot angle], `$ angle.dot.l ... angle.dot.r $`, $ angle.dot.l x angle.dot.r $,
-  [Double angle], `$ angle.double.l ... angle.double.r $`, $ angle.double.l x angle.double.r $,
 
   table.cell(colspan: 3)[Brace Delimiters],
   [Basic brace], `$ brace.l ... brace.r $`, $ brace.l x brace.r $,
-  [Double brace], `$ brace.double.l ... brace.double.r $`, $ brace.double.l x brace.double.r $,
   [Stroked brace], `$ brace.stroked.l ... brace.stroked.r $`, $ brace.stroked.l x brace.stroked.r $,
 
   table.cell(colspan: 3)[Bracket Delimiters],
   [Basic bracket], `$ bracket.l ... bracket.r $`, $ bracket.l x bracket.r $,
-  [Double bracket], `$ bracket.double.l ... bracket.double.r $`, $ bracket.double.l x bracket.double.r $,
   [Stroked bracket], `$ bracket.stroked.l ... bracket.stroked.r $`, $ bracket.stroked.l x bracket.stroked.r $,
 
   table.cell(colspan: 3)[Chevron Delimiters],
@@ -71,13 +65,11 @@
   table.cell(colspan: 3)[Parentheses Variants],
   [Basic paren], `$ paren.l ... paren.r $`, $ paren.l x paren.r $,
   [Closed paren], `$ paren.closed.l ... paren.closed.r $`, $ paren.closed.l x paren.closed.r $,
-  [Double paren], `$ paren.double.l ... paren.double.r $`, $ paren.double.l x paren.double.r $,
   [Flat paren], `$ paren.flat.l ... paren.flat.r $`, $ paren.flat.l x paren.flat.r $,
   [Stroked paren], `$ paren.stroked.l ... paren.stroked.r $`, $ paren.stroked.l x paren.stroked.r $,
 
   table.cell(colspan: 3)[Shell Delimiters],
   [Basic shell], `$ shell.l ... shell.r $`, $ shell.l x shell.r $,
-  [Double shell], `$ shell.double.l ... shell.double.r $`, $ shell.double.l x shell.double.r $,
   [Filled shell], `$ shell.filled.l ... shell.filled.r $`, $ shell.filled.l x shell.filled.r $,
   [Stroked shell], `$ shell.stroked.l ... shell.stroked.r $`, $ shell.stroked.l x shell.stroked.r $,
 
@@ -101,9 +93,6 @@
 
   table.cell(colspan: 3)[Nested Delimiters],
   [Nesting], `$ lr( delimiter1 content delimiter1 ) $`, $ lr([ (a/b) + (c/d) ]) $,
-  [Mixed types],
-  `$ lr( angle.l brace.double.l x brace.double.r angle.r ) $`,
-  $ angle.l brace.double.l x brace.double.r angle.r $,
 
   table.cell(colspan: 3)[Custom Pairs],
   [Any pair], `$ lr( | content |) $`, $ lr(| a/b |) $,
